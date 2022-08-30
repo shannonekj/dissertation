@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Male2_S63_L004_R2_001.fastq.gz
+PASS	Per base sequence quality	Male2_S63_L004_R2_001.fastq.gz
+PASS	Per tile sequence quality	Male2_S63_L004_R2_001.fastq.gz
+PASS	Per sequence quality scores	Male2_S63_L004_R2_001.fastq.gz
+WARN	Per base sequence content	Male2_S63_L004_R2_001.fastq.gz
+WARN	Per sequence GC content	Male2_S63_L004_R2_001.fastq.gz
+PASS	Per base N content	Male2_S63_L004_R2_001.fastq.gz
+PASS	Sequence Length Distribution	Male2_S63_L004_R2_001.fastq.gz
+WARN	Sequence Duplication Levels	Male2_S63_L004_R2_001.fastq.gz
+FAIL	Overrepresented sequences	Male2_S63_L004_R2_001.fastq.gz
+PASS	Adapter Content	Male2_S63_L004_R2_001.fastq.gz

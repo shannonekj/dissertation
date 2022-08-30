@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Per base sequence quality	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Per tile sequence quality	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Per sequence quality scores	Smelt2F_S432_L004_R1_001.fastq.gz
+WARN	Per base sequence content	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Per sequence GC content	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Per base N content	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Sequence Length Distribution	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Sequence Duplication Levels	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Overrepresented sequences	Smelt2F_S432_L004_R1_001.fastq.gz
+PASS	Adapter Content	Smelt2F_S432_L004_R1_001.fastq.gz
