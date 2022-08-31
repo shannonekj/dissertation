@@ -1,0 +1,30 @@
+# BUSCO version is: 5.4.3 
+# The lineage dataset is: actinopterygii_odb10 (Creation date: 2021-02-19, number of genomes: 26, number of BUSCOs: 3640)
+# Summarized benchmarking in BUSCO notation for file /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/HypTra_hifi_combined.fasta
+# BUSCO was run in mode: euk_genome_met
+# Gene predictor used: metaeuk
+
+	***** Results: *****
+
+	C:90.4%[S:3.4%,D:87.0%],F:4.0%,M:5.6%,n:3640	   
+	3289	Complete BUSCOs (C)			   
+	123	Complete and single-copy BUSCOs (S)	   
+	3166	Complete and duplicated BUSCOs (D)	   
+	146	Fragmented BUSCOs (F)			   
+	205	Missing BUSCOs (M)			   
+	3640	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	3095133	Number of scaffolds
+	3095133	Number of contigs
+	35145204844	Total length
+	0.000%	Percent gaps
+	11 KB	Scaffold N50
+	11 KB	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	bbtools: 38.98
+	metaeuk: 6.a5d39d9
+	busco: 5.4.3
