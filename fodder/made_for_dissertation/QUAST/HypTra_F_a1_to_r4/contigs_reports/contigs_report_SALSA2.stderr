@@ -1,0 +1,10 @@
+[M::mm_idx_gen::9.388*1.59] collected minimizers
+[M::mm_idx_gen::11.000*1.80] sorted minimizers
+[M::main::11.000*1.80] loaded/built the index for 376 target sequence(s)
+[M::mm_mapopt_update::11.797*1.74] mid_occ = 200
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 376
+[M::mm_idx_stat::12.297*1.71] distinct minimizers: 33111171 (94.88% are singletons); average occurrences: 1.341; average spacing: 9.850; total length: 437273953
+[M::worker_pipeline::331.485*2.93] mapped 515 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: /home/sejoslin/miniconda3/envs/quast/bin/minimap2 -c -x asm10 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 3 /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/quast_corrected_input/CHRR_integrated.fa /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/quast_corrected_input/SALSA2.fasta
+[M::main] Real time: 331.531 sec; CPU: 970.811 sec; Peak RSS: 5.339 GB

@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     ipa       scaff10x  SALSA2  
+# misassemblies              22        32        11      
+  # contig misassemblies     22        31        0       
+    # c. relocations         1         1         0       
+    # c. translocations      21        30        0       
+    # c. inversions          0         0         0       
+  # scaffold misassemblies   0         1         11      
+    # s. relocations         0         0         9       
+    # s. translocations      0         1         2       
+    # s. inversions          0         0         0       
+# misassembled contigs       21        32        10      
+Misassembled contigs length  12800171  97154385  99932638
+# local misassemblies        3         0         0       
+# scaffold gap ext. mis.     0         0         0       
+# scaffold gap loc. mis.     0         0         519     
+# structural variations      -         -         -       
+# possible TEs               2         2         2       
+# unaligned mis. contigs     0         0         0       
+# mismatches                 169       8         8       
+# indels                     55        1         0       
+    # indels (<= 5 bp)       52        0         0       
+    # indels (> 5 bp)        3         1         0       
+Indels length                216       100       0       

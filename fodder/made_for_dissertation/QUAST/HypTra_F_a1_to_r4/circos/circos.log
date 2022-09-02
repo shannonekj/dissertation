@@ -1,0 +1,88 @@
+debuggroup summary 0.36s welcome to circos v0.69-8 15 Jun 2019 on Perl 5.032001
+debuggroup summary 0.36s current working directory /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4
+debuggroup summary 0.36s command /home/sejoslin/miniconda3/envs/quast/bin/circos -conf /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/circos.conf
+debuggroup summary 0.36s loading configuration from file /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/circos.conf
+debuggroup summary 0.36s found conf file /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/circos.conf
+debuggroup summary 0.50s debug will appear for these features: output,summary
+debuggroup summary 0.50s bitmap output image /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/circos.png
+debuggroup summary 0.50s parsing karyotype and organizing ideograms
+debuggroup summary 0.54s karyotype has 376 chromosomes of total size 437,274,329
+debuggroup summary 0.80s applying global and local scaling
+debuggroup summary 0.95s allocating image, colors and brushes
+debuggroup summary 6.24s drawing 376 ideograms of total size 437,274,329
+debuggroup summary 6.24s drawing highlights and ideograms
+debuggroup summary 8.35s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/text.conf
+debuggroup summary 8.35s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/text.conf
+debuggroup summary 8.35s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/text.conf
+debuggroup summary 8.35s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/tile.conf
+debuggroup summary 8.35s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/tile.conf
+debuggroup summary 8.35s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/tile.conf
+debuggroup summary 8.36s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/heatmap.conf
+debuggroup summary 8.36s processing track_0 text /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/data/labels.txt
+debuggroup summary 8.36s processing track_1 text /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/data/labels.txt
+debuggroup summary 8.36s processing track_2 text /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/data/labels.txt
+debuggroup summary 8.36s processing track_3 tile /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/data/ipa.conf
+debuggroup summary 8.50s processing track_4 tile /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/data/scaff10x.conf
+debuggroup summary 8.57s processing track_5 tile /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/data/SALSA2.conf
+debuggroup summary 8.61s processing track_6 heatmap /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/data/gc.txt
+debuggroup summary 15.26s drawing track_3 tile z 0 ipa.conf orient out
+debuggroup summary 15.28s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/axis.conf
+debuggroup summary 16.29s drawing track_4 tile z 0 scaff10x.conf orient out
+debuggroup summary 16.30s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/axis.conf
+debuggroup summary 16.83s drawing track_5 tile z 0 SALSA2.conf orient out
+debuggroup summary 16.84s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/axis.conf
+debuggroup summary 17.15s drawing track_6 heatmap z 0 gc.txt 
+debuggroup summary 18.55s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/axis.conf
+debuggroup summary 37.53s drawing track_0 text z 10 labels.txt 
+debuggroup summary 37.53s placing text track labels.txt
+debuggroup summary 37.53s ... see progress with -debug_group text
+debuggroup summary 37.53s ... see placement summary with -debug_group textplace
+debuggroup summary 37.57s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/axis.conf
+debuggroup summary 37.63s drawing track_1 text z 10 labels.txt 
+debuggroup summary 37.63s placing text track labels.txt
+debuggroup summary 37.63s ... see progress with -debug_group text
+debuggroup summary 37.63s ... see placement summary with -debug_group textplace
+debuggroup summary 37.66s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/axis.conf
+debuggroup summary 37.72s drawing track_2 text z 10 labels.txt 
+debuggroup summary 37.72s placing text track labels.txt
+debuggroup summary 37.72s ... see progress with -debug_group text
+debuggroup summary 37.72s ... see placement summary with -debug_group textplace
+debuggroup summary 37.75s found conf file /home/sejoslin/miniconda3/envs/quast/bin/../etc/tracks/axis.conf
+debuggroup output 37.81s generating output
+debuggroup output 38.23s created PNG image /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/circos.png (945 kb)
+debuggroup timer 38.23s report circos 37.876 s
+debuggroup timer 38.23s report color 5.120 s
+debuggroup timer 38.23s report colordefinitions 0.454 s
+debuggroup timer 38.23s report colorfetch 0.262 s
+debuggroup timer 38.23s report colorlists 3.995 s
+debuggroup timer 38.23s report colorlookups 0.003 s
+debuggroup timer 38.23s report colortransparency 0.609 s
+debuggroup timer 38.23s report dataparams 3.800 s
+debuggroup timer 38.23s report datarules 0.001 s
+debuggroup timer 38.23s report graphic_png_polygon 3.833 s
+debuggroup timer 38.23s report graphic_slice 7.297 s
+debuggroup timer 38.23s report graphic_slice_polygon_coord 1.089 s
+debuggroup timer 38.23s report graphic_slice_preprocess 1.970 s
+debuggroup timer 38.23s report highlights 0.000 s
+debuggroup timer 38.23s report ideograms_draw 2.112 s
+debuggroup timer 38.23s report ideograms_processing 0.257 s
+debuggroup timer 38.23s report ideograms_ticks_draw 1.597 s
+debuggroup timer 38.23s report ideograms_zoom 0.112 s
+debuggroup timer 38.23s report io 0.931 s
+debuggroup timer 38.23s report karyotype 0.039 s
+debuggroup timer 38.23s report parameter_seek 2.845 s
+debuggroup timer 38.23s report track_heatmap 12.517 s
+debuggroup timer 38.23s report track_preprocess 1.432 s
+debuggroup timer 38.23s report track_text_ashift 0.001 s
+debuggroup timer 38.23s report track_text_ashiftiter 0.000 s
+debuggroup timer 38.23s report track_text_draw 0.003 s
+debuggroup timer 38.23s report track_text_place 0.090 s
+debuggroup timer 38.23s report track_text_preashift 0.001 s
+debuggroup timer 38.23s report track_text_preprocess 0.003 s
+debuggroup timer 38.23s report track_text_refine 0.000 s
+debuggroup timer 38.23s report track_tile 1.186 s
+debuggroup timer 38.23s report unitconvert 0.002 s
+debuggroup timer 38.23s report unitconvert_decision 0.000 s
+debuggroup timer 38.23s report unitconvert_delegate 0.001 s
+debuggroup timer 38.23s report unitparse 0.351 s
+debuggroup summary,timer 38.23s image took more than 30 s to generate. Component timings are shown above. To always show them, use -debug_group timer. To adjust the time cutoff, change debug_auto_timer_report in etc/housekeeping.conf.

@@ -1,0 +1,1 @@
+lg01	0	0	null	track0=assembly1,track1=assembly2,track2=assembly3

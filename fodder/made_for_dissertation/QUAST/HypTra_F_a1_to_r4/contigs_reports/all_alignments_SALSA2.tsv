@@ -1,0 +1,2099 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+2626693	4030845	1404153	1	lg23	scaffold_1	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1	2626192	4030845	1404654	lg23	scaffold_1	100.0		True
+relocation, scaffold gap is present, inconsistency = 4627798
+7254491	8128877	4031346	4905732	lg23	scaffold_1	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8129378	8658949	4906233	5435804	lg23	scaffold_1	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8659450	13209791	5436305	9986646	lg23	scaffold_1	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13210292	16612098	9987147	13388953	lg23	scaffold_1	100.0		True
+relocation, scaffold gap is present, inconsistency = 99863
+16712462	18263845	13389454	14940837	lg23	scaffold_1	100.0		True
+fake: scaffold gap size wrong estimation (local)
+18264346	20427041	14941338	17104033	lg23	scaffold_1	100.0		True
+fake: scaffold gap size wrong estimation (local)
+20427542	20697914	17104534	17374906	lg23	scaffold_1	100.0		True
+fake: scaffold gap size wrong estimation (local)
+20698415	21529172	17375407	18206164	lg23	scaffold_1	100.0		True
+CONTIG	scaffold_1	18206164	misassembled
+57780	698984	1	641205	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+699485	1246786	641706	1189007	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1247287	3377967	1189508	3320188	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3378468	4284999	3320689	4227220	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4285500	9245949	4227721	9188170	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9246450	12294812	9188671	12237033	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12295313	12380220	12237534	12322441	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12380721	12892333	12322942	12834554	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12892834	12999520	12835055	12941741	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13000021	13218678	12942242	13160899	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13219179	13506613	13161400	13448834	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13507114	13767938	13449335	13710159	lg03	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13768439	13971289	13710660	13913510	lg03	scaffold_2	100.0		True
+translocation, scaffold gap is present
+13334442	13929737	14509306	13914011	lg10	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13276194	13333941	14567554	14509807	lg10	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13206656	13275693	14637092	14568055	lg10	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13034924	13206155	14808824	14637593	lg10	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12807467	13034423	15036281	14809325	lg10	scaffold_2	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12764519	12806966	15079229	15036782	lg10	scaffold_2	100.0		True
+CONTIG	scaffold_2	15079229	misassembled
+14740025	14850352	110328	1	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14643500	14739524	206853	110829	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14350118	14642999	500235	207354	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14253396	14349617	596957	500736	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14187178	14252895	663175	597458	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13702260	14186677	1148093	663676	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13321245	13701759	1529108	1148594	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13228673	13320744	1621680	1529609	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12933742	13228172	1916611	1622181	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12087687	12933241	2762666	1917112	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7275139	12087186	7575214	2763167	lg13	scaffold_3	100.0		True
+relocation, scaffold gap is present, inconsistency = 576342
+2013888	6698296	12260123	7575715	lg13	scaffold_3	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1	2013387	14274010	12260624	lg13	scaffold_3	100.0		True
+CONTIG	scaffold_3	14274010	misassembled
+2719290	3474477	1	755188	lg11	scaffold_4	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3474978	5842828	755689	3123539	lg11	scaffold_4	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5843329	8732700	3124040	6013411	lg11	scaffold_4	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8733201	12288474	6013912	9569185	lg11	scaffold_4	100.0		True
+relocation, scaffold gap is present, inconsistency = 546324
+12835299	16146349	9569686	12880736	lg11	scaffold_4	100.0		True
+CONTIG	scaffold_4	12880736	misassembled
+12480917	12764418	283502	1	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12380854	12480416	383565	284003	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12012561	12380353	751858	384066	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11929219	12012060	835200	752359	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11823868	11928718	940551	835701	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11741421	11823367	1022998	941052	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11524803	11740920	1239616	1023499	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11170623	11524302	1593796	1240117	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11023136	11170122	1741283	1594297	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10560751	11022635	2203668	1741784	lg10	scaffold_5	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1	10560250	12764418	2204169	lg10	scaffold_5	100.0		True
+CONTIG	scaffold_5	12764418	correct
+3075726	9419468	1	6343743	lg08	scaffold_6	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9419969	10776275	6344244	7700550	lg08	scaffold_6	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10776776	12781953	7701051	9706228	lg08	scaffold_6	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12782454	14090550	9706729	11014825	lg08	scaffold_6	100.0		True
+CONTIG	scaffold_6	11014825	correct
+1	640742	1	640742	lg17	scaffold_7	100.0		True
+fake: scaffold gap size wrong estimation (local)
+641243	902343	641243	902343	lg17	scaffold_7	100.0		True
+fake: scaffold gap size wrong estimation (local)
+902844	990016	902844	990016	lg17	scaffold_7	100.0		True
+fake: scaffold gap size wrong estimation (local)
+990517	1139248	990517	1139248	lg17	scaffold_7	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1139749	1340876	1139749	1340876	lg17	scaffold_7	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1341377	1392858	1341377	1392858	lg17	scaffold_7	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1393359	2006767	1393359	2006767	lg17	scaffold_7	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2007268	6675153	2007268	6675153	lg17	scaffold_7	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6675654	10340711	6675654	10340711	lg17	scaffold_7	100.0		True
+CONTIG	scaffold_7	10340711	correct
+628728	1083596	1	454869	lg12	scaffold_8	100.0		True
+relocation, scaffold gap is present, inconsistency = 385677
+1469774	2332109	455370	1317705	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2332610	2467776	1318206	1453372	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2468277	2710952	1453873	1696548	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2711453	3346287	1697049	2331883	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3346788	3495146	2332384	2480742	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3495647	3659688	2481243	2645284	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3660189	3921041	2645785	2906637	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3921542	5313765	2907138	4299361	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5314266	7259571	4299862	6245167	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7260072	8633307	6245668	7618903	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8633808	9929358	7619404	8914954	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9929859	9983701	8915455	8969297	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9984202	10063330	8969798	9048926	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10063831	10162549	9049427	9148145	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10163050	10224283	9148646	9209879	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10224784	10347918	9210380	9333514	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10348419	10435972	9334015	9421568	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10436473	10659706	9422069	9645302	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10660207	10762788	9645803	9748384	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10763289	10836717	9748885	9822313	lg12	scaffold_8	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10837218	10948312	9822814	9933908	lg12	scaffold_8	100.0		True
+CONTIG	scaffold_8	9933908	misassembled
+11084123	11959024	874902	1	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9772751	11083622	2186274	875403	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5813961	9772250	6145064	2186775	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3623969	5813460	8335056	6145565	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3541898	3623468	8417127	8335557	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3391576	3541397	8567449	8417628	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3105632	3391075	8853393	8567950	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2938154	3105131	9020871	8853894	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2868755	2937653	9090270	9021372	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2772189	2868254	9186836	9090771	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2331013	2771688	9628012	9187337	lg18	scaffold_9	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2179914	2330512	9779111	9628513	lg18	scaffold_9	100.0		True
+CONTIG	scaffold_9	9779111	correct
+9903076	11341639	1438564	1	lg22	scaffold_10	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6601238	9902575	4740402	1439065	lg22	scaffold_10	100.0		True
+relocation, scaffold gap is present, inconsistency = 3940767
+1612357	2659970	4740903	5788516	lg22	scaffold_10	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2660471	4078804	5789017	7207350	lg22	scaffold_10	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4079305	5265388	7207851	8393934	lg22	scaffold_10	100.0		True
+CONTIG	scaffold_10	8393934	misassembled
+785377	1385176	1	599800	lg21	scaffold_11	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1385677	1912939	600301	1127563	lg21	scaffold_11	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1913440	3750493	1128064	2965117	lg21	scaffold_11	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3750994	3938052	2965618	3152676	lg21	scaffold_11	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3938553	4113992	3153177	3328616	lg21	scaffold_11	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4114493	4438503	3329117	3653127	lg21	scaffold_11	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4439004	5964630	3653628	5179254	lg21	scaffold_11	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5965131	8771939	5179755	7986563	lg21	scaffold_11	100.0		True
+CONTIG	scaffold_11	7987965	correct
+10079086	10666606	587521	1	lg02	scaffold_12	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9165494	10078585	1501113	588022	lg02	scaffold_12	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8794175	9164993	1872432	1501614	lg02	scaffold_12	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8538931	8793674	2127676	1872933	lg02	scaffold_12	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7160656	8538430	3505951	2128177	lg02	scaffold_12	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3818215	7160155	6848392	3506452	lg02	scaffold_12	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3086828	3817714	7579779	6848893	lg02	scaffold_12	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2799390	3086327	7867217	7580280	lg02	scaffold_12	100.0		True
+CONTIG	scaffold_12	7867217	correct
+8170473	8573851	403379	1	lg04	scaffold_13	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7703351	8169972	870501	403880	lg04	scaffold_13	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6579876	7702850	1993976	871002	lg04	scaffold_13	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2698886	6579375	5874966	1994477	lg04	scaffold_13	100.0		True
+relocation, scaffold gap is present, inconsistency = 55088
+1366575	2643297	7152189	5875467	lg04	scaffold_13	100.0		True
+fake: scaffold gap size wrong estimation (local)
+973930	1366040	7544834	7152724	lg04	scaffold_13	100.0		True
+fake: scaffold gap size wrong estimation (local)
+749576	973429	7769188	7545335	lg04	scaffold_13	100.0		True
+CONTIG	scaffold_13	7769188	misassembled
+3486273	4059863	1	573591	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4060364	6282403	574092	2796131	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6282904	7877868	2796632	4391596	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7878369	8421309	4392097	4935037	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8421810	8740223	4935538	5253951	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8740724	9161054	5254452	5674782	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9161555	9656300	5675283	6170028	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9656801	10019474	6170529	6533202	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10019975	10237658	6533703	6751386	lg09	scaffold_14	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10238159	11110833	6751887	7624561	lg09	scaffold_14	100.0		True
+CONTIG	scaffold_14	7624561	correct
+17248697	17325139	76443	1	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+17138867	17248196	186273	76944	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+17038534	17138366	286606	186774	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16963980	17038033	361160	287107	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16824993	16963479	500147	361661	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16727649	16824492	597491	500648	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16646975	16727148	678165	597992	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16337840	16646474	987300	678666	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16273770	16337339	1051370	987801	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16130385	16273269	1194755	1051871	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16033342	16129884	1291798	1195256	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+15969737	16032841	1355403	1292299	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+15911363	15969236	1413777	1355904	lg17	scaffold_15	100.0		True
+relocation, scaffold gap is present, inconsistency = 249373
+15526249	15661489	1549518	1414278	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+15391671	15525748	1684096	1550019	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14905782	15391170	2169985	1684597	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13836140	14905281	3239627	2170486	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12825079	13835639	4250688	3240128	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11871058	12824578	5204709	4251189	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10967930	11870557	6107837	5205210	lg17	scaffold_15	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10340812	10967429	6734955	6108338	lg17	scaffold_15	100.0		True
+CONTIG	scaffold_15	6734955	misassembled
+7099104	7446237	347134	1	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5422091	7098603	2024147	347635	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5274229	5421590	2172009	2024648	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5027481	5273728	2418757	2172510	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4736098	5026980	2710140	2419258	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4016975	4735597	3429263	2710641	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2851203	4016474	4595035	3429764	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2441637	2850702	5004601	4595536	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2290553	2441136	5155685	5005102	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2076134	2290052	5370104	5156186	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2019010	2075633	5427228	5370605	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1301216	2018509	6145022	5427729	lg05	scaffold_16	100.0		True
+fake: scaffold gap size wrong estimation (local)
+799442	1300715	6646796	6145523	lg05	scaffold_16	100.0		True
+CONTIG	scaffold_16	6646796	correct
+9835833	11890194	2054362	1	lg06	scaffold_17	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6706336	9835332	5183859	2054863	lg06	scaffold_17	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6295082	6705835	5595113	5184360	lg06	scaffold_17	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6169406	6294581	5720789	5595614	lg06	scaffold_17	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6011208	6168905	5878987	5721290	lg06	scaffold_17	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5573872	6010707	6316323	5879488	lg06	scaffold_17	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5436418	5573371	6453777	6316824	lg06	scaffold_17	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5326522	5435917	6563673	6454278	lg06	scaffold_17	100.0		True
+CONTIG	scaffold_17	6563673	correct
+21699796	22675904	976109	1	lg09	scaffold_18	100.0		True
+fake: scaffold gap size wrong estimation (local)
+18778655	21699295	3897250	976610	lg09	scaffold_18	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16117925	18778154	6557980	3897751	lg09	scaffold_18	100.0		True
+CONTIG	scaffold_18	6557980	correct
+1	1541387	1	1541387	lg26	scaffold_19	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1541888	2022768	1541888	2022768	lg26	scaffold_19	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2023269	3453505	2023269	3453505	lg26	scaffold_19	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3454006	4694635	3454006	4694635	lg26	scaffold_19	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4695136	6441955	4695136	6441955	lg26	scaffold_19	100.0		True
+CONTIG	scaffold_19	6441955	correct
+1805292	3243402	1	1438111	lg16	scaffold_20	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3243903	7011621	1438612	5206330	lg16	scaffold_20	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7012122	7071271	5206831	5265980	lg16	scaffold_20	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7071772	7503967	5266481	5698676	lg16	scaffold_20	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7504468	7741046	5699177	5935755	lg16	scaffold_20	100.0		True
+CONTIG	scaffold_20	5935755	correct
+5693185	5751540	58356	1	lg24	scaffold_21	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5593266	5692684	158275	58857	lg24	scaffold_21	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3973191	5592765	1778350	158776	lg24	scaffold_21	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2463766	3972690	3287775	1778851	lg24	scaffold_21	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1715350	2463265	4036191	3288276	lg24	scaffold_21	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1018880	1714849	4732661	4036692	lg24	scaffold_21	100.0		True
+fake: scaffold gap size wrong estimation (local)
+713210	1018379	5038331	4733162	lg24	scaffold_21	100.0		True
+fake: scaffold gap size wrong estimation (local)
+63951	712709	5687590	5038832	lg24	scaffold_21	100.0		True
+CONTIG	scaffold_21	5687590	correct
+7182202	11653198	4470997	1	lg19	scaffold_22	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6110547	7181701	5542652	4471498	lg19	scaffold_22	100.0		True
+CONTIG	scaffold_22	5542652	correct
+4360661	5112518	751858	1	lg20	scaffold_23	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1626777	4360160	3485742	752359	lg20	scaffold_23	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1	1626276	5112518	3486243	lg20	scaffold_23	100.0		True
+CONTIG	scaffold_23	5112518	correct
+13578609	14926737	1348129	1	lg15	scaffold_24	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12022175	13578108	2904563	1348630	lg15	scaffold_24	100.0		True
+relocation, scaffold gap is present, inconsistency = 4681101
+7110392	7340573	2905064	3135245	lg15	scaffold_24	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7341074	7549484	3135746	3344156	lg15	scaffold_24	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7549985	8011795	3344657	3806467	lg15	scaffold_24	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8012296	8327881	3806968	4122553	lg15	scaffold_24	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8328382	8656226	4123054	4450898	lg15	scaffold_24	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8656727	8740618	4451399	4535290	lg15	scaffold_24	100.0		True
+CONTIG	scaffold_24	4535290	misassembled
+1	2238172	1	2238172	lg14	scaffold_25	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2238673	4495638	2238673	4495638	lg14	scaffold_25	100.0		True
+CONTIG	scaffold_25	4495638	correct
+2887972	4383157	1495186	1	lg07	scaffold_26	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1	2887471	4383157	1495687	lg07	scaffold_26	100.0		True
+CONTIG	scaffold_26	4383157	correct
+1	644804	1	644804	scaffold_27	scaffold_27	100.0		True
+fake: scaffold gap size wrong estimation (local)
+645305	774280	645305	774280	scaffold_27	scaffold_27	100.0		True
+fake: scaffold gap size wrong estimation (local)
+774781	855368	774781	855368	scaffold_27	scaffold_27	100.0		True
+fake: scaffold gap size wrong estimation (local)
+855869	1051410	855869	1051410	scaffold_27	scaffold_27	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1051911	1544530	1051911	1544530	scaffold_27	scaffold_27	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1545031	4169489	1545031	4169489	scaffold_27	scaffold_27	100.0		True
+CONTIG	scaffold_27	4169489	correct
+2273203	5328497	3055295	1	lg19	scaffold_28	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1167831	2272702	4160667	3055796	lg19	scaffold_28	100.0		True
+CONTIG	scaffold_28	4160667	correct
+12101099	12569137	1	468039	lg19	scaffold_29	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12569638	12923414	468540	822316	lg19	scaffold_29	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12923915	13297434	822817	1196336	lg19	scaffold_29	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13297935	13642674	1196837	1541576	lg19	scaffold_29	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13643175	13981396	1542077	1880298	lg19	scaffold_29	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13981897	14797336	1880799	2696238	lg19	scaffold_29	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14797837	15713392	2696739	3612294	lg19	scaffold_29	100.0		True
+CONTIG	scaffold_29	3612294	correct
+1	1534882	1	1534882	scaffold_30	scaffold_30	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1535383	3559729	1535383	3559729	scaffold_30	scaffold_30	100.0		True
+CONTIG	scaffold_30	3559729	correct
+1	55012	1	55012	scaffold_31	scaffold_31	100.0		True
+fake: scaffold gap size wrong estimation (local)
+55513	114073	55513	114073	scaffold_31	scaffold_31	100.0		True
+fake: scaffold gap size wrong estimation (local)
+114574	399877	114574	399877	scaffold_31	scaffold_31	100.0		True
+fake: scaffold gap size wrong estimation (local)
+400378	2348994	400378	2348994	scaffold_31	scaffold_31	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2349495	3527675	2349495	3527675	scaffold_31	scaffold_31	100.0		True
+CONTIG	scaffold_31	3527675	correct
+7175861	10469389	1	3293529	lg01	scaffold_32	100.0		True
+CONTIG	scaffold_32	3293529	correct
+3858218	3950405	1	92188	lg15	scaffold_33	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3950906	4112900	92689	254683	lg15	scaffold_33	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4113401	4213080	255184	354863	lg15	scaffold_33	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4213581	4459070	355364	600853	lg15	scaffold_33	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4459571	5057836	601354	1199619	lg15	scaffold_33	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5058337	5231016	1200120	1372799	lg15	scaffold_33	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5231517	7110291	1373300	3252074	lg15	scaffold_33	100.0		True
+CONTIG	scaffold_33	3252074	correct
+15254984	16066009	811026	1	lg02	scaffold_34	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12836371	15254483	3229639	811527	lg02	scaffold_34	100.0		True
+CONTIG	scaffold_34	3229639	correct
+15613528	16117824	504297	1	lg09	scaffold_35	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14481302	15613027	1636523	504798	lg09	scaffold_35	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12976355	14480801	3141470	1637024	lg09	scaffold_35	100.0		True
+CONTIG	scaffold_35	3141470	correct
+5076985	8107848	1	3030864	lg14	scaffold_36	100.0		True
+CONTIG	scaffold_36	3030864	correct
+4383258	7257250	2873993	1	lg07	scaffold_37	100.0		True
+CONTIG	scaffold_37	2873993	correct
+15274357	15839239	564883	1	lg14	scaffold_38	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14817007	15273856	1022233	565384	lg14	scaffold_38	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14473046	14816506	1366194	1022734	lg14	scaffold_38	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14273205	14472545	1566035	1366695	lg14	scaffold_38	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13898458	14272704	1940782	1566536	lg14	scaffold_38	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13283404	13897957	2555836	1941283	lg14	scaffold_38	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13060941	13282903	2778299	2556337	lg14	scaffold_38	100.0		True
+CONTIG	scaffold_38	2778299	correct
+6187053	6411540	224488	1	lg25	scaffold_39	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5685705	6186552	725836	224989	lg25	scaffold_39	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5088392	5685204	1323149	726337	lg25	scaffold_39	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4349644	5087891	2061897	1323650	lg25	scaffold_39	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3707816	4349143	2703725	2062398	lg25	scaffold_39	100.0		True
+CONTIG	scaffold_39	2703725	correct
+8948385	9066379	117995	1	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8631398	8947884	434982	118496	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8324438	8630897	741942	435483	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8120630	8323937	945750	742443	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7796211	8120129	1270169	946251	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7246943	7795710	1819437	1270670	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6796921	7246442	2269459	1819938	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6745783	6796420	2320597	2269960	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6585835	6745282	2480545	2321098	lg26	scaffold_40	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6442056	6585334	2624324	2481046	lg26	scaffold_40	100.0		True
+CONTIG	scaffold_40	2624324	correct
+12854847	14285099	1430253	1	lg06	scaffold_41	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11890295	12854346	2394805	1430754	lg06	scaffold_41	100.0		True
+CONTIG	scaffold_41	2394805	correct
+1	1771497	1	1771497	scaffold_42	scaffold_42	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1771998	2292928	1771998	2292928	scaffold_42	scaffold_42	100.0		True
+CONTIG	scaffold_42	2292928	correct
+12288254	12451346	1	163093	lg22	scaffold_43	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12451847	12791510	163594	503257	lg22	scaffold_43	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12792011	13645441	503758	1357188	lg22	scaffold_43	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13645942	13732170	1357689	1443917	lg22	scaffold_43	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13732671	13894129	1444418	1605876	lg22	scaffold_43	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13894630	14073448	1606377	1785195	lg22	scaffold_43	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14073949	14381526	1785696	2093273	lg22	scaffold_43	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14382027	14503447	2093774	2215194	lg22	scaffold_43	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14503948	14584411	2215695	2296158	lg22	scaffold_43	100.0		True
+CONTIG	scaffold_43	2296158	correct
+4945365	6236422	1291058	1	lg01	scaffold_44	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3966015	4944864	2270408	1291559	lg01	scaffold_44	100.0		True
+CONTIG	scaffold_44	2270408	correct
+827506	1264399	1	436894	lg18	scaffold_45	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1264900	1981387	437395	1153882	lg18	scaffold_45	100.0		True
+translocation, scaffold gap is present
+16373649	17036951	1817685	1154383	lg02	scaffold_45	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16066110	16373148	2125224	1818186	lg02	scaffold_45	100.0		True
+CONTIG	scaffold_45	2125224	misassembled
+8937033	11044700	1	2107668	lg14	scaffold_46	100.0		True
+CONTIG	scaffold_46	2107668	correct
+11044801	13060840	1	2016040	lg14	scaffold_47	100.0		True
+CONTIG	scaffold_47	2016040	correct
+1	1898637	1	1898637	scaffold_48	scaffold_48	100.0		True
+CONTIG	scaffold_48	1898637	correct
+1	3254	1	3254	lg06	scaffold_49	100.0		True
+indel: stretch of mismatches
+3255	627842	3255	627842	lg06	scaffold_49	100.0		True
+fake: scaffold gap size wrong estimation (local)
+628343	1835322	628343	1835322	lg06	scaffold_49	100.0		True
+CONTIG	scaffold_49	1835322	correct
+10271551	12022074	1750524	1	lg15	scaffold_50	100.0		True
+CONTIG	scaffold_50	1750524	correct
+1	1709888	1	1709888	scaffold_51	scaffold_51	100.0		True
+CONTIG	scaffold_51	1709888	correct
+1	889262	1	889262	scaffold_52	scaffold_52	100.0		True
+fake: scaffold gap size wrong estimation (local)
+889763	1201223	889763	1201223	scaffold_52	scaffold_52	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1201724	1695153	1201724	1695153	scaffold_52	scaffold_52	100.0		True
+CONTIG	scaffold_52	1695153	correct
+667832	1657176	989345	1	lg01	scaffold_53	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1	667331	1657176	989846	lg01	scaffold_53	100.0		True
+CONTIG	scaffold_53	1657176	correct
+9655605	11306531	1	1650927	lg04	scaffold_54	100.0		True
+CONTIG	scaffold_54	1650927	correct
+1	1631013	1	1631013	scaffold_55	scaffold_55	100.0		True
+CONTIG	scaffold_55	1631013	correct
+1	73441	1	73441	lg22	scaffold_56	100.0		True
+fake: scaffold gap size wrong estimation (local)
+73942	303614	73942	303614	lg22	scaffold_56	100.0		True
+fake: scaffold gap size wrong estimation (local)
+304115	604340	304115	604340	lg22	scaffold_56	100.0		True
+fake: scaffold gap size wrong estimation (local)
+604841	742452	604841	742452	lg22	scaffold_56	100.0		True
+fake: scaffold gap size wrong estimation (local)
+742953	951633	742953	951633	lg22	scaffold_56	100.0		True
+fake: scaffold gap size wrong estimation (local)
+952134	1299874	952134	1299874	lg22	scaffold_56	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1300375	1514678	1300375	1514678	lg22	scaffold_56	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1515179	1612256	1515179	1612256	lg22	scaffold_56	100.0		True
+CONTIG	scaffold_56	1612256	correct
+13342664	13709271	1	366608	lg18	scaffold_57	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13709772	13728634	367109	385971	lg18	scaffold_57	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13729135	13807325	386472	464662	lg18	scaffold_57	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13807826	13858130	465163	515467	lg18	scaffold_57	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13858631	14953238	515968	1610575	lg18	scaffold_57	100.0		True
+CONTIG	scaffold_57	1610575	correct
+2110653	3707715	1	1597063	lg25	scaffold_58	100.0		True
+CONTIG	scaffold_58	1597063	correct
+18095006	18272272	1	177267	lg11	scaffold_59	100.0		True
+fake: scaffold gap size wrong estimation (local)
+18272773	18417269	177768	322264	lg11	scaffold_59	100.0		True
+fake: scaffold gap size wrong estimation (local)
+18417770	18768958	322765	673953	lg11	scaffold_59	100.0		True
+fake: scaffold gap size wrong estimation (local)
+18769459	19099662	674454	1004657	lg11	scaffold_59	100.0		True
+fake: scaffold gap size wrong estimation (local)
+19100163	19213763	1005158	1118758	lg11	scaffold_59	100.0		True
+fake: scaffold gap size wrong estimation (local)
+19214264	19278891	1119259	1183886	lg11	scaffold_59	100.0		True
+fake: scaffold gap size wrong estimation (local)
+19279392	19378516	1184387	1283511	lg11	scaffold_59	100.0		True
+fake: scaffold gap size wrong estimation (local)
+19379017	19577805	1284012	1482800	lg11	scaffold_59	100.0		True
+fake: scaffold gap size wrong estimation (local)
+19578306	19684503	1483301	1589498	lg11	scaffold_59	100.0		True
+CONTIG	scaffold_59	1589498	correct
+1	1557319	1	1557319	scaffold_60	scaffold_60	100.0		True
+CONTIG	scaffold_60	1557319	correct
+1	1190320	1	1190320	scaffold_61	scaffold_61	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1190821	1482774	1190821	1482774	scaffold_61	scaffold_61	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1483275	1539821	1483275	1539821	scaffold_61	scaffold_61	100.0		True
+CONTIG	scaffold_61	1539821	correct
+1	327546	1	327546	scaffold_62	scaffold_62	100.0		True
+fake: scaffold gap size wrong estimation (local)
+328047	1068540	328047	1068540	scaffold_62	scaffold_62	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1069041	1215032	1069041	1215032	scaffold_62	scaffold_62	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1215533	1462566	1215533	1462566	scaffold_62	scaffold_62	100.0		True
+CONTIG	scaffold_62	1462566	correct
+1401964	1499937	97974	1	lg08	scaffold_63	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1262370	1401463	237568	98475	lg08	scaffold_63	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1191654	1261869	308284	238069	lg08	scaffold_63	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1122898	1191153	377040	308785	lg08	scaffold_63	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1044318	1122397	455620	377541	lg08	scaffold_63	100.0		True
+fake: scaffold gap size wrong estimation (local)
+989949	1043817	509989	456121	lg08	scaffold_63	100.0		True
+fake: scaffold gap size wrong estimation (local)
+282603	989448	1217335	510490	lg08	scaffold_63	100.0		True
+fake: scaffold gap size wrong estimation (local)
+171783	282102	1328155	1217836	lg08	scaffold_63	100.0		True
+fake: scaffold gap size wrong estimation (local)
+88037	171282	1411901	1328656	lg08	scaffold_63	100.0		True
+CONTIG	scaffold_63	1411901	correct
+1	1401475	1	1401475	scaffold_64	scaffold_64	100.0		True
+CONTIG	scaffold_64	1401475	correct
+1	1383554	1	1383554	scaffold_65	scaffold_65	100.0		True
+CONTIG	scaffold_65	1383554	correct
+12953881	13342563	388683	1	lg18	scaffold_66	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12811623	12953380	530941	389184	lg18	scaffold_66	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12693374	12811122	649190	531442	lg18	scaffold_66	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12556164	12692873	786400	649691	lg18	scaffold_66	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12214625	12555663	1127939	786901	lg18	scaffold_66	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12142121	12214124	1200443	1128440	lg18	scaffold_66	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12071245	12141620	1271319	1200944	lg18	scaffold_66	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11959125	12070744	1383439	1271820	lg18	scaffold_66	100.0		True
+CONTIG	scaffold_66	1383439	correct
+736110	909523	1	173414	lg25	scaffold_67	100.0		True
+fake: scaffold gap size wrong estimation (local)
+910024	966253	173915	230144	lg25	scaffold_67	100.0		True
+fake: scaffold gap size wrong estimation (local)
+966754	1136766	230645	400657	lg25	scaffold_67	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1137267	1803833	401158	1067724	lg25	scaffold_67	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1804334	2110552	1068225	1374443	lg25	scaffold_67	100.0		True
+CONTIG	scaffold_67	1374443	correct
+1088518	1273619	1	185102	lg11	scaffold_68	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1274120	1309061	185603	220544	lg11	scaffold_68	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1309562	1902322	221045	813805	lg11	scaffold_68	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1902823	2289970	814306	1201453	lg11	scaffold_68	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2290471	2400581	1201954	1312064	lg11	scaffold_68	100.0		True
+CONTIG	scaffold_68	1312064	correct
+12182475	12409940	227466	1	lg09	scaffold_69	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12055924	12181974	354017	227967	lg09	scaffold_69	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11896370	12055423	513571	354518	lg09	scaffold_69	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11457368	11895869	952573	514072	lg09	scaffold_69	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11334158	11456867	1075783	953074	lg09	scaffold_69	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11185210	11333657	1224731	1076284	lg09	scaffold_69	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11110934	11184709	1299007	1225232	lg09	scaffold_69	100.0		True
+CONTIG	scaffold_69	1299007	correct
+3047598	3486172	438575	1	lg09	scaffold_70	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2217615	3047097	1268558	439076	lg09	scaffold_70	100.0		True
+indel: stretch of mismatches
+2211831	2217614	1274342	1268559	lg09	scaffold_70	100.0		True
+CONTIG	scaffold_70	1274342	correct
+5992093	6038039	1	45947	lg23	scaffold_71	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6038540	6309132	46448	317040	lg23	scaffold_71	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6309633	6429888	317541	437796	lg23	scaffold_71	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6430389	6506867	438297	514775	lg23	scaffold_71	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6507368	6941582	515276	949490	lg23	scaffold_71	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6942083	7032681	949991	1040589	lg23	scaffold_71	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7033182	7185026	1041090	1192934	lg23	scaffold_71	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7185527	7254390	1193435	1262298	lg23	scaffold_71	100.0		True
+CONTIG	scaffold_71	1262298	correct
+17945139	18094905	149767	1	lg11	scaffold_72	100.0		True
+fake: scaffold gap size wrong estimation (local)
+17390638	17944638	704268	150268	lg11	scaffold_72	100.0		True
+fake: scaffold gap size wrong estimation (local)
+17298541	17390137	796365	704769	lg11	scaffold_72	100.0		True
+fake: scaffold gap size wrong estimation (local)
+17041692	17298040	1053214	796866	lg11	scaffold_72	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16895976	17041191	1198930	1053715	lg11	scaffold_72	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16844600	16895475	1250306	1199431	lg11	scaffold_72	100.0		True
+CONTIG	scaffold_72	1250306	correct
+16507875	17745835	1	1237961	lg14	scaffold_73	100.0		True
+CONTIG	scaffold_73	1237961	correct
+2140976	3372721	1231746	1	lg15	scaffold_74	100.0		True
+CONTIG	scaffold_74	1231746	correct
+4081276	4978799	1	897524	lg23	scaffold_75	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4979300	5258041	898025	1176766	lg23	scaffold_75	100.0		True
+CONTIG	scaffold_75	1176766	correct
+230002	1167730	937729	1	lg19	scaffold_76	100.0		True
+fake: scaffold gap size wrong estimation (local)
+170338	229501	997393	938230	lg19	scaffold_76	100.0		True
+fake: scaffold gap size wrong estimation (local)
+88432	169837	1079299	997894	lg19	scaffold_76	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1	87931	1167730	1079800	lg19	scaffold_76	100.0		True
+CONTIG	scaffold_76	1167730	correct
+4169062	4336836	1	167775	lg06	scaffold_77	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4337337	5069696	168276	900635	lg06	scaffold_77	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5070197	5326421	901136	1157360	lg06	scaffold_77	100.0		True
+CONTIG	scaffold_77	1157360	correct
+10738006	11874765	1136760	1	lg01	scaffold_78	100.0		True
+CONTIG	scaffold_78	1136760	correct
+3428075	3581826	153752	1	lg01	scaffold_79	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3148719	3427574	433108	154253	lg01	scaffold_79	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2899365	3148218	682462	433609	lg01	scaffold_79	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2814951	2898864	766876	682963	lg01	scaffold_79	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2721987	2814450	859840	767377	lg01	scaffold_79	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2442710	2721486	1139117	860341	lg01	scaffold_79	100.0		True
+CONTIG	scaffold_79	1139117	correct
+663739	737168	1	73430	lg15	scaffold_80	100.0		True
+fake: scaffold gap size wrong estimation (local)
+737669	813601	73931	149863	lg15	scaffold_80	100.0		True
+fake: scaffold gap size wrong estimation (local)
+814102	971124	150364	307386	lg15	scaffold_80	100.0		True
+fake: scaffold gap size wrong estimation (local)
+971625	1023660	307887	359922	lg15	scaffold_80	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1024161	1076614	360423	412876	lg15	scaffold_80	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1077115	1461364	413377	797626	lg15	scaffold_80	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1461865	1801247	798127	1137509	lg15	scaffold_80	100.0		True
+CONTIG	scaffold_80	1137509	correct
+10666707	10718673	1	51967	lg02	scaffold_81	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10719174	10781141	52468	114435	lg02	scaffold_81	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10781642	11156947	114936	490241	lg02	scaffold_81	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11157448	11591265	490742	924559	lg02	scaffold_81	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11591766	11784072	925060	1117366	lg02	scaffold_81	100.0		True
+CONTIG	scaffold_81	1117366	correct
+9213228	10322997	1	1109770	lg21	scaffold_82	100.0		True
+CONTIG	scaffold_82	1109770	correct
+1	1088417	1	1088417	lg11	scaffold_83	100.0		True
+CONTIG	scaffold_83	1088417	correct
+1	607057	1	607057	scaffold_84	scaffold_84	100.0		True
+fake: scaffold gap size wrong estimation (local)
+607558	885069	607558	885069	scaffold_84	scaffold_84	100.0		True
+fake: scaffold gap size wrong estimation (local)
+885570	1053635	885570	1053635	scaffold_84	scaffold_84	100.0		True
+CONTIG	scaffold_84	1053635	correct
+11784173	12391203	1	607031	lg02	scaffold_85	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12391704	12667388	607532	883216	lg02	scaffold_85	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12667889	12751907	883717	967735	lg02	scaffold_85	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12752408	12836270	968236	1052098	lg02	scaffold_85	100.0		True
+CONTIG	scaffold_85	1052098	correct
+9190783	10240637	1	1049855	lg07	scaffold_86	100.0		True
+CONTIG	scaffold_86	1049855	correct
+2505652	3542907	1	1037256	lg06	scaffold_87	100.0		True
+CONTIG	scaffold_87	1037256	correct
+1	985700	1	985700	scaffold_88	scaffold_88	100.0		True
+CONTIG	scaffold_88	985700	correct
+1	981956	1	981956	scaffold_89	scaffold_89	100.0		True
+CONTIG	scaffold_89	981956	correct
+1	573664	1	573664	scaffold_90	scaffold_90	100.0		True
+fake: scaffold gap size wrong estimation (local)
+574165	980304	574165	980304	scaffold_90	scaffold_90	100.0		True
+CONTIG	scaffold_90	980304	correct
+1	949707	1	949707	scaffold_91	scaffold_91	100.0		True
+CONTIG	scaffold_91	949707	correct
+11341740	12288153	1	946414	lg22	scaffold_92	100.0		True
+CONTIG	scaffold_92	946414	correct
+1	932139	932139	1	lg16	scaffold_93	100.0		True
+CONTIG	scaffold_93	932139	correct
+1	916522	1	916522	scaffold_94	scaffold_94	100.0		True
+CONTIG	scaffold_94	916522	correct
+1006896	1224951	218056	1	lg02	scaffold_95	100.0		True
+fake: scaffold gap size wrong estimation (local)
+832137	1006395	392815	218557	lg02	scaffold_95	100.0		True
+fake: scaffold gap size wrong estimation (local)
+716434	831636	508518	393316	lg02	scaffold_95	100.0		True
+fake: scaffold gap size wrong estimation (local)
+636570	715933	588382	509019	lg02	scaffold_95	100.0		True
+fake: scaffold gap size wrong estimation (local)
+508945	636069	716007	588883	lg02	scaffold_95	100.0		True
+fake: scaffold gap size wrong estimation (local)
+310336	508444	914616	716508	lg02	scaffold_95	100.0		True
+CONTIG	scaffold_95	914616	correct
+1	172377	1	172377	scaffold_96	scaffold_96	100.0		True
+fake: scaffold gap size wrong estimation (local)
+172878	210277	172878	210277	scaffold_96	scaffold_96	100.0		True
+fake: scaffold gap size wrong estimation (local)
+210778	737662	210778	737662	scaffold_96	scaffold_96	100.0		True
+fake: scaffold gap size wrong estimation (local)
+738163	908581	738163	908581	scaffold_96	scaffold_96	100.0		True
+CONTIG	scaffold_96	908581	correct
+5265489	6166538	1	901050	lg22	scaffold_97	100.0		True
+CONTIG	scaffold_97	901050	correct
+14798211	15692960	1	894750	lg03	scaffold_98	100.0		True
+CONTIG	scaffold_98	894750	correct
+9138435	9190682	52248	1	lg07	scaffold_99	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8991185	9137934	199498	52749	lg07	scaffold_99	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8870830	8990684	319853	199999	lg07	scaffold_99	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8669227	8870329	521456	320354	lg07	scaffold_99	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8441479	8668726	749204	521957	lg07	scaffold_99	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8299602	8440978	891081	749705	lg07	scaffold_99	100.0		True
+CONTIG	scaffold_99	891081	correct
+1	859966	1	859966	scaffold_100	scaffold_100	100.0		True
+CONTIG	scaffold_100	859966	correct
+1	845608	1	845608	scaffold_101	scaffold_101	100.0		True
+CONTIG	scaffold_101	845608	correct
+1	827405	827405	1	lg18	scaffold_102	100.0		True
+CONTIG	scaffold_102	827405	correct
+14411432	14798110	386679	1	lg03	scaffold_103	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14241171	14410931	556940	387180	lg03	scaffold_103	100.0		True
+fake: scaffold gap size wrong estimation (local)
+13971390	14240670	826721	557441	lg03	scaffold_103	100.0		True
+CONTIG	scaffold_103	826721	correct
+1500038	2324874	1	824837	lg08	scaffold_104	100.0		True
+CONTIG	scaffold_104	824837	correct
+1	799970	1	799970	scaffold_105	scaffold_105	100.0		True
+CONTIG	scaffold_105	799970	correct
+457850	940085	1	482236	lg09	scaffold_106	100.0		True
+fake: scaffold gap size wrong estimation (local)
+940586	1248878	482737	791029	lg09	scaffold_106	100.0		True
+CONTIG	scaffold_106	791029	correct
+1	785992	1	785992	scaffold_107	scaffold_107	100.0		True
+CONTIG	scaffold_107	785992	correct
+1	308190	1	308190	lg21	scaffold_108	100.0		True
+fake: scaffold gap size wrong estimation (local)
+308691	785276	308691	785276	lg21	scaffold_108	100.0		True
+CONTIG	scaffold_108	785276	correct
+1657277	1759662	1	102386	lg01	scaffold_109	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1760163	1848404	102887	191128	lg01	scaffold_109	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1848905	1933633	191629	276357	lg01	scaffold_109	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1934134	2294464	276858	637188	lg01	scaffold_109	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2294965	2442609	637689	785333	lg01	scaffold_109	100.0		True
+CONTIG	scaffold_109	785333	correct
+8107949	8186586	1	78638	lg14	scaffold_110	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8187087	8260360	79139	152412	lg14	scaffold_110	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8260861	8580464	152913	472516	lg14	scaffold_110	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8580965	8764378	473017	656430	lg14	scaffold_110	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8764879	8877933	656931	769985	lg14	scaffold_110	100.0		True
+CONTIG	scaffold_110	769985	correct
+2997	762945	2997	762945	scaffold_111	scaffold_111	100.0		True
+CONTIG	scaffold_111	762945	correct
+2324975	3075625	750651	1	lg08	scaffold_112	100.0		True
+CONTIG	scaffold_112	750651	correct
+1	749475	749475	1	lg04	scaffold_113	100.0		True
+CONTIG	scaffold_113	749475	correct
+1	59784	1	59784	lg05	scaffold_114	100.0		True
+fake: scaffold gap size wrong estimation (local)
+60285	214412	60285	214412	lg05	scaffold_114	100.0		True
+fake: scaffold gap size wrong estimation (local)
+214913	543671	214913	543671	lg05	scaffold_114	100.0		True
+fake: scaffold gap size wrong estimation (local)
+544172	729187	544172	729187	lg05	scaffold_114	100.0		True
+CONTIG	scaffold_114	729187	correct
+7593260	8299501	706242	1	lg07	scaffold_115	100.0		True
+CONTIG	scaffold_115	706242	correct
+1	67460	1	67460	scaffold_116	scaffold_116	100.0		True
+fake: scaffold gap size wrong estimation (local)
+67961	155773	67961	155773	scaffold_116	scaffold_116	100.0		True
+fake: scaffold gap size wrong estimation (local)
+156274	475178	156274	475178	scaffold_116	scaffold_116	100.0		True
+fake: scaffold gap size wrong estimation (local)
+475679	617012	475679	617012	scaffold_116	scaffold_116	100.0		True
+fake: scaffold gap size wrong estimation (local)
+617513	692379	617513	692379	scaffold_116	scaffold_116	100.0		True
+CONTIG	scaffold_116	692379	correct
+6994289	7175760	181472	1	lg01	scaffold_117	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6740420	6993788	435341	181973	lg01	scaffold_117	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6490710	6739919	685051	435842	lg01	scaffold_117	100.0		True
+CONTIG	scaffold_117	685051	correct
+1	670848	1	670848	scaffold_118	scaffold_118	100.0		True
+CONTIG	scaffold_118	670848	correct
+15839340	16014876	1	175537	lg14	scaffold_119	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16015377	16438941	176038	599602	lg14	scaffold_119	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16439442	16507774	600103	668435	lg14	scaffold_119	100.0		True
+CONTIG	scaffold_119	668435	correct
+1	134091	1	134091	lg15	scaffold_120	100.0		True
+fake: scaffold gap size wrong estimation (local)
+134592	336150	134592	336150	lg15	scaffold_120	100.0		True
+fake: scaffold gap size wrong estimation (local)
+336651	663638	336651	663638	lg15	scaffold_120	100.0		True
+CONTIG	scaffold_120	663638	correct
+8573952	8757333	1	183382	lg04	scaffold_121	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8757834	9084601	183883	510650	lg04	scaffold_121	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9085102	9237334	511151	663383	lg04	scaffold_121	100.0		True
+CONTIG	scaffold_121	663383	correct
+1	661041	1	661041	scaffold_122	scaffold_122	100.0		True
+CONTIG	scaffold_122	661041	correct
+11874866	11925425	1	50560	lg01	scaffold_123	100.0		True
+fake: scaffold gap size wrong estimation (local)
+11925926	12516727	51061	641862	lg01	scaffold_123	100.0		True
+CONTIG	scaffold_123	641862	correct
+1	629148	1	629148	scaffold_124	scaffold_124	100.0		True
+CONTIG	scaffold_124	629148	correct
+1	92386	1	92386	lg12	scaffold_125	100.0		True
+fake: scaffold gap size wrong estimation (local)
+92887	133181	92887	133181	lg12	scaffold_125	100.0		True
+fake: scaffold gap size wrong estimation (local)
+133682	284374	133682	284374	lg12	scaffold_125	100.0		True
+fake: scaffold gap size wrong estimation (local)
+284875	456959	284875	456959	lg12	scaffold_125	100.0		True
+fake: scaffold gap size wrong estimation (local)
+457460	523622	457460	523622	lg12	scaffold_125	100.0		True
+fake: scaffold gap size wrong estimation (local)
+524123	628627	524123	628627	lg12	scaffold_125	100.0		True
+CONTIG	scaffold_125	628627	correct
+3543008	4015187	1	472180	lg06	scaffold_126	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4015688	4116238	472681	573231	lg06	scaffold_126	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4116739	4168961	573732	625954	lg06	scaffold_126	100.0		True
+CONTIG	scaffold_126	625954	correct
+1	189299	1	189299	scaffold_127	scaffold_127	100.0		True
+fake: scaffold gap size wrong estimation (local)
+189800	617610	189800	617610	scaffold_127	scaffold_127	100.0		True
+CONTIG	scaffold_127	617610	correct
+1225052	1839370	1	614319	lg02	scaffold_128	100.0		True
+CONTIG	scaffold_128	614319	correct
+1	600757	1	600757	scaffold_129	scaffold_129	100.0		True
+CONTIG	scaffold_129	600757	correct
+1	595881	1	595881	scaffold_130	scaffold_130	100.0		True
+CONTIG	scaffold_130	595881	correct
+1	590230	1	590230	scaffold_131	scaffold_131	100.0		True
+CONTIG	scaffold_131	590230	correct
+1	583325	1	583325	scaffold_132	scaffold_132	100.0		True
+CONTIG	scaffold_132	583325	correct
+1	262549	1	262549	scaffold_133	scaffold_133	100.0		True
+fake: scaffold gap size wrong estimation (local)
+263050	528735	263050	528735	scaffold_133	scaffold_133	100.0		True
+fake: scaffold gap size wrong estimation (local)
+529236	583287	529236	583287	scaffold_133	scaffold_133	100.0		True
+CONTIG	scaffold_133	583287	correct
+1	121115	1	121115	scaffold_134	scaffold_134	100.0		True
+fake: scaffold gap size wrong estimation (local)
+121616	582103	121616	582103	scaffold_134	scaffold_134	100.0		True
+CONTIG	scaffold_134	582103	correct
+14285200	14866287	581088	1	lg06	scaffold_135	100.0		True
+CONTIG	scaffold_135	581088	correct
+4495739	4564211	1	68473	lg14	scaffold_136	100.0		True
+fake: scaffold gap size wrong estimation (local)
+4564712	5076884	68974	581146	lg14	scaffold_136	100.0		True
+CONTIG	scaffold_136	581146	correct
+1	577675	1	577675	scaffold_137	scaffold_137	100.0		True
+CONTIG	scaffold_137	577675	correct
+1	573900	1	573900	scaffold_138	scaffold_138	100.0		True
+CONTIG	scaffold_138	574997	correct
+1	344856	1	344856	scaffold_139	scaffold_139	100.0		True
+fake: scaffold gap size wrong estimation (local)
+345357	439205	345357	439205	scaffold_139	scaffold_139	100.0		True
+fake: scaffold gap size wrong estimation (local)
+439706	574967	439706	574967	scaffold_139	scaffold_139	100.0		True
+CONTIG	scaffold_139	574967	correct
+9163387	9334474	1	171088	lg15	scaffold_140	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9334975	9539020	171589	375634	lg15	scaffold_140	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9539521	9677695	376135	514309	lg15	scaffold_140	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9678196	9733783	514810	570397	lg15	scaffold_140	100.0		True
+CONTIG	scaffold_140	570397	correct
+12808116	12976254	168139	1	lg09	scaffold_141	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12778553	12807615	197702	168640	lg09	scaffold_141	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12638715	12778052	337540	198203	lg09	scaffold_141	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12410041	12638214	566214	338041	lg09	scaffold_141	100.0		True
+CONTIG	scaffold_141	566214	correct
+1	556901	1	556901	scaffold_142	scaffold_142	100.0		True
+CONTIG	scaffold_142	556901	correct
+1	553164	1	553164	scaffold_143	scaffold_143	100.0		True
+CONTIG	scaffold_143	553164	correct
+1	547976	1	547976	scaffold_144	scaffold_144	100.0		True
+CONTIG	scaffold_144	547976	correct
+12288575	12347728	1	59154	lg11	scaffold_145	100.0		True
+fake: scaffold gap size wrong estimation (local)
+12348229	12835198	59655	546624	lg11	scaffold_145	100.0		True
+CONTIG	scaffold_145	546624	correct
+1	542693	1	542693	scaffold_146	scaffold_146	100.0		True
+CONTIG	scaffold_146	542693	correct
+9733884	10271450	1	537567	lg15	scaffold_147	100.0		True
+CONTIG	scaffold_147	537567	correct
+1	144855	1	144855	lg25	scaffold_148	100.0		True
+fake: scaffold gap size wrong estimation (local)
+145356	246126	145356	246126	lg25	scaffold_148	100.0		True
+fake: scaffold gap size wrong estimation (local)
+246627	369770	246627	369770	lg25	scaffold_148	100.0		True
+fake: scaffold gap size wrong estimation (local)
+370271	538720	370271	538720	lg25	scaffold_148	100.0		True
+CONTIG	scaffold_148	538720	correct
+1	142786	1	142786	scaffold_149	scaffold_149	100.0		True
+fake: scaffold gap size wrong estimation (local)
+143287	535127	143287	535127	scaffold_149	scaffold_149	100.0		True
+CONTIG	scaffold_149	535127	correct
+932240	987130	1	54891	lg16	scaffold_150	100.0		True
+fake: scaffold gap size wrong estimation (local)
+987631	1052154	55392	119915	lg16	scaffold_150	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1052655	1113428	120416	181189	lg16	scaffold_150	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1113929	1170462	181690	238223	lg16	scaffold_150	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1170963	1225039	238724	292800	lg16	scaffold_150	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1225540	1353716	293301	421477	lg16	scaffold_150	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1354217	1465424	421978	533185	lg16	scaffold_150	100.0		True
+CONTIG	scaffold_150	533185	correct
+1698384	1828466	1	130083	lg09	scaffold_151	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1828967	2152033	130584	453650	lg09	scaffold_151	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2152534	2211730	454151	513347	lg09	scaffold_151	100.0		True
+CONTIG	scaffold_151	513347	correct
+1	512194	1	512194	scaffold_152	scaffold_152	100.0		True
+CONTIG	scaffold_152	512194	correct
+1	511852	1	511852	scaffold_153	scaffold_153	100.0		True
+CONTIG	scaffold_153	511852	correct
+1	502752	1	502752	scaffold_154	scaffold_154	100.0		True
+CONTIG	scaffold_154	502752	correct
+1	492199	1	492199	scaffold_155	scaffold_155	100.0		True
+CONTIG	scaffold_155	492199	correct
+1	140603	1	140603	scaffold_156	scaffold_156	100.0		True
+fake: scaffold gap size wrong estimation (local)
+141104	346356	141104	346356	scaffold_156	scaffold_156	100.0		True
+fake: scaffold gap size wrong estimation (local)
+346857	488939	346857	488939	scaffold_156	scaffold_156	100.0		True
+CONTIG	scaffold_156	488939	correct
+3372822	3858117	1	485296	lg15	scaffold_157	100.0		True
+CONTIG	scaffold_157	485296	correct
+14584512	14654404	1	69893	lg22	scaffold_158	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14654905	14727042	70394	142531	lg22	scaffold_158	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14727543	14800029	143032	215518	lg22	scaffold_158	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14800530	14914960	216019	330449	lg22	scaffold_158	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14915461	15067536	330950	483025	lg22	scaffold_158	100.0		True
+CONTIG	scaffold_158	483025	correct
+1	475115	1	475115	scaffold_159	scaffold_159	100.0		True
+CONTIG	scaffold_159	475115	correct
+1	466330	1	466330	scaffold_160	scaffold_160	100.0		True
+CONTIG	scaffold_160	466330	correct
+1	457749	457749	1	lg09	scaffold_161	100.0		True
+CONTIG	scaffold_161	457749	correct
+1	455197	1	455197	scaffold_162	scaffold_162	100.0		True
+CONTIG	scaffold_162	455197	correct
+2050948	2113124	1	62177	lg06	scaffold_163	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2113625	2169766	62678	118819	lg06	scaffold_163	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2170267	2381253	119320	330306	lg06	scaffold_163	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2381754	2422167	330807	371220	lg06	scaffold_163	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2422668	2505551	371721	454604	lg06	scaffold_163	100.0		True
+CONTIG	scaffold_163	454604	correct
+1248979	1698283	449305	1	lg09	scaffold_164	100.0		True
+CONTIG	scaffold_164	449305	correct
+11653299	12100998	1	447700	lg19	scaffold_165	100.0		True
+CONTIG	scaffold_165	447700	correct
+1	148585	1	148585	scaffold_166	scaffold_166	100.0		True
+fake: scaffold gap size wrong estimation (local)
+149086	440305	149086	440305	scaffold_166	scaffold_166	100.0		True
+CONTIG	scaffold_166	440305	correct
+6166639	6547399	1	380761	lg22	scaffold_167	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6547900	6601137	381262	434499	lg22	scaffold_167	100.0		True
+CONTIG	scaffold_167	434499	correct
+9401650	9655504	253855	1	lg04	scaffold_168	100.0		True
+fake: scaffold gap size wrong estimation (local)
+9237435	9401149	418070	254356	lg04	scaffold_168	100.0		True
+CONTIG	scaffold_168	418070	correct
+1839471	2247817	1	408347	lg02	scaffold_169	100.0		True
+CONTIG	scaffold_169	408347	correct
+1	141549	1	141549	scaffold_170	scaffold_170	100.0		True
+fake: scaffold gap size wrong estimation (local)
+142050	214307	142050	214307	scaffold_170	scaffold_170	100.0		True
+fake: scaffold gap size wrong estimation (local)
+214808	293677	214808	293677	scaffold_170	scaffold_170	100.0		True
+fake: scaffold gap size wrong estimation (local)
+294178	408514	294178	408514	scaffold_170	scaffold_170	100.0		True
+CONTIG	scaffold_170	408514	correct
+5585755	5661488	1	75734	lg23	scaffold_171	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5661989	5813298	76235	227544	lg23	scaffold_171	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5813799	5883553	228045	297799	lg23	scaffold_171	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5884054	5935236	298300	349482	lg23	scaffold_171	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5935737	5991992	349983	406238	lg23	scaffold_171	100.0		True
+CONTIG	scaffold_171	406238	correct
+1	403116	1	403116	scaffold_172	scaffold_172	100.0		True
+CONTIG	scaffold_172	403116	correct
+8773442	9161026	1	387585	lg21	scaffold_173	100.0		True
+CONTIG	scaffold_173	387585	correct
+1083697	1233991	1	150295	lg12	scaffold_174	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1234492	1469673	150796	385977	lg12	scaffold_174	100.0		True
+CONTIG	scaffold_174	385977	correct
+3581927	3658748	1	76822	lg01	scaffold_175	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3659249	3721748	77323	139822	lg01	scaffold_175	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3722249	3965914	140323	383988	lg01	scaffold_175	100.0		True
+CONTIG	scaffold_175	383988	correct
+1	381643	1	381643	scaffold_176	scaffold_176	100.0		True
+CONTIG	scaffold_176	381643	correct
+13929838	14075331	1	145494	lg10	scaffold_177	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14075832	14142168	145995	212331	lg10	scaffold_177	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14142669	14203026	212832	273189	lg10	scaffold_177	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14203527	14254028	273690	324191	lg10	scaffold_177	100.0		True
+fake: scaffold gap size wrong estimation (local)
+14254529	14312355	324692	382518	lg10	scaffold_177	100.0		True
+CONTIG	scaffold_177	382518	correct
+5534849	5836532	1	301684	lg19	scaffold_178	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5837033	5913594	302185	378746	lg19	scaffold_178	100.0		True
+CONTIG	scaffold_178	378746	correct
+2744797	2799289	54493	1	lg02	scaffold_179	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2684073	2744296	115217	54994	lg02	scaffold_179	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2626366	2683572	172924	115718	lg02	scaffold_179	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2427738	2625865	371552	173425	lg02	scaffold_179	100.0		True
+CONTIG	scaffold_179	371552	correct
+1	368179	1	368179	scaffold_180	scaffold_180	100.0		True
+CONTIG	scaffold_180	368179	correct
+1	361240	1	361240	scaffold_181	scaffold_181	100.0		True
+CONTIG	scaffold_181	361240	correct
+8740719	8771304	1	30586	lg15	scaffold_182	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8771805	8972559	31087	231841	lg15	scaffold_182	100.0		True
+fake: scaffold gap size wrong estimation (local)
+8973060	9097054	232342	356336	lg15	scaffold_182	100.0		True
+CONTIG	scaffold_182	356336	correct
+16146450	16198850	1	52401	lg11	scaffold_183	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16199351	16379310	52902	232861	lg11	scaffold_183	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16379811	16502114	233362	355665	lg11	scaffold_183	100.0		True
+CONTIG	scaffold_183	355665	correct
+1	70644	1	70644	scaffold_184	scaffold_184	100.0		True
+fake: scaffold gap size wrong estimation (local)
+71145	183710	71145	183710	scaffold_184	scaffold_184	100.0		True
+fake: scaffold gap size wrong estimation (local)
+184211	242663	184211	242663	scaffold_184	scaffold_184	100.0		True
+fake: scaffold gap size wrong estimation (local)
+243164	354571	243164	354571	scaffold_184	scaffold_184	100.0		True
+CONTIG	scaffold_184	354571	correct
+1	349375	1	349375	scaffold_185	scaffold_185	100.0		True
+CONTIG	scaffold_185	349375	correct
+1	345495	1	345495	scaffold_186	scaffold_186	100.0		True
+CONTIG	scaffold_186	345495	correct
+1	342978	1	342978	scaffold_187	scaffold_187	100.0		True
+CONTIG	scaffold_187	342978	correct
+1	342426	1	342426	scaffold_188	scaffold_188	100.0		True
+CONTIG	scaffold_188	342426	correct
+16502215	16574326	1	72112	lg11	scaffold_189	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16574827	16628394	72613	126180	lg11	scaffold_189	100.0		True
+fake: scaffold gap size wrong estimation (local)
+16628895	16844499	126681	342285	lg11	scaffold_189	100.0		True
+CONTIG	scaffold_189	342285	correct
+10323098	10662977	1	339880	lg21	scaffold_190	100.0		True
+CONTIG	scaffold_190	339880	correct
+1801348	1857883	1	56536	lg15	scaffold_191	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1858384	2012980	57037	211633	lg15	scaffold_191	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2013481	2140875	212134	339528	lg15	scaffold_191	100.0		True
+CONTIG	scaffold_191	339528	correct
+1	77066	1	77066	scaffold_192	scaffold_192	100.0		True
+fake: scaffold gap size wrong estimation (local)
+77567	254575	77567	254575	scaffold_192	scaffold_192	100.0		True
+fake: scaffold gap size wrong estimation (local)
+255076	338615	255076	338615	scaffold_192	scaffold_192	100.0		True
+CONTIG	scaffold_192	338615	correct
+7257351	7352274	1	94924	lg07	scaffold_193	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7352775	7439928	95425	182578	lg07	scaffold_193	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7440429	7499306	183079	241956	lg07	scaffold_193	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7499807	7593159	242457	335809	lg07	scaffold_193	100.0		True
+CONTIG	scaffold_193	335809	correct
+1	330122	1	330122	scaffold_194	scaffold_194	100.0		True
+CONTIG	scaffold_194	330122	correct
+1	53128	1	53128	scaffold_195	scaffold_195	100.0		True
+fake: scaffold gap size wrong estimation (local)
+53629	190036	53629	190036	scaffold_195	scaffold_195	100.0		True
+fake: scaffold gap size wrong estimation (local)
+190537	240753	190537	240753	scaffold_195	scaffold_195	100.0		True
+fake: scaffold gap size wrong estimation (local)
+241254	329130	241254	329130	scaffold_195	scaffold_195	100.0		True
+CONTIG	scaffold_195	329130	correct
+5258142	5585654	1	327513	lg23	scaffold_196	100.0		True
+CONTIG	scaffold_196	327513	correct
+2400682	2719189	1	318508	lg11	scaffold_197	100.0		True
+CONTIG	scaffold_197	318508	correct
+6698397	6757934	1	59538	lg13	scaffold_198	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6758435	7016364	60039	317968	lg13	scaffold_198	100.0		True
+CONTIG	scaffold_198	317968	correct
+1	55256	1	55256	scaffold_199	scaffold_199	100.0		True
+fake: scaffold gap size wrong estimation (local)
+55757	115149	55757	115149	scaffold_199	scaffold_199	100.0		True
+fake: scaffold gap size wrong estimation (local)
+115650	200962	115650	200962	scaffold_199	scaffold_199	100.0		True
+fake: scaffold gap size wrong estimation (local)
+201463	316600	201463	316600	scaffold_199	scaffold_199	100.0		True
+CONTIG	scaffold_199	316600	correct
+1	249822	1	249822	lg02	scaffold_200	100.0		True
+fake: scaffold gap size wrong estimation (local)
+250323	310235	250323	310235	lg02	scaffold_200	100.0		True
+CONTIG	scaffold_200	310235	correct
+1	309076	1	309076	scaffold_201	scaffold_201	100.0		True
+CONTIG	scaffold_201	309076	correct
+1	304396	1	304396	scaffold_202	scaffold_202	100.0		True
+CONTIG	scaffold_202	304396	correct
+1	246387	1	246387	scaffold_203	scaffold_203	100.0		True
+fake: scaffold gap size wrong estimation (local)
+246888	301397	246888	301397	scaffold_203	scaffold_203	100.0		True
+CONTIG	scaffold_203	301397	correct
+1	111607	1	111607	scaffold_204	scaffold_204	100.0		True
+fake: scaffold gap size wrong estimation (local)
+112108	189197	112108	189197	scaffold_204	scaffold_204	100.0		True
+fake: scaffold gap size wrong estimation (local)
+189698	301298	189698	301298	scaffold_204	scaffold_204	100.0		True
+CONTIG	scaffold_204	301298	correct
+1	64801	1	64801	scaffold_205	scaffold_205	100.0		True
+fake: scaffold gap size wrong estimation (local)
+65302	298619	65302	298619	scaffold_205	scaffold_205	100.0		True
+CONTIG	scaffold_205	298619	correct
+1	296099	1	296099	scaffold_206	scaffold_206	100.0		True
+CONTIG	scaffold_206	296099	correct
+5751641	6043785	1	292145	lg24	scaffold_207	100.0		True
+CONTIG	scaffold_207	292145	correct
+1	231122	1	231122	scaffold_208	scaffold_208	100.0		True
+fake: scaffold gap size wrong estimation (local)
+231623	288394	231623	288394	scaffold_208	scaffold_208	100.0		True
+CONTIG	scaffold_208	288394	correct
+1465525	1753397	1	287873	lg16	scaffold_209	100.0		True
+CONTIG	scaffold_209	287873	correct
+1	88603	1	88603	scaffold_210	scaffold_210	100.0		True
+fake: scaffold gap size wrong estimation (local)
+89104	287688	89104	287688	scaffold_210	scaffold_210	100.0		True
+CONTIG	scaffold_210	287688	correct
+1	273553	1	273553	scaffold_211	scaffold_211	100.0		True
+CONTIG	scaffold_211	273553	correct
+1	270697	1	270697	scaffold_212	scaffold_212	100.0		True
+CONTIG	scaffold_212	270697	correct
+1	58360	1	58360	scaffold_213	scaffold_213	100.0		True
+fake: scaffold gap size wrong estimation (local)
+58861	209762	58861	209762	scaffold_213	scaffold_213	100.0		True
+fake: scaffold gap size wrong estimation (local)
+210263	269983	210263	269983	scaffold_213	scaffold_213	100.0		True
+CONTIG	scaffold_213	269983	correct
+1	76008	1	76008	scaffold_214	scaffold_214	100.0		True
+fake: scaffold gap size wrong estimation (local)
+76509	268540	76509	268540	scaffold_214	scaffold_214	100.0		True
+CONTIG	scaffold_214	268540	correct
+10469490	10606577	1	137088	lg01	scaffold_215	100.0		True
+fake: scaffold gap size wrong estimation (local)
+10607078	10737905	137589	268416	lg01	scaffold_215	100.0		True
+CONTIG	scaffold_215	268416	correct
+1	261999	1	261999	scaffold_216	scaffold_216	100.0		True
+CONTIG	scaffold_216	261999	correct
+7016465	7134912	1	118448	lg13	scaffold_217	100.0		True
+fake: scaffold gap size wrong estimation (local)
+7135413	7275038	118949	258574	lg13	scaffold_217	100.0		True
+CONTIG	scaffold_217	258574	correct
+1	70741	1	70741	scaffold_218	scaffold_218	100.0		True
+fake: scaffold gap size wrong estimation (local)
+71242	257582	71242	257582	scaffold_218	scaffold_218	100.0		True
+CONTIG	scaffold_218	257582	correct
+1	255962	1	255962	scaffold_219	scaffold_219	100.0		True
+CONTIG	scaffold_219	255962	correct
+6236523	6436083	1	199561	lg01	scaffold_220	100.0		True
+fake: scaffold gap size wrong estimation (local)
+6436584	6490609	200062	254087	lg01	scaffold_220	100.0		True
+CONTIG	scaffold_220	254087	correct
+1	249890	1	249890	scaffold_221	scaffold_221	100.0		True
+CONTIG	scaffold_221	249890	correct
+15809534	15911262	101729	1	lg17	scaffold_222	100.0		True
+fake: scaffold gap size wrong estimation (local)
+15661590	15809033	249673	102230	lg17	scaffold_222	100.0		True
+CONTIG	scaffold_222	249673	correct
+1	164127	1	164127	scaffold_223	scaffold_223	100.0		True
+fake: scaffold gap size wrong estimation (local)
+164628	241563	164628	241563	scaffold_223	scaffold_223	100.0		True
+CONTIG	scaffold_223	241563	correct
+1	232875	1	232875	scaffold_224	scaffold_224	100.0		True
+CONTIG	scaffold_224	232875	correct
+1	71331	1	71331	scaffold_225	scaffold_225	100.0		True
+fake: scaffold gap size wrong estimation (local)
+71832	228721	71832	228721	scaffold_225	scaffold_225	100.0		True
+CONTIG	scaffold_225	228721	correct
+1	223935	1	223935	scaffold_226	scaffold_226	100.0		True
+CONTIG	scaffold_226	223935	correct
+1	223736	1	223736	scaffold_227	scaffold_227	100.0		True
+CONTIG	scaffold_227	223736	correct
+1	219946	1	219946	scaffold_228	scaffold_228	100.0		True
+CONTIG	scaffold_228	219946	correct
+1	105334	1	105334	scaffold_229	scaffold_229	100.0		True
+fake: scaffold gap size wrong estimation (local)
+105835	218043	105835	218043	scaffold_229	scaffold_229	100.0		True
+CONTIG	scaffold_229	218043	correct
+1835423	1918167	1	82745	lg06	scaffold_230	100.0		True
+fake: scaffold gap size wrong estimation (local)
+1918668	2050847	83246	215425	lg06	scaffold_230	100.0		True
+CONTIG	scaffold_230	215425	correct
+1	212237	1	212237	scaffold_231	scaffold_231	100.0		True
+CONTIG	scaffold_231	212237	correct
+1	50367	1	50367	scaffold_232	scaffold_232	100.0		True
+fake: scaffold gap size wrong estimation (local)
+50868	156434	50868	156434	scaffold_232	scaffold_232	100.0		True
+fake: scaffold gap size wrong estimation (local)
+156935	210056	156935	210056	scaffold_232	scaffold_232	100.0		True
+CONTIG	scaffold_232	210056	correct
+1	208848	1	208848	scaffold_233	scaffold_233	100.0		True
+CONTIG	scaffold_233	208848	correct
+1	205736	1	205736	scaffold_234	scaffold_234	100.0		True
+CONTIG	scaffold_234	205736	correct
+1	201403	1	201403	scaffold_235	scaffold_235	100.0		True
+CONTIG	scaffold_235	201403	correct
+1	97000	1	97000	scaffold_236	scaffold_236	100.0		True
+fake: scaffold gap size wrong estimation (local)
+97501	199803	97501	199803	scaffold_236	scaffold_236	100.0		True
+CONTIG	scaffold_236	199803	correct
+1981488	2113497	1	132010	lg18	scaffold_237	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2113998	2179813	132511	198326	lg18	scaffold_237	100.0		True
+CONTIG	scaffold_237	198326	correct
+5913695	6110446	1	196752	lg19	scaffold_238	100.0		True
+CONTIG	scaffold_238	196752	correct
+538821	589222	1	50402	lg25	scaffold_239	100.0		True
+fake: scaffold gap size wrong estimation (local)
+589723	642699	50903	103879	lg25	scaffold_239	100.0		True
+fake: scaffold gap size wrong estimation (local)
+643200	736009	104380	197189	lg25	scaffold_239	100.0		True
+CONTIG	scaffold_239	197189	correct
+1	194678	1	194678	scaffold_240	scaffold_240	100.0		True
+CONTIG	scaffold_240	194678	correct
+1	193490	1	193490	scaffold_241	scaffold_241	100.0		True
+CONTIG	scaffold_241	193490	correct
+1	193386	1	193386	scaffold_242	scaffold_242	100.0		True
+CONTIG	scaffold_242	193386	correct
+1	59850	1	59850	scaffold_243	scaffold_243	100.0		True
+fake: scaffold gap size wrong estimation (local)
+60351	143020	60351	143020	scaffold_243	scaffold_243	100.0		True
+fake: scaffold gap size wrong estimation (local)
+143521	193975	143521	193975	scaffold_243	scaffold_243	100.0		True
+CONTIG	scaffold_243	193975	correct
+9066480	9256486	1	190007	lg26	scaffold_244	100.0		True
+CONTIG	scaffold_244	190007	correct
+1	35457	1	35457	scaffold_245	scaffold_245	100.0		True
+fake: scaffold gap size wrong estimation (local)
+35958	186332	35958	186332	scaffold_245	scaffold_245	100.0		True
+CONTIG	scaffold_245	186332	correct
+1	180450	1	180450	scaffold_246	scaffold_246	100.0		True
+CONTIG	scaffold_246	180450	correct
+2247918	2346066	1	98149	lg02	scaffold_247	100.0		True
+fake: scaffold gap size wrong estimation (local)
+2346567	2427637	98650	179720	lg02	scaffold_247	100.0		True
+CONTIG	scaffold_247	179720	correct
+11306632	11481881	1	175250	lg04	scaffold_248	100.0		True
+CONTIG	scaffold_248	175250	correct
+1	116036	1	116036	scaffold_249	scaffold_249	100.0		True
+fake: scaffold gap size wrong estimation (local)
+116537	173349	116537	173349	scaffold_249	scaffold_249	100.0		True
+CONTIG	scaffold_249	173349	correct
+1	171231	1	171231	scaffold_250	scaffold_250	100.0		True
+CONTIG	scaffold_250	171231	correct
+1	54330	1	54330	scaffold_251	scaffold_251	100.0		True
+fake: scaffold gap size wrong estimation (local)
+54831	108927	54831	108927	scaffold_251	scaffold_251	100.0		True
+fake: scaffold gap size wrong estimation (local)
+109428	170988	109428	170988	scaffold_251	scaffold_251	100.0		True
+CONTIG	scaffold_251	170988	correct
+17037052	17103585	1	66534	lg02	scaffold_252	100.0		True
+fake: scaffold gap size wrong estimation (local)
+17104086	17206656	67035	169605	lg02	scaffold_252	100.0		True
+CONTIG	scaffold_252	169605	correct
+1	168810	1	168810	scaffold_253	scaffold_253	100.0		True
+CONTIG	scaffold_253	168810	correct
+1	164468	1	164468	scaffold_254	scaffold_254	100.0		True
+CONTIG	scaffold_254	164468	correct
+1	89414	1	89414	scaffold_255	scaffold_255	100.0		True
+fake: scaffold gap size wrong estimation (local)
+89915	164398	89915	164398	scaffold_255	scaffold_255	100.0		True
+CONTIG	scaffold_255	164398	correct
+1	158889	1	158889	scaffold_256	scaffold_256	100.0		True
+CONTIG	scaffold_256	158889	correct
+1	157864	1	157864	scaffold_257	scaffold_257	100.0		True
+CONTIG	scaffold_257	157864	correct
+1	157291	1	157291	scaffold_258	scaffold_258	100.0		True
+CONTIG	scaffold_258	157291	correct
+1	156555	1	156555	scaffold_259	scaffold_259	100.0		True
+CONTIG	scaffold_259	156555	correct
+1	128291	1	128291	scaffold_260	scaffold_260	100.0		True
+fake: scaffold gap size wrong estimation (local)
+128792	156678	128792	156678	scaffold_260	scaffold_260	100.0		True
+CONTIG	scaffold_260	156678	correct
+1	155250	1	155250	scaffold_261	scaffold_261	100.0		True
+CONTIG	scaffold_261	155250	correct
+1	155243	1	155243	scaffold_262	scaffold_262	100.0		True
+CONTIG	scaffold_262	155243	correct
+1	94811	1	94811	scaffold_263	scaffold_263	100.0		True
+fake: scaffold gap size wrong estimation (local)
+95312	155202	95312	155202	scaffold_263	scaffold_263	100.0		True
+CONTIG	scaffold_263	155202	correct
+1	154623	1	154623	scaffold_264	scaffold_264	100.0		True
+CONTIG	scaffold_264	154623	correct
+1	93516	1	93516	scaffold_265	scaffold_265	100.0		True
+fake: scaffold gap size wrong estimation (local)
+94017	154219	94017	154219	scaffold_265	scaffold_265	100.0		True
+CONTIG	scaffold_265	154219	correct
+1	153678	1	153678	scaffold_266	scaffold_266	100.0		True
+CONTIG	scaffold_266	153678	correct
+14959577	15058369	1	98793	lg06	scaffold_267	100.0		True
+fake: scaffold gap size wrong estimation (local)
+15058870	15113095	99294	153519	lg06	scaffold_267	100.0		True
+CONTIG	scaffold_267	153519	correct
+1	151613	1	151613	scaffold_268	scaffold_268	100.0		True
+CONTIG	scaffold_268	151613	correct
+1	150445	1	150445	scaffold_269	scaffold_269	100.0		True
+CONTIG	scaffold_269	150445	correct
+1	90023	1	90023	scaffold_270	scaffold_270	100.0		True
+fake: scaffold gap size wrong estimation (local)
+90524	150187	90524	150187	scaffold_270	scaffold_270	100.0		True
+CONTIG	scaffold_270	150187	correct
+1	105705	1	105705	scaffold_271	scaffold_271	100.0		True
+fake: scaffold gap size wrong estimation (local)
+106206	145966	106206	145966	scaffold_271	scaffold_271	100.0		True
+CONTIG	scaffold_271	145966	correct
+1	144483	1	144483	scaffold_272	scaffold_272	100.0		True
+CONTIG	scaffold_272	144483	correct
+1	59901	1	59901	scaffold_273	scaffold_273	100.0		True
+fake: scaffold gap size wrong estimation (local)
+60402	141157	60402	141157	scaffold_273	scaffold_273	100.0		True
+CONTIG	scaffold_273	141157	correct
+1	140218	1	140218	scaffold_274	scaffold_274	100.0		True
+CONTIG	scaffold_274	140218	correct
+1	140201	1	140201	scaffold_275	scaffold_275	100.0		True
+CONTIG	scaffold_275	140201	correct
+1	138513	1	138513	scaffold_276	scaffold_276	100.0		True
+CONTIG	scaffold_276	138513	correct
+1	137540	1	137540	scaffold_277	scaffold_277	100.0		True
+CONTIG	scaffold_277	137540	correct
+1	133676	1	133676	scaffold_278	scaffold_278	100.0		True
+CONTIG	scaffold_278	133676	correct
+1	133069	1	133069	scaffold_279	scaffold_279	100.0		True
+CONTIG	scaffold_279	133069	correct
+1	132078	1	132078	scaffold_280	scaffold_280	100.0		True
+CONTIG	scaffold_280	132078	correct
+1	63140	1	63140	scaffold_281	scaffold_281	100.0		True
+fake: scaffold gap size wrong estimation (local)
+63641	132533	63641	132533	scaffold_281	scaffold_281	100.0		True
+CONTIG	scaffold_281	132533	correct
+1	131406	1	131406	scaffold_282	scaffold_282	100.0		True
+CONTIG	scaffold_282	131406	correct
+1	79084	1	79084	scaffold_283	scaffold_283	100.0		True
+fake: scaffold gap size wrong estimation (local)
+79585	131354	79585	131354	scaffold_283	scaffold_283	100.0		True
+CONTIG	scaffold_283	131354	correct
+1	130053	1	130053	scaffold_284	scaffold_284	100.0		True
+CONTIG	scaffold_284	130053	correct
+1	129982	1	129982	scaffold_285	scaffold_285	100.0		True
+CONTIG	scaffold_285	129982	correct
+1	127926	1	127926	scaffold_286	scaffold_286	100.0		True
+CONTIG	scaffold_286	127926	correct
+1	127740	1	127740	scaffold_287	scaffold_287	100.0		True
+CONTIG	scaffold_287	127740	correct
+1	127679	1	127679	scaffold_288	scaffold_288	100.0		True
+CONTIG	scaffold_288	127679	correct
+1	125887	1	125887	scaffold_289	scaffold_289	100.0		True
+CONTIG	scaffold_289	125887	correct
+1	125204	1	125204	scaffold_290	scaffold_290	100.0		True
+CONTIG	scaffold_290	125204	correct
+1	124980	1	124980	scaffold_291	scaffold_291	100.0		True
+CONTIG	scaffold_291	124980	correct
+1	54876	1	54876	scaffold_292	scaffold_292	100.0		True
+fake: scaffold gap size wrong estimation (local)
+55377	124665	55377	124665	scaffold_292	scaffold_292	100.0		True
+CONTIG	scaffold_292	124665	correct
+1	121054	1	121054	scaffold_293	scaffold_293	100.0		True
+CONTIG	scaffold_293	121054	correct
+1	120524	1	120524	scaffold_294	scaffold_294	100.0		True
+CONTIG	scaffold_294	120524	correct
+1	119782	1	119782	scaffold_295	scaffold_295	100.0		True
+CONTIG	scaffold_295	119782	correct
+1	119192	1	119192	scaffold_296	scaffold_296	100.0		True
+CONTIG	scaffold_296	119192	correct
+1	55901	1	55901	scaffold_297	scaffold_297	100.0		True
+fake: scaffold gap size wrong estimation (local)
+56402	118952	56402	118952	scaffold_297	scaffold_297	100.0		True
+CONTIG	scaffold_297	118952	correct
+1	118332	1	118332	scaffold_298	scaffold_298	100.0		True
+CONTIG	scaffold_298	118332	correct
+5328598	5386807	1	58210	lg19	scaffold_299	100.0		True
+fake: scaffold gap size wrong estimation (local)
+5387308	5446570	58711	117973	lg19	scaffold_299	100.0		True
+CONTIG	scaffold_299	117973	correct
+1	53460	1	53460	scaffold_300	scaffold_300	100.0		True
+fake: scaffold gap size wrong estimation (local)
+53961	117526	53961	117526	scaffold_300	scaffold_300	100.0		True
+CONTIG	scaffold_300	117526	correct
+1	116932	1	116932	scaffold_301	scaffold_301	100.0		True
+CONTIG	scaffold_301	116932	correct
+1	116805	1	116805	scaffold_302	scaffold_302	100.0		True
+CONTIG	scaffold_302	116805	correct
+1	116166	1	116166	scaffold_303	scaffold_303	100.0		True
+CONTIG	scaffold_303	116166	correct
+1	115529	1	115529	scaffold_304	scaffold_304	100.0		True
+CONTIG	scaffold_304	115529	correct
+1	114716	1	114716	scaffold_305	scaffold_305	100.0		True
+CONTIG	scaffold_305	114716	correct
+1	51974	1	51974	scaffold_306	scaffold_306	100.0		True
+fake: scaffold gap size wrong estimation (local)
+52475	114227	52475	114227	scaffold_306	scaffold_306	100.0		True
+CONTIG	scaffold_306	114227	correct
+1	113405	1	113405	scaffold_307	scaffold_307	100.0		True
+CONTIG	scaffold_307	113405	correct
+1	111445	1	111445	scaffold_308	scaffold_308	100.0		True
+CONTIG	scaffold_308	111445	correct
+1	110970	1	110970	scaffold_309	scaffold_309	100.0		True
+CONTIG	scaffold_309	110970	correct
+1	108685	1	108685	scaffold_310	scaffold_310	100.0		True
+CONTIG	scaffold_310	108685	correct
+1	108426	1	108426	scaffold_311	scaffold_311	100.0		True
+CONTIG	scaffold_311	108426	correct
+1	108287	1	108287	scaffold_312	scaffold_312	100.0		True
+CONTIG	scaffold_312	108287	correct
+1	108032	1	108032	scaffold_313	scaffold_313	100.0		True
+CONTIG	scaffold_313	108032	correct
+1	107315	1	107315	scaffold_314	scaffold_314	100.0		True
+CONTIG	scaffold_314	107315	correct
+1	106255	1	106255	scaffold_315	scaffold_315	100.0		True
+CONTIG	scaffold_315	106255	correct
+1	105892	1	105892	scaffold_316	scaffold_316	100.0		True
+CONTIG	scaffold_316	105892	correct
+1	105738	1	105738	scaffold_317	scaffold_317	100.0		True
+CONTIG	scaffold_317	105738	correct
+1	105058	1	105058	scaffold_318	scaffold_318	100.0		True
+CONTIG	scaffold_318	105058	correct
+1	104572	1	104572	scaffold_319	scaffold_319	100.0		True
+CONTIG	scaffold_319	104572	correct
+1	102101	1	102101	scaffold_320	scaffold_320	100.0		True
+CONTIG	scaffold_320	102101	correct
+1	102040	1	102040	scaffold_321	scaffold_321	100.0		True
+CONTIG	scaffold_321	102040	correct
+1	101940	1	101940	scaffold_322	scaffold_322	100.0		True
+CONTIG	scaffold_322	101940	correct
+1	101142	1	101142	scaffold_323	scaffold_323	100.0		True
+CONTIG	scaffold_323	101142	correct
+16612199	16712361	1	100163	lg23	scaffold_324	100.0		True
+CONTIG	scaffold_324	100163	correct
+1	99696	1	99696	scaffold_325	scaffold_325	100.0		True
+CONTIG	scaffold_325	99696	correct
+1	99597	1	99597	scaffold_326	scaffold_326	100.0		True
+CONTIG	scaffold_326	99597	correct
+1	99482	1	99482	scaffold_327	scaffold_327	100.0		True
+CONTIG	scaffold_327	99482	correct
+1	99261	1	99261	scaffold_328	scaffold_328	100.0		True
+CONTIG	scaffold_328	99261	correct
+1	98603	1	98603	scaffold_329	scaffold_329	100.0		True
+CONTIG	scaffold_329	98603	correct
+1	98263	1	98263	scaffold_330	scaffold_330	100.0		True
+CONTIG	scaffold_330	98263	correct
+1	97153	1	97153	scaffold_331	scaffold_331	100.0		True
+CONTIG	scaffold_331	97153	correct
+1	96083	1	96083	scaffold_332	scaffold_332	100.0		True
+CONTIG	scaffold_332	96083	correct
+1	95467	1	95467	scaffold_333	scaffold_333	100.0		True
+CONTIG	scaffold_333	95467	correct
+1	95327	1	95327	scaffold_334	scaffold_334	100.0		True
+CONTIG	scaffold_334	95327	correct
+1	94941	1	94941	scaffold_335	scaffold_335	100.0		True
+CONTIG	scaffold_335	94941	correct
+1	94839	1	94839	scaffold_336	scaffold_336	100.0		True
+CONTIG	scaffold_336	94839	correct
+1	76508	1	76508	scaffold_337	scaffold_337	100.0		True
+fake: scaffold gap size wrong estimation (local)
+77009	95243	77009	95243	scaffold_337	scaffold_337	100.0		True
+CONTIG	scaffold_337	95243	correct
+1	94266	1	94266	scaffold_338	scaffold_338	100.0		True
+CONTIG	scaffold_338	94266	correct
+1	94179	1	94179	scaffold_339	scaffold_339	100.0		True
+CONTIG	scaffold_339	94179	correct
+284	93689	284	93689	scaffold_340	scaffold_340	100.0		True
+CONTIG	scaffold_340	93689	correct
+14866388	14959476	1	93089	lg06	scaffold_341	100.0		True
+CONTIG	scaffold_341	93089	correct
+1	92775	1	92775	scaffold_342	scaffold_342	100.0		True
+CONTIG	scaffold_342	92775	correct
+1	92170	1	92170	scaffold_343	scaffold_343	100.0		True
+CONTIG	scaffold_343	92170	correct
+1	30388	1	30388	scaffold_344	scaffold_344	100.0		True
+fake: not a misassembly (possible transposable element)
+24421	26959	32927	30389	scaffold_475	scaffold_344	96.55		True
+fake: not a misassembly (possible transposable element)
+39761	91994	39761	91994	scaffold_344	scaffold_344	100.0		True
+CONTIG	scaffold_344	91994	correct
+1	90664	1	90664	scaffold_345	scaffold_345	100.0		True
+CONTIG	scaffold_345	90664	correct
+5446671	5534682	1	88012	lg19	scaffold_346	100.0		True
+CONTIG	scaffold_346	88078	correct
+1	87936	1	87936	lg08	scaffold_347	100.0		True
+CONTIG	scaffold_347	87936	correct
+1	87195	1	87195	scaffold_348	scaffold_348	100.0		True
+CONTIG	scaffold_348	87195	correct
+1	86999	1	86999	scaffold_349	scaffold_349	100.0		True
+CONTIG	scaffold_349	86999	correct
+1	86436	1	86436	scaffold_350	scaffold_350	100.0		True
+CONTIG	scaffold_350	86436	correct
+1	86301	1	86301	scaffold_351	scaffold_351	100.0		True
+CONTIG	scaffold_351	86301	correct
+1	85418	1	85418	scaffold_352	scaffold_352	100.0		True
+CONTIG	scaffold_352	85418	correct
+1	84596	1	84596	scaffold_353	scaffold_353	100.0		True
+CONTIG	scaffold_353	84596	correct
+1	83508	1	83508	scaffold_354	scaffold_354	100.0		True
+CONTIG	scaffold_354	83508	correct
+1	82813	1	82813	scaffold_355	scaffold_355	100.0		True
+CONTIG	scaffold_355	82813	correct
+1	81416	1	81416	scaffold_356	scaffold_356	100.0		True
+CONTIG	scaffold_356	81416	correct
+1	80993	1	80993	scaffold_357	scaffold_357	100.0		True
+CONTIG	scaffold_357	80993	correct
+1	80664	1	80664	scaffold_358	scaffold_358	100.0		True
+CONTIG	scaffold_358	80664	correct
+1	80544	1	80544	scaffold_359	scaffold_359	100.0		True
+CONTIG	scaffold_359	80544	correct
+1	80538	1	80538	scaffold_360	scaffold_360	100.0		True
+CONTIG	scaffold_360	80538	correct
+1	80107	1	80107	scaffold_361	scaffold_361	100.0		True
+CONTIG	scaffold_361	80107	correct
+1233	79635	1233	79635	scaffold_362	scaffold_362	100.0		True
+CONTIG	scaffold_362	79635	correct
+1	79421	1	79421	scaffold_363	scaffold_363	100.0		True
+CONTIG	scaffold_363	79421	correct
+1	79194	1	79194	scaffold_364	scaffold_364	100.0		True
+CONTIG	scaffold_364	79194	correct
+1	78315	1	78315	scaffold_365	scaffold_365	100.0		True
+CONTIG	scaffold_365	78315	correct
+1	77941	1	77941	scaffold_366	scaffold_366	100.0		True
+CONTIG	scaffold_366	77941	correct
+1	77908	1	77908	scaffold_367	scaffold_367	100.0		True
+CONTIG	scaffold_367	77908	correct
+17745936	17823525	1	77590	lg14	scaffold_368	100.0		True
+CONTIG	scaffold_368	77590	correct
+1	77271	1	77271	scaffold_369	scaffold_369	100.0		True
+CONTIG	scaffold_369	77271	correct
+1	76595	1	76595	scaffold_370	scaffold_370	100.0		True
+CONTIG	scaffold_370	76595	correct
+1	76402	1	76402	scaffold_371	scaffold_371	100.0		True
+CONTIG	scaffold_371	76402	correct
+1	76042	1	76042	scaffold_372	scaffold_372	100.0		True
+CONTIG	scaffold_372	76042	correct
+1	73207	1	73207	scaffold_373	scaffold_373	100.0		True
+CONTIG	scaffold_373	73207	correct
+1	73144	1	73144	scaffold_374	scaffold_374	100.0		True
+CONTIG	scaffold_374	73144	correct
+1	72917	1	72917	scaffold_375	scaffold_375	100.0		True
+CONTIG	scaffold_375	72917	correct
+14926838	14998720	1	71883	lg15	scaffold_376	100.0		True
+CONTIG	scaffold_376	71883	correct
+1	70238	1	70238	scaffold_377	scaffold_377	100.0		True
+CONTIG	scaffold_377	70238	correct
+729288	799341	1	70054	lg05	scaffold_378	100.0		True
+CONTIG	scaffold_378	70054	correct
+1	69759	1	69759	scaffold_379	scaffold_379	100.0		True
+CONTIG	scaffold_379	69759	correct
+1	69402	1	69402	scaffold_380	scaffold_380	100.0		True
+CONTIG	scaffold_380	69402	correct
+1	69062	1	69062	scaffold_381	scaffold_381	100.0		True
+CONTIG	scaffold_381	69062	correct
+1	68910	1	68910	scaffold_382	scaffold_382	100.0		True
+CONTIG	scaffold_382	68910	correct
+1	68441	1	68441	scaffold_383	scaffold_383	100.0		True
+CONTIG	scaffold_383	68441	correct
+1	68154	1	68154	scaffold_384	scaffold_384	100.0		True
+CONTIG	scaffold_384	68154	correct
+1	68109	1	68109	scaffold_385	scaffold_385	100.0		True
+CONTIG	scaffold_385	68109	correct
+1	68081	1	68081	scaffold_386	scaffold_386	100.0		True
+CONTIG	scaffold_386	68081	correct
+1	67628	1	67628	scaffold_387	scaffold_387	100.0		True
+CONTIG	scaffold_387	67628	correct
+1	67527	1	67527	scaffold_388	scaffold_388	100.0		True
+CONTIG	scaffold_388	67527	correct
+1	67194	1	67194	scaffold_389	scaffold_389	100.0		True
+CONTIG	scaffold_389	67194	correct
+1	67023	1	67023	scaffold_390	scaffold_390	100.0		True
+CONTIG	scaffold_390	67023	correct
+1	66940	1	66940	scaffold_391	scaffold_391	100.0		True
+CONTIG	scaffold_391	66940	correct
+1	66548	1	66548	scaffold_392	scaffold_392	100.0		True
+CONTIG	scaffold_392	66548	correct
+1	66531	1	66531	scaffold_393	scaffold_393	100.0		True
+CONTIG	scaffold_393	66531	correct
+9097155	9163286	1	66132	lg15	scaffold_394	100.0		True
+CONTIG	scaffold_394	66132	correct
+1	65802	1	65802	scaffold_395	scaffold_395	100.0		True
+CONTIG	scaffold_395	65802	correct
+1	64995	1	64995	scaffold_396	scaffold_396	100.0		True
+CONTIG	scaffold_396	64995	correct
+1	64737	1	64737	scaffold_397	scaffold_397	100.0		True
+CONTIG	scaffold_397	64737	correct
+1	64348	1	64348	scaffold_398	scaffold_398	100.0		True
+CONTIG	scaffold_398	64348	correct
+1	63850	1	63850	lg24	scaffold_399	100.0		True
+CONTIG	scaffold_399	63850	correct
+1	63654	1	63654	scaffold_400	scaffold_400	100.0		True
+CONTIG	scaffold_400	63654	correct
+1	63599	1	63599	scaffold_401	scaffold_401	100.0		True
+CONTIG	scaffold_401	63599	correct
+1	63524	1	63524	scaffold_402	scaffold_402	100.0		True
+CONTIG	scaffold_402	63524	correct
+1	62850	1	62850	scaffold_403	scaffold_403	100.0		True
+CONTIG	scaffold_403	62850	correct
+1	62563	1	62563	scaffold_404	scaffold_404	100.0		True
+CONTIG	scaffold_404	62563	correct
+1	62365	1	62365	scaffold_405	scaffold_405	100.0		True
+CONTIG	scaffold_405	62365	correct
+15713493	15775655	1	62163	lg19	scaffold_406	100.0		True
+CONTIG	scaffold_406	62163	correct
+1	61287	1	61287	scaffold_407	scaffold_407	100.0		True
+CONTIG	scaffold_407	61287	correct
+1900	61157	1900	61157	scaffold_408	scaffold_408	100.0		True
+CONTIG	scaffold_408	61157	correct
+1	61139	1	61139	scaffold_409	scaffold_409	100.0		True
+CONTIG	scaffold_409	61139	correct
+1	61028	1	61028	scaffold_410	scaffold_410	100.0		True
+CONTIG	scaffold_410	61028	correct
+1	60968	1	60968	scaffold_411	scaffold_411	100.0		True
+CONTIG	scaffold_411	60968	correct
+1	60863	1	60863	scaffold_412	scaffold_412	100.0		True
+CONTIG	scaffold_412	60863	correct
+1	60805	1	60805	scaffold_413	scaffold_413	100.0		True
+CONTIG	scaffold_413	60805	correct
+1	60331	1	60331	scaffold_414	scaffold_414	100.0		True
+CONTIG	scaffold_414	60331	correct
+1	60051	1	60051	scaffold_415	scaffold_415	100.0		True
+CONTIG	scaffold_415	60051	correct
+1	59903	1	59903	scaffold_416	scaffold_416	100.0		True
+CONTIG	scaffold_416	59903	correct
+1	59852	1	59852	scaffold_417	scaffold_417	100.0		True
+CONTIG	scaffold_417	59852	correct
+1	59505	1	59505	scaffold_418	scaffold_418	100.0		True
+CONTIG	scaffold_418	59505	correct
+1	59392	1	59392	scaffold_419	scaffold_419	100.0		True
+CONTIG	scaffold_419	59392	correct
+1	59172	1	59172	scaffold_420	scaffold_420	100.0		True
+CONTIG	scaffold_420	59172	correct
+1	58941	1	58941	scaffold_421	scaffold_421	100.0		True
+CONTIG	scaffold_421	58941	correct
+8878034	8936932	1	58899	lg14	scaffold_422	100.0		True
+CONTIG	scaffold_422	58899	correct
+1	58762	1	58762	scaffold_423	scaffold_423	100.0		True
+CONTIG	scaffold_423	58762	correct
+1	58554	1	58554	scaffold_424	scaffold_424	100.0		True
+CONTIG	scaffold_424	58554	correct
+1	58333	1	58333	scaffold_425	scaffold_425	100.0		True
+CONTIG	scaffold_425	58333	correct
+1	58118	1	58118	scaffold_426	scaffold_426	100.0		True
+CONTIG	scaffold_426	58118	correct
+1	58090	1	58090	scaffold_427	scaffold_427	100.0		True
+CONTIG	scaffold_427	58090	correct
+1	57921	1	57921	scaffold_428	scaffold_428	100.0		True
+CONTIG	scaffold_428	57921	correct
+1	57763	1	57763	scaffold_429	scaffold_429	100.0		True
+CONTIG	scaffold_429	57763	correct
+1	57679	1	57679	lg03	scaffold_430	100.0		True
+CONTIG	scaffold_430	57679	correct
+1	57627	1	57627	scaffold_431	scaffold_431	100.0		True
+CONTIG	scaffold_431	57627	correct
+1	57619	1	57619	scaffold_432	scaffold_432	100.0		True
+CONTIG	scaffold_432	57619	correct
+1	57565	1	57565	scaffold_433	scaffold_433	100.0		True
+CONTIG	scaffold_433	57565	correct
+1	57394	1	57394	scaffold_434	scaffold_434	100.0		True
+CONTIG	scaffold_434	57394	correct
+1	57354	1	57354	scaffold_435	scaffold_435	100.0		True
+CONTIG	scaffold_435	57354	correct
+1	57003	1	57003	scaffold_436	scaffold_436	100.0		True
+CONTIG	scaffold_436	57003	correct
+1	56986	1	56986	scaffold_437	scaffold_437	100.0		True
+CONTIG	scaffold_437	56986	correct
+1	56502	1	56502	scaffold_438	scaffold_438	100.0		True
+CONTIG	scaffold_438	56502	correct
+1	56473	1	56473	scaffold_439	scaffold_439	100.0		True
+CONTIG	scaffold_439	56473	correct
+1	56377	1	56377	scaffold_440	scaffold_440	100.0		True
+CONTIG	scaffold_440	56377	correct
+1	56194	1	56194	scaffold_441	scaffold_441	100.0		True
+CONTIG	scaffold_441	56194	correct
+1	56180	1	56180	scaffold_442	scaffold_442	100.0		True
+CONTIG	scaffold_442	56180	correct
+1	56154	1	56154	scaffold_443	scaffold_443	100.0		True
+CONTIG	scaffold_443	56154	correct
+1	56131	1	56131	scaffold_444	scaffold_444	100.0		True
+CONTIG	scaffold_444	56131	correct
+1	55761	1	55761	scaffold_445	scaffold_445	100.0		True
+CONTIG	scaffold_445	55761	correct
+1	55687	1	55687	scaffold_446	scaffold_446	100.0		True
+CONTIG	scaffold_446	55687	correct
+1	55503	1	55503	scaffold_447	scaffold_447	100.0		True
+CONTIG	scaffold_447	55503	correct
+2643398	2698785	1	55388	lg04	scaffold_448	100.0		True
+CONTIG	scaffold_448	55388	correct
+1	55229	1	55229	scaffold_449	scaffold_449	100.0		True
+CONTIG	scaffold_449	55229	correct
+1	55167	1	55167	scaffold_450	scaffold_450	100.0		True
+CONTIG	scaffold_450	55167	correct
+1	54993	1	54993	scaffold_451	scaffold_451	100.0		True
+CONTIG	scaffold_451	54993	correct
+1	54964	1	54964	scaffold_452	scaffold_452	100.0		True
+CONTIG	scaffold_452	54964	correct
+3224	41065	3224	41065	scaffold_453	scaffold_453	100.0		True
+CONTIG	scaffold_453	54551	correct
+1	54249	1	54249	scaffold_454	scaffold_454	100.0		True
+CONTIG	scaffold_454	54249	correct
+1	54172	1	54172	scaffold_455	scaffold_455	100.0		True
+CONTIG	scaffold_455	54172	correct
+1	54141	1	54141	scaffold_456	scaffold_456	100.0		True
+CONTIG	scaffold_456	54141	correct
+1	54122	1	54122	scaffold_457	scaffold_457	100.0		True
+CONTIG	scaffold_457	54122	correct
+1	53944	1	53944	scaffold_458	scaffold_458	100.0		True
+CONTIG	scaffold_458	53944	correct
+1	53827	1	53827	scaffold_459	scaffold_459	100.0		True
+CONTIG	scaffold_459	53827	correct
+1	53684	1	53684	scaffold_460	scaffold_460	100.0		True
+CONTIG	scaffold_460	53684	correct
+1	53648	1	53648	scaffold_461	scaffold_461	100.0		True
+CONTIG	scaffold_461	53648	correct
+1	53612	1	53612	scaffold_462	scaffold_462	100.0		True
+CONTIG	scaffold_462	53612	correct
+1	53591	1	53591	scaffold_463	scaffold_463	100.0		True
+CONTIG	scaffold_463	53591	correct
+1	53576	1	53576	scaffold_464	scaffold_464	100.0		True
+CONTIG	scaffold_464	53576	correct
+1	53471	1	53471	scaffold_465	scaffold_465	100.0		True
+CONTIG	scaffold_465	53471	correct
+1	53464	1	53464	scaffold_466	scaffold_466	100.0		True
+CONTIG	scaffold_466	53464	correct
+1	53445	1	53445	scaffold_467	scaffold_467	100.0		True
+CONTIG	scaffold_467	53445	correct
+1	53419	1	53419	scaffold_468	scaffold_468	100.0		True
+CONTIG	scaffold_468	53419	correct
+1	53382	1	53382	scaffold_469	scaffold_469	100.0		True
+CONTIG	scaffold_469	53382	correct
+1	53369	1	53369	scaffold_470	scaffold_470	100.0		True
+CONTIG	scaffold_470	53369	correct
+1	52941	1	52941	scaffold_471	scaffold_471	100.0		True
+CONTIG	scaffold_471	52941	correct
+1	52807	1	52807	scaffold_472	scaffold_472	100.0		True
+CONTIG	scaffold_472	52807	correct
+1	52790	1	52790	scaffold_473	scaffold_473	100.0		True
+CONTIG	scaffold_473	52790	correct
+1	52576	1	52576	scaffold_474	scaffold_474	100.0		True
+CONTIG	scaffold_474	52576	correct
+1	52520	1	52520	scaffold_475	scaffold_475	100.0		True
+CONTIG	scaffold_475	52520	correct
+1	52309	1	52309	scaffold_476	scaffold_476	100.0		True
+CONTIG	scaffold_476	52309	correct
+1	52227	1	52227	scaffold_477	scaffold_477	100.0		True
+CONTIG	scaffold_477	52227	correct
+1	52222	1	52222	scaffold_478	scaffold_478	100.0		True
+CONTIG	scaffold_478	52222	correct
+1	52198	1	52198	scaffold_479	scaffold_479	100.0		True
+CONTIG	scaffold_479	52198	correct
+1	52158	1	52158	scaffold_480	scaffold_480	100.0		True
+CONTIG	scaffold_480	52158	correct
+1	52079	1	52079	scaffold_481	scaffold_481	100.0		True
+CONTIG	scaffold_481	52079	correct
+9161127	9213127	1	52001	lg21	scaffold_482	100.0		True
+CONTIG	scaffold_482	52001	correct
+1	51886	1	51886	scaffold_483	scaffold_483	100.0		True
+CONTIG	scaffold_483	51886	correct
+1	51725	1	51725	scaffold_484	scaffold_484	100.0		True
+CONTIG	scaffold_484	51725	correct
+1753498	1805191	1	51694	lg16	scaffold_485	100.0		True
+CONTIG	scaffold_485	51694	correct
+1	51426	1	51426	scaffold_486	scaffold_486	100.0		True
+CONTIG	scaffold_486	51426	correct
+1	51290	1	51290	scaffold_487	scaffold_487	100.0		True
+CONTIG	scaffold_487	51290	correct
+1	51186	1	51186	scaffold_488	scaffold_488	100.0		True
+CONTIG	scaffold_488	51186	correct
+1	51101	1	51101	scaffold_489	scaffold_489	100.0		True
+CONTIG	scaffold_489	51101	correct
+1	51067	1	51067	scaffold_490	scaffold_490	100.0		True
+CONTIG	scaffold_490	51067	correct
+1	51060	1	51060	scaffold_491	scaffold_491	100.0		True
+CONTIG	scaffold_491	51060	correct
+1	51040	1	51040	scaffold_492	scaffold_492	100.0		True
+CONTIG	scaffold_492	51040	correct
+1	50946	1	50946	scaffold_493	scaffold_493	100.0		True
+CONTIG	scaffold_493	50946	correct
+1	50809	1	50809	scaffold_494	scaffold_494	100.0		True
+CONTIG	scaffold_494	50809	correct
+1	50775	1	50775	scaffold_495	scaffold_495	100.0		True
+CONTIG	scaffold_495	50775	correct
+1	50679	1	50679	scaffold_496	scaffold_496	100.0		True
+CONTIG	scaffold_496	50679	correct
+1	50652	1	50652	scaffold_497	scaffold_497	100.0		True
+CONTIG	scaffold_497	50652	correct
+1	50514	1	50514	scaffold_498	scaffold_498	100.0		True
+CONTIG	scaffold_498	50514	correct
+1	50294	1	50294	scaffold_499	scaffold_499	100.0		True
+CONTIG	scaffold_499	50294	correct
+4030946	4081175	1	50230	lg23	scaffold_500	100.0		True
+CONTIG	scaffold_500	50230	correct
+1	48132	1	48132	scaffold_501	scaffold_501	100.0		True
+CONTIG	scaffold_501	48132	correct
+1	48005	1	48005	scaffold_502	scaffold_502	100.0		True
+CONTIG	scaffold_502	48005	correct
+1	46678	1	46678	scaffold_503	scaffold_503	100.0		True
+CONTIG	scaffold_503	46678	correct
+1	41231	1	41231	scaffold_504	scaffold_504	100.0		True
+CONTIG	scaffold_504	41231	correct
+1	40802	1	40802	scaffold_505	scaffold_505	100.0		True
+CONTIG	scaffold_505	40802	correct
+1	40090	1	40090	scaffold_506	scaffold_506	100.0		True
+CONTIG	scaffold_506	40090	correct
+1	39908	1	39908	scaffold_507	scaffold_507	100.0		True
+CONTIG	scaffold_507	39908	correct
+1	27972	1	27972	scaffold_508	scaffold_508	100.0		True
+CONTIG	scaffold_508	27972	correct
+1	27321	1	27321	scaffold_509	scaffold_509	100.0		True
+CONTIG	scaffold_509	27321	correct
+1	26600	1	26600	scaffold_510	scaffold_510	100.0		True
+CONTIG	scaffold_510	26600	correct
+1	25746	1	25746	scaffold_511	scaffold_511	100.0		True
+CONTIG	scaffold_511	25746	correct
+1	23191	1	23191	scaffold_512	scaffold_512	100.0		True
+CONTIG	scaffold_512	23191	correct
+1	20854	1	20854	scaffold_513	scaffold_513	100.0		True
+CONTIG	scaffold_513	20854	correct
+1	17588	1	17588	scaffold_514	scaffold_514	100.0		True
+CONTIG	scaffold_514	17588	correct
+1	15545	1	15545	scaffold_515	scaffold_515	100.0		True
+CONTIG	scaffold_515	15545	correct

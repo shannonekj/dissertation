@@ -1,0 +1,7 @@
+All statistics are based on contigs of size >= 3000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     ipa     scaff10x  SALSA2
+K-mer-based compl. (%)       100.00  100.00    100.00
+K-mer-based cor. length (%)  -       -         -     
+K-mer-based mis. length (%)  -       -         -     
+# k-mer-based misjoins       -       -         -     

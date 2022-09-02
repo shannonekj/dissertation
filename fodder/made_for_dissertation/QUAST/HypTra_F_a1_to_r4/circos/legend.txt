@@ -1,0 +1,7 @@
+1) The outer circle represents reference sequence with GC (%) heatmap [from 28% (white) to 66% (black)].
+
+2) Assembly tracks:
+	assembly1 - ipa
+	assembly2 - scaff10x
+	assembly3 - SALSA2
+Assembly tracks are combined with mismatches visualization: higher columns indicate larger mismatch rate.

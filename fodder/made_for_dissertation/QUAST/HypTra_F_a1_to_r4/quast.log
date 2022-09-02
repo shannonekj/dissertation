@@ -1,0 +1,1328 @@
+/home/sejoslin/miniconda3/envs/quast/bin/quast --large --k-mer-stats --eukaryote --threads 11 -o /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4 -a one -r /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_chromonomer/output/CHRR_integrated.fa --circos --labels ipa,scaff10x,SALSA2 --report-all-metrics /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_ipa/RUN/19-final/final.p_ctg.fasta /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_scaff10x/Hyp_tra_F.scf.fasta /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_salsa2/salsa_i5_dup/scaffolds_FINAL.fasta
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-5.4.0-107-generic-x86_64-with-glibc2.27 (linux_64)
+  Python version: 3.10.6
+  CPUs number: 24
+
+Started: 2022-08-31 16:25:49
+
+Logging to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/quast.log
+
+CWD: /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4
+Main parameters: 
+  MODE: large, threads: 11, eukaryotic: true, min contig length: 3000, min alignment length: 500, \
+  min alignment IDY: 95.0, ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 7000
+
+Reference:
+  /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_chromonomer/output/CHRR_integrated.fa ==> CHRR_integrated
+
+Contigs:
+  Pre-processing...
+  1  /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_ipa/RUN/19-final/final.p_ctg.fasta ==> ipa
+  2  /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_scaff10x/Hyp_tra_F.scf.fasta ==> scaff10x
+  3  /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_salsa2/salsa_i5_dup/scaffolds_FINAL.fasta ==> SALSA2
+
+2022-08-31 16:26:23
+Running Basic statistics processor...
+  Reference genome:
+    CHRR_integrated.fa, length = 437273953, num fragments = 376, GC % = 44.99
+WARNING:   Reference genome is fragmented. You may consider rerunning QUAST using --fragmented option. QUAST will try to detect misassemblies caused by the fragmentation and mark them fake (will be excluded from # misassemblies).
+  Contig files: 
+    1  ipa
+    2  scaff10x
+    3  SALSA2
+  Calculating N50 and L50...
+    1  ipa, N50 = 418614, L50 = 264, auN = 668619.6, Total length = 436920153, GC % = 44.99, # N's per 100 kbp =  0.07
+    2  scaff10x, N50 = 1392224, L50 = 80, auN = 2113507.9, Total length = 436999453, GC % = 44.99, # N's per 100 kbp =  18.21
+    3  SALSA2, N50 = 4383157, L50 = 26, auN = 5815293.2, Total length = 437264453, GC % = 44.99, # N's per 100 kbp =  78.81
+  Drawing Nx plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/basic_stats/GC_content_plot.pdf
+  Drawing ipa GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/basic_stats/ipa_GC_content_plot.pdf
+  Drawing scaff10x GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/basic_stats/scaff10x_GC_content_plot.pdf
+  Drawing SALSA2 GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/basic_stats/SALSA2_GC_content_plot.pdf
+Done.
+
+2022-08-31 16:27:47
+Running analysis based on unique 101-mers...
+  Running KMC on reference...
+/home/sejoslin/.quast/kmc/kmc -t11 -hp -m6 -n128 -k101 -fm -cx1 -ci1 quast_corrected_input/CHRR_integrated.fa \
+k_mer_stats/tmp/CHRR_integrated.fa.kmc k_mer_stats/tmp >> k_mer_stats/kmc.log 2>> \
+k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp histogram k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/CHRR_integrated.fa.kmc.histo.txt >> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+  Analyzing assemblies completeness...
+    1  ipa
+/home/sejoslin/.quast/kmc/kmc -t11 -hp -m2 -n128 -k101 -fm -cx1 -ci1 quast_corrected_input/ipa.fasta \
+k_mer_stats/tmp/ipa.fasta.kmc k_mer_stats/tmp >> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp simple k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/ipa.fasta.kmc intersect k_mer_stats/tmp/CHRR_integrated.fa_ipa.fasta.kmc \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp histogram k_mer_stats/tmp/CHRR_integrated.fa_ipa.fasta.kmc \
+k_mer_stats/tmp/CHRR_integrated.fa_ipa.fasta.kmc.histo.txt >> k_mer_stats/kmc.log \
+2>> k_mer_stats/kmc.err
+    2  scaff10x
+/home/sejoslin/.quast/kmc/kmc -t11 -hp -m2 -n128 -k101 -fm -cx1 -ci1 quast_corrected_input/scaff10x.fasta \
+k_mer_stats/tmp/scaff10x.fasta.kmc k_mer_stats/tmp >> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp simple k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/scaff10x.fasta.kmc intersect k_mer_stats/tmp/CHRR_integrated.fa_scaff10x.fasta.kmc \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp histogram k_mer_stats/tmp/CHRR_integrated.fa_scaff10x.fasta.kmc \
+k_mer_stats/tmp/CHRR_integrated.fa_scaff10x.fasta.kmc.histo.txt >> k_mer_stats/kmc.log \
+2>> k_mer_stats/kmc.err
+    3  SALSA2
+/home/sejoslin/.quast/kmc/kmc -t11 -hp -m2 -n128 -k101 -fm -cx1 -ci1 quast_corrected_input/SALSA2.fasta \
+k_mer_stats/tmp/SALSA2.fasta.kmc k_mer_stats/tmp >> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp simple k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/SALSA2.fasta.kmc intersect k_mer_stats/tmp/CHRR_integrated.fa_SALSA2.fasta.kmc \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp histogram k_mer_stats/tmp/CHRR_integrated.fa_SALSA2.fasta.kmc \
+k_mer_stats/tmp/CHRR_integrated.fa_SALSA2.fasta.kmc.histo.txt >> k_mer_stats/kmc.log \
+2>> k_mer_stats/kmc.err
+  Analyzing assemblies correctness...
+    Downsampling k-mers...
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg01.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg01.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg02.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg02.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg03.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg03.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg04.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg04.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg05.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg05.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg06.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg06.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg07.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg07.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg08.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg08.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg09.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg09.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg10.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg10.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg11.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg11.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg12.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg12.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg13.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg13.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg14.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg14.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg15.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg15.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg16.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg16.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg17.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg17.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg18.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg18.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg19.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg19.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg20.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg20.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg21.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg21.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg22.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg22.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg23.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg23.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg24.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg24.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg25.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg25.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_lg26.fasta -ci1 -fa k_mer_stats/tmp/kmers_lg26.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_27.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_27.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_30.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_30.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_31.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_31.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_42.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_42.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_48.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_48.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_51.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_51.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_52.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_52.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_55.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_55.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_60.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_60.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_61.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_61.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_62.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_62.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_64.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_64.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_65.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_65.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_84.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_84.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_88.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_88.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_89.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_89.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_90.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_90.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_91.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_91.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_94.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_94.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_96.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_96.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_100.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_100.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_101.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_101.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_105.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_105.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_107.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_107.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_111.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_111.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_116.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_116.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_118.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_118.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_122.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_122.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_124.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_124.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_127.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_127.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_129.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_129.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_130.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_130.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_131.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_131.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_132.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_132.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_133.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_133.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_134.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_134.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_137.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_137.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_138.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_138.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_139.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_139.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_142.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_142.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_143.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_143.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_144.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_144.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_146.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_146.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_149.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_149.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_152.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_152.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_153.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_153.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_154.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_154.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_155.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_155.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_156.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_156.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_159.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_159.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_160.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_160.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_162.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_162.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_166.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_166.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_170.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_170.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_172.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_172.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_176.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_176.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_180.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_180.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_181.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_181.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_184.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_184.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_185.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_185.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_186.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_186.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_187.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_187.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_188.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_188.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_192.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_192.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_194.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_194.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_195.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_195.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_199.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_199.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_201.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_201.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_202.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_202.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_203.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_203.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_204.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_204.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_205.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_205.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_206.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_206.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_208.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_208.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_210.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_210.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_211.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_211.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_212.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_212.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_213.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_213.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_214.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_214.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_216.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_216.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_218.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_218.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_219.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_219.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_221.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_221.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_223.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_223.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_224.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_224.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_225.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_225.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_226.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_226.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_227.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_227.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_228.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_228.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_229.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_229.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_231.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_231.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_232.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_232.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_233.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_233.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_234.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_234.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_235.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_235.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_236.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_236.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_240.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_240.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_241.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_241.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_242.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_242.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_243.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_243.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_245.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_245.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_246.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_246.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_249.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_249.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_250.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_250.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_251.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_251.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_253.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_253.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_254.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_254.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_255.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_255.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_256.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_256.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_257.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_257.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_258.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_258.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_259.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_259.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_260.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_260.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_261.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_261.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_262.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_262.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_263.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_263.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_264.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_264.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_265.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_265.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_266.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_266.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_268.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_268.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_269.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_269.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_270.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_270.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_271.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_271.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_272.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_272.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_273.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_273.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_274.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_274.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_275.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_275.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_276.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_276.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_277.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_277.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_278.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_278.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_279.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_279.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_280.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_280.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_281.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_281.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_282.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_282.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_283.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_283.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_284.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_284.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_285.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_285.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_286.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_286.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_287.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_287.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_288.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_288.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_289.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_289.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_290.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_290.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_291.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_291.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_292.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_292.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_293.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_293.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_294.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_294.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_295.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_295.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_296.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_296.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_297.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_297.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_298.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_298.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_300.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_300.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_301.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_301.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_302.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_302.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_303.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_303.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_304.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_304.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_305.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_305.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_306.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_306.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_307.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_307.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_308.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_308.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_309.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_309.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_310.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_310.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_311.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_311.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_312.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_312.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_313.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_313.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_314.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_314.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_315.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_315.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_316.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_316.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_317.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_317.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_318.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_318.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_319.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_319.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_320.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_320.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_321.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_321.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_322.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_322.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_323.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_323.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_325.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_325.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_326.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_326.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_327.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_327.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_328.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_328.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_329.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_329.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_330.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_330.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_331.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_331.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_332.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_332.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_333.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_333.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_334.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_334.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_335.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_335.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_336.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_336.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_337.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_337.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_338.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_338.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_339.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_339.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_340.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_340.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_342.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_342.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_343.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_343.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_344.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_344.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_345.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_345.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_348.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_348.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_349.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_349.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_350.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_350.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_351.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_351.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_352.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_352.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_353.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_353.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_354.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_354.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_355.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_355.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_356.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_356.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_357.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_357.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_358.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_358.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_359.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_359.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_360.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_360.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_361.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_361.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_362.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_362.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_363.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_363.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_364.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_364.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_365.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_365.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_366.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_366.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_367.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_367.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_369.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_369.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_370.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_370.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_371.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_371.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_372.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_372.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_373.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_373.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_374.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_374.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_375.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_375.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_377.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_377.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_379.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_379.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_380.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_380.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_381.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_381.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_382.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_382.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_383.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_383.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_384.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_384.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_385.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_385.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_386.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_386.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_387.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_387.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_388.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_388.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_389.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_389.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_390.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_390.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_391.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_391.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_392.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_392.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_393.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_393.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_395.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_395.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_396.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_396.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_397.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_397.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_398.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_398.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_400.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_400.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_401.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_401.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_402.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_402.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_403.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_403.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_404.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_404.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_405.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_405.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_407.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_407.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_408.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_408.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_409.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_409.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_410.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_410.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_411.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_411.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_412.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_412.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_413.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_413.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_414.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_414.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_415.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_415.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_416.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_416.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_417.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_417.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_418.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_418.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_419.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_419.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_420.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_420.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_421.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_421.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_423.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_423.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_424.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_424.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_425.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_425.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_426.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_426.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_427.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_427.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_428.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_428.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_429.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_429.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_431.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_431.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_432.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_432.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_433.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_433.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_434.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_434.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_435.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_435.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_436.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_436.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_437.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_437.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_438.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_438.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_439.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_439.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_440.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_440.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_441.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_441.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_442.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_442.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_443.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_443.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_444.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_444.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_445.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_445.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_446.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_446.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_447.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_447.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_449.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_449.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_450.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_450.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_451.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_451.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_452.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_452.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_453.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_453.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_454.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_454.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_455.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_455.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_456.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_456.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_457.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_457.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_458.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_458.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_459.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_459.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_460.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_460.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_461.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_461.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_462.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_462.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_463.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_463.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_464.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_464.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_465.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_465.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_466.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_466.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_467.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_467.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_468.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_468.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_469.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_469.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_470.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_470.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_471.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_471.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_472.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_472.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_473.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_473.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_474.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_474.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_475.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_475.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_476.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_476.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_477.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_477.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_478.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_478.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_479.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_479.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_480.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_480.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_481.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_481.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_483.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_483.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_484.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_484.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_486.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_486.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_487.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_487.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_488.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_488.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_489.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_489.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_490.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_490.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_491.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_491.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_492.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_492.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_493.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_493.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_494.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_494.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_495.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_495.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_496.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_496.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_497.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_497.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_498.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_498.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_499.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_499.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_501.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_501.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_502.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_502.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_503.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_503.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_504.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_504.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_505.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_505.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_506.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_506.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_507.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_507.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_508.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_508.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_509.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_509.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_510.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_510.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_511.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_511.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_512.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_512.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_513.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_513.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_514.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_514.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+/home/sejoslin/.quast/kmc/kmc_tools -t11 -hp filter k_mer_stats/tmp/CHRR_integrated.fa.kmc \
+k_mer_stats/tmp/kmers_scaffold_515.fasta -ci1 -fa k_mer_stats/tmp/kmers_scaffold_515.filtered.fasta \
+>> k_mer_stats/kmc.log 2>> k_mer_stats/kmc.err
+    1  ipa
+WARNING: Reference is too fragmented. Scaffolding accuracy will not be assessed.
+    2  scaff10x
+WARNING: Reference is too fragmented. Scaffolding accuracy will not be assessed.
+    3  SALSA2
+WARNING: Reference is too fragmented. Scaffolding accuracy will not be assessed.
+  Creating total report...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/k_mer_stats/kmers_report.txt, kmers_report.tsv, and kmers_report.tex
+Done.
+
+2022-08-31 17:53:38
+Running Contig analyzer...
+  1  ipa
+  1  Logging to files /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/contigs_reports/contigs_report_ipa.stdout and contigs_report_ipa.stderr...
+  1  Aligning contigs to the reference
+  1  /home/sejoslin/miniconda3/envs/quast/bin/minimap2 -c -x asm10 --mask-level 0.9 \
+     --min-occ 200 -g 2500 --score-N 2 --cs -t 3 quast_corrected_input/CHRR_integrated.fa \
+     quast_corrected_input/ipa.fasta > contigs_reports/minimap_output/ipa.coords_tmp \
+     2>> contigs_reports/contigs_report_ipa.stderr
+  2  scaff10x
+  2  Logging to files /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/contigs_reports/contigs_report_scaff10x.stdout and contigs_report_scaff10x.stderr...
+  2  Aligning contigs to the reference
+  2  /home/sejoslin/miniconda3/envs/quast/bin/minimap2 -c -x asm10 --mask-level 0.9 \
+     --min-occ 200 -g 2500 --score-N 2 --cs -t 3 quast_corrected_input/CHRR_integrated.fa \
+     quast_corrected_input/scaff10x.fasta > contigs_reports/minimap_output/scaff10x.coords_tmp \
+     2>> contigs_reports/contigs_report_scaff10x.stderr
+  3  SALSA2
+  3  Logging to files /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/contigs_reports/contigs_report_SALSA2.stdout and contigs_report_SALSA2.stderr...
+  3  Aligning contigs to the reference
+  3  /home/sejoslin/miniconda3/envs/quast/bin/minimap2 -c -x asm10 --mask-level 0.9 \
+     --min-occ 200 -g 2500 --score-N 2 --cs -t 3 quast_corrected_input/CHRR_integrated.fa \
+     quast_corrected_input/SALSA2.fasta > contigs_reports/minimap_output/SALSA2.coords_tmp \
+     2>> contigs_reports/contigs_report_SALSA2.stderr
+  3  Analysis is finished.
+
+  1  Analysis is finished.
+
+  2  Analysis is finished.
+
+  Creating total report...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2022-08-31 18:03:03
+Running NA-NGA calculation...
+  1  ipa, Largest alignment = 3341941, NA50 = 415714, NGA50 = 415714, LA50 = 266, LGA50 = 266
+  2  scaff10x, Largest alignment = 10560250, NA50 = 1237961, NGA50 = 1237961, LA50 = 91, LGA50 = 91
+  3  SALSA2, Largest alignment = 13907510, NA50 = 3609294, NGA50 = 3609294, LA50 = 32, LGA50 = 32
+  Drawing cumulative plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/aligned_stats/NGAx_plot.pdf
+Done.
+
+2022-08-31 18:03:19
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  1  ipa
+  2  scaff10x
+  3  SALSA2
+  1  Analysis is finished.
+  3  Analysis is finished.
+  2  Analysis is finished.
+  Drawing Genome fraction, % histogram...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/genome_stats/genome_fraction_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-08-31 18:04:25
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 3: Creating PDF with all tables and plots...
+  2 of 3: Creating Icarus viewers...
+  3 of 3: Creating Circos plot...
+/home/sejoslin/miniconda3/envs/quast/bin/circos -conf circos/circos.conf > circos/circos.log \
+2> circos/circos.err
+Done
+
+2022-08-31 18:05:18
+RESULTS:
+  Text versions of total report are saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/report.html
+  PDF version (tables and plots) is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/report.pdf
+  Circos plot is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/circos/circos.png (legend is in legend.txt, configuration file is in circos.conf)
+  Icarus (contig browser) is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/icarus.html
+  Log is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/F/QUAST/a1_to_a4/quast.log
+
+Finished: 2022-08-31 18:05:18
+Elapsed time: 1:39:29.548816
+NOTICEs: 3; WARNINGs: 4; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

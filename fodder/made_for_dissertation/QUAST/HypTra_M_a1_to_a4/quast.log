@@ -1,0 +1,79 @@
+/home/sejoslin/miniconda3/envs/quast/bin/quast --large --k-mer-stats --eukaryote --threads 11 -o /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4 -a one --est-ref-size 490000000 --circos --labels ipa,scaff10x,SALSA2,chromonomer --report-all-metrics /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa/DeltaSmelt_combined_ipa/RUN/19-final/final.p_ctg.fasta /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa/DeltaSmelt_combined_scaff10x_defaults/Hyp_tra.scf.fasta /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa/DeltaSmelt_combined_salsa2_defaults/salsa_i5_dup/scaffolds_FINAL.fasta /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/04-linkage_map/out_chromonomer/CHRR_integrated.fa
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-5.4.0-124-generic-x86_64-with-glibc2.27 (linux_64)
+  Python version: 3.10.6
+  CPUs number: 24
+
+Started: 2022-09-01 17:30:23
+
+Logging to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/quast.log
+
+CWD: /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4
+Main parameters: 
+  MODE: large, threads: 11, eukaryotic: true, min contig length: 3000, min alignment length: 500, \
+  min alignment IDY: 95.0, ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 7000
+
+Contigs:
+  Pre-processing...
+  1  /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa/DeltaSmelt_combined_ipa/RUN/19-final/final.p_ctg.fasta ==> ipa
+  2  /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa/DeltaSmelt_combined_scaff10x_defaults/Hyp_tra.scf.fasta ==> scaff10x
+  3  /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa/DeltaSmelt_combined_salsa2_defaults/salsa_i5_dup/scaffolds_FINAL.fasta ==> SALSA2
+  4  /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/04-linkage_map/out_chromonomer/CHRR_integrated.fa ==> chromonomer
+
+2022-09-01 17:30:54
+Running Basic statistics processor...
+  Estimated reference length = 490000000
+  Contig files: 
+    1  ipa
+    2  scaff10x
+    3  SALSA2
+    4  chromonomer
+  Calculating N50 and L50...
+    1  ipa, N50 = 353581, L50 = 324, auN = 581149.7, Total length = 471831811, GC % = 44.71, # N's per 100 kbp =  0.01
+    2  scaff10x, N50 = 1188596, L50 = 106, auN = 1582156.2, Total length = 471929811, GC % = 44.71, # N's per 100 kbp =  20.78
+    3  SALSA2, N50 = 2749144, L50 = 38, auN = 4514538.1, Total length = 472145811, GC % = 44.71, # N's per 100 kbp =  66.51
+    4  chromonomer, N50 = 12200365, L50 = 15, auN = 10600547.4, Total length = 472157411, GC % = 44.71, # N's per 100 kbp =  68.97
+  Drawing Nx plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/basic_stats/GC_content_plot.pdf
+  Drawing ipa GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/basic_stats/ipa_GC_content_plot.pdf
+  Drawing scaff10x GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/basic_stats/scaff10x_GC_content_plot.pdf
+  Drawing SALSA2 GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/basic_stats/SALSA2_GC_content_plot.pdf
+  Drawing chromonomer GC content plot...
+    saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/basic_stats/chromonomer_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-09-01 17:32:50
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2022-09-01 17:33:17
+RESULTS:
+  Text versions of total report are saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/report.html
+  PDF version (tables and plots) is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/report.pdf
+  Icarus (contig browser) is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/icarus.html
+  Log is saved to /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/01-assembly/M/QUAST/a1_to_a4/quast.log
+
+Finished: 2022-09-01 17:33:17
+Elapsed time: 0:02:54.196432
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

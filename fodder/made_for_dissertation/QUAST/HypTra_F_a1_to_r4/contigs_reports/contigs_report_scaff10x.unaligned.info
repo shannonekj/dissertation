@@ -1,0 +1,8 @@
+Contig	Total_length	Unaligned_length	Unaligned_type	Unaligned_parts
+tarseq_1	3563399	1402	partial	1-1402
+tarseq_39	3636938	2996	partial	1-2996
+tarseq_64	3138365	4970	partial	508001-512970
+tarseq_163	61157	1899	partial	1-1899
+tarseq_190	91994	6833	partial	32928-39760
+tarseq_228	79635	1232	partial	1-1232
+tarseq_381	54551	16709	partial	1-3223,41066-54551

@@ -1,0 +1,85 @@
+Assembly	ipa	scaff10x	SALSA2	chromonomer
+# contigs (>= 0 bp)	2086	1106	705	549
+# contigs (>= 1000 bp)	2086	1106	705	549
+# contigs (>= 5000 bp)	2086	1106	705	549
+# contigs (>= 10000 bp)	2086	1106	705	549
+# contigs (>= 25000 bp)	2084	1104	705	549
+# contigs (>= 50000 bp)	2057	1078	699	545
+Total length (>= 0 bp)	471831811	471929811	472145811	472157411
+Total length (>= 1000 bp)	471831811	471929811	472145811	472157411
+Total length (>= 5000 bp)	471831811	471929811	472145811	472157411
+Total length (>= 10000 bp)	471831811	471929811	472145811	472157411
+Total length (>= 25000 bp)	471783108	471881108	472145811	472157411
+Total length (>= 50000 bp)	470677046	470821567	471892474	471998837
+# contigs	2086	1106	705	549
+Largest contig	2899834	5525214	16473917	21130208
+Total length	471831811	471929811	472145811	472157411
+Reference length	-	-	-	-
+Estimated reference length	490000000	490000000	490000000	490000000
+GC (%)	44.71	44.71	44.71	44.71
+Reference GC (%)	-	-	-	-
+N50	353581	1188596	2749144	12200365
+NG50	335796	1121656	2516285	12021477
+N90	91777	162160	247754	276497
+NG90	76626	115916	176999	185728
+auN	581149.7	1582156.2	4514538.1	10600547.4
+auNG	559601.9	1523809.6	4350041.3	10214544.9
+L50	324	106	38	15
+LG50	351	114	41	16
+L90	1388	542	290	153
+LG90	1583	661	366	224
+# total reads	-	-	-	-
+# left	-	-	-	-
+# right	-	-	-	-
+Mapped (%)	-	-	-	-
+Reference mapped (%)	-	-	-	-
+Properly paired (%)	-	-	-	-
+Reference properly paired (%)	-	-	-	-
+Avg. coverage depth	-	-	-	-
+Reference avg. coverage depth	-	-	-	-
+Coverage >= 1x (%)	-	-	-	-
+Reference coverage >= 1x (%)	-	-	-	-
+# large blocks misassemblies	-	-	-	-
+# misassemblies	-	-	-	-
+# misassembled contigs	-	-	-	-
+Misassembled contigs length	-	-	-	-
+# local misassemblies	-	-	-	-
+# scaffold gap ext. mis.	-	-	-	-
+# scaffold gap loc. mis.	-	-	-	-
+# structural variations	-	-	-	-
+# possible TEs	-	-	-	-
+# unaligned mis. contigs	-	-	-	-
+# unaligned contigs	-	-	-	-
+Unaligned length	-	-	-	-
+Genome fraction (%)	-	-	-	-
+Duplication ratio	-	-	-	-
+Avg contig read support	-	-	-	-
+# N's per 100 kbp	0.01	20.78	66.51	68.97
+# mismatches per 100 kbp	-	-	-	-
+# indels per 100 kbp	-	-	-	-
+# genomic features	-	-	-	-
+# operons	-	-	-	-
+Complete BUSCO (%)	-	-	-	-
+Partial BUSCO (%)	-	-	-	-
+# predicted genes (unique)	-	-	-	-
+# predicted genes (>= 0 bp)	-	-	-	-
+# predicted genes (>= 300 bp)	-	-	-	-
+# predicted genes (>= 1500 bp)	-	-	-	-
+# predicted genes (>= 3000 bp)	-	-	-	-
+# predicted rRNA genes	-	-	-	-
+Largest alignment	-	-	-	-
+Total aligned length	-	-	-	-
+NA50	-	-	-	-
+NGA50	-	-	-	-
+NA90	-	-	-	-
+NGA90	-	-	-	-
+auNA	-	-	-	-
+auNGA	-	-	-	-
+LA50	-	-	-	-
+LGA50	-	-	-	-
+LA90	-	-	-	-
+LGA90	-	-	-	-
+K-mer-based compl. (%)	-	-	-	-
+K-mer-based cor. length (%)	-	-	-	-
+K-mer-based mis. length (%)	-	-	-	-
+# k-mer-based misjoins	-	-	-	-

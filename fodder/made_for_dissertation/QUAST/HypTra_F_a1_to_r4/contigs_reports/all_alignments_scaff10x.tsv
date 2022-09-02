@@ -1,0 +1,2093 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+3818215	7160155	3341941	1	lg02	tarseq_0	100.0		True
+CONTIG	tarseq_0	3341941	correct
+5965131	8771939	2808211	1403	lg21	tarseq_1	100.0		True
+translocation
+2719290	3474477	3563399	2808212	lg11	tarseq_1	100.0		True
+CONTIG	tarseq_1	3563399	misassembled
+16117925	18778154	2660230	1	lg09	tarseq_2	100.0		True
+CONTIG	tarseq_2	2660230	correct
+2013888	6698296	1	4684409	lg13	tarseq_3	100.0		True
+CONTIG	tarseq_3	4684409	correct
+18778655	21699295	2920641	1	lg09	tarseq_4	100.0		True
+CONTIG	tarseq_4	2920641	correct
+13210292	16612098	1	3401807	lg23	tarseq_5	100.0		True
+CONTIG	tarseq_5	3401807	correct
+10776776	12781953	1	2005178	lg08	tarseq_6	100.0		True
+CONTIG	tarseq_6	2005178	correct
+4695136	6441955	1	1746820	lg26	tarseq_7	100.0		True
+CONTIG	tarseq_7	1746820	correct
+1	1898637	1	1898637	scaffold_48	tarseq_8	100.0		True
+CONTIG	tarseq_8	1898637	correct
+2110653	3707715	1597063	1	lg25	tarseq_9	100.0		True
+CONTIG	tarseq_9	1597063	correct
+89915	164398	74484	1	scaffold_255	tarseq_10	100.0		True
+translocation
+3243903	7011621	3842203	74485	lg16	tarseq_10	100.0		True
+CONTIG	tarseq_10	3842203	misassembled
+4439004	5963917	1	1524914	lg21	tarseq_11	100.0		True
+CONTIG	tarseq_11	1525627	correct
+1	23191	1	23191	scaffold_512	tarseq_12	100.0		True
+translocation
+2023269	3453505	23192	1453428	lg26	tarseq_12	100.0		True
+CONTIG	tarseq_12	1453428	misassembled
+8659450	13209791	1	4550342	lg23	tarseq_13	100.0		True
+CONTIG	tarseq_13	4550342	correct
+1	1401475	1401475	1	scaffold_64	tarseq_14	100.0		True
+CONTIG	tarseq_14	1401475	correct
+1	1383554	1	1383554	scaffold_65	tarseq_15	100.0		True
+CONTIG	tarseq_15	1383554	correct
+6675654	10340711	3665058	1	lg17	tarseq_16	100.0		True
+CONTIG	tarseq_16	3665058	correct
+1	1631013	1	1631013	scaffold_55	tarseq_17	100.0		True
+CONTIG	tarseq_17	1631013	correct
+628343	1835322	1	1206980	lg06	tarseq_18	100.0		True
+CONTIG	tarseq_18	1206980	correct
+1	1541387	1541387	1	lg26	tarseq_19	100.0		True
+CONTIG	tarseq_19	1541387	correct
+9213228	10322997	1	1109770	lg21	tarseq_20	100.0		True
+CONTIG	tarseq_20	1109770	correct
+1	981956	1	981956	scaffold_89	tarseq_21	100.0		True
+translocation
+1190821	1482774	1273910	981957	scaffold_61	tarseq_21	100.0		True
+CONTIG	tarseq_21	1273910	misassembled
+2505652	3542907	1037256	1	lg06	tarseq_22	100.0		True
+CONTIG	tarseq_22	1037256	correct
+12976355	14480801	1	1504447	lg09	tarseq_23	100.0		True
+CONTIG	tarseq_23	1504447	correct
+3454006	4694635	1240630	1	lg26	tarseq_24	100.0		True
+CONTIG	tarseq_24	1240630	correct
+4079305	6166538	2087134	1	lg22	tarseq_25	100.0		True
+CONTIG	tarseq_25	2087134	correct
+11871058	12824578	953521	1	lg17	tarseq_26	100.0		True
+CONTIG	tarseq_26	953521	correct
+1	916522	1	916522	scaffold_94	tarseq_27	100.0		True
+CONTIG	tarseq_27	916522	correct
+10967930	11870557	1	902628	lg17	tarseq_28	100.0		True
+CONTIG	tarseq_28	902628	correct
+1	889262	1	889262	scaffold_52	tarseq_29	100.0		True
+CONTIG	tarseq_29	889262	correct
+12825079	13835639	1	1010561	lg17	tarseq_30	100.0		True
+CONTIG	tarseq_30	1010561	correct
+1	859966	859966	1	scaffold_100	tarseq_31	100.0		True
+CONTIG	tarseq_31	859966	correct
+11890295	12854346	964052	1	lg06	tarseq_32	100.0		True
+CONTIG	tarseq_32	964052	correct
+16712462	18263845	1	1551384	lg23	tarseq_33	100.0		True
+CONTIG	tarseq_33	1551384	correct
+3623969	5813460	1	2189492	lg18	tarseq_34	100.0		True
+CONTIG	tarseq_34	2189492	correct
+1	799970	1	799970	scaffold_105	tarseq_35	100.0		True
+CONTIG	tarseq_35	799970	correct
+2140976	3372721	1231746	1	lg15	tarseq_36	100.0		True
+CONTIG	tarseq_36	1231746	correct
+1	1709888	1709888	1	scaffold_51	tarseq_37	100.0		True
+CONTIG	tarseq_37	1709888	correct
+1	113405	1	113405	scaffold_307	tarseq_38	100.0		True
+CONTIG	tarseq_38	113405	correct
+2997	762945	2997	762945	scaffold_111	tarseq_39	100.0		True
+translocation
+4383258	7257250	3636938	762946	lg07	tarseq_39	100.0		True
+CONTIG	tarseq_39	3636938	misassembled
+1	670848	670848	1	scaffold_118	tarseq_40	100.0		True
+CONTIG	tarseq_40	670848	correct
+1	661041	1	661041	scaffold_122	tarseq_41	100.0		True
+CONTIG	tarseq_41	661041	correct
+57780	698984	1	641205	lg03	tarseq_42	100.0		True
+CONTIG	tarseq_42	641205	correct
+1913440	3750493	1837054	1	lg21	tarseq_43	100.0		True
+translocation
+1	246387	1837055	2083441	scaffold_203	tarseq_43	100.0		True
+CONTIG	tarseq_43	2083441	misassembled
+1	52941	1	52941	scaffold_471	tarseq_44	100.0		True
+CONTIG	tarseq_44	52941	correct
+1	949707	1	949707	scaffold_91	tarseq_45	100.0		True
+CONTIG	tarseq_45	949707	correct
+10340812	10967429	1	626618	lg17	tarseq_46	100.0		True
+CONTIG	tarseq_46	626618	correct
+1	595881	1	595881	scaffold_130	tarseq_47	100.0		True
+CONTIG	tarseq_47	595881	correct
+1	985700	1	985700	scaffold_88	tarseq_48	100.0		True
+CONTIG	tarseq_48	985700	correct
+1541888	2022768	1	480881	lg26	tarseq_49	100.0		True
+CONTIG	tarseq_49	480881	correct
+1	577675	1	577675	scaffold_137	tarseq_50	100.0		True
+CONTIG	tarseq_50	577675	correct
+1	556901	1	556901	scaffold_142	tarseq_51	100.0		True
+CONTIG	tarseq_51	556901	correct
+1	553164	1	553164	scaffold_143	tarseq_52	100.0		True
+CONTIG	tarseq_52	553164	correct
+1	590230	1	590230	scaffold_131	tarseq_53	100.0		True
+CONTIG	tarseq_53	590230	correct
+1	502752	1	502752	scaffold_154	tarseq_54	100.0		True
+CONTIG	tarseq_54	502752	correct
+1	511852	1	511852	scaffold_153	tarseq_55	100.0		True
+CONTIG	tarseq_55	511852	correct
+1	1534882	1534882	1	scaffold_30	tarseq_56	100.0		True
+CONTIG	tarseq_56	1534882	correct
+1201724	1695153	493430	1	scaffold_52	tarseq_57	100.0		True
+CONTIG	tarseq_57	493430	correct
+1	492199	1	492199	scaffold_155	tarseq_58	100.0		True
+CONTIG	tarseq_58	492199	correct
+13858631	14953238	1	1094608	lg18	tarseq_59	100.0		True
+CONTIG	tarseq_59	1094608	correct
+1	1190320	1	1190320	scaffold_61	tarseq_60	100.0		True
+translocation
+1715350	2463265	1938236	1190321	lg24	tarseq_60	100.0		True
+CONTIG	tarseq_60	1938236	misassembled
+121616	582103	1	460488	scaffold_134	tarseq_61	100.0		True
+CONTIG	tarseq_61	460488	correct
+1	455197	1	455197	scaffold_162	tarseq_62	100.0		True
+CONTIG	tarseq_62	455197	correct
+11653299	12100998	1	447700	lg19	tarseq_63	100.0		True
+CONTIG	tarseq_63	447700	correct
+4568885	5076884	508000	1	lg14	tarseq_64	100.0		True
+translocation
+1	2625395	3138365	512971	lg23	tarseq_64	100.0		True
+CONTIG	tarseq_64	3138365	misassembled
+14481302	15613027	1	1131726	lg09	tarseq_65	100.0		True
+CONTIG	tarseq_65	1131726	correct
+6601238	9902575	3301338	1	lg22	tarseq_66	100.0		True
+CONTIG	tarseq_66	3301338	correct
+1012	627842	626831	1	lg06	tarseq_67	100.0		True
+CONTIG	tarseq_67	627842	correct
+1	1557319	1	1557319	scaffold_60	tarseq_68	100.0		True
+CONTIG	tarseq_68	1557319	correct
+1	403116	1	403116	scaffold_172	tarseq_69	100.0		True
+CONTIG	tarseq_69	403116	correct
+8773442	9161026	1	387585	lg21	tarseq_70	100.0		True
+CONTIG	tarseq_70	387585	correct
+8937033	11044700	1	2107668	lg14	tarseq_71	100.0		True
+CONTIG	tarseq_71	2107668	correct
+7703351	8169972	1	466622	lg04	tarseq_72	100.0		True
+translocation
+18264346	20427041	2629318	466623	lg23	tarseq_72	100.0		True
+CONTIG	tarseq_72	2629318	misassembled
+1077115	1461364	1	384250	lg15	tarseq_73	100.0		True
+CONTIG	tarseq_73	384250	correct
+11341740	12288153	1	946414	lg22	tarseq_74	100.0		True
+CONTIG	tarseq_74	946414	correct
+1	368179	1	368179	scaffold_180	tarseq_75	100.0		True
+CONTIG	tarseq_75	368179	correct
+6796921	7246442	1	449522	lg26	tarseq_76	100.0		True
+CONTIG	tarseq_76	449522	correct
+9903076	11341639	1	1438564	lg22	tarseq_77	100.0		True
+CONTIG	tarseq_77	1438564	correct
+1	344856	1	344856	scaffold_139	tarseq_78	100.0		True
+translocation
+1805292	3243402	344857	1782967	lg16	tarseq_78	100.0		True
+CONTIG	tarseq_78	1782967	misassembled
+1	349375	1	349375	scaffold_185	tarseq_79	100.0		True
+translocation
+12782454	14090550	349376	1657472	lg08	tarseq_79	100.0		True
+CONTIG	tarseq_79	1657472	misassembled
+1	342426	1	342426	scaffold_188	tarseq_80	100.0		True
+CONTIG	tarseq_80	342426	correct
+1	342978	1	342978	scaffold_187	tarseq_81	100.0		True
+CONTIG	tarseq_81	342978	correct
+14797837	15713392	1	915556	lg19	tarseq_82	100.0		True
+CONTIG	tarseq_82	915556	correct
+7175861	10469389	1	3293529	lg01	tarseq_83	100.0		True
+CONTIG	tarseq_83	3293529	correct
+1	127926	1	127926	scaffold_286	tarseq_84	100.0		True
+CONTIG	tarseq_84	127926	correct
+1	547976	1	547976	scaffold_144	tarseq_85	100.0		True
+CONTIG	tarseq_85	547976	correct
+1	20854	1	20854	scaffold_513	tarseq_86	100.0		True
+CONTIG	tarseq_86	20854	correct
+889763	1201223	1	311461	scaffold_52	tarseq_87	100.0		True
+CONTIG	tarseq_87	311461	correct
+1	304396	1	304396	scaffold_202	tarseq_88	100.0		True
+CONTIG	tarseq_88	304396	correct
+2273203	5328497	3055295	1	lg19	tarseq_89	100.0		True
+CONTIG	tarseq_89	3055295	correct
+2349495	3527675	1178181	1	scaffold_31	tarseq_90	100.0		True
+CONTIG	tarseq_90	1178181	correct
+827506	1264399	436894	1	lg18	tarseq_91	100.0		True
+CONTIG	tarseq_91	436894	correct
+1	273553	1	273553	scaffold_211	tarseq_92	100.0		True
+CONTIG	tarseq_92	273553	correct
+14798211	15692960	1	894750	lg03	tarseq_93	100.0		True
+translocation
+3075726	9419468	7238493	894751	lg08	tarseq_93	100.0		True
+CONTIG	tarseq_93	7238493	misassembled
+1	270697	1	270697	scaffold_212	tarseq_94	100.0		True
+CONTIG	tarseq_94	270697	correct
+10271551	12022074	1750524	1	lg15	tarseq_95	100.0		True
+CONTIG	tarseq_95	1750524	correct
+1	261999	1	261999	scaffold_216	tarseq_96	100.0		True
+CONTIG	tarseq_96	261999	correct
+2799390	3086327	1	286938	lg02	tarseq_97	100.0		True
+CONTIG	tarseq_97	286938	correct
+1	255962	1	255962	scaffold_219	tarseq_98	100.0		True
+CONTIG	tarseq_98	255962	correct
+1	345495	1	345495	scaffold_186	tarseq_99	100.0		True
+CONTIG	tarseq_99	345495	correct
+1	155243	1	155243	scaffold_262	tarseq_100	100.0		True
+CONTIG	tarseq_100	155243	correct
+749576	973429	1	223854	lg04	tarseq_101	100.0		True
+CONTIG	tarseq_101	223854	correct
+1	232875	1	232875	scaffold_224	tarseq_102	100.0		True
+CONTIG	tarseq_102	232875	correct
+1	219946	1	219946	scaffold_228	tarseq_103	100.0		True
+translocation
+9419969	10776275	1576253	219947	lg08	tarseq_103	100.0		True
+CONTIG	tarseq_103	1576253	misassembled
+1	133676	1	133676	scaffold_278	tarseq_104	100.0		True
+CONTIG	tarseq_104	133676	correct
+574165	980304	1	406140	scaffold_90	tarseq_105	100.0		True
+translocation
+2238673	4495638	2663106	406141	lg14	tarseq_105	100.0		True
+CONTIG	tarseq_105	2663106	misassembled
+1	512194	1	512194	scaffold_152	tarseq_106	100.0		True
+CONTIG	tarseq_106	512194	correct
+9655605	11306531	1	1650927	lg04	tarseq_107	100.0		True
+CONTIG	tarseq_107	1650927	correct
+263050	528735	1	265686	scaffold_133	tarseq_108	100.0		True
+CONTIG	tarseq_108	265686	correct
+1	212237	212237	1	scaffold_231	tarseq_109	100.0		True
+CONTIG	tarseq_109	212237	correct
+1	106255	1	106255	scaffold_315	tarseq_110	100.0		True
+CONTIG	tarseq_110	106255	correct
+1	208848	1	208848	scaffold_233	tarseq_111	100.0		True
+CONTIG	tarseq_111	208848	correct
+1	10560250	1	10560250	lg10	tarseq_112	100.0		True
+translocation
+1	1771497	10560251	12331747	scaffold_42	tarseq_112	100.0		True
+CONTIG	tarseq_112	12331747	misassembled
+457850	940085	482236	1	lg09	tarseq_113	100.0		True
+CONTIG	tarseq_113	482236	correct
+1	361240	1	361240	scaffold_181	tarseq_114	100.0		True
+translocation
+5813961	9772250	4319530	361241	lg18	tarseq_114	100.0		True
+CONTIG	tarseq_114	4319530	misassembled
+1	194678	1	194678	scaffold_240	tarseq_115	100.0		True
+CONTIG	tarseq_115	194678	correct
+7275139	12087186	1	4812048	lg13	tarseq_116	100.0		True
+CONTIG	tarseq_116	4812048	correct
+1	193386	1	193386	scaffold_242	tarseq_117	100.0		True
+CONTIG	tarseq_117	193386	correct
+1	116932	1	116932	scaffold_301	tarseq_118	100.0		True
+CONTIG	tarseq_118	116932	correct
+1088518	1273619	185102	1	lg11	tarseq_119	100.0		True
+CONTIG	tarseq_119	185102	correct
+1	573664	1	573664	scaffold_90	tarseq_120	100.0		True
+CONTIG	tarseq_120	573664	correct
+12348229	12835198	1	486970	lg11	tarseq_121	100.0		True
+CONTIG	tarseq_121	486970	correct
+738163	908581	170419	1	scaffold_96	tarseq_122	100.0		True
+CONTIG	tarseq_122	170419	correct
+12808116	12976254	1	168139	lg09	tarseq_123	100.0		True
+CONTIG	tarseq_123	168139	correct
+1	180450	1	180450	scaffold_246	tarseq_124	100.0		True
+CONTIG	tarseq_124	180450	correct
+1	27321	1	27321	scaffold_509	tarseq_125	100.0		True
+CONTIG	tarseq_125	27321	correct
+1461865	1801247	1	339383	lg15	tarseq_126	100.0		True
+CONTIG	tarseq_126	339383	correct
+1	63654	1	63654	scaffold_400	tarseq_127	100.0		True
+CONTIG	tarseq_127	63654	correct
+3921542	5313765	1392224	1	lg12	tarseq_128	100.0		True
+CONTIG	tarseq_128	1392224	correct
+1	15545	1	15545	scaffold_515	tarseq_129	100.0		True
+CONTIG	tarseq_129	15545	correct
+1	131406	1	131406	scaffold_282	tarseq_130	100.0		True
+CONTIG	tarseq_130	131406	correct
+1	157864	157864	1	scaffold_257	tarseq_131	100.0		True
+CONTIG	tarseq_131	157864	correct
+14915461	15067536	152076	1	lg22	tarseq_132	100.0		True
+CONTIG	tarseq_132	152076	correct
+12854847	14285099	1	1430253	lg06	tarseq_133	100.0		True
+CONTIG	tarseq_133	1430253	correct
+1	155250	1	155250	scaffold_261	tarseq_134	100.0		True
+CONTIG	tarseq_134	155250	correct
+1	156555	1	156555	scaffold_259	tarseq_135	100.0		True
+CONTIG	tarseq_135	156555	correct
+1	151613	1	151613	scaffold_268	tarseq_136	100.0		True
+CONTIG	tarseq_136	151613	correct
+2660471	4078804	1	1418334	lg22	tarseq_137	100.0		True
+CONTIG	tarseq_137	1418334	correct
+1	52520	1	52520	scaffold_475	tarseq_138	100.0		True
+CONTIG	tarseq_138	52520	correct
+1	60805	1	60805	scaffold_413	tarseq_139	100.0		True
+CONTIG	tarseq_139	60805	correct
+1	150445	150445	1	scaffold_269	tarseq_140	100.0		True
+CONTIG	tarseq_140	150445	correct
+1	144483	1	144483	scaffold_272	tarseq_141	100.0		True
+CONTIG	tarseq_141	144483	correct
+5992093	6038039	1	45947	lg23	tarseq_142	100.0		True
+CONTIG	tarseq_142	45947	correct
+1	127740	1	127740	scaffold_287	tarseq_143	100.0		True
+CONTIG	tarseq_143	127740	correct
+1	53369	1	53369	scaffold_470	tarseq_144	100.0		True
+CONTIG	tarseq_144	53369	correct
+53629	190036	136408	1	scaffold_195	tarseq_145	100.0		True
+CONTIG	tarseq_145	136408	correct
+1	138513	1	138513	scaffold_276	tarseq_146	100.0		True
+CONTIG	tarseq_146	138513	correct
+1	140218	1	140218	scaffold_274	tarseq_147	100.0		True
+CONTIG	tarseq_147	140218	correct
+1	749475	1	749475	lg04	tarseq_148	100.0		True
+CONTIG	tarseq_148	749475	correct
+1	51426	1	51426	scaffold_486	tarseq_149	100.0		True
+CONTIG	tarseq_149	51426	correct
+1	466330	1	466330	scaffold_160	tarseq_150	100.0		True
+CONTIG	tarseq_150	466330	correct
+1	133069	1	133069	scaffold_279	tarseq_151	100.0		True
+CONTIG	tarseq_151	133069	correct
+1	129982	1	129982	scaffold_285	tarseq_152	100.0		True
+CONTIG	tarseq_152	129982	correct
+1	2238172	2238172	1	lg14	tarseq_153	100.0		True
+translocation
+7593260	8299501	2238173	2944414	lg07	tarseq_153	100.0		True
+CONTIG	tarseq_153	2944414	misassembled
+14285200	14866287	581088	1	lg06	tarseq_154	100.0		True
+CONTIG	tarseq_154	581088	correct
+1	121115	121115	1	scaffold_134	tarseq_155	100.0		True
+CONTIG	tarseq_155	121115	correct
+1	124980	1	124980	scaffold_291	tarseq_156	100.0		True
+CONTIG	tarseq_156	124980	correct
+1	120524	1	120524	scaffold_294	tarseq_157	100.0		True
+CONTIG	tarseq_157	120524	correct
+1	46678	46678	1	scaffold_503	tarseq_158	100.0		True
+CONTIG	tarseq_158	46678	correct
+1	116805	1	116805	scaffold_302	tarseq_159	100.0		True
+CONTIG	tarseq_159	116805	correct
+106206	145966	39761	1	scaffold_271	tarseq_160	100.0		True
+CONTIG	tarseq_160	39761	correct
+92887	133181	1	40295	lg12	tarseq_161	100.0		True
+CONTIG	tarseq_161	40295	correct
+1	116166	1	116166	scaffold_303	tarseq_162	100.0		True
+CONTIG	tarseq_162	116166	correct
+1900	61157	1900	61157	scaffold_408	tarseq_163	100.0		True
+CONTIG	tarseq_163	61157	correct
+1167831	2272702	1104872	1	lg19	tarseq_164	100.0		True
+CONTIG	tarseq_164	1104872	correct
+1	114716	1	114716	scaffold_305	tarseq_165	100.0		True
+CONTIG	tarseq_165	114716	correct
+50868	156434	105567	1	scaffold_232	tarseq_166	100.0		True
+CONTIG	tarseq_166	105567	correct
+1	98603	98603	1	scaffold_329	tarseq_167	100.0		True
+CONTIG	tarseq_167	98603	correct
+5593266	5692684	99419	1	lg24	tarseq_168	100.0		True
+CONTIG	tarseq_168	99419	correct
+1	40802	1	40802	scaffold_505	tarseq_169	100.0		True
+CONTIG	tarseq_169	40802	correct
+13334442	13929737	595296	1	lg10	tarseq_170	100.0		True
+CONTIG	tarseq_170	595296	correct
+1	108426	1	108426	scaffold_311	tarseq_171	100.0		True
+CONTIG	tarseq_171	108426	correct
+1	121054	1	121054	scaffold_293	tarseq_172	100.0		True
+CONTIG	tarseq_172	121054	correct
+1	105892	1	105892	scaffold_316	tarseq_173	100.0		True
+CONTIG	tarseq_173	105892	correct
+643200	736009	92810	1	lg25	tarseq_174	100.0		True
+CONTIG	tarseq_174	92810	correct
+1	87195	1	87195	scaffold_348	tarseq_175	100.0		True
+CONTIG	tarseq_175	87195	correct
+1	108685	1	108685	scaffold_310	tarseq_176	100.0		True
+CONTIG	tarseq_176	108685	correct
+1	105738	1	105738	scaffold_317	tarseq_177	100.0		True
+CONTIG	tarseq_177	105738	correct
+1	101940	1	101940	scaffold_322	tarseq_178	100.0		True
+CONTIG	tarseq_178	101940	correct
+11784173	12391203	1	607031	lg02	tarseq_179	100.0		True
+translocation
+5314266	7259571	2552337	607032	lg12	tarseq_179	100.0		True
+CONTIG	tarseq_179	2552337	misassembled
+5446671	5534682	1	88012	lg19	tarseq_180	100.0		True
+translocation, scaffold gap is present
+1366575	2643297	88113	1364835	lg04	tarseq_180	100.0		True
+CONTIG	tarseq_180	1364835	misassembled
+1	48005	1	48005	scaffold_502	tarseq_181	100.0		True
+CONTIG	tarseq_181	48005	correct
+1	99261	1	99261	scaffold_328	tarseq_182	100.0		True
+CONTIG	tarseq_182	99261	correct
+1	84596	84596	1	scaffold_353	tarseq_183	100.0		True
+CONTIG	tarseq_183	84596	correct
+3750994	3938052	1	187059	lg21	tarseq_184	100.0		True
+CONTIG	tarseq_184	187059	correct
+3378468	4284999	1	906532	lg03	tarseq_185	100.0		True
+CONTIG	tarseq_185	906532	correct
+1	92170	1	92170	scaffold_343	tarseq_186	100.0		True
+CONTIG	tarseq_186	92170	correct
+60351	143020	1	82670	scaffold_243	tarseq_187	100.0		True
+CONTIG	tarseq_187	82670	correct
+8740719	8771304	30586	1	lg15	tarseq_188	100.0		True
+CONTIG	tarseq_188	30586	correct
+1	94941	1	94941	scaffold_335	tarseq_189	100.0		True
+CONTIG	tarseq_189	94941	correct
+1	30388	1	30388	scaffold_344	tarseq_190	100.0		True
+fake: not a misassembly (possible transposable element)
+24421	26959	32927	30389	scaffold_475	tarseq_190	96.55		True
+fake: not a misassembly (possible transposable element)
+39761	91994	39761	91994	scaffold_344	tarseq_190	100.0		True
+CONTIG	tarseq_190	91994	correct
+1	95327	1	95327	scaffold_334	tarseq_191	100.0		True
+CONTIG	tarseq_191	95327	correct
+1	40090	1	40090	scaffold_506	tarseq_192	100.0		True
+CONTIG	tarseq_192	40090	correct
+2381754	2422167	1	40414	lg06	tarseq_193	100.0		True
+CONTIG	tarseq_193	40414	correct
+1	90664	1	90664	scaffold_345	tarseq_194	100.0		True
+CONTIG	tarseq_194	90664	correct
+1	35457	35457	1	scaffold_245	tarseq_195	100.0		True
+CONTIG	tarseq_195	35457	correct
+1	83508	83508	1	scaffold_354	tarseq_196	100.0		True
+CONTIG	tarseq_196	83508	correct
+2217615	3047097	829483	1	lg09	tarseq_197	100.0		True
+CONTIG	tarseq_197	835267	correct
+1	89414	1	89414	scaffold_255	tarseq_198	100.0		True
+CONTIG	tarseq_198	89414	correct
+433	93689	433	93689	scaffold_340	tarseq_199	100.0		True
+CONTIG	tarseq_199	93689	correct
+1	76508	76508	1	scaffold_337	tarseq_200	100.0		True
+CONTIG	tarseq_200	76508	correct
+58861	209762	1	150902	scaffold_213	tarseq_201	100.0		True
+CONTIG	tarseq_201	150902	correct
+1	82813	1	82813	scaffold_355	tarseq_202	100.0		True
+CONTIG	tarseq_202	82813	correct
+1	73207	1	73207	scaffold_373	tarseq_203	100.0		True
+CONTIG	tarseq_203	73207	correct
+12778553	12807615	1	29063	lg09	tarseq_204	100.0		True
+CONTIG	tarseq_204	29063	correct
+1	39908	1	39908	scaffold_507	tarseq_205	100.0		True
+CONTIG	tarseq_205	39908	correct
+1	172377	1	172377	scaffold_96	tarseq_206	100.0		True
+CONTIG	tarseq_206	172377	correct
+8441479	8668726	1	227248	lg07	tarseq_207	100.0		True
+translocation
+9246450	12294812	227249	3275611	lg03	tarseq_207	100.0		True
+CONTIG	tarseq_207	3275611	misassembled
+1	86999	1	86999	scaffold_349	tarseq_208	100.0		True
+CONTIG	tarseq_208	86999	correct
+1	80664	1	80664	scaffold_358	tarseq_209	100.0		True
+CONTIG	tarseq_209	80664	correct
+4030946	4081175	1	50230	lg23	tarseq_210	100.0		True
+CONTIG	tarseq_210	50230	correct
+1	80544	1	80544	scaffold_359	tarseq_211	100.0		True
+CONTIG	tarseq_211	80544	correct
+1	68109	1	68109	scaffold_385	tarseq_212	100.0		True
+CONTIG	tarseq_212	68109	correct
+9733884	10271450	1	537567	lg15	tarseq_213	100.0		True
+CONTIG	tarseq_213	537567	correct
+1	80538	1	80538	scaffold_360	tarseq_214	100.0		True
+CONTIG	tarseq_214	80538	correct
+8771805	8972559	200755	1	lg15	tarseq_215	100.0		True
+CONTIG	tarseq_215	200755	correct
+1	68441	1	68441	scaffold_383	tarseq_216	100.0		True
+CONTIG	tarseq_216	68441	correct
+1	25746	1	25746	scaffold_511	tarseq_217	100.0		True
+CONTIG	tarseq_217	25746	correct
+1	64995	64995	1	scaffold_396	tarseq_218	100.0		True
+CONTIG	tarseq_218	64995	correct
+1	27972	1	27972	scaffold_508	tarseq_219	100.0		True
+CONTIG	tarseq_219	27972	correct
+1	77908	1	77908	scaffold_367	tarseq_220	100.0		True
+CONTIG	tarseq_220	77908	correct
+1	48132	1	48132	scaffold_501	tarseq_221	100.0		True
+CONTIG	tarseq_221	48132	correct
+1	80107	1	80107	scaffold_361	tarseq_222	100.0		True
+CONTIG	tarseq_222	80107	correct
+1	72917	1	72917	scaffold_375	tarseq_223	100.0		True
+CONTIG	tarseq_223	72917	correct
+16502215	16574326	1	72112	lg11	tarseq_224	100.0		True
+CONTIG	tarseq_224	72112	correct
+12764519	12806966	1	42448	lg10	tarseq_225	100.0		True
+CONTIG	tarseq_225	42448	correct
+1	63850	63850	1	lg24	tarseq_226	100.0		True
+CONTIG	tarseq_226	63850	correct
+1	76595	1	76595	scaffold_370	tarseq_227	100.0		True
+CONTIG	tarseq_227	76595	correct
+1233	79635	1233	79635	scaffold_362	tarseq_228	100.0		True
+CONTIG	tarseq_228	79635	correct
+1	61139	1	61139	scaffold_409	tarseq_229	100.0		True
+CONTIG	tarseq_229	61139	correct
+1	78315	1	78315	scaffold_365	tarseq_230	100.0		True
+CONTIG	tarseq_230	78315	correct
+2050948	2113124	1	62177	lg06	tarseq_231	100.0		True
+CONTIG	tarseq_231	62177	correct
+77009	95243	18235	1	scaffold_337	tarseq_232	100.0		True
+CONTIG	tarseq_232	18235	correct
+5387308	5446570	1	59263	lg19	tarseq_233	100.0		True
+CONTIG	tarseq_233	59263	correct
+1	77941	1	77941	scaffold_366	tarseq_234	100.0		True
+CONTIG	tarseq_234	77941	correct
+55757	115149	59393	1	scaffold_199	tarseq_235	100.0		True
+CONTIG	tarseq_235	59393	correct
+8878034	8936932	1	58899	lg14	tarseq_236	100.0		True
+CONTIG	tarseq_236	58899	correct
+1	76042	1	76042	scaffold_372	tarseq_237	100.0		True
+CONTIG	tarseq_237	76042	correct
+172878	210277	37400	1	scaffold_96	tarseq_238	100.0		True
+CONTIG	tarseq_238	37400	correct
+12288575	12347728	1	59154	lg11	tarseq_239	100.0		True
+CONTIG	tarseq_239	59154	correct
+1	59901	1	59901	scaffold_273	tarseq_240	100.0		True
+CONTIG	tarseq_240	59901	correct
+55513	114073	1	58561	scaffold_31	tarseq_241	100.0		True
+CONTIG	tarseq_241	58561	correct
+1	67527	1	67527	scaffold_388	tarseq_242	100.0		True
+CONTIG	tarseq_242	67527	correct
+170338	229501	59164	1	lg19	tarseq_243	100.0		True
+CONTIG	tarseq_243	59164	correct
+90524	150187	59664	1	scaffold_270	tarseq_244	100.0		True
+CONTIG	tarseq_244	59664	correct
+250323	310235	1	59913	lg02	tarseq_245	100.0		True
+CONTIG	tarseq_245	59913	correct
+15911363	15969236	57874	1	lg17	tarseq_246	100.0		True
+CONTIG	tarseq_246	57874	correct
+1	59784	1	59784	lg05	tarseq_247	100.0		True
+CONTIG	tarseq_247	59784	correct
+1	57619	57619	1	scaffold_432	tarseq_248	100.0		True
+CONTIG	tarseq_248	57619	correct
+1	66940	1	66940	scaffold_391	tarseq_249	100.0		True
+CONTIG	tarseq_249	66940	correct
+1	58360	1	58360	scaffold_213	tarseq_250	100.0		True
+CONTIG	tarseq_250	58360	correct
+1	58762	58762	1	scaffold_423	tarseq_251	100.0		True
+CONTIG	tarseq_251	58762	correct
+1	58090	58090	1	scaffold_427	tarseq_252	100.0		True
+CONTIG	tarseq_252	58090	correct
+3047598	3486172	1	438575	lg09	tarseq_253	100.0		True
+CONTIG	tarseq_253	438575	correct
+1	69759	69759	1	scaffold_379	tarseq_254	100.0		True
+CONTIG	tarseq_254	69759	correct
+910024	966253	1	56230	lg25	tarseq_255	100.0		True
+CONTIG	tarseq_255	56230	correct
+13709772	13728634	1	18863	lg18	tarseq_256	100.0		True
+CONTIG	tarseq_256	18863	correct
+1	56473	1	56473	scaffold_439	tarseq_257	100.0		True
+CONTIG	tarseq_257	56473	correct
+184211	242663	1	58453	scaffold_184	tarseq_258	100.0		True
+CONTIG	tarseq_258	58453	correct
+9678196	9733783	55588	1	lg15	tarseq_259	100.0		True
+CONTIG	tarseq_259	55588	correct
+14254529	14312355	57827	1	lg10	tarseq_260	100.0		True
+CONTIG	tarseq_260	57827	correct
+1	55256	1	55256	scaffold_199	tarseq_261	100.0		True
+CONTIG	tarseq_261	55256	correct
+1	55167	1	55167	scaffold_450	tarseq_262	100.0		True
+CONTIG	tarseq_262	55167	correct
+1	50652	1	50652	scaffold_497	tarseq_263	100.0		True
+CONTIG	tarseq_263	50652	correct
+1	57565	1	57565	scaffold_433	tarseq_264	100.0		True
+CONTIG	tarseq_264	57565	correct
+1	54993	1	54993	scaffold_451	tarseq_265	100.0		True
+CONTIG	tarseq_265	54993	correct
+2684073	2744296	60224	1	lg02	tarseq_266	100.0		True
+CONTIG	tarseq_266	60224	correct
+1	58118	1	58118	scaffold_426	tarseq_267	100.0		True
+CONTIG	tarseq_267	58118	correct
+7440429	7499306	58878	1	lg07	tarseq_268	100.0		True
+CONTIG	tarseq_268	58878	correct
+1	55012	55012	1	scaffold_31	tarseq_269	100.0		True
+CONTIG	tarseq_269	55012	correct
+1	67628	1	67628	scaffold_387	tarseq_270	100.0		True
+CONTIG	tarseq_270	67628	correct
+2744797	2799289	1	54493	lg02	tarseq_271	100.0		True
+CONTIG	tarseq_271	54493	correct
+1	54172	54172	1	scaffold_455	tarseq_272	100.0		True
+CONTIG	tarseq_272	54172	correct
+989949	1043817	1	53869	lg08	tarseq_273	100.0		True
+CONTIG	tarseq_273	53869	correct
+54831	108927	54097	1	scaffold_251	tarseq_274	100.0		True
+CONTIG	tarseq_274	54097	correct
+1801348	1857883	1	56536	lg15	tarseq_275	100.0		True
+CONTIG	tarseq_275	56536	correct
+1	58941	1	58941	scaffold_421	tarseq_276	100.0		True
+CONTIG	tarseq_276	58941	correct
+1	60863	1	60863	scaffold_412	tarseq_277	100.0		True
+CONTIG	tarseq_277	60863	correct
+1	54876	54876	1	scaffold_292	tarseq_278	100.0		True
+CONTIG	tarseq_278	54876	correct
+1	26600	26600	1	scaffold_510	tarseq_279	100.0		True
+CONTIG	tarseq_279	26600	correct
+1	55229	1	55229	scaffold_449	tarseq_280	100.0		True
+CONTIG	tarseq_280	55229	correct
+9138435	9190682	1	52248	lg07	tarseq_281	100.0		True
+CONTIG	tarseq_281	52248	correct
+2019010	2075633	1	56624	lg05	tarseq_282	100.0		True
+CONTIG	tarseq_282	56624	correct
+1	54122	1	54122	scaffold_457	tarseq_283	100.0		True
+CONTIG	tarseq_283	54122	correct
+1	54249	1	54249	scaffold_454	tarseq_284	100.0		True
+CONTIG	tarseq_284	54249	correct
+16574827	16628394	1	53568	lg11	tarseq_285	100.0		True
+CONTIG	tarseq_285	53568	correct
+971625	1023660	52036	1	lg15	tarseq_286	100.0		True
+CONTIG	tarseq_286	52036	correct
+116537	173349	56813	1	scaffold_249	tarseq_287	100.0		True
+CONTIG	tarseq_287	56813	correct
+1	59903	59903	1	scaffold_416	tarseq_288	100.0		True
+CONTIG	tarseq_288	59903	correct
+1170963	1225039	54077	1	lg16	tarseq_289	100.0		True
+CONTIG	tarseq_289	54077	correct
+1	55901	1	55901	scaffold_297	tarseq_290	100.0		True
+CONTIG	tarseq_290	55901	correct
+1	55503	1	55503	scaffold_447	tarseq_291	100.0		True
+CONTIG	tarseq_291	55503	correct
+1	53684	1	53684	scaffold_460	tarseq_292	100.0		True
+CONTIG	tarseq_292	53684	correct
+932240	987130	54891	1	lg16	tarseq_293	100.0		True
+CONTIG	tarseq_293	54891	correct
+589723	642699	1	52977	lg25	tarseq_294	100.0		True
+CONTIG	tarseq_294	52977	correct
+529236	583287	1	54052	scaffold_133	tarseq_295	100.0		True
+CONTIG	tarseq_295	54052	correct
+1	53648	1	53648	scaffold_461	tarseq_296	100.0		True
+CONTIG	tarseq_296	53648	correct
+1	55687	1	55687	scaffold_446	tarseq_297	100.0		True
+CONTIG	tarseq_297	55687	correct
+1	52222	1	52222	scaffold_478	tarseq_298	100.0		True
+CONTIG	tarseq_298	52222	correct
+1	67023	1	67023	scaffold_390	tarseq_299	100.0		True
+CONTIG	tarseq_299	67023	correct
+1024161	1076614	1	52454	lg15	tarseq_300	100.0		True
+CONTIG	tarseq_300	52454	correct
+1	52227	1	52227	scaffold_477	tarseq_301	100.0		True
+CONTIG	tarseq_301	52227	correct
+1	56194	1	56194	scaffold_441	tarseq_302	100.0		True
+CONTIG	tarseq_302	56194	correct
+6698397	6757934	59538	1	lg13	tarseq_303	100.0		True
+CONTIG	tarseq_303	59538	correct
+10666707	10718673	51967	1	lg02	tarseq_304	100.0		True
+CONTIG	tarseq_304	51967	correct
+1	62365	1	62365	scaffold_405	tarseq_305	100.0		True
+translocation
+1612357	2659970	62366	1109979	lg22	tarseq_305	100.0		True
+CONTIG	tarseq_305	1109979	misassembled
+1	51886	1	51886	scaffold_483	tarseq_306	100.0		True
+CONTIG	tarseq_306	51886	correct
+4116739	4168961	52223	1	lg06	tarseq_307	100.0		True
+CONTIG	tarseq_307	52223	correct
+156935	210056	53122	1	scaffold_232	tarseq_308	100.0		True
+CONTIG	tarseq_308	53122	correct
+1	53445	1	53445	scaffold_467	tarseq_309	100.0		True
+CONTIG	tarseq_309	53445	correct
+1	68910	1	68910	scaffold_382	tarseq_310	100.0		True
+CONTIG	tarseq_310	68910	correct
+1	51186	1	51186	scaffold_488	tarseq_311	100.0		True
+CONTIG	tarseq_311	51186	correct
+1	68154	1	68154	scaffold_384	tarseq_312	100.0		True
+CONTIG	tarseq_312	68154	correct
+1	59852	1	59852	scaffold_417	tarseq_313	100.0		True
+CONTIG	tarseq_313	59852	correct
+1	56154	56154	1	scaffold_443	tarseq_314	100.0		True
+CONTIG	tarseq_314	56154	correct
+1	51040	1	51040	scaffold_492	tarseq_315	100.0		True
+CONTIG	tarseq_315	51040	correct
+1	51067	51067	1	scaffold_490	tarseq_316	100.0		True
+CONTIG	tarseq_316	51067	correct
+538821	589222	50402	1	lg25	tarseq_317	100.0		True
+CONTIG	tarseq_317	50402	correct
+1	51101	51101	1	scaffold_489	tarseq_318	100.0		True
+CONTIG	tarseq_318	51101	correct
+5884054	5935236	1	51183	lg23	tarseq_319	100.0		True
+CONTIG	tarseq_319	51183	correct
+1	52790	1	52790	scaffold_473	tarseq_320	100.0		True
+CONTIG	tarseq_320	52790	correct
+1	52807	1	52807	scaffold_472	tarseq_321	100.0		True
+CONTIG	tarseq_321	52807	correct
+9929859	9983701	53843	1	lg12	tarseq_322	100.0		True
+CONTIG	tarseq_322	53843	correct
+14203527	14254028	1	50502	lg10	tarseq_323	100.0		True
+CONTIG	tarseq_323	50502	correct
+6745783	6796420	1	50638	lg26	tarseq_324	100.0		True
+CONTIG	tarseq_324	50638	correct
+190537	240753	50217	1	scaffold_195	tarseq_325	100.0		True
+CONTIG	tarseq_325	50217	correct
+1	51290	1	51290	scaffold_487	tarseq_326	100.0		True
+CONTIG	tarseq_326	51290	correct
+1	50294	1	50294	scaffold_499	tarseq_327	100.0		True
+CONTIG	tarseq_327	50294	correct
+246888	301397	1	54510	scaffold_203	tarseq_328	100.0		True
+CONTIG	tarseq_328	54510	correct
+16146450	16198850	52401	1	lg11	tarseq_329	100.0		True
+CONTIG	tarseq_329	52401	correct
+13276194	13333941	1	57748	lg10	tarseq_330	100.0		True
+CONTIG	tarseq_330	57748	correct
+1	50775	1	50775	scaffold_495	tarseq_331	100.0		True
+CONTIG	tarseq_331	50775	correct
+1	52198	52198	1	scaffold_479	tarseq_332	100.0		True
+CONTIG	tarseq_332	52198	correct
+1	63524	1	63524	scaffold_402	tarseq_333	100.0		True
+CONTIG	tarseq_333	63524	correct
+79585	131354	1	51770	scaffold_283	tarseq_334	100.0		True
+CONTIG	tarseq_334	51770	correct
+1483275	1539821	56547	1	scaffold_61	tarseq_335	100.0		True
+CONTIG	tarseq_335	56547	correct
+1	56502	56502	1	scaffold_438	tarseq_336	100.0		True
+CONTIG	tarseq_336	56502	correct
+1	50946	50946	1	scaffold_493	tarseq_337	100.0		True
+CONTIG	tarseq_337	50946	correct
+2643398	2698785	1	55388	lg04	tarseq_338	100.0		True
+CONTIG	tarseq_338	55388	correct
+1	53460	1	53460	scaffold_300	tarseq_339	100.0		True
+CONTIG	tarseq_339	53460	correct
+5693185	5751540	1	58356	lg24	tarseq_340	100.0		True
+CONTIG	tarseq_340	58356	correct
+1	52079	52079	1	scaffold_481	tarseq_341	100.0		True
+CONTIG	tarseq_341	52079	correct
+5935737	5991992	1	56256	lg23	tarseq_342	100.0		True
+CONTIG	tarseq_342	56256	correct
+1	51974	1	51974	scaffold_306	tarseq_343	100.0		True
+CONTIG	tarseq_343	51974	correct
+1	56986	56986	1	scaffold_437	tarseq_344	100.0		True
+CONTIG	tarseq_344	56986	correct
+1	58333	58333	1	scaffold_425	tarseq_345	100.0		True
+CONTIG	tarseq_345	58333	correct
+1	57679	57679	1	lg03	tarseq_346	100.0		True
+CONTIG	tarseq_346	57679	correct
+1	64348	1	64348	scaffold_398	tarseq_347	100.0		True
+CONTIG	tarseq_347	64348	correct
+2113625	2169766	1	56142	lg06	tarseq_348	100.0		True
+CONTIG	tarseq_348	56142	correct
+1	57763	1	57763	scaffold_429	tarseq_349	100.0		True
+CONTIG	tarseq_349	57763	correct
+1113929	1170462	56534	1	lg16	tarseq_350	100.0		True
+CONTIG	tarseq_350	56534	correct
+13807826	13858130	1	50305	lg18	tarseq_351	100.0		True
+CONTIG	tarseq_351	50305	correct
+1	62563	1	62563	scaffold_404	tarseq_352	100.0		True
+CONTIG	tarseq_352	62563	correct
+1	57627	1	57627	scaffold_431	tarseq_353	100.0		True
+CONTIG	tarseq_353	57627	correct
+1	59392	1	59392	scaffold_419	tarseq_354	100.0		True
+CONTIG	tarseq_354	59392	correct
+1	54964	1	54964	scaffold_452	tarseq_355	100.0		True
+CONTIG	tarseq_355	54964	correct
+1	51060	1	51060	scaffold_491	tarseq_356	100.0		True
+CONTIG	tarseq_356	51060	correct
+6436584	6490609	1	54026	lg01	tarseq_357	100.0		True
+CONTIG	tarseq_357	54026	correct
+1	54330	54330	1	scaffold_251	tarseq_358	100.0		True
+CONTIG	tarseq_358	54330	correct
+1	53128	1	53128	scaffold_195	tarseq_359	100.0		True
+CONTIG	tarseq_359	53128	correct
+1	55761	1	55761	scaffold_445	tarseq_360	100.0		True
+CONTIG	tarseq_360	55761	correct
+1	58554	1	58554	scaffold_424	tarseq_361	100.0		True
+CONTIG	tarseq_361	58554	correct
+1	53944	1	53944	scaffold_458	tarseq_362	100.0		True
+CONTIG	tarseq_362	53944	correct
+1	63599	1	63599	scaffold_401	tarseq_363	100.0		True
+CONTIG	tarseq_363	63599	correct
+1	54141	54141	1	scaffold_456	tarseq_364	100.0		True
+CONTIG	tarseq_364	54141	correct
+1	59505	1	59505	scaffold_418	tarseq_365	100.0		True
+CONTIG	tarseq_365	59505	correct
+128792	156678	1	27887	scaffold_260	tarseq_366	100.0		True
+CONTIG	tarseq_366	27887	correct
+2626366	2683572	57207	1	lg02	tarseq_367	100.0		True
+CONTIG	tarseq_367	57207	correct
+9161127	9213127	52001	1	lg21	tarseq_368	100.0		True
+CONTIG	tarseq_368	52001	correct
+1	56377	56377	1	scaffold_440	tarseq_369	100.0		True
+CONTIG	tarseq_369	56377	correct
+1	53464	1	53464	scaffold_466	tarseq_370	100.0		True
+CONTIG	tarseq_370	53464	correct
+1	51725	1	51725	scaffold_484	tarseq_371	100.0		True
+CONTIG	tarseq_371	51725	correct
+1	53612	1	53612	scaffold_462	tarseq_372	100.0		True
+CONTIG	tarseq_372	53612	correct
+1	53471	1	53471	scaffold_465	tarseq_373	100.0		True
+CONTIG	tarseq_373	53471	correct
+16844600	16895475	50876	1	lg11	tarseq_374	100.0		True
+CONTIG	tarseq_374	50876	correct
+1	53576	1	53576	scaffold_464	tarseq_375	100.0		True
+CONTIG	tarseq_375	53576	correct
+1341377	1392858	51482	1	lg17	tarseq_376	100.0		True
+CONTIG	tarseq_376	51482	correct
+1	53382	1	53382	scaffold_469	tarseq_377	100.0		True
+CONTIG	tarseq_377	53382	correct
+1	50514	1	50514	scaffold_498	tarseq_378	100.0		True
+CONTIG	tarseq_378	50514	correct
+1	52309	1	52309	scaffold_476	tarseq_379	100.0		True
+CONTIG	tarseq_379	52309	correct
+1	50679	1	50679	scaffold_496	tarseq_380	100.0		True
+CONTIG	tarseq_380	50679	correct
+3224	41065	3224	41065	scaffold_453	tarseq_381	100.0		True
+CONTIG	tarseq_381	54551	correct
+1	56180	1	56180	scaffold_442	tarseq_382	100.0		True
+CONTIG	tarseq_382	56180	correct
+12836371	15254483	2418113	1	lg02	tarseq_383	100.0		True
+CONTIG	tarseq_383	2418113	correct
+1	73144	73144	1	scaffold_374	tarseq_384	100.0		True
+translocation
+1545031	4169489	2697603	73145	scaffold_27	tarseq_384	100.0		True
+CONTIG	tarseq_384	2697603	misassembled
+1	2013387	2013387	1	lg13	tarseq_385	100.0		True
+CONTIG	tarseq_385	2013387	correct
+1301216	2018509	1	717294	lg05	tarseq_386	100.0		True
+CONTIG	tarseq_386	717294	correct
+1	573900	1	573900	scaffold_138	tarseq_387	100.0		True
+CONTIG	tarseq_387	574997	correct
+5422091	7098603	1676513	1	lg05	tarseq_388	100.0		True
+translocation
+13971390	14240670	1945794	1676514	lg03	tarseq_388	100.0		True
+CONTIG	tarseq_388	1945794	misassembled
+3372822	3858117	1	485296	lg15	tarseq_389	100.0		True
+CONTIG	tarseq_389	485296	correct
+699485	1246786	547302	1	lg03	tarseq_390	100.0		True
+CONTIG	tarseq_390	547302	correct
+16507875	17745835	1	1237961	lg14	tarseq_391	100.0		True
+translocation
+12022175	13578108	1237962	2793895	lg15	tarseq_391	100.0		True
+CONTIG	tarseq_391	2793895	misassembled
+1	1626276	1	1626276	lg20	tarseq_392	100.0		True
+CONTIG	tarseq_392	1626276	correct
+1	137540	1	137540	scaffold_277	tarseq_393	100.0		True
+CONTIG	tarseq_393	137540	correct
+65302	298619	233318	1	scaffold_205	tarseq_394	100.0		True
+CONTIG	tarseq_394	233318	correct
+13768439	13971289	1	202851	lg03	tarseq_395	100.0		True
+CONTIG	tarseq_395	202851	correct
+1	193490	1	193490	scaffold_241	tarseq_396	100.0		True
+CONTIG	tarseq_396	193490	correct
+20698415	21529172	830758	1	lg23	tarseq_397	100.0		True
+CONTIG	tarseq_397	830758	correct
+1	1088417	1	1088417	lg11	tarseq_398	100.0		True
+CONTIG	tarseq_398	1088417	correct
+11084123	11959024	874902	1	lg18	tarseq_399	100.0		True
+CONTIG	tarseq_399	874902	correct
+4285500	9245949	1	4960450	lg03	tarseq_400	100.0		True
+CONTIG	tarseq_400	4960450	correct
+1	457749	1	457749	lg09	tarseq_401	100.0		True
+CONTIG	tarseq_401	457749	correct
+230002	1167730	1	937729	lg19	tarseq_402	100.0		True
+CONTIG	tarseq_402	937729	correct
+1	205736	205736	1	scaffold_234	tarseq_403	100.0		True
+CONTIG	tarseq_403	205736	correct
+1	308190	308190	1	lg21	tarseq_404	100.0		True
+translocation
+13836140	14905281	1377332	308191	lg17	tarseq_404	100.0		True
+CONTIG	tarseq_404	1377332	misassembled
+14905782	15391170	485389	1	lg17	tarseq_405	100.0		True
+CONTIG	tarseq_405	485389	correct
+1	171231	171231	1	scaffold_250	tarseq_406	100.0		True
+CONTIG	tarseq_406	171231	correct
+2463766	3972690	1	1508925	lg24	tarseq_407	100.0		True
+CONTIG	tarseq_407	1508925	correct
+1	189299	1	189299	scaffold_127	tarseq_408	100.0		True
+translocation
+9835833	11890194	189300	2243661	lg06	tarseq_408	100.0		True
+CONTIG	tarseq_408	2243661	misassembled
+1	107315	1	107315	scaffold_314	tarseq_409	100.0		True
+CONTIG	tarseq_409	107315	correct
+1	94179	94179	1	scaffold_339	tarseq_410	100.0		True
+CONTIG	tarseq_410	94179	correct
+1	92775	1	92775	scaffold_342	tarseq_411	100.0		True
+CONTIG	tarseq_411	92775	correct
+1	330122	330122	1	scaffold_194	tarseq_412	100.0		True
+CONTIG	tarseq_412	330122	correct
+1	90023	1	90023	scaffold_270	tarseq_413	100.0		True
+CONTIG	tarseq_413	90023	correct
+1	97153	1	97153	scaffold_331	tarseq_414	100.0		True
+CONTIG	tarseq_414	97153	correct
+5751641	6043785	1	292145	lg24	tarseq_415	100.0		True
+CONTIG	tarseq_415	292145	correct
+607558	885069	1	277512	scaffold_84	tarseq_416	100.0		True
+CONTIG	tarseq_416	277512	correct
+1	59850	59850	1	scaffold_243	tarseq_417	100.0		True
+CONTIG	tarseq_417	59850	correct
+4495739	4564211	68473	1	lg14	tarseq_418	100.0		True
+CONTIG	tarseq_418	68473	correct
+6706336	9835332	1	3128997	lg06	tarseq_419	100.0		True
+CONTIG	tarseq_419	3128997	correct
+189800	617610	427811	1	scaffold_127	tarseq_420	100.0		True
+CONTIG	tarseq_420	427811	correct
+1	64801	1	64801	scaffold_205	tarseq_421	100.0		True
+CONTIG	tarseq_421	64801	correct
+1	69402	1	69402	scaffold_380	tarseq_422	100.0		True
+CONTIG	tarseq_422	69402	correct
+1	61287	61287	1	scaffold_407	tarseq_423	100.0		True
+CONTIG	tarseq_423	61287	correct
+1465525	1753397	287873	1	lg16	tarseq_424	100.0		True
+CONTIG	tarseq_424	287873	correct
+2400682	2719189	318508	1	lg11	tarseq_425	100.0		True
+CONTIG	tarseq_425	318508	correct
+2324975	3075625	1	750651	lg08	tarseq_426	100.0		True
+CONTIG	tarseq_426	750651	correct
+1	932139	932139	1	lg16	tarseq_427	100.0		True
+CONTIG	tarseq_427	932139	correct
+1	153678	153678	1	scaffold_266	tarseq_428	100.0		True
+CONTIG	tarseq_428	153678	correct
+1	17588	17588	1	scaffold_514	tarseq_429	100.0		True
+CONTIG	tarseq_429	17588	correct
+53961	117526	63566	1	scaffold_300	tarseq_430	100.0		True
+CONTIG	tarseq_430	63566	correct
+15058870	15113095	54226	1	lg06	tarseq_431	100.0		True
+CONTIG	tarseq_431	54226	correct
+1	827405	827405	1	lg18	tarseq_432	100.0		True
+CONTIG	tarseq_432	827405	correct
+1	53827	53827	1	scaffold_459	tarseq_433	100.0		True
+CONTIG	tarseq_433	53827	correct
+1753498	1805191	1	51694	lg16	tarseq_434	100.0		True
+CONTIG	tarseq_434	51694	correct
+1	52158	1	52158	scaffold_480	tarseq_435	100.0		True
+CONTIG	tarseq_435	52158	correct
+1	50367	50367	1	scaffold_232	tarseq_436	100.0		True
+CONTIG	tarseq_436	50367	correct
+11874866	11925425	1	50560	lg01	tarseq_437	100.0		True
+CONTIG	tarseq_437	50560	correct
+5076985	8107848	1	3030864	lg14	tarseq_438	100.0		True
+CONTIG	tarseq_438	3030864	correct
+5843329	8732700	1	2889372	lg11	tarseq_439	100.0		True
+CONTIG	tarseq_439	2889372	correct
+3474978	5842828	2367851	1	lg11	tarseq_440	100.0		True
+translocation
+7182202	11653198	2367852	6838848	lg19	tarseq_440	100.0		True
+CONTIG	tarseq_440	6838848	misassembled
+1535383	3559729	1	2024347	scaffold_30	tarseq_441	100.0		True
+CONTIG	tarseq_441	2024347	correct
+4060364	6282403	2222040	1	lg09	tarseq_442	100.0		True
+CONTIG	tarseq_442	2222040	correct
+2887972	4383157	1495186	1	lg07	tarseq_443	100.0		True
+CONTIG	tarseq_443	1495186	correct
+12792011	13645441	1	853431	lg22	tarseq_444	100.0		True
+CONTIG	tarseq_444	853431	correct
+1393359	2006767	613409	1	lg17	tarseq_445	100.0		True
+CONTIG	tarseq_445	613409	correct
+1	583325	1	583325	scaffold_132	tarseq_446	100.0		True
+CONTIG	tarseq_446	583325	correct
+400378	2348994	1	1948617	scaffold_31	tarseq_447	100.0		True
+CONTIG	tarseq_447	1948617	correct
+12087687	12933241	845555	1	lg13	tarseq_448	100.0		True
+CONTIG	tarseq_448	845555	correct
+1	640742	640742	1	lg17	tarseq_449	100.0		True
+CONTIG	tarseq_449	640742	correct
+1	2887471	2887471	1	lg07	tarseq_450	100.0		True
+CONTIG	tarseq_450	2887471	correct
+1	667331	667331	1	lg01	tarseq_451	100.0		True
+CONTIG	tarseq_451	667331	correct
+8733201	12288474	1	3555274	lg11	tarseq_452	100.0		True
+translocation
+6110547	7181701	4626429	3555275	lg19	tarseq_452	100.0		True
+CONTIG	tarseq_452	4626429	misassembled
+7260072	8633307	1373236	1	lg12	tarseq_453	100.0		True
+CONTIG	tarseq_453	1373236	correct
+1771998	2292928	520931	1	scaffold_42	tarseq_454	100.0		True
+CONTIG	tarseq_454	520931	correct
+1	381643	1	381643	scaffold_176	tarseq_455	100.0		True
+CONTIG	tarseq_455	381643	correct
+9066480	9256486	190007	1	lg26	tarseq_456	100.0		True
+CONTIG	tarseq_456	190007	correct
+13981897	14797336	815440	1	lg19	tarseq_457	100.0		True
+CONTIG	tarseq_457	815440	correct
+10323098	10662977	1	339880	lg21	tarseq_458	100.0		True
+CONTIG	tarseq_458	339880	correct
+13342664	13709271	366608	1	lg18	tarseq_459	100.0		True
+CONTIG	tarseq_459	366608	correct
+21699796	22675904	976109	1	lg09	tarseq_460	100.0		True
+CONTIG	tarseq_460	976109	correct
+1500038	2324874	1	824837	lg08	tarseq_461	100.0		True
+CONTIG	tarseq_461	824837	correct
+4360661	5112518	751858	1	lg20	tarseq_462	100.0		True
+CONTIG	tarseq_462	751858	correct
+8170473	8573851	403379	1	lg04	tarseq_463	100.0		True
+CONTIG	tarseq_463	403379	correct
+1	845608	1	845608	scaffold_101	tarseq_464	100.0		True
+CONTIG	tarseq_464	845608	correct
+2698886	6579375	1	3880490	lg04	tarseq_465	100.0		True
+CONTIG	tarseq_465	3880490	correct
+1139749	1340876	201128	1	lg17	tarseq_466	100.0		True
+CONTIG	tarseq_466	201128	correct
+1248979	1698283	449305	1	lg09	tarseq_467	100.0		True
+relocation, inconsistency = 1787989
+3486273	4059863	449306	1022896	lg09	tarseq_467	100.0		True
+CONTIG	tarseq_467	1022896	misassembled
+8633808	9929358	1	1295551	lg12	tarseq_468	100.0		True
+CONTIG	tarseq_468	1295551	correct
+9190783	10240637	1	1049855	lg07	tarseq_469	100.0		True
+CONTIG	tarseq_469	1049855	correct
+8669227	8870329	201103	1	lg07	tarseq_470	100.0		True
+CONTIG	tarseq_470	201103	correct
+1	607057	1	607057	scaffold_84	tarseq_471	100.0		True
+CONTIG	tarseq_471	607057	correct
+1	125887	1	125887	scaffold_289	tarseq_472	100.0		True
+CONTIG	tarseq_472	125887	correct
+940586	1248878	1	308293	lg09	tarseq_473	100.0		True
+CONTIG	tarseq_473	308293	correct
+1	115529	1	115529	scaffold_304	tarseq_474	100.0		True
+CONTIG	tarseq_474	115529	correct
+3973191	5592765	1619575	1	lg24	tarseq_475	100.0		True
+CONTIG	tarseq_475	1619575	correct
+2007268	6675153	1	4667886	lg17	tarseq_476	100.0		True
+CONTIG	tarseq_476	4667886	correct
+4081276	4978799	1	897524	lg23	tarseq_477	100.0		True
+CONTIG	tarseq_477	897524	correct
+11044801	13060840	1	2016040	lg14	tarseq_478	100.0		True
+CONTIG	tarseq_478	2016040	correct
+2427738	2625865	198128	1	lg02	tarseq_479	100.0		True
+CONTIG	tarseq_479	198128	correct
+1	309076	1	309076	scaffold_201	tarseq_480	100.0		True
+CONTIG	tarseq_480	309076	correct
+282603	989448	706846	1	lg08	tarseq_481	100.0		True
+CONTIG	tarseq_481	706846	correct
+1	262549	1	262549	scaffold_133	tarseq_482	100.0		True
+CONTIG	tarseq_482	262549	correct
+7012122	7071271	1	59150	lg16	tarseq_483	100.0		True
+CONTIG	tarseq_483	59150	correct
+6166639	6547399	380761	1	lg22	tarseq_484	100.0		True
+CONTIG	tarseq_484	380761	correct
+4114493	4438503	324011	1	lg21	tarseq_485	100.0		True
+translocation
+1247287	3377967	324012	2454692	lg03	tarseq_485	100.0		True
+CONTIG	tarseq_485	2454692	misassembled
+3707816	4349143	1	641328	lg25	tarseq_486	100.0		True
+CONTIG	tarseq_486	641328	correct
+308691	785276	1	476586	lg21	tarseq_487	100.0		True
+CONTIG	tarseq_487	476586	correct
+1	157291	1	157291	scaffold_258	tarseq_488	100.0		True
+CONTIG	tarseq_488	157291	correct
+1	94266	1	94266	scaffold_338	tarseq_489	100.0		True
+CONTIG	tarseq_489	94266	correct
+785377	1385176	1	599800	lg21	tarseq_490	100.0		True
+CONTIG	tarseq_490	599800	correct
+799442	1300715	1	501274	lg05	tarseq_491	100.0		True
+CONTIG	tarseq_491	501274	correct
+13729135	13807325	1	78191	lg18	tarseq_492	100.0		True
+CONTIG	tarseq_492	78191	correct
+12835299	16146349	1	3311051	lg11	tarseq_493	100.0		True
+CONTIG	tarseq_493	3311051	correct
+990517	1139248	148732	1	lg17	tarseq_494	100.0		True
+CONTIG	tarseq_494	148732	correct
+1	644804	1	644804	scaffold_27	tarseq_495	100.0		True
+CONTIG	tarseq_495	644804	correct
+1385677	1912939	527263	1	lg21	tarseq_496	100.0		True
+CONTIG	tarseq_496	527263	correct
+5328598	5386807	58210	1	lg19	tarseq_497	100.0		True
+CONTIG	tarseq_497	58210	correct
+1	223935	223935	1	scaffold_226	tarseq_498	100.0		True
+CONTIG	tarseq_498	223935	correct
+1	164468	1	164468	scaffold_254	tarseq_499	100.0		True
+CONTIG	tarseq_499	164468	correct
+7099104	7446237	347134	1	lg05	tarseq_500	100.0		True
+CONTIG	tarseq_500	347134	correct
+5534849	5836532	1	301684	lg19	tarseq_501	100.0		True
+CONTIG	tarseq_501	301684	correct
+1	57394	57394	1	scaffold_434	tarseq_502	100.0		True
+CONTIG	tarseq_502	57394	correct
+1	57003	1	57003	scaffold_436	tarseq_503	100.0		True
+CONTIG	tarseq_503	57003	correct
+15254984	16066009	811026	1	lg02	tarseq_504	100.0		True
+translocation
+1626777	4360160	3544410	811027	lg20	tarseq_504	100.0		True
+CONTIG	tarseq_504	3544410	misassembled
+8973060	9097054	123995	1	lg15	tarseq_505	100.0		True
+CONTIG	tarseq_505	123995	correct
+95312	155202	1	59891	scaffold_263	tarseq_506	100.0		True
+CONTIG	tarseq_506	59891	correct
+1	53591	1	53591	scaffold_463	tarseq_507	100.0		True
+CONTIG	tarseq_507	53591	correct
+210263	269983	59721	1	scaffold_213	tarseq_508	100.0		True
+CONTIG	tarseq_508	59721	correct
+6547900	6601137	53238	1	lg22	tarseq_509	100.0		True
+CONTIG	tarseq_509	53238	correct
+1	59172	1	59172	scaffold_420	tarseq_510	100.0		True
+CONTIG	tarseq_510	59172	correct
+231623	288394	1	56772	scaffold_208	tarseq_511	100.0		True
+CONTIG	tarseq_511	56772	correct
+1	57354	1	57354	scaffold_435	tarseq_512	100.0		True
+CONTIG	tarseq_512	57354	correct
+1	56131	1	56131	scaffold_444	tarseq_513	100.0		True
+CONTIG	tarseq_513	56131	correct
+1	53419	1	53419	scaffold_468	tarseq_514	100.0		True
+CONTIG	tarseq_514	53419	correct
+1	52576	1	52576	scaffold_474	tarseq_515	100.0		True
+CONTIG	tarseq_515	52576	correct
+143521	193975	1	50455	scaffold_243	tarseq_516	100.0		True
+CONTIG	tarseq_516	50455	correct
+5231517	7110291	1878775	1	lg15	tarseq_517	100.0		True
+CONTIG	tarseq_517	1878775	correct
+6282904	7877868	1594965	1	lg09	tarseq_518	100.0		True
+CONTIG	tarseq_518	1594965	correct
+2626693	4030845	1	1404153	lg23	tarseq_519	100.0		True
+CONTIG	tarseq_519	1404153	correct
+7160656	8538430	1	1377775	lg02	tarseq_520	100.0		True
+CONTIG	tarseq_520	1377775	correct
+13578609	14926737	1	1348129	lg15	tarseq_521	100.0		True
+CONTIG	tarseq_521	1348129	correct
+9772751	11083622	1	1310872	lg18	tarseq_522	100.0		True
+CONTIG	tarseq_522	1310872	correct
+4945365	6236422	1	1291058	lg01	tarseq_523	100.0		True
+CONTIG	tarseq_523	1291058	correct
+1	96083	1	96083	scaffold_332	tarseq_524	100.0		True
+translocation
+10738006	11874765	1232843	96084	lg01	tarseq_524	100.0		True
+CONTIG	tarseq_524	1232843	misassembled
+2851203	4016474	1165272	1	lg05	tarseq_525	100.0		True
+CONTIG	tarseq_525	1165272	correct
+6579876	7702850	1	1122975	lg04	tarseq_526	100.0		True
+CONTIG	tarseq_526	1122975	correct
+3966015	4944864	1	978850	lg01	tarseq_527	100.0		True
+CONTIG	tarseq_527	978850	correct
+667832	1657176	989345	1	lg01	tarseq_528	100.0		True
+CONTIG	tarseq_528	989345	correct
+9165494	10078585	913092	1	lg02	tarseq_529	100.0		True
+CONTIG	tarseq_529	913092	correct
+10238159	11110833	1	872675	lg09	tarseq_530	100.0		True
+CONTIG	tarseq_530	872675	correct
+1469774	2332109	862336	1	lg12	tarseq_531	100.0		True
+CONTIG	tarseq_531	862336	correct
+7254491	8128877	874387	1	lg23	tarseq_532	100.0		True
+CONTIG	tarseq_532	874387	correct
+1	785992	1	785992	scaffold_107	tarseq_533	100.0		True
+CONTIG	tarseq_533	785992	correct
+328047	1068540	740494	1	scaffold_62	tarseq_534	100.0		True
+CONTIG	tarseq_534	740494	correct
+1	475115	1	475115	scaffold_159	tarseq_535	100.0		True
+CONTIG	tarseq_535	475115	correct
+4349644	5087891	738248	1	lg25	tarseq_536	100.0		True
+CONTIG	tarseq_536	738248	correct
+3086828	3817714	730887	1	lg02	tarseq_537	100.0		True
+CONTIG	tarseq_537	730887	correct
+4337337	5069696	1	732360	lg06	tarseq_538	100.0		True
+CONTIG	tarseq_538	732360	correct
+1264900	1981387	1	716488	lg18	tarseq_539	100.0		True
+CONTIG	tarseq_539	716488	correct
+4016975	4735597	1	718623	lg05	tarseq_540	100.0		True
+CONTIG	tarseq_540	718623	correct
+1018880	1714849	1	695970	lg24	tarseq_541	100.0		True
+CONTIG	tarseq_541	695970	correct
+1137267	1803833	666567	1	lg25	tarseq_542	100.0		True
+CONTIG	tarseq_542	666567	correct
+16373649	17036951	663303	1	lg02	tarseq_543	100.0		True
+CONTIG	tarseq_543	663303	correct
+63951	712709	1	648759	lg24	tarseq_544	100.0		True
+CONTIG	tarseq_544	648759	correct
+1	629148	629148	1	scaffold_124	tarseq_545	100.0		True
+CONTIG	tarseq_545	629148	correct
+1225052	1839370	614319	1	lg02	tarseq_546	100.0		True
+CONTIG	tarseq_546	614319	correct
+2711453	3346287	1	634835	lg12	tarseq_547	100.0		True
+CONTIG	tarseq_547	634835	correct
+13283404	13897957	1	614554	lg14	tarseq_548	100.0		True
+CONTIG	tarseq_548	614554	correct
+4459571	5057836	1	598266	lg15	tarseq_549	100.0		True
+CONTIG	tarseq_549	598266	correct
+5088392	5685204	1	596813	lg25	tarseq_550	100.0		True
+CONTIG	tarseq_550	596813	correct
+11925926	12516727	1	590802	lg01	tarseq_551	100.0		True
+CONTIG	tarseq_551	590802	correct
+1	600757	1	600757	scaffold_129	tarseq_552	100.0		True
+CONTIG	tarseq_552	600757	correct
+10079086	10666606	1	587521	lg02	tarseq_553	100.0		True
+CONTIG	tarseq_553	587521	correct
+1309562	1902322	1	592761	lg11	tarseq_554	100.0		True
+CONTIG	tarseq_554	592761	correct
+15274357	15839239	1	564883	lg14	tarseq_555	100.0		True
+CONTIG	tarseq_555	564883	correct
+7246943	7795710	548768	1	lg26	tarseq_556	100.0		True
+CONTIG	tarseq_556	548768	correct
+8794175	9164993	1	370819	lg02	tarseq_557	100.0		True
+CONTIG	tarseq_557	370819	correct
+17390638	17944638	554001	1	lg11	tarseq_558	100.0		True
+CONTIG	tarseq_558	554001	correct
+7878369	8421309	1	542941	lg09	tarseq_559	100.0		True
+CONTIG	tarseq_559	542941	correct
+1	542693	542693	1	scaffold_146	tarseq_560	100.0		True
+CONTIG	tarseq_560	542693	correct
+8129378	8658949	1	529572	lg23	tarseq_561	100.0		True
+CONTIG	tarseq_561	529572	correct
+12380721	12892333	1	511613	lg03	tarseq_562	100.0		True
+CONTIG	tarseq_562	511613	correct
+210778	737662	1	526885	scaffold_96	tarseq_563	100.0		True
+CONTIG	tarseq_563	526885	correct
+5685705	6186552	500848	1	lg25	tarseq_564	100.0		True
+CONTIG	tarseq_564	500848	correct
+15613528	16117824	504297	1	lg09	tarseq_565	100.0		True
+CONTIG	tarseq_565	504297	correct
+9161555	9656300	1	494746	lg09	tarseq_566	100.0		True
+CONTIG	tarseq_566	494746	correct
+1051911	1544530	1	492620	scaffold_27	tarseq_567	100.0		True
+CONTIG	tarseq_567	492620	correct
+13702260	14186677	484418	1	lg13	tarseq_568	100.0		True
+CONTIG	tarseq_568	484418	correct
+3543008	4015187	472180	1	lg06	tarseq_569	100.0		True
+CONTIG	tarseq_569	472180	correct
+10560751	11022635	1	461885	lg10	tarseq_570	100.0		True
+CONTIG	tarseq_570	461885	correct
+12101099	12569137	468039	1	lg19	tarseq_571	100.0		True
+CONTIG	tarseq_571	468039	correct
+7549985	8011795	1	461811	lg15	tarseq_572	100.0		True
+CONTIG	tarseq_572	461811	correct
+14817007	15273856	1	456850	lg14	tarseq_573	100.0		True
+CONTIG	tarseq_573	456850	correct
+628728	1083596	1	454869	lg12	tarseq_574	100.0		True
+CONTIG	tarseq_574	454869	correct
+2331013	2771688	440676	1	lg18	tarseq_575	100.0		True
+CONTIG	tarseq_575	440676	correct
+16066110	16373148	307039	1	lg02	tarseq_576	100.0		True
+CONTIG	tarseq_576	307039	correct
+11457368	11895869	1	438502	lg09	tarseq_577	100.0		True
+CONTIG	tarseq_577	438502	correct
+6507368	6941582	1	434215	lg23	tarseq_578	100.0		True
+CONTIG	tarseq_578	434215	correct
+5573872	6010707	1	436836	lg06	tarseq_579	100.0		True
+CONTIG	tarseq_579	436836	correct
+8740724	9161054	420331	1	lg09	tarseq_580	100.0		True
+CONTIG	tarseq_580	420331	correct
+11157448	11591265	1	433818	lg02	tarseq_581	100.0		True
+CONTIG	tarseq_581	433818	correct
+7071772	7503967	1	432196	lg16	tarseq_582	100.0		True
+CONTIG	tarseq_582	432196	correct
+6295082	6705835	410754	1	lg06	tarseq_583	100.0		True
+CONTIG	tarseq_583	410754	correct
+2441637	2850702	1	409066	lg05	tarseq_584	100.0		True
+CONTIG	tarseq_584	409066	correct
+16015377	16438941	423565	1	lg14	tarseq_585	100.0		True
+CONTIG	tarseq_585	423565	correct
+1839471	2247817	1	408347	lg02	tarseq_586	100.0		True
+CONTIG	tarseq_586	408347	correct
+973930	1366040	1	392111	lg04	tarseq_587	100.0		True
+CONTIG	tarseq_587	392111	correct
+1902823	2289970	387148	1	lg11	tarseq_588	100.0		True
+CONTIG	tarseq_588	387148	correct
+12953881	13342563	1	388683	lg18	tarseq_589	100.0		True
+CONTIG	tarseq_589	388683	correct
+143287	535127	1	391841	scaffold_149	tarseq_590	100.0		True
+CONTIG	tarseq_590	391841	correct
+14411432	14798110	386679	1	lg03	tarseq_591	100.0		True
+CONTIG	tarseq_591	386679	correct
+13898458	14272704	1	374247	lg14	tarseq_592	100.0		True
+CONTIG	tarseq_592	374247	correct
+12923915	13297434	373520	1	lg19	tarseq_593	100.0		True
+CONTIG	tarseq_593	373520	correct
+12012561	12380353	367793	1	lg10	tarseq_594	100.0		True
+CONTIG	tarseq_594	367793	correct
+10781642	11156947	375306	1	lg02	tarseq_595	100.0		True
+CONTIG	tarseq_595	375306	correct
+8538931	8793674	1	254744	lg02	tarseq_596	100.0		True
+CONTIG	tarseq_596	254744	correct
+13321245	13701759	1	380515	lg13	tarseq_597	100.0		True
+CONTIG	tarseq_597	380515	correct
+9656801	10019474	1	362674	lg09	tarseq_598	100.0		True
+CONTIG	tarseq_598	362674	correct
+1934134	2294464	360331	1	lg01	tarseq_599	100.0		True
+CONTIG	tarseq_599	360331	correct
+952134	1299874	347741	1	lg22	tarseq_600	100.0		True
+CONTIG	tarseq_600	347741	correct
+12569638	12923414	353777	1	lg19	tarseq_601	100.0		True
+CONTIG	tarseq_601	353777	correct
+12214625	12555663	341039	1	lg18	tarseq_602	100.0		True
+CONTIG	tarseq_602	341039	correct
+11170623	11524302	353680	1	lg10	tarseq_603	100.0		True
+CONTIG	tarseq_603	353680	correct
+18417770	18768958	351189	1	lg11	tarseq_604	100.0		True
+CONTIG	tarseq_604	351189	correct
+12451847	12791510	1	339664	lg22	tarseq_605	100.0		True
+CONTIG	tarseq_605	339664	correct
+13297935	13642674	344740	1	lg19	tarseq_606	100.0		True
+CONTIG	tarseq_606	344740	correct
+336651	663638	1	326988	lg15	tarseq_607	100.0		True
+CONTIG	tarseq_607	326988	correct
+18769459	19099662	1	330204	lg11	tarseq_608	100.0		True
+CONTIG	tarseq_608	330204	correct
+14473046	14816506	1	343461	lg14	tarseq_609	100.0		True
+CONTIG	tarseq_609	343461	correct
+8328382	8656226	1	327845	lg15	tarseq_610	100.0		True
+CONTIG	tarseq_610	327845	correct
+13643175	13981396	338222	1	lg19	tarseq_611	100.0		True
+CONTIG	tarseq_611	338222	correct
+214913	543671	328759	1	lg05	tarseq_612	100.0		True
+CONTIG	tarseq_612	328759	correct
+7796211	8120129	323919	1	lg26	tarseq_613	100.0		True
+CONTIG	tarseq_613	323919	correct
+1828967	2152033	1	323067	lg09	tarseq_614	100.0		True
+CONTIG	tarseq_614	323067	correct
+8631398	8947884	1	316487	lg26	tarseq_615	100.0		True
+CONTIG	tarseq_615	316487	correct
+1	327546	327546	1	scaffold_62	tarseq_616	100.0		True
+CONTIG	tarseq_616	327546	correct
+8757834	9084601	326768	1	lg04	tarseq_617	100.0		True
+CONTIG	tarseq_617	326768	correct
+156274	475178	318905	1	scaffold_116	tarseq_618	100.0		True
+CONTIG	tarseq_618	318905	correct
+5258142	5585654	327513	1	lg23	tarseq_619	100.0		True
+CONTIG	tarseq_619	327513	correct
+8421810	8740223	318414	1	lg09	tarseq_620	100.0		True
+CONTIG	tarseq_620	318414	correct
+8012296	8327881	1	315586	lg15	tarseq_621	100.0		True
+CONTIG	tarseq_621	315586	correct
+16337840	16646474	1	308635	lg17	tarseq_622	100.0		True
+CONTIG	tarseq_622	308635	correct
+8260861	8580464	319604	1	lg14	tarseq_623	100.0		True
+CONTIG	tarseq_623	319604	correct
+8324438	8630897	306460	1	lg26	tarseq_624	100.0		True
+CONTIG	tarseq_624	306460	correct
+14350118	14642999	292882	1	lg13	tarseq_625	100.0		True
+CONTIG	tarseq_625	292882	correct
+713210	1018379	305170	1	lg24	tarseq_626	100.0		True
+CONTIG	tarseq_626	305170	correct
+1	296099	1	296099	scaffold_206	tarseq_627	100.0		True
+CONTIG	tarseq_627	296099	correct
+304115	604340	300226	1	lg22	tarseq_628	100.0		True
+CONTIG	tarseq_628	300226	correct
+4736098	5026980	290883	1	lg05	tarseq_629	100.0		True
+CONTIG	tarseq_629	290883	correct
+14073949	14381526	1	307578	lg22	tarseq_630	100.0		True
+CONTIG	tarseq_630	307578	correct
+1804334	2110552	1	306219	lg25	tarseq_631	100.0		True
+CONTIG	tarseq_631	306219	correct
+12933742	13228172	294431	1	lg13	tarseq_632	100.0		True
+CONTIG	tarseq_632	294431	correct
+114574	399877	285304	1	scaffold_31	tarseq_633	100.0		True
+CONTIG	tarseq_633	285304	correct
+149086	440305	291220	1	scaffold_166	tarseq_634	100.0		True
+CONTIG	tarseq_634	291220	correct
+3105632	3391075	285444	1	lg18	tarseq_635	100.0		True
+CONTIG	tarseq_635	285444	correct
+4979300	5258041	1	278742	lg23	tarseq_636	100.0		True
+CONTIG	tarseq_636	278742	correct
+12480917	12764418	1	283502	lg10	tarseq_637	100.0		True
+CONTIG	tarseq_637	283502	correct
+12391704	12667388	1	275685	lg02	tarseq_638	100.0		True
+CONTIG	tarseq_638	275685	correct
+6038540	6309132	270593	1	lg23	tarseq_639	100.0		True
+CONTIG	tarseq_639	270593	correct
+3148719	3427574	278856	1	lg01	tarseq_640	100.0		True
+CONTIG	tarseq_640	278856	correct
+2442710	2721486	278777	1	lg01	tarseq_641	100.0		True
+CONTIG	tarseq_641	278777	correct
+13219179	13506613	287435	1	lg03	tarseq_642	100.0		True
+CONTIG	tarseq_642	287435	correct
+641243	902343	1	261101	lg17	tarseq_643	100.0		True
+CONTIG	tarseq_643	261101	correct
+20427542	20697914	270373	1	lg23	tarseq_644	100.0		True
+CONTIG	tarseq_644	270373	correct
+13507114	13767938	1	260825	lg03	tarseq_645	100.0		True
+CONTIG	tarseq_645	260825	correct
+3660189	3921041	260853	1	lg12	tarseq_646	100.0		True
+CONTIG	tarseq_646	260853	correct
+4213581	4459070	245490	1	lg15	tarseq_647	100.0		True
+CONTIG	tarseq_647	245490	correct
+1215533	1462566	1	247034	scaffold_62	tarseq_648	100.0		True
+CONTIG	tarseq_648	247034	correct
+1	249890	249890	1	scaffold_221	tarseq_649	100.0		True
+CONTIG	tarseq_649	249890	correct
+6740420	6993788	253369	1	lg01	tarseq_650	100.0		True
+CONTIG	tarseq_650	253369	correct
+17041692	17298040	256349	1	lg11	tarseq_651	100.0		True
+CONTIG	tarseq_651	256349	correct
+3722249	3965914	243666	1	lg01	tarseq_652	100.0		True
+CONTIG	tarseq_652	243666	correct
+2468277	2710952	242676	1	lg12	tarseq_653	100.0		True
+CONTIG	tarseq_653	242676	correct
+9401650	9655504	253855	1	lg04	tarseq_654	100.0		True
+CONTIG	tarseq_654	253855	correct
+5070197	5326421	256225	1	lg06	tarseq_655	100.0		True
+CONTIG	tarseq_655	256225	correct
+6758435	7016364	257930	1	lg13	tarseq_656	100.0		True
+CONTIG	tarseq_656	257930	correct
+1	249822	249822	1	lg02	tarseq_657	100.0		True
+CONTIG	tarseq_657	249822	correct
+2899365	3148218	248854	1	lg01	tarseq_658	100.0		True
+CONTIG	tarseq_658	248854	correct
+5027481	5273728	1	246248	lg05	tarseq_659	100.0		True
+CONTIG	tarseq_659	246248	correct
+6490710	6739919	1	249210	lg01	tarseq_660	100.0		True
+CONTIG	tarseq_660	249210	correct
+7504468	7741046	236579	1	lg16	tarseq_661	100.0		True
+CONTIG	tarseq_661	236579	correct
+73942	303614	1	229673	lg22	tarseq_662	100.0		True
+CONTIG	tarseq_662	229673	correct
+12410041	12638214	1	228174	lg09	tarseq_663	100.0		True
+CONTIG	tarseq_663	228174	correct
+12807467	13034423	1	226957	lg10	tarseq_664	100.0		True
+CONTIG	tarseq_664	226957	correct
+7110392	7340573	230182	1	lg15	tarseq_665	100.0		True
+CONTIG	tarseq_665	230182	correct
+6169406	6294581	125176	1	lg06	tarseq_666	100.0		True
+CONTIG	tarseq_666	125176	correct
+13000021	13218678	218658	1	lg03	tarseq_667	100.0		True
+CONTIG	tarseq_667	218658	correct
+10436473	10659706	1	223234	lg12	tarseq_668	100.0		True
+CONTIG	tarseq_668	223234	correct
+1234492	1469673	1	235182	lg12	tarseq_669	100.0		True
+CONTIG	tarseq_669	235182	correct
+13060941	13282903	1	221963	lg14	tarseq_670	100.0		True
+CONTIG	tarseq_670	221963	correct
+1	231122	1	231122	scaffold_208	tarseq_671	100.0		True
+CONTIG	tarseq_671	231122	correct
+10019975	10237658	1	217684	lg09	tarseq_672	100.0		True
+CONTIG	tarseq_672	217684	correct
+1069041	1215032	1	145992	scaffold_62	tarseq_673	100.0		True
+CONTIG	tarseq_673	145992	correct
+12182475	12409940	1	227466	lg09	tarseq_674	100.0		True
+CONTIG	tarseq_674	227466	correct
+16628895	16844499	215605	1	lg11	tarseq_675	100.0		True
+CONTIG	tarseq_675	215605	correct
+1300375	1514678	214304	1	lg22	tarseq_676	100.0		True
+CONTIG	tarseq_676	214304	correct
+6187053	6411540	224488	1	lg25	tarseq_677	100.0		True
+CONTIG	tarseq_677	224488	correct
+2076134	2290052	213919	1	lg05	tarseq_678	100.0		True
+CONTIG	tarseq_678	213919	correct
+11524803	11740920	1	216118	lg10	tarseq_679	100.0		True
+CONTIG	tarseq_679	216118	correct
+742953	951633	208681	1	lg22	tarseq_680	100.0		True
+CONTIG	tarseq_680	208681	correct
+1	223736	1	223736	scaffold_227	tarseq_681	100.0		True
+CONTIG	tarseq_681	223736	correct
+141104	346356	1	205253	scaffold_156	tarseq_682	100.0		True
+CONTIG	tarseq_682	205253	correct
+16273770	16337339	1	63570	lg17	tarseq_683	100.0		True
+CONTIG	tarseq_683	63570	correct
+1006896	1224951	1	218056	lg02	tarseq_684	100.0		True
+CONTIG	tarseq_684	218056	correct
+1	201403	1	201403	scaffold_235	tarseq_685	100.0		True
+CONTIG	tarseq_685	201403	correct
+8120630	8323937	1	203308	lg26	tarseq_686	100.0		True
+CONTIG	tarseq_686	203308	correct
+7341074	7549484	1	208411	lg15	tarseq_687	100.0		True
+CONTIG	tarseq_687	208411	correct
+2170267	2381253	1	210987	lg06	tarseq_688	100.0		True
+CONTIG	tarseq_688	210987	correct
+19379017	19577805	198789	1	lg11	tarseq_689	100.0		True
+CONTIG	tarseq_689	198789	correct
+15839340	16014876	1	175537	lg14	tarseq_690	100.0		True
+CONTIG	tarseq_690	175537	correct
+12380854	12480416	99563	1	lg10	tarseq_691	100.0		True
+CONTIG	tarseq_691	99563	correct
+9334975	9539020	204046	1	lg15	tarseq_692	100.0		True
+CONTIG	tarseq_692	204046	correct
+134592	336150	1	201559	lg15	tarseq_693	100.0		True
+CONTIG	tarseq_693	201559	correct
+1	164127	164127	1	scaffold_223	tarseq_694	100.0		True
+CONTIG	tarseq_694	164127	correct
+89104	287688	1	198585	scaffold_210	tarseq_695	100.0		True
+CONTIG	tarseq_695	198585	correct
+11591766	11784072	1	192307	lg02	tarseq_696	100.0		True
+CONTIG	tarseq_696	192307	correct
+310336	508444	198109	1	lg02	tarseq_697	100.0		True
+CONTIG	tarseq_697	198109	correct
+14273205	14472545	199341	1	lg14	tarseq_698	100.0		True
+CONTIG	tarseq_698	199341	correct
+855869	1051410	1	195542	scaffold_27	tarseq_699	100.0		True
+CONTIG	tarseq_699	195542	correct
+6236523	6436083	199561	1	lg01	tarseq_700	100.0		True
+CONTIG	tarseq_700	199561	correct
+8580965	8764378	183414	1	lg14	tarseq_701	100.0		True
+CONTIG	tarseq_701	183414	correct
+16199351	16379310	179960	1	lg11	tarseq_702	100.0		True
+CONTIG	tarseq_702	179960	correct
+76509	268540	1	192032	scaffold_214	tarseq_703	100.0		True
+CONTIG	tarseq_703	192032	correct
+5913695	6110446	1	196752	lg19	tarseq_704	100.0		True
+CONTIG	tarseq_704	196752	correct
+13894630	14073448	178819	1	lg22	tarseq_705	100.0		True
+CONTIG	tarseq_705	178819	correct
+544172	729187	185016	1	lg05	tarseq_706	100.0		True
+CONTIG	tarseq_706	185016	correct
+77567	254575	1	177009	scaffold_192	tarseq_707	100.0		True
+CONTIG	tarseq_707	177009	correct
+832137	1006395	174259	1	lg02	tarseq_708	100.0		True
+CONTIG	tarseq_708	174259	correct
+71242	257582	1	186341	scaffold_218	tarseq_709	100.0		True
+CONTIG	tarseq_709	186341	correct
+6430389	6506867	76479	1	lg23	tarseq_710	100.0		True
+CONTIG	tarseq_710	76479	correct
+8573952	8757333	183382	1	lg04	tarseq_711	100.0		True
+CONTIG	tarseq_711	183382	correct
+13034924	13206155	171232	1	lg10	tarseq_712	100.0		True
+CONTIG	tarseq_712	171232	correct
+14241171	14410931	1	169761	lg03	tarseq_713	100.0		True
+CONTIG	tarseq_713	169761	correct
+18095006	18272272	177267	1	lg11	tarseq_714	100.0		True
+CONTIG	tarseq_714	177267	correct
+3938553	4113992	175440	1	lg21	tarseq_715	100.0		True
+CONTIG	tarseq_715	175440	correct
+6994289	7175760	1	181472	lg01	tarseq_716	100.0		True
+CONTIG	tarseq_716	181472	correct
+9163387	9334474	1	171088	lg15	tarseq_717	100.0		True
+CONTIG	tarseq_717	171088	correct
+5058337	5231016	1	172680	lg15	tarseq_718	100.0		True
+CONTIG	tarseq_718	172680	correct
+11306632	11481881	175250	1	lg04	tarseq_719	100.0		True
+CONTIG	tarseq_719	175250	correct
+284875	456959	1	172085	lg12	tarseq_720	100.0		True
+CONTIG	tarseq_720	172085	correct
+736110	909523	173414	1	lg25	tarseq_721	100.0		True
+CONTIG	tarseq_721	173414	correct
+1	154623	1	154623	scaffold_264	tarseq_722	100.0		True
+CONTIG	tarseq_722	154623	correct
+13732671	13894129	1	161459	lg22	tarseq_723	100.0		True
+CONTIG	tarseq_723	161459	correct
+966754	1136766	1	170013	lg25	tarseq_724	100.0		True
+CONTIG	tarseq_724	170013	correct
+6011208	6168905	157698	1	lg06	tarseq_725	100.0		True
+CONTIG	tarseq_725	157698	correct
+885570	1053635	168066	1	scaffold_84	tarseq_726	100.0		True
+CONTIG	tarseq_726	168066	correct
+3495647	3659688	164042	1	lg12	tarseq_727	100.0		True
+CONTIG	tarseq_727	164042	correct
+2938154	3105131	1	166978	lg18	tarseq_728	100.0		True
+CONTIG	tarseq_728	166978	correct
+1	168810	1	168810	scaffold_253	tarseq_729	100.0		True
+CONTIG	tarseq_729	168810	correct
+4169062	4336836	167775	1	lg06	tarseq_730	100.0		True
+CONTIG	tarseq_730	167775	correct
+12288254	12451346	163093	1	lg22	tarseq_731	100.0		True
+CONTIG	tarseq_731	163093	correct
+15661590	15809033	1	147444	lg17	tarseq_732	100.0		True
+CONTIG	tarseq_732	147444	correct
+370271	538720	168450	1	lg25	tarseq_733	100.0		True
+CONTIG	tarseq_733	168450	correct
+1858384	2012980	154597	1	lg15	tarseq_734	100.0		True
+CONTIG	tarseq_734	154597	correct
+3950906	4112900	161995	1	lg15	tarseq_735	100.0		True
+CONTIG	tarseq_735	161995	correct
+9237435	9401149	1	163715	lg04	tarseq_736	100.0		True
+CONTIG	tarseq_736	163715	correct
+1	158889	1	158889	scaffold_256	tarseq_737	100.0		True
+CONTIG	tarseq_737	158889	correct
+7033182	7185026	1	151845	lg23	tarseq_738	100.0		True
+CONTIG	tarseq_738	151845	correct
+1083697	1233991	150295	1	lg12	tarseq_739	100.0		True
+CONTIG	tarseq_739	150295	correct
+60285	214412	1	154128	lg05	tarseq_740	100.0		True
+CONTIG	tarseq_740	154128	correct
+35958	186332	150375	1	scaffold_245	tarseq_741	100.0		True
+CONTIG	tarseq_741	150375	correct
+3391576	3541397	149822	1	lg18	tarseq_742	100.0		True
+CONTIG	tarseq_742	149822	correct
+2179914	2330512	1	150599	lg18	tarseq_743	100.0		True
+CONTIG	tarseq_743	150599	correct
+6585835	6745282	1	159448	lg26	tarseq_744	100.0		True
+CONTIG	tarseq_744	159448	correct
+814102	971124	1	157023	lg15	tarseq_745	100.0		True
+CONTIG	tarseq_745	157023	correct
+5274229	5421590	1	147362	lg05	tarseq_746	100.0		True
+CONTIG	tarseq_746	147362	correct
+11896370	12055423	1	159054	lg09	tarseq_747	100.0		True
+CONTIG	tarseq_747	159054	correct
+2290553	2441136	1	150584	lg05	tarseq_748	100.0		True
+CONTIG	tarseq_748	150584	correct
+13929838	14075331	1	145494	lg10	tarseq_749	100.0		True
+CONTIG	tarseq_749	145494	correct
+16895976	17041191	145216	1	lg11	tarseq_750	100.0		True
+CONTIG	tarseq_750	145216	correct
+3428075	3581826	1	153752	lg01	tarseq_751	100.0		True
+CONTIG	tarseq_751	153752	correct
+9085102	9237334	152233	1	lg04	tarseq_752	100.0		True
+CONTIG	tarseq_752	152233	correct
+18272773	18417269	1	144497	lg11	tarseq_753	100.0		True
+CONTIG	tarseq_753	144497	correct
+1	142786	1	142786	scaffold_149	tarseq_754	100.0		True
+CONTIG	tarseq_754	142786	correct
+16130385	16273269	142885	1	lg17	tarseq_755	100.0		True
+CONTIG	tarseq_755	142885	correct
+17945139	18094905	149767	1	lg11	tarseq_756	100.0		True
+CONTIG	tarseq_756	149767	correct
+71832	228721	1	156890	scaffold_225	tarseq_757	100.0		True
+CONTIG	tarseq_757	156890	correct
+5585755	5661488	75734	1	lg23	tarseq_758	100.0		True
+CONTIG	tarseq_758	75734	correct
+3346788	3495146	1	148359	lg12	tarseq_759	100.0		True
+CONTIG	tarseq_759	148359	correct
+12638715	12778052	139338	1	lg09	tarseq_760	100.0		True
+CONTIG	tarseq_760	139338	correct
+5661989	5813298	1	151310	lg23	tarseq_761	100.0		True
+CONTIG	tarseq_761	151310	correct
+1	140603	140603	1	scaffold_156	tarseq_762	100.0		True
+CONTIG	tarseq_762	140603	correct
+133682	284374	150693	1	lg12	tarseq_763	100.0		True
+CONTIG	tarseq_763	150693	correct
+13645942	13732170	1	86229	lg22	tarseq_764	100.0		True
+CONTIG	tarseq_764	86229	correct
+1	148585	148585	1	scaffold_166	tarseq_765	100.0		True
+CONTIG	tarseq_765	148585	correct
+1262370	1401463	1	139094	lg08	tarseq_766	100.0		True
+CONTIG	tarseq_766	139094	correct
+11185210	11333657	1	148448	lg09	tarseq_767	100.0		True
+CONTIG	tarseq_767	148448	correct
+2294965	2442609	1	147645	lg01	tarseq_768	100.0		True
+CONTIG	tarseq_768	147645	correct
+16824993	16963479	1	138487	lg17	tarseq_769	100.0		True
+CONTIG	tarseq_769	138487	correct
+1	141549	1	141549	scaffold_170	tarseq_770	100.0		True
+CONTIG	tarseq_770	141549	correct
+5436418	5573371	136954	1	lg06	tarseq_771	100.0		True
+CONTIG	tarseq_771	136954	correct
+11023136	11170122	146987	1	lg10	tarseq_772	100.0		True
+CONTIG	tarseq_772	146987	correct
+7135413	7275038	1	139626	lg13	tarseq_773	100.0		True
+CONTIG	tarseq_773	139626	correct
+6442056	6585334	1	143279	lg26	tarseq_774	100.0		True
+CONTIG	tarseq_774	143279	correct
+2332610	2467776	135167	1	lg12	tarseq_775	100.0		True
+CONTIG	tarseq_775	135167	correct
+8991185	9137934	146750	1	lg07	tarseq_776	100.0		True
+CONTIG	tarseq_776	146750	correct
+475679	617012	141334	1	scaffold_116	tarseq_777	100.0		True
+CONTIG	tarseq_777	141334	correct
+15526249	15661489	1	135241	lg17	tarseq_778	100.0		True
+CONTIG	tarseq_778	135241	correct
+439706	574967	1	135262	scaffold_139	tarseq_779	100.0		True
+CONTIG	tarseq_779	135262	correct
+1	140201	1	140201	scaffold_275	tarseq_780	100.0		True
+CONTIG	tarseq_780	140201	correct
+6309633	6429888	120256	1	lg23	tarseq_781	100.0		True
+CONTIG	tarseq_781	120256	correct
+9539521	9677695	138175	1	lg15	tarseq_782	100.0		True
+CONTIG	tarseq_782	138175	correct
+12811623	12953380	1	141758	lg18	tarseq_783	100.0		True
+CONTIG	tarseq_783	141758	correct
+1	132078	1	132078	scaffold_280	tarseq_784	100.0		True
+CONTIG	tarseq_784	132078	correct
+10469490	10606577	1	137088	lg01	tarseq_785	100.0		True
+CONTIG	tarseq_785	137088	correct
+8299602	8440978	141377	1	lg07	tarseq_786	100.0		True
+CONTIG	tarseq_786	141377	correct
+10607078	10737905	130828	1	lg01	tarseq_787	100.0		True
+CONTIG	tarseq_787	130828	correct
+1	134091	1	134091	lg15	tarseq_788	100.0		True
+CONTIG	tarseq_788	134091	correct
+1	128291	1	128291	scaffold_260	tarseq_789	100.0		True
+CONTIG	tarseq_789	128291	correct
+346857	488939	1	142083	scaffold_156	tarseq_790	100.0		True
+CONTIG	tarseq_790	142083	correct
+645305	774280	128976	1	scaffold_27	tarseq_791	100.0		True
+CONTIG	tarseq_791	128976	correct
+12556164	12692873	1	136710	lg18	tarseq_792	100.0		True
+CONTIG	tarseq_792	136710	correct
+1	127679	1	127679	scaffold_288	tarseq_793	100.0		True
+CONTIG	tarseq_793	127679	correct
+1698384	1828466	1	130083	lg09	tarseq_794	100.0		True
+CONTIG	tarseq_794	130083	correct
+1	144855	1	144855	lg25	tarseq_795	100.0		True
+CONTIG	tarseq_795	144855	correct
+14866388	14959476	93089	1	lg06	tarseq_796	100.0		True
+CONTIG	tarseq_796	93089	correct
+12055924	12181974	1	126051	lg09	tarseq_797	100.0		True
+CONTIG	tarseq_797	126051	correct
+604841	742452	137612	1	lg22	tarseq_798	100.0		True
+CONTIG	tarseq_798	137612	correct
+1981488	2113497	132010	1	lg18	tarseq_799	100.0		True
+CONTIG	tarseq_799	132010	correct
+15391671	15525748	1	134078	lg17	tarseq_800	100.0		True
+CONTIG	tarseq_800	134078	correct
+508945	636069	127125	1	lg02	tarseq_801	100.0		True
+CONTIG	tarseq_801	127125	correct
+11334158	11456867	122710	1	lg09	tarseq_802	100.0		True
+CONTIG	tarseq_802	122710	correct
+246627	369770	123144	1	lg25	tarseq_803	100.0		True
+CONTIG	tarseq_803	123144	correct
+1225540	1353716	128177	1	lg16	tarseq_804	100.0		True
+CONTIG	tarseq_804	128177	correct
+14382027	14503447	1	121421	lg22	tarseq_805	100.0		True
+CONTIG	tarseq_805	121421	correct
+8870830	8990684	119855	1	lg07	tarseq_806	100.0		True
+CONTIG	tarseq_806	119855	correct
+1	130053	1	130053	scaffold_284	tarseq_807	100.0		True
+CONTIG	tarseq_807	130053	correct
+716434	831636	1	115203	lg02	tarseq_808	100.0		True
+CONTIG	tarseq_808	115203	correct
+16379811	16502114	122304	1	lg11	tarseq_809	100.0		True
+CONTIG	tarseq_809	122304	correct
+2013481	2140875	127395	1	lg15	tarseq_810	100.0		True
+CONTIG	tarseq_810	127395	correct
+1918668	2050847	132180	1	lg06	tarseq_811	100.0		True
+CONTIG	tarseq_811	132180	correct
+1	125204	1	125204	scaffold_290	tarseq_812	100.0		True
+CONTIG	tarseq_812	125204	correct
+8948385	9066379	117995	1	lg26	tarseq_813	100.0		True
+CONTIG	tarseq_813	117995	correct
+201463	316600	115138	1	scaffold_199	tarseq_814	100.0		True
+CONTIG	tarseq_814	115138	correct
+10224784	10347918	123135	1	lg12	tarseq_815	100.0		True
+CONTIG	tarseq_815	123135	correct
+294178	408514	114337	1	scaffold_170	tarseq_816	100.0		True
+CONTIG	tarseq_816	114337	correct
+1	116036	1	116036	scaffold_249	tarseq_817	100.0		True
+CONTIG	tarseq_817	116036	correct
+19100163	19213763	113601	1	lg11	tarseq_818	100.0		True
+CONTIG	tarseq_818	113601	correct
+14740025	14850352	1	110328	lg13	tarseq_819	100.0		True
+CONTIG	tarseq_819	110328	correct
+14800530	14914960	1	114431	lg22	tarseq_820	100.0		True
+CONTIG	tarseq_820	114431	correct
+8764879	8877933	1	113055	lg14	tarseq_821	100.0		True
+CONTIG	tarseq_821	113055	correct
+105835	218043	1	112209	scaffold_229	tarseq_822	100.0		True
+CONTIG	tarseq_822	112209	correct
+1	111445	1	111445	scaffold_308	tarseq_823	100.0		True
+CONTIG	tarseq_823	111445	correct
+14959577	15058369	98793	1	lg06	tarseq_824	100.0		True
+CONTIG	tarseq_824	98793	correct
+1	119192	1	119192	scaffold_296	tarseq_825	100.0		True
+CONTIG	tarseq_825	119192	correct
+164628	241563	1	76936	scaffold_223	tarseq_826	100.0		True
+CONTIG	tarseq_826	76936	correct
+1	119782	119782	1	scaffold_295	tarseq_827	100.0		True
+CONTIG	tarseq_827	119782	correct
+11959125	12070744	111620	1	lg18	tarseq_828	100.0		True
+CONTIG	tarseq_828	111620	correct
+10837218	10948312	1	111095	lg12	tarseq_829	100.0		True
+CONTIG	tarseq_829	111095	correct
+171783	282102	110320	1	lg08	tarseq_830	100.0		True
+CONTIG	tarseq_830	110320	correct
+7016465	7134912	1	118448	lg13	tarseq_831	100.0		True
+CONTIG	tarseq_831	118448	correct
+189698	301298	111601	1	scaffold_204	tarseq_832	100.0		True
+CONTIG	tarseq_832	111601	correct
+1	110970	1	110970	scaffold_309	tarseq_833	100.0		True
+CONTIG	tarseq_833	110970	correct
+243164	354571	1	111408	scaffold_184	tarseq_834	100.0		True
+CONTIG	tarseq_834	111408	correct
+1	108032	1	108032	scaffold_313	tarseq_835	100.0		True
+CONTIG	tarseq_835	108032	correct
+5326522	5435917	109396	1	lg06	tarseq_836	100.0		True
+CONTIG	tarseq_836	109396	correct
+1	118332	118332	1	scaffold_298	tarseq_837	100.0		True
+CONTIG	tarseq_837	118332	correct
+1	105334	105334	1	scaffold_229	tarseq_838	100.0		True
+CONTIG	tarseq_838	105334	correct
+11823868	11928718	1	104851	lg10	tarseq_839	100.0		True
+CONTIG	tarseq_839	104851	correct
+1	105705	105705	1	scaffold_271	tarseq_840	100.0		True
+CONTIG	tarseq_840	105705	correct
+1	105058	105058	1	scaffold_318	tarseq_841	100.0		True
+CONTIG	tarseq_841	105058	correct
+1	111607	111607	1	scaffold_204	tarseq_842	100.0		True
+CONTIG	tarseq_842	111607	correct
+1657277	1759662	1	102386	lg01	tarseq_843	100.0		True
+CONTIG	tarseq_843	102386	correct
+17104086	17206656	102571	1	lg02	tarseq_844	100.0		True
+CONTIG	tarseq_844	102571	correct
+12693374	12811122	1	117749	lg18	tarseq_845	100.0		True
+CONTIG	tarseq_845	117749	correct
+97501	199803	102303	1	scaffold_236	tarseq_846	100.0		True
+CONTIG	tarseq_846	102303	correct
+15809534	15911262	101729	1	lg17	tarseq_847	100.0		True
+CONTIG	tarseq_847	101729	correct
+71145	183710	112566	1	scaffold_184	tarseq_848	100.0		True
+CONTIG	tarseq_848	112566	correct
+10660207	10762788	102582	1	lg12	tarseq_849	100.0		True
+CONTIG	tarseq_849	102582	correct
+524123	628627	1	104505	lg12	tarseq_850	100.0		True
+CONTIG	tarseq_850	104505	correct
+1	102101	102101	1	scaffold_320	tarseq_851	100.0		True
+CONTIG	tarseq_851	102101	correct
+4113401	4213080	1	99680	lg15	tarseq_852	100.0		True
+CONTIG	tarseq_852	99680	correct
+145356	246126	100771	1	lg25	tarseq_853	100.0		True
+CONTIG	tarseq_853	100771	correct
+4015688	4116238	1	100551	lg06	tarseq_854	100.0		True
+CONTIG	tarseq_854	100551	correct
+2290471	2400581	1	110111	lg11	tarseq_855	100.0		True
+CONTIG	tarseq_855	110111	correct
+1	99597	1	99597	scaffold_326	tarseq_856	100.0		True
+CONTIG	tarseq_856	99597	correct
+1	99482	1	99482	scaffold_327	tarseq_857	100.0		True
+CONTIG	tarseq_857	99482	correct
+17038534	17138366	99833	1	lg17	tarseq_858	100.0		True
+CONTIG	tarseq_858	99833	correct
+1354217	1465424	111208	1	lg16	tarseq_859	100.0		True
+CONTIG	tarseq_859	111208	correct
+1	98263	1	98263	scaffold_330	tarseq_860	100.0		True
+CONTIG	tarseq_860	98263	correct
+17138867	17248196	109330	1	lg17	tarseq_861	100.0		True
+CONTIG	tarseq_861	109330	correct
+1	102040	1	102040	scaffold_321	tarseq_862	100.0		True
+CONTIG	tarseq_862	102040	correct
+12892834	12999520	1	106687	lg03	tarseq_863	100.0		True
+CONTIG	tarseq_863	106687	correct
+19578306	19684503	1	106198	lg11	tarseq_864	100.0		True
+CONTIG	tarseq_864	106198	correct
+1	108287	1	108287	scaffold_312	tarseq_865	100.0		True
+CONTIG	tarseq_865	108287	correct
+14253396	14349617	1	96222	lg13	tarseq_866	100.0		True
+CONTIG	tarseq_866	96222	correct
+1	93516	1	93516	scaffold_265	tarseq_867	100.0		True
+CONTIG	tarseq_867	93516	correct
+1515179	1612256	97078	1	lg22	tarseq_868	100.0		True
+CONTIG	tarseq_868	97078	correct
+2247918	2346066	98149	1	lg02	tarseq_869	100.0		True
+CONTIG	tarseq_869	98149	correct
+1	94839	1	94839	scaffold_336	tarseq_870	100.0		True
+CONTIG	tarseq_870	94839	correct
+3858218	3950405	92188	1	lg15	tarseq_871	100.0		True
+CONTIG	tarseq_871	92188	correct
+1	101142	101142	1	scaffold_323	tarseq_872	100.0		True
+CONTIG	tarseq_872	101142	correct
+10763289	10836717	1	73429	lg12	tarseq_873	100.0		True
+CONTIG	tarseq_873	73429	correct
+16727649	16824492	96844	1	lg17	tarseq_874	100.0		True
+CONTIG	tarseq_874	96844	correct
+1	87936	87936	1	lg08	tarseq_875	100.0		True
+CONTIG	tarseq_875	87936	correct
+17298541	17390137	1	91597	lg11	tarseq_876	100.0		True
+CONTIG	tarseq_876	91597	correct
+13228673	13320744	92072	1	lg13	tarseq_877	100.0		True
+CONTIG	tarseq_877	92072	correct
+16612199	16712361	100163	1	lg23	tarseq_878	100.0		True
+CONTIG	tarseq_878	100163	correct
+1	95467	1	95467	scaffold_333	tarseq_879	100.0		True
+CONTIG	tarseq_879	95467	correct
+7499807	7593159	93353	1	lg07	tarseq_880	100.0		True
+CONTIG	tarseq_880	93353	correct
+19279392	19378516	1	99125	lg11	tarseq_881	100.0		True
+CONTIG	tarseq_881	99125	correct
+1274120	1309061	1	34942	lg11	tarseq_882	100.0		True
+CONTIG	tarseq_882	34942	correct
+1	104572	1	104572	scaffold_319	tarseq_883	100.0		True
+CONTIG	tarseq_883	104572	correct
+1	99696	1	99696	scaffold_325	tarseq_884	100.0		True
+CONTIG	tarseq_884	99696	correct
+1044318	1122397	1	78080	lg08	tarseq_885	100.0		True
+CONTIG	tarseq_885	78080	correct
+345357	439205	1	93849	scaffold_139	tarseq_886	100.0		True
+CONTIG	tarseq_886	93849	correct
+6942083	7032681	90599	1	lg23	tarseq_887	100.0		True
+CONTIG	tarseq_887	90599	correct
+1760163	1848404	1	88242	lg01	tarseq_888	100.0		True
+CONTIG	tarseq_888	88242	correct
+7352775	7439928	87154	1	lg07	tarseq_889	100.0		True
+CONTIG	tarseq_889	87154	correct
+1	97000	1	97000	scaffold_236	tarseq_890	100.0		True
+CONTIG	tarseq_890	97000	correct
+241254	329130	1	87877	scaffold_195	tarseq_891	100.0		True
+CONTIG	tarseq_891	87877	correct
+16033342	16129884	1	96543	lg17	tarseq_892	100.0		True
+CONTIG	tarseq_892	96543	correct
+1	88603	88603	1	scaffold_210	tarseq_893	100.0		True
+CONTIG	tarseq_893	88603	correct
+10348419	10435972	87554	1	lg12	tarseq_894	100.0		True
+CONTIG	tarseq_894	87554	correct
+2772189	2868254	96066	1	lg18	tarseq_895	100.0		True
+CONTIG	tarseq_895	96066	correct
+1	92386	1	92386	lg12	tarseq_896	100.0		True
+CONTIG	tarseq_896	92386	correct
+115650	200962	1	85313	scaffold_199	tarseq_897	100.0		True
+CONTIG	tarseq_897	85313	correct
+14643500	14739524	1	96025	lg13	tarseq_898	100.0		True
+CONTIG	tarseq_898	96025	correct
+7257351	7352274	1	94924	lg07	tarseq_899	100.0		True
+CONTIG	tarseq_899	94924	correct
+1	94811	94811	1	scaffold_263	tarseq_900	100.0		True
+CONTIG	tarseq_900	94811	correct
+1848905	1933633	84729	1	lg01	tarseq_901	100.0		True
+CONTIG	tarseq_901	84729	correct
+8656727	8740618	1	83892	lg15	tarseq_902	100.0		True
+CONTIG	tarseq_902	83892	correct
+12752408	12836270	83863	1	lg02	tarseq_903	100.0		True
+CONTIG	tarseq_903	83863	correct
+1	86436	1	86436	scaffold_350	tarseq_904	100.0		True
+CONTIG	tarseq_904	86436	correct
+12295313	12380220	1	84908	lg03	tarseq_905	100.0		True
+CONTIG	tarseq_905	84908	correct
+1	86301	86301	1	scaffold_351	tarseq_906	100.0		True
+CONTIG	tarseq_906	86301	correct
+2814951	2898864	1	83914	lg01	tarseq_907	100.0		True
+CONTIG	tarseq_907	83914	correct
+88037	171282	1	83246	lg08	tarseq_908	100.0		True
+CONTIG	tarseq_908	83246	correct
+255076	338615	1	83540	scaffold_192	tarseq_909	100.0		True
+CONTIG	tarseq_909	83540	correct
+88432	169837	81406	1	lg19	tarseq_910	100.0		True
+CONTIG	tarseq_910	81406	correct
+10063831	10162549	1	98719	lg12	tarseq_911	100.0		True
+CONTIG	tarseq_911	98719	correct
+2422668	2505551	82884	1	lg06	tarseq_912	100.0		True
+CONTIG	tarseq_912	82884	correct
+1401964	1499937	97974	1	lg08	tarseq_913	100.0		True
+CONTIG	tarseq_913	97974	correct
+774781	855368	80588	1	scaffold_27	tarseq_914	100.0		True
+CONTIG	tarseq_914	80588	correct
+1	81416	81416	1	scaffold_356	tarseq_915	100.0		True
+CONTIG	tarseq_915	81416	correct
+1	85418	85418	1	scaffold_352	tarseq_916	100.0		True
+CONTIG	tarseq_916	85418	correct
+2721987	2814450	1	92464	lg01	tarseq_917	100.0		True
+CONTIG	tarseq_917	92464	correct
+60402	141157	1	80756	scaffold_273	tarseq_918	100.0		True
+CONTIG	tarseq_918	80756	correct
+1	79421	79421	1	scaffold_363	tarseq_919	100.0		True
+CONTIG	tarseq_919	79421	correct
+9984202	10063330	79129	1	lg12	tarseq_920	100.0		True
+CONTIG	tarseq_920	79129	correct
+902844	990016	1	87173	lg17	tarseq_921	100.0		True
+CONTIG	tarseq_921	87173	correct
+12667889	12751907	1	84019	lg02	tarseq_922	100.0		True
+CONTIG	tarseq_922	84019	correct
+636570	715933	1	79364	lg02	tarseq_923	100.0		True
+CONTIG	tarseq_923	79364	correct
+67961	155773	1	87813	scaffold_116	tarseq_924	100.0		True
+CONTIG	tarseq_924	87813	correct
+1	79194	79194	1	scaffold_364	tarseq_925	100.0		True
+CONTIG	tarseq_925	79194	correct
+3541898	3623468	1	81571	lg18	tarseq_926	100.0		True
+CONTIG	tarseq_926	81571	correct
+3581927	3658748	1	76822	lg01	tarseq_927	100.0		True
+CONTIG	tarseq_927	76822	correct
+214808	293677	1	78870	scaffold_170	tarseq_928	100.0		True
+CONTIG	tarseq_928	78870	correct
+737669	813601	1	75933	lg15	tarseq_929	100.0		True
+CONTIG	tarseq_929	75933	correct
+8107949	8186586	1	78638	lg14	tarseq_930	100.0		True
+CONTIG	tarseq_930	78638	correct
+1	79084	1	79084	scaffold_283	tarseq_931	100.0		True
+CONTIG	tarseq_931	79084	correct
+1	76402	1	76402	scaffold_371	tarseq_932	100.0		True
+CONTIG	tarseq_932	76402	correct
+1	87931	1	87931	lg19	tarseq_933	100.0		True
+CONTIG	tarseq_933	87931	correct
+17248697	17325139	76443	1	lg17	tarseq_934	100.0		True
+CONTIG	tarseq_934	76443	correct
+1835423	1918167	82745	1	lg06	tarseq_935	100.0		True
+CONTIG	tarseq_935	82745	correct
+11110934	11184709	1	73776	lg09	tarseq_936	100.0		True
+CONTIG	tarseq_936	73776	correct
+1	77271	77271	1	scaffold_369	tarseq_937	100.0		True
+CONTIG	tarseq_937	77271	correct
+1	80993	80993	1	scaffold_357	tarseq_938	100.0		True
+CONTIG	tarseq_938	80993	correct
+19214264	19278891	1	64628	lg11	tarseq_939	100.0		True
+CONTIG	tarseq_939	64628	correct
+142050	214307	72258	1	scaffold_170	tarseq_940	100.0		True
+CONTIG	tarseq_940	72258	correct
+12142121	12214124	1	72004	lg18	tarseq_941	100.0		True
+CONTIG	tarseq_941	72004	correct
+663739	737168	1	73430	lg15	tarseq_942	100.0		True
+CONTIG	tarseq_942	73430	correct
+14584512	14654404	69893	1	lg22	tarseq_943	100.0		True
+CONTIG	tarseq_943	69893	correct
+11741421	11823367	1	81947	lg10	tarseq_944	100.0		True
+CONTIG	tarseq_944	81947	correct
+14727543	14800029	72487	1	lg22	tarseq_945	100.0		True
+CONTIG	tarseq_945	72487	correct
+11929219	12012060	82842	1	lg10	tarseq_946	100.0		True
+CONTIG	tarseq_946	82842	correct
+1	76008	76008	1	scaffold_214	tarseq_947	100.0		True
+CONTIG	tarseq_947	76008	correct
+1	77066	77066	1	scaffold_192	tarseq_948	100.0		True
+CONTIG	tarseq_948	77066	correct
+17745936	17823525	1	77590	lg14	tarseq_949	100.0		True
+CONTIG	tarseq_949	77590	correct
+1	70644	70644	1	scaffold_184	tarseq_950	100.0		True
+CONTIG	tarseq_950	70644	correct
+1191654	1261869	70216	1	lg08	tarseq_951	100.0		True
+CONTIG	tarseq_951	70216	correct
+1	70238	1	70238	scaffold_377	tarseq_952	100.0		True
+CONTIG	tarseq_952	70238	correct
+14503948	14584411	1	80464	lg22	tarseq_953	100.0		True
+CONTIG	tarseq_953	80464	correct
+16646975	16727148	1	80174	lg17	tarseq_954	100.0		True
+CONTIG	tarseq_954	80174	correct
+5837033	5913594	76562	1	lg19	tarseq_955	100.0		True
+CONTIG	tarseq_955	76562	correct
+2346567	2427637	1	81071	lg02	tarseq_956	100.0		True
+CONTIG	tarseq_956	81071	correct
+7185527	7254390	1	68864	lg23	tarseq_957	100.0		True
+CONTIG	tarseq_957	68864	correct
+617513	692379	1	74867	scaffold_116	tarseq_958	100.0		True
+CONTIG	tarseq_958	74867	correct
+63641	132533	68893	1	scaffold_281	tarseq_959	100.0		True
+CONTIG	tarseq_959	68893	correct
+1	68081	1	68081	scaffold_386	tarseq_960	100.0		True
+CONTIG	tarseq_960	68081	correct
+13206656	13275693	69038	1	lg10	tarseq_961	100.0		True
+CONTIG	tarseq_961	69038	correct
+2868755	2937653	1	68899	lg18	tarseq_962	100.0		True
+CONTIG	tarseq_962	68899	correct
+5813799	5883553	69755	1	lg23	tarseq_963	100.0		True
+CONTIG	tarseq_963	69755	correct
+1122898	1191153	1	68256	lg08	tarseq_964	100.0		True
+CONTIG	tarseq_964	68256	correct
+1	70741	1	70741	scaffold_218	tarseq_965	100.0		True
+CONTIG	tarseq_965	70741	correct
+12071245	12141620	70376	1	lg18	tarseq_966	100.0		True
+CONTIG	tarseq_966	70376	correct
+1	67194	1	67194	scaffold_389	tarseq_967	100.0		True
+CONTIG	tarseq_967	67194	correct
+1	69062	1	69062	scaffold_381	tarseq_968	100.0		True
+CONTIG	tarseq_968	69062	correct
+112108	189197	1	77090	scaffold_204	tarseq_969	100.0		True
+CONTIG	tarseq_969	77090	correct
+16963980	17038033	74054	1	lg17	tarseq_970	100.0		True
+CONTIG	tarseq_970	74054	correct
+17037052	17103585	66534	1	lg02	tarseq_971	100.0		True
+CONTIG	tarseq_971	66534	correct
+457460	523622	1	66163	lg12	tarseq_972	100.0		True
+CONTIG	tarseq_972	66163	correct
+987631	1052154	64524	1	lg16	tarseq_973	100.0		True
+CONTIG	tarseq_973	64524	correct
+8187087	8260360	73274	1	lg14	tarseq_974	100.0		True
+CONTIG	tarseq_974	73274	correct
+1	63140	63140	1	scaffold_281	tarseq_975	100.0		True
+CONTIG	tarseq_975	63140	correct
+15969737	16032841	63105	1	lg17	tarseq_976	100.0		True
+CONTIG	tarseq_976	63105	correct
+1	65802	65802	1	scaffold_395	tarseq_977	100.0		True
+CONTIG	tarseq_977	65802	correct
+15713493	15775655	1	62163	lg19	tarseq_978	100.0		True
+CONTIG	tarseq_978	62163	correct
+14926838	14998720	1	71883	lg15	tarseq_979	100.0		True
+CONTIG	tarseq_979	71883	correct
+3659249	3721748	62500	1	lg01	tarseq_980	100.0		True
+CONTIG	tarseq_980	62500	correct
+14654905	14727042	1	72138	lg22	tarseq_981	100.0		True
+CONTIG	tarseq_981	72138	correct
+16439442	16507774	1	68333	lg14	tarseq_982	100.0		True
+CONTIG	tarseq_982	68333	correct
+2113998	2179813	65816	1	lg18	tarseq_983	100.0		True
+CONTIG	tarseq_983	65816	correct
+10719174	10781141	1	61968	lg02	tarseq_984	100.0		True
+CONTIG	tarseq_984	61968	correct
+1	64737	1	64737	scaffold_397	tarseq_985	100.0		True
+CONTIG	tarseq_985	64737	correct
+10163050	10224283	1	61234	lg12	tarseq_986	100.0		True
+CONTIG	tarseq_986	61234	correct
+14075832	14142168	66337	1	lg10	tarseq_987	100.0		True
+CONTIG	tarseq_987	66337	correct
+109428	170988	61561	1	scaffold_251	tarseq_988	100.0		True
+CONTIG	tarseq_988	61561	correct
+1	60331	1	60331	scaffold_414	tarseq_989	100.0		True
+CONTIG	tarseq_989	60331	correct
+1	60968	1	60968	scaffold_411	tarseq_990	100.0		True
+CONTIG	tarseq_990	60968	correct
+52475	114227	61753	1	scaffold_306	tarseq_991	100.0		True
+CONTIG	tarseq_991	61753	correct
+1	61028	1	61028	scaffold_410	tarseq_992	100.0		True
+CONTIG	tarseq_992	61028	correct
+1	73441	73441	1	lg22	tarseq_993	100.0		True
+CONTIG	tarseq_993	73441	correct
+2152534	2211730	59197	1	lg09	tarseq_994	100.0		True
+CONTIG	tarseq_994	59197	correct
+729288	799341	1	70054	lg05	tarseq_995	100.0		True
+CONTIG	tarseq_995	70054	correct
+1052655	1113428	1	60774	lg16	tarseq_996	100.0		True
+CONTIG	tarseq_996	60774	correct
+1	67460	1	67460	scaffold_116	tarseq_997	100.0		True
+CONTIG	tarseq_997	67460	correct
+14142669	14203026	1	60358	lg10	tarseq_998	100.0		True
+CONTIG	tarseq_998	60358	correct
+14187178	14252895	65718	1	lg13	tarseq_999	100.0		True
+CONTIG	tarseq_999	65718	correct
+55377	124665	69289	1	scaffold_292	tarseq_1000	100.0		True
+CONTIG	tarseq_1000	69289	correct
+1	66548	1	66548	scaffold_392	tarseq_1001	100.0		True
+CONTIG	tarseq_1001	66548	correct
+1	71331	71331	1	scaffold_225	tarseq_1002	100.0		True
+CONTIG	tarseq_1002	71331	correct
+9097155	9163286	1	66132	lg15	tarseq_1003	100.0		True
+CONTIG	tarseq_1003	66132	correct
+56402	118952	1	62551	scaffold_297	tarseq_1004	100.0		True
+CONTIG	tarseq_1004	62551	correct
+1	66531	66531	1	scaffold_393	tarseq_1005	100.0		True
+CONTIG	tarseq_1005	66531	correct
+1	62850	1	62850	scaffold_403	tarseq_1006	100.0		True
+CONTIG	tarseq_1006	62850	correct
+94017	154219	1	60203	scaffold_265	tarseq_1007	100.0		True
+CONTIG	tarseq_1007	60203	correct
+1	60051	1	60051	scaffold_415	tarseq_1008	100.0		True
+CONTIG	tarseq_1008	60051	correct
+1	57921	57921	1	scaffold_428	tarseq_1009	100.0		True
+CONTIG	tarseq_1009	57921	correct
+1	50809	50809	1	scaffold_494	tarseq_1010	100.0		True
+CONTIG	tarseq_1010	50809	correct
+1	41231	1	41231	scaffold_504	tarseq_1011	100.0		True
+CONTIG	tarseq_1011	41231	correct
