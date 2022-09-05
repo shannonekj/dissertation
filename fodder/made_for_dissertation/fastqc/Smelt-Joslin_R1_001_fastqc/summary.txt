@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Smelt-Joslin_R1_001.fastq.gz
+PASS	Per base sequence quality	Smelt-Joslin_R1_001.fastq.gz
+WARN	Per tile sequence quality	Smelt-Joslin_R1_001.fastq.gz
+PASS	Per sequence quality scores	Smelt-Joslin_R1_001.fastq.gz
+FAIL	Per base sequence content	Smelt-Joslin_R1_001.fastq.gz
+PASS	Per sequence GC content	Smelt-Joslin_R1_001.fastq.gz
+PASS	Per base N content	Smelt-Joslin_R1_001.fastq.gz
+PASS	Sequence Length Distribution	Smelt-Joslin_R1_001.fastq.gz
+WARN	Sequence Duplication Levels	Smelt-Joslin_R1_001.fastq.gz
+PASS	Overrepresented sequences	Smelt-Joslin_R1_001.fastq.gz
+FAIL	Adapter Content	Smelt-Joslin_R1_001.fastq.gz

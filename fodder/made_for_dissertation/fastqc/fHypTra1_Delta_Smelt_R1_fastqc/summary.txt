@@ -1,0 +1,11 @@
+PASS	Basic Statistics	fHypTra1_Delta_Smelt_R1.fastq.gz
+PASS	Per base sequence quality	fHypTra1_Delta_Smelt_R1.fastq.gz
+PASS	Per tile sequence quality	fHypTra1_Delta_Smelt_R1.fastq.gz
+PASS	Per sequence quality scores	fHypTra1_Delta_Smelt_R1.fastq.gz
+FAIL	Per base sequence content	fHypTra1_Delta_Smelt_R1.fastq.gz
+PASS	Per sequence GC content	fHypTra1_Delta_Smelt_R1.fastq.gz
+PASS	Per base N content	fHypTra1_Delta_Smelt_R1.fastq.gz
+PASS	Sequence Length Distribution	fHypTra1_Delta_Smelt_R1.fastq.gz
+FAIL	Sequence Duplication Levels	fHypTra1_Delta_Smelt_R1.fastq.gz
+PASS	Overrepresented sequences	fHypTra1_Delta_Smelt_R1.fastq.gz
+PASS	Adapter Content	fHypTra1_Delta_Smelt_R1.fastq.gz
