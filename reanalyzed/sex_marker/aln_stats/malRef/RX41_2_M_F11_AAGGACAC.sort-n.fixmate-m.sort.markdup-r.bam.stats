@@ -1,0 +1,14 @@
+RX41_2_M_F11_AAGGACAC.sort-n.fixmate-m.sort.markdup-r.bam
+5744189 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+52601 + 0 supplementary
+0 + 0 duplicates
+5283872 + 0 mapped (91.99% : N/A)
+5691588 + 0 paired in sequencing
+2840863 + 0 read1
+2850725 + 0 read2
+5103200 + 0 properly paired (89.66% : N/A)
+5202666 + 0 with itself and mate mapped
+28605 + 0 singletons (0.50% : N/A)
+87024 + 0 with mate mapped to a different chr
+31595 + 0 with mate mapped to a different chr (mapQ>=5)

@@ -1,0 +1,6 @@
+# NOTE: file of commands run to produce files for disseration stats, figs, etc...
+
+2022.11.06 - Sex Marker
+1. get alignment stats
+    Samtools v1.10, htslib 1.10.2
+    

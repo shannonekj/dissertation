@@ -1,0 +1,14 @@
+RX03_1_F_C07_CAAGACTA.sort-n.fixmate-m.sort.markdup-r.bam
+11983704 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+133232 + 0 supplementary
+0 + 0 duplicates
+10976945 + 0 mapped (91.60% : N/A)
+11850472 + 0 paired in sequencing
+5913321 + 0 read1
+5937151 + 0 read2
+10540162 + 0 properly paired (88.94% : N/A)
+10780770 + 0 with itself and mate mapped
+62943 + 0 singletons (0.53% : N/A)
+214726 + 0 with mate mapped to a different chr
+85860 + 0 with mate mapped to a different chr (mapQ>=5)

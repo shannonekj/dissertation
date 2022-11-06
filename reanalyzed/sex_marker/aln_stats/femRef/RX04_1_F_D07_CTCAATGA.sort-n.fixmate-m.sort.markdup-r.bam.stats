@@ -1,0 +1,14 @@
+RX04_1_F_D07_CTCAATGA.sort-n.fixmate-m.sort.markdup-r.bam
+8808244 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+89546 + 0 supplementary
+0 + 0 duplicates
+8163484 + 0 mapped (92.68% : N/A)
+8718698 + 0 paired in sequencing
+4351749 + 0 read1
+4366949 + 0 read2
+7870096 + 0 properly paired (90.27% : N/A)
+8032248 + 0 with itself and mate mapped
+41690 + 0 singletons (0.48% : N/A)
+141878 + 0 with mate mapped to a different chr
+59384 + 0 with mate mapped to a different chr (mapQ>=5)

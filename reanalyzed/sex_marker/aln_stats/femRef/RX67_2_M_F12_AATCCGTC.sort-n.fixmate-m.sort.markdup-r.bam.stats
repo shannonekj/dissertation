@@ -1,0 +1,14 @@
+RX67_2_M_F12_AATCCGTC.sort-n.fixmate-m.sort.markdup-r.bam
+5634059 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+49828 + 0 supplementary
+0 + 0 duplicates
+5223853 + 0 mapped (92.72% : N/A)
+5584231 + 0 paired in sequencing
+2787672 + 0 read1
+2796559 + 0 read2
+5052914 + 0 properly paired (90.49% : N/A)
+5147188 + 0 with itself and mate mapped
+26837 + 0 singletons (0.48% : N/A)
+81294 + 0 with mate mapped to a different chr
+32307 + 0 with mate mapped to a different chr (mapQ>=5)

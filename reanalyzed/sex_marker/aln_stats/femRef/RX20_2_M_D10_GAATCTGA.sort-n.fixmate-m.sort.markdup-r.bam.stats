@@ -1,0 +1,14 @@
+RX20_2_M_D10_GAATCTGA.sort-n.fixmate-m.sort.markdup-r.bam
+9152632 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+100894 + 0 supplementary
+0 + 0 duplicates
+8455326 + 0 mapped (92.38% : N/A)
+9051738 + 0 paired in sequencing
+4517505 + 0 read1
+4534233 + 0 read2
+8127824 + 0 properly paired (89.79% : N/A)
+8308646 + 0 with itself and mate mapped
+45786 + 0 singletons (0.51% : N/A)
+158858 + 0 with mate mapped to a different chr
+67451 + 0 with mate mapped to a different chr (mapQ>=5)

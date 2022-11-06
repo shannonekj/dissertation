@@ -1,0 +1,14 @@
+RX48_1_F_H08_GAACAGGC.sort-n.fixmate-m.sort.markdup-r.bam
+9018907 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+84584 + 0 supplementary
+0 + 0 duplicates
+8278429 + 0 mapped (91.79% : N/A)
+8934323 + 0 paired in sequencing
+4458897 + 0 read1
+4475426 + 0 read2
+7988852 + 0 properly paired (89.42% : N/A)
+8148092 + 0 with itself and mate mapped
+45753 + 0 singletons (0.51% : N/A)
+140052 + 0 with mate mapped to a different chr
+50103 + 0 with mate mapped to a different chr (mapQ>=5)

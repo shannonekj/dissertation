@@ -1,0 +1,14 @@
+RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r.bam
+4363359 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+38649 + 0 supplementary
+0 + 0 duplicates
+4057888 + 0 mapped (93.00% : N/A)
+4324710 + 0 paired in sequencing
+2159296 + 0 read1
+2165414 + 0 read2
+3926052 + 0 properly paired (90.78% : N/A)
+3999008 + 0 with itself and mate mapped
+20231 + 0 singletons (0.47% : N/A)
+62234 + 0 with mate mapped to a different chr
+24956 + 0 with mate mapped to a different chr (mapQ>=5)

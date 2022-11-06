@@ -1,0 +1,14 @@
+RX34_2_M_G10_ATTGGCTC.sort-n.fixmate-m.sort.markdup-r.bam
+11187518 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+123054 + 0 supplementary
+0 + 0 duplicates
+10229356 + 0 mapped (91.44% : N/A)
+11064464 + 0 paired in sequencing
+5522016 + 0 read1
+5542448 + 0 read2
+9826136 + 0 properly paired (88.81% : N/A)
+10048784 + 0 with itself and mate mapped
+57518 + 0 singletons (0.52% : N/A)
+198486 + 0 with mate mapped to a different chr
+77423 + 0 with mate mapped to a different chr (mapQ>=5)

@@ -1,0 +1,14 @@
+RX05_1_F_E07_GGTGCGAA.sort-n.fixmate-m.sort.markdup-r.bam
+7863002 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+81241 + 0 supplementary
+0 + 0 duplicates
+7287553 + 0 mapped (92.68% : N/A)
+7781761 + 0 paired in sequencing
+3884336 + 0 read1
+3897425 + 0 read2
+7021136 + 0 properly paired (90.23% : N/A)
+7167956 + 0 with itself and mate mapped
+38356 + 0 singletons (0.49% : N/A)
+129100 + 0 with mate mapped to a different chr
+55345 + 0 with mate mapped to a different chr (mapQ>=5)

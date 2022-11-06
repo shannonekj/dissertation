@@ -1,0 +1,14 @@
+RX56_1_F_F09_ACACGAGA.sort-n.fixmate-m.sort.markdup-r.bam
+6599305 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+64921 + 0 supplementary
+0 + 0 duplicates
+6070873 + 0 mapped (91.99% : N/A)
+6534384 + 0 paired in sequencing
+3261421 + 0 read1
+3272963 + 0 read2
+5851898 + 0 properly paired (89.56% : N/A)
+5971306 + 0 with itself and mate mapped
+34646 + 0 singletons (0.53% : N/A)
+105726 + 0 with mate mapped to a different chr
+39414 + 0 with mate mapped to a different chr (mapQ>=5)

@@ -1,0 +1,14 @@
+RX32_2_M_E10_GTCTGTCA.sort-n.fixmate-m.sort.markdup-r.bam
+11764045 + 0 in total (QC-passed reads + QC-failed reads)
+0 + 0 secondary
+128254 + 0 supplementary
+0 + 0 duplicates
+10792463 + 0 mapped (91.74% : N/A)
+11635791 + 0 paired in sequencing
+5806738 + 0 read1
+5829053 + 0 read2
+10370534 + 0 properly paired (89.13% : N/A)
+10603706 + 0 with itself and mate mapped
+60503 + 0 singletons (0.52% : N/A)
+207816 + 0 with mate mapped to a different chr
+82779 + 0 with mate mapped to a different chr (mapQ>=5)
