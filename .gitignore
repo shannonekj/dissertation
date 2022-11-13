@@ -9,3 +9,6 @@ tables_and_figures/~$Tables.xlsx
 reanalyzed/sex_marker/depth_analysis/*no0.sort
 reanalyzed/sex_marker/depth_analysis/*lzma
 reanalyzed/sex_marker/depth_analysis/*gz
+reanalyzed/sex_marker/kmer_analysis/slurm/*
+reanalyzed/sex_marker/kmer_analysis/*male.sig
+reanalyzed/sex_marker/depth_analysis/tmp*
