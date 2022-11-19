@@ -12,3 +12,7 @@ reanalyzed/sex_marker/depth_analysis/*gz
 reanalyzed/sex_marker/kmer_analysis/slurm/*
 reanalyzed/sex_marker/kmer_analysis/*male.sig
 reanalyzed/sex_marker/depth_analysis/tmp*
+reanalyzed/sex_marker/kmer_analysis/tmp*
+reanalyzed/sex_marker/kmer_analysis/*.histo
+reanalyzed/sex_marker/kmer_analysis/*.fasta
+reanalyzed/sex_marker/kmer_analysis/sex_abund.ratios
