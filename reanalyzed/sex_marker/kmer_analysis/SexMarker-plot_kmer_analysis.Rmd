@@ -1,0 +1,105 @@
+---
+title: "SexMarker-plot_kmer_analysis"
+author: "Shannon EK Joslin"
+date: "11/18/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library('ggplot2')
+library('tidyverse')
+setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/kmer_analysis/")
+```
+
+## Distribution of log2 ratios F:M
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+ PLOT HISTOGRAM % of hashes in bin vs log2 male/female
+_ = pylab.hist(ratios, bins=100, density=True)
+pylab.title('distribution of log2 ratios of k-mers, male / female')
+pylab.xlabel('log2 male/female')
+pylab.ylabel('percent of hashes in that bin')
+pylab.axis(xmin=-10, xmax=10)
+_ = pylab.savefig('/tmp/shannon-dist.png')
+
+```{r sex_abundance}
+sex_abund_ratio <- read_table(file="sex_abund.ratios", col_names="m_div_f_abund")
+
+ggplot(sex_abund_ratio, aes(x=m_div_f_abund)) +
+  geom_density(alpha=.2, fill="blue") +
+  geom_histogram(aes(y=..density..), bins=150) 
+```
+
+## Distribution of F only k-mer abundance
+
+You can also embed plots, for example:
+
+```{r female_only_abund_plot, echo=FALSE}
+female_only_abunds <- read_table(file="female_only_abunds.histo", col_names="f_abund")
+female_abunds_within_range <- filter(female_only_abunds, between(f_abund, 0, 500))
+ggplot(female_abunds_within_range, aes(x=f_abund)) +
+  geom_histogram(aes(y=..density..), bins=500) +
+  coord_cartesian(xlim=c(0, 300), ylim=c(0, 0.04))
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Distribution of M only k-mer abundance
+
+You can also embed plots, for example:
+
+```{r male_only_abund_plot, echo=FALSE}
+male_only_abunds <- read_table(file="male_only_abunds.histo", col_names="m_abund")
+male_abunds_within_range <- filter(male_only_abunds, between(m_abund, 0, 500))
+ggplot(male_abunds_within_range, aes(x=m_abund)) +
+  geom_histogram(aes(y=..density..), bins=500) +
+  coord_cartesian(xlim=c(0, 300), ylim=c(0, 0.04))
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Distribution #4 female-only and male-only k-mer abundances in one plot
+
+
+```{r abund_histo_female_and_male, echo=FALSE}
+# combine F & M into one df
+ggplot() +
+  geom_histogram(data=female_abunds_within_range, aes(x=f_abund, y=..density..), bins=500, fill="dark red", alpha=0.5) +
+  geom_histogram(data=male_abunds_within_range, aes(x=m_abund, y=..density..), bins=500, fill="dark blue", alpha=0.5) +
+  #geom_density(data=male_abunds_within_range, aes(x=m_abund, y=..density..), color="blue", alpha=0.5) +
+  #geom_density(data=female_abunds_within_range, aes(x=f_abund, y=..density..), color="red", alpha=0.5) +
+  coord_cartesian(xlim=c(0, 125), ylim=c(0, 0.01))
+```
+
+
+
+
+
+## Density of selected hashes (k-mer with selected abundance)
+
+MALE_ABUND_MIN_CUTOFF = 50
+MALE_ABUND_MAX_CUTOFF = 100
+k-mer with `abund >= MALE_ABUND_MIN_CUTOFF` and `abund < MALE_ABUND_MAX_CUTOFF`
+
+```{r male_abund_plot, echo=FALSE}
+m_abd <- read_table(file="density_male_k-mer_abund_50to100.histo", col_names="density")
+
+ggplot(m_abd, aes(x=density)) + 
+  geom_histogram(aes(y=..density..), bins=20)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Distribution of F only k-mer abundance
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
