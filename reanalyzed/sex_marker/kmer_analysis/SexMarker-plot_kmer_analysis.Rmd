@@ -7,13 +7,18 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-# packages needed tweenr, ggplot2, tidyverse, polyclip, ggforce
+# packages needed tweenr, ggplot2, tidyverse, polyclip, ggforce, cowplot, ggpubr
 library('devtools')
 library('ggplot2')
 library('tidyverse')
 library('tweenr')
 library('polyclip')
 library('ggforce')
+library('cowplot')
+library('ggpubr')
+library('gridExtra')
+library('grid')
+library('lattice')
 setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/kmer_analysis/")
 ```
 
@@ -53,7 +58,7 @@ You can also embed plots, for example:
 female_only_abunds <- read_table(file="female_only_abunds.histo", col_names="f_abund")
 female_abunds_within_range <- filter(female_only_abunds, between(f_abund, 0, 500))
 ggplot(female_abunds_within_range, aes(x=f_abund)) +
-  geom_histogram(aes(y=..density..), bins=500, fill="dark red", alpha=0.5) +
+  geom_histogram(aes(y=..density..), bins=498, fill="dark red", alpha=0.5) +
   coord_cartesian(xlim=c(0, 200), ylim=c(0, 0.04)) +
   scale_x_continuous(breaks=seq(0, 200, 50)) +
   scale_y_continuous(breaks=seq(0, 0.04, 0.005)) +
@@ -71,7 +76,7 @@ You can also embed plots, for example:
 male_only_abunds <- read_table(file="male_only_abunds.histo", col_names="m_abund")
 male_abunds_within_range <- filter(male_only_abunds, between(m_abund, 0, 500))
 ggplot(male_abunds_within_range, aes(x=m_abund)) +
-  geom_histogram(aes(y=..density..),bins=500, fill="dark blue", alpha=0.5) +
+  geom_histogram(aes(y=..density..),bins=498, fill="dark blue", alpha=0.5) +
   coord_cartesian(xlim=c(0, 200), ylim=c(0, 0.04)) +
   scale_x_continuous(breaks=seq(0, 200, 50)) +
   scale_y_continuous(breaks=seq(0, 0.04, 0.005)) +
@@ -80,6 +85,47 @@ ggplot(male_abunds_within_range, aes(x=m_abund)) +
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Make all of the above in a prety fig
+
+```{r combine_abund_figs, echo=FALSE}
+a <- ggplot(sex_abund_ratio, aes(x=m_div_f_abund)) +
+  geom_density(alpha=.2, fill="blue") +
+  geom_histogram(aes(y=..density..), bins=150) +
+  scale_x_continuous(breaks=seq(-16, 16, 2)) +
+  scale_y_continuous(breaks=seq(0, 0.6, 0.05)) +
+  xlab(expression(paste(log[2], "male/female", sep="  "))) +
+  coord_cartesian(xlim=c(-8,8)) +
+  ylab("% k-mers")
+
+f <- ggplot(female_abunds_within_range, aes(x=f_abund)) +
+  geom_histogram(aes(y=..density..), bins=498, fill="dark red", alpha=0.5) +
+  coord_cartesian(xlim=c(0, 200), ylim=c(0, 0.04)) +
+  scale_x_continuous(breaks=seq(0, 200, 50)) +
+  scale_y_continuous(breaks=seq(0, 0.04, 0.005)) +
+  labs(title="Distribution of female-only k-mers", x="k-mer Abundance", y="% k-mers") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+m <- ggplot(male_abunds_within_range, aes(x=m_abund)) +
+  geom_histogram(aes(y=..density..),bins=498, fill="dark blue", alpha=0.5) +
+  coord_cartesian(xlim=c(0, 200), ylim=c(0, 0.04)) +
+  scale_x_continuous(breaks=seq(0, 200, 50)) +
+  scale_y_continuous(breaks=seq(0, 0.04, 0.005)) +
+  labs(title="Distribution of male-only k-mers", x="k-mer Abundance", y="% k-mers") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+gs <- lapply(1:3, function(ii) 
+  grobTree(rectGrob(gp=gpar(fill=ii, alpha=0.5)), textGrob(ii)))
+lay <- rbind(c(1),
+             c(2,3))
+grid.arrange(grobs = gs, layout_matrix = lay)
+
+ggarrange(a, f, m)
+
+
+```
+
+
 
 ## Distribution #4 female-only and male-only k-mer abundances in one plot
 
