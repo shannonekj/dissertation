@@ -92,10 +92,11 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 a <- ggplot(sex_abund_ratio, aes(x=m_div_f_abund)) +
   geom_density(alpha=.2, fill="blue") +
   geom_histogram(aes(y=..density..), bins=150) +
-  scale_x_continuous(breaks=seq(-16, 16, 2)) +
+  scale_x_continuous(breaks=seq(-16, 16, 1)) +
   scale_y_continuous(breaks=seq(0, 0.6, 0.05)) +
-  xlab(expression(paste(log[2], "male/female", sep="  "))) +
+  xlab(expression(paste(log[2], frac("male","female"), sep="   "))) +
   coord_cartesian(xlim=c(-8,8)) +
+  theme(text=element_text(size=24)) +
   ylab("% k-mers")
 
 f <- ggplot(female_abunds_within_range, aes(x=f_abund)) +
@@ -103,26 +104,29 @@ f <- ggplot(female_abunds_within_range, aes(x=f_abund)) +
   coord_cartesian(xlim=c(0, 200), ylim=c(0, 0.04)) +
   scale_x_continuous(breaks=seq(0, 200, 50)) +
   scale_y_continuous(breaks=seq(0, 0.04, 0.005)) +
-  labs(title="Distribution of female-only k-mers", x="k-mer Abundance", y="% k-mers") +
-  theme(plot.title = element_text(hjust = 0.5))
+  labs(title="Female-only k-mers", x="k-mer Abundance", y="% k-mers") +
+  theme(plot.title = element_text(hjust = 0.5), text=element_text(size=24))
 
 m <- ggplot(male_abunds_within_range, aes(x=m_abund)) +
   geom_histogram(aes(y=..density..),bins=498, fill="dark blue", alpha=0.5) +
   coord_cartesian(xlim=c(0, 200), ylim=c(0, 0.04)) +
   scale_x_continuous(breaks=seq(0, 200, 50)) +
   scale_y_continuous(breaks=seq(0, 0.04, 0.005)) +
-  labs(title="Distribution of male-only k-mers", x="k-mer Abundance", y="% k-mers") +
-  theme(plot.title = element_text(hjust = 0.5))
+  labs(title="Male-only k-mers", x="k-mer Abundance", y="% k-mers") +
+  theme(plot.title = element_text(hjust = 0.5), text=element_text(size=24))
 
-gs <- lapply(1:3, function(ii) 
-  grobTree(rectGrob(gp=gpar(fill=ii, alpha=0.5)), textGrob(ii)))
-lay <- rbind(c(1),
-             c(2,3))
-grid.arrange(grobs = gs, layout_matrix = lay)
+ggarrange(a, 
+          ggarrange(f, m, ncol = 2, labels = c("B", "C")),
+          nrow = 2, 
+          labels = "A") 
 
-ggarrange(a, f, m)
-
-
+#SAVE
+png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-kmer_abundances.png", width=1020, height=730)
+ggarrange(a, 
+          ggarrange(f, m, ncol=2, labels=c("B", "C"), font.label=list(color="black",size=24)),
+          nrow = 2, labels = "A",
+          font.label=list(color="black",size=24))
+dev.off()
 ```
 
 
@@ -131,19 +135,23 @@ ggarrange(a, f, m)
 
 
 ```{r abund_histo_female_and_male, echo=FALSE}
-ggplot() +
-  #geom_histogram(data=female_abunds_within_range, aes(x=f_abund, y=..density..), bins=500, fill="dark red", alpha=0.5) +
-  #geom_histogram(data=male_abunds_within_range, aes(x=m_abund, y=..density..), bins=500, fill="dark blue", alpha=0.5) +
-  geom_density(data=male_abunds_within_range, aes(x=m_abund, y=..density..), color="blue", fill="dark blue", alpha=0.5) +
-  geom_density(data=female_abunds_within_range, aes(x=f_abund, y=..density..), color="red", fill="dark red", alpha=0.5) +
+p <- ggplot() +
+  geom_histogram(data=female_abunds_within_range, aes(x=f_abund, y=..density..), bins=497, fill="dark red", alpha=0.5) +
+  geom_histogram(data=male_abunds_within_range, aes(x=m_abund, y=..density..), bins=497, fill="dark blue", alpha=0.5) +
+  #geom_density(data=male_abunds_within_range, aes(x=m_abund, y=..density..), color="blue", fill="dark blue", alpha=0.5) +
+  #geom_density(data=female_abunds_within_range, aes(x=f_abund, y=..density..), color="red", fill="dark red", alpha=0.5) +
   coord_cartesian(xlim=c(0, 125), ylim=c(0, 0.01)) +
   scale_x_continuous(breaks=seq(0, 1200, 10)) +
   scale_y_continuous(breaks=seq(0, 0.01, 0.00125)) +
-  labs(x="k-mer Abundance", y="n k-mers / 1000")
+  theme(legend.position = c(0.01, 0.1), legend.background = element_rect(fill = "white")) +
+  labs(x="k-mer Abundance", y=expression(frac("n k-mers","1000"))) +
+  theme(text=element_text(size=24))
+
+
+
 
 #SAVE
-png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-Distribution_of_sex-specific_kmer_abundance.png",
-width=1120, height=630)
+png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-Distribution_of_sex-specific_kmer_abundance.png", width=1020, height=620)
 ggplot() +
   geom_density(data=male_abunds_within_range, aes(x=m_abund, y=..density..), color="blue", fill="dark blue", alpha=0.5) +
   geom_density(data=female_abunds_within_range, aes(x=f_abund, y=..density..), color="red", fill="dark red", alpha=0.5) +
@@ -195,7 +203,7 @@ ggplot(contig_abunds, aes(m_ctg_abund, f_ctg_abund)) +
   geom_abline(aes(intercept=0, slope=1), color="mediumpurple4", linetype="dashed") +
   facet_zoom(xlim=c(0,200), ylim=c(0, 200))
 
-png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-male_vs_female_abundance_in_select_contigs.png", width=1120, height=630)
+png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-male_vs_female_abundance_in_select_contigs.png", width=1020, height=630)
 ggplot(contig_abunds, aes(m_ctg_abund, f_ctg_abund)) +
   geom_point(color="black", size=2) +
   labs(x="Male Abundance", y="Female Abundance") +
