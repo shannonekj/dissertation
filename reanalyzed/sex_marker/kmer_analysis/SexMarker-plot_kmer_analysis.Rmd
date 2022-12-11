@@ -182,21 +182,30 @@ male_hash_abund <- read_table(file="male_kmer_abunds_in_male_contigs.histo", col
 max_abd <- 150
 min_abd <- 0
 f_hsh_subset <- female_hash_abund %>% filter(f_hsh_abund>=min_abd & f_hsh_abund<=max_abd)
-m_hsh_subset <- male_hash_abund %>% filter(m_hsh_abund>=min_abd & m_hsh_abund<=max_abd)
+m_hsh_subs
 
+# stats
+mean(female_hash_abund$f_hsh_abund)
+mean(male_hash_abund$m_hsh_abund)
+print(paste("Female meand abund is ", mean(female_hash_abund$f_hsh_abund), ", while male mean abund is ", mean(male_hash_abund$m_hsh_abund), "or roughly ", ((mean(male_hash_abund$m_hsh_abund))/(mean(female_hash_abund$f_hsh_abund)))*100, "%", sep=""))
+
+# plot
 n_bin <- (max_abd-min_abd)/2
-
 p2 <- ggplot() +
-  geom_histogram(data=f_hsh_subset, aes(x=f_hsh_abund, y=..density..), bins=n_bin, fill="dark red", alpha=0.5) +
-  geom_histogram(data=m_hsh_subset, aes(x=m_hsh_abund, y=..density..), bins=n_bin, fill="dark blue", alpha=0.5) +
+  #geom_histogram(data=f_hsh_subset, aes(x=f_hsh_abund, y=..density..), bins=n_bin, fill="dark red", alpha=0.5) +
+  #geom_histogram(data=m_hsh_subset, aes(x=m_hsh_abund, y=..density..), bins=n_bin, fill="dark blue", alpha=0.5) +
   geom_density(data=m_hsh_subset, aes(x=m_hsh_abund, y=..density..), color="blue", fill="dark blue", alpha=0.5) +
   geom_density(data=f_hsh_subset, aes(x=f_hsh_abund, y=..density..), color="red", fill="dark red", alpha=0.5) +
   scale_x_continuous(breaks=seq(0, 150, 15)) +
-  scale_y_continuous(breaks=seq(0, 0.03, 0.005)) +
+  scale_y_continuous(breaks=seq(0, 0.03, 0.0025)) +
   theme(legend.position = c(0.01, 0.1), legend.background = element_rect(fill = "white")) +
-  labs(x="k-mer Abundance") 
+  labs(x="k-mer Abundance") +
   theme(text=element_text(size=24))
 
+# save
+png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-distribution_male_vs_female_abundance_in_select_contigs.png", width=1020, height=830)
+p2
+dev.off()
 
 ```
 
