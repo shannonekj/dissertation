@@ -20,3 +20,5 @@ reanalyzed/sex_marker/kmer_analysis/sex_abund.ratios
 reanalyzed/sex_marker/depth_analysis/*Ref.depth*
 reanalyzed/sex_marker/kmer_analysis/contigs.match=common5.fa
 reanalyzed/sex_marker/kmer_analysis/merged_bams_maleRef/*
+reanalyzed/sex_marker/SexFindR/step0-mapping/femaleRef_stats/*.stats
+reanalyzed/sex_marker/SexFindR/step0-mapping/maleRef_stats/*.stats
