@@ -1,0 +1,21 @@
+This directory contains DifCover output from comparing coverage of RX29_1_F_D08_CTGAGCCA.sort-n.fixmate-m.sort.markdup-r.bam and RX32_2_M_E10_GTCTGTCA.sort-n.fixmate-m.sort.markdup-r.bam in /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-mapping/00-alignments_F
+
+SOFTWARE VERSIONS:
+    -samtools 1.10
+    -Using htslib 1.10.2
+    -bedtools v2.29.2
+    -R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+
+FILES:
+    Renaming.list == file with the original path to sample1 and sample2 sorted bam files
+    ref.length.Vk1s_sorted == sorted lengths of reference genome scaffolds
+    *.bedcov.Vk1s_sorted == bed coverage files
+    *.unionbedcv == coverage of each bed interval for sample1 and sample2 in corresponding columns
+    *.ratio_per_w_CC0_a10_A219_b10_B240_v1000_l500 == ratio of valid bases for sample1 sand sample2 for each window along genome :: calculation ratio=sum_of_cov(sample1)/sum_of_cov(sample2)
+    *.log2adj_ == AC*log2(ratio) of above file for each window
+    *.DNAcopyout == [chr | loc.start | loc.end | num.mark | seg.mean]; num.mark=# markers in segment; seg.mean=mean copy number ratio of each segment
+    *.pdf == plots of whole and plateau copy number ratios between sample1 and sample2; plot one is ordered by locations throughout genome; plot two is ordered by the value of the segment means
+    *.DNAcopyout.len == [Contig | contig_length | begin_of_interval|  length_of_interval | ratio]; length of each DNAcopy intervals with corresponding ratios
+    *.DNAcopyout.len.hist_b1 == length of each DNA copy interval with corresponding whole contig (DifCover explanation = computed length of each DNAcopy interval and output length of the whole contig to which that interval belongs)
+    *.DNAcopyout.up0.7369656 == sample1_coverage > sample2_coverage; DNAcopy intervals with av(adj_coef*log2ratio)> p, where p=enrichment scores threshold (when p=2 will report regions with coverage in sample1 being roughly 4 times larger than coverage in sample2)
+    *.DNAcopyout.down0.7369656 == sample2_coverage > sample1_coverage; DNAcopy intervals with av(adj_coef*log2ratio)> p, where p=enrichment scores threshold (when p=2 will report regions with coverage in sample1 being roughly 4 times larger than coverage in sample2)
