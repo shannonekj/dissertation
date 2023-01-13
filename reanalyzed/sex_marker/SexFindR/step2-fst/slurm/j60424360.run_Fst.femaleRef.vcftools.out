@@ -1,0 +1,47 @@
+==========================================
+SLURM_JOB_ID = 60424360
+SLURM_NODELIST = bigmem10
+==========================================
+Hello sejoslin, the current time is 16:00:06 23/01/12 in the Holocene Epoch of the Quaternary Period
+...you may be outdated but at least you're updated.
+
+You are running the following jobs:
+               JOBID PARTITION     NAME     USER  ACCOUNT ST        TIME   TIME_LEFT NODES CPU MIN_ME NODELIST(REASON)
+            60424360   bigmemm   femFst sejoslin millermr  R        0:01     3:59:59     1 1   4G     bigmem10
+            60423447      high     bash sejoslin millermr  R     2:02:08  2-21:57:52     1 7   16G    c10-74
+bigmem10
+My SLURM_JOB_ID: 60424360
+
+Sanity Checks --
+    SNP Density directory
+    VCF directory : /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling/femaleRef
+    VCF file : femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz
+    output directory : /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-fst
+
+01/12/23 16:00:07 Finding Fst between females and males using the  female reference genome
+    done.
+JobID|MaxRSS|AveCPU
+60424360.batch|1372K|00:00:15
+Runtime : 15
+Name                : femFst
+User                : sejoslin
+Account             : millermrgrp
+Partition           : bigmemm
+Nodes               : bigmem10
+Cores               : 1
+GPUs                : 0
+State               : COMPLETED
+ExitCode            : 0:0
+Submit              : 2023-01-12T15:59:59
+Start               : 2023-01-12T16:00:05
+End                 : 2023-01-12T16:00:22
+Waited              : 00:00:06
+Reserved walltime   : 04:00:00
+Used walltime       : 00:00:17
+Used CPU time       : 00:00:15
+% User (Computation): 92.08%
+% System (I/O)      :  7.92%
+Mem reserved        : 4G
+Max Mem used        : 1.34M (bigmem10)
+Max Disk Write      : 12.26M (bigmem10)
+Max Disk Read       : 207.87M (bigmem10)

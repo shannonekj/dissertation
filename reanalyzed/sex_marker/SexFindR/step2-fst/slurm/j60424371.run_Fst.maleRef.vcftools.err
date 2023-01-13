@@ -1,0 +1,50 @@
++ set -e
++ hostname
+++ date +%s
++ start=1673568128
++ echo 'My SLURM_JOB_ID: 60424371'
++ sex=M
++ SEX=male
++ snp_dir=/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/maleRef
++ vcf_dir=/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling/maleRef
++ out_dir=/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-fst
++ vcf_file=maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz
++ echo ''
++ echo 'Sanity Checks --'
++ echo '    SNP Density directory'
++ echo '    VCF directory : /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling/maleRef'
++ echo '    VCF file : maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz'
++ echo '    output directory : /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-fst'
++ echo ''
++ '[' -d /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-fst ']'
++ cd /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-fst
+++ date '+%D %T'
++ echo 01/12/23 16:02:08 'Finding Fst between females and males using the  male reference genome'
++ vcftools --gzvcf /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling/maleRef/maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz --weir-fst-pop /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/maleRef/snpDen_males.txt --weir-fst-pop /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/maleRef/snpDen_females.txt --out biallelic_fst_maleRef
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling/maleRef/maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz
+	--weir-fst-pop /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/maleRef/snpDen_males.txt
+	--weir-fst-pop /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/maleRef/snpDen_females.txt
+	--keep /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/maleRef/snpDen_males.txt
+	--keep /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/maleRef/snpDen_females.txt
+	--out biallelic_fst_maleRef
+
+Using zlib version: 1.2.3
+Versions of zlib >= 1.2.4 will be *much* faster when reading zipped VCF files.
+Keeping individuals in 'keep' list
+After filtering, kept 48 out of 48 Individuals
+Outputting Weir and Cockerham Fst estimates.
+Weir and Cockerham mean Fst estimate: -0.0020834
+Weir and Cockerham weighted Fst estimate: 0.0002476
+After filtering, kept 466385 out of a possible 466385 Sites
+Run Time = 12.00 seconds
++ echo '    done.'
++ sstat --format JobID,MaxRSS,AveCPU -P 60424371.batch
+++ date +%s
++ end=1673568140
++ runtime=12
++ echo 'Runtime : 12'
