@@ -1,0 +1,242 @@
+==========================================
+SLURM_JOB_ID = 60412391
+SLURM_NODELIST = bigmem10
+==========================================
+Hello sejoslin, the current time is 15:41:34 23/01/11 in the Holocene Epoch of the Quaternary Period
+...you may be outdated but at least you're updated.
+
+You are running the following jobs:
+               JOBID PARTITION     NAME     USER  ACCOUNT ST        TIME   TIME_LEFT NODES CPU MIN_ME NODELIST(REASON)
+            60360603   bigmemh     bash sejoslin millermr  R  2-07:19:10    16:40:50     1 4   24G    bigmem3
+            60412391   bigmemm cntKmers sejoslin millermr  R        0:00     4:00:00     1 1   4G     bigmem10
+bigmem10
+My SLURM_JOB_ID: 60412391
+
+Sanity Checks --
+    VCF directory : /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling
+    VCF file : RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf
+    output directory : /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density
+
+01/11/23 15:41:36 Processing femaleRef
+01/11/23 15:41:36 Indexing femaleRef vcf file.
+    done.
+01/11/23 15:41:36 Making files of individuals for each sex
+Submitted batch job 60412392
+01/11/23 15:41:36 Making files of individuals for each sex
+Submitted batch job 60412393
+01/11/23 15:41:36 Making files of individuals for each sex
+Submitted batch job 60412394
+01/11/23 15:41:36 Making files of individuals for each sex
+Submitted batch job 60412395
+01/11/23 15:41:36 Making files of individuals for each sex
+Submitted batch job 60412396
+01/11/23 15:41:36 Making files of individuals for each sex
+Submitted batch job 60412397
+01/11/23 15:41:36 Making files of individuals for each sex
+Submitted batch job 60412398
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412399
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412400
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412401
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412402
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412403
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412404
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412405
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412406
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412407
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412408
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412409
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412410
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412411
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412412
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412413
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412414
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412415
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412416
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412417
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412418
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412419
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412420
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412421
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412422
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412423
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412424
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412425
+01/11/23 15:41:37 Making files of individuals for each sex
+Submitted batch job 60412426
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412427
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412428
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412429
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412430
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412431
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412432
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412433
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412434
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412435
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412436
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412437
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412438
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412439
+01/11/23 15:41:38 Processing maleRef
+01/11/23 15:41:38 Indexing maleRef vcf file.
+    done.
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412440
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412441
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412442
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412443
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412444
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412445
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412446
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412447
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412448
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412449
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412450
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412451
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412452
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412453
+01/11/23 15:41:38 Making files of individuals for each sex
+Submitted batch job 60412454
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412455
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412456
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412457
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412458
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412459
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412460
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412461
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412462
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412463
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412464
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412465
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412466
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412467
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412468
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412469
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412470
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412471
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412472
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412473
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412474
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412475
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412476
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412477
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412478
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412479
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412480
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412481
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412482
+01/11/23 15:41:39 Making files of individuals for each sex
+Submitted batch job 60412483
+01/11/23 15:41:40 Making files of individuals for each sex
+Submitted batch job 60412484
+01/11/23 15:41:40 Making files of individuals for each sex
+Submitted batch job 60412485
+01/11/23 15:41:40 Making files of individuals for each sex
+Submitted batch job 60412486
+01/11/23 15:41:40 Making files of individuals for each sex
+Submitted batch job 60412487
+JobID|MaxRSS|AveCPU
+60412391.batch|1332K|00:00:04
+Runtime : 4
+Name                : cntKmers
+User                : sejoslin
+Account             : millermrgrp
+Partition           : bigmemm
+Nodes               : bigmem10
+Cores               : 1
+GPUs                : 0
+State               : COMPLETED
+ExitCode            : 0:0
+Submit              : 2023-01-11T15:41:15
+Start               : 2023-01-11T15:41:34
+End                 : 2023-01-11T15:41:40
+Waited              : 00:00:19
+Reserved walltime   : 04:00:00
+Used walltime       : 00:00:06
+Used CPU time       : 00:00:04
+% User (Computation): 73.26%
+% System (I/O)      : 26.74%
+Mem reserved        : 4G
+Max Mem used        : 1.30M (bigmem10)
+Max Disk Write      : 112.64K (bigmem10)
+Max Disk Read       : 24.42M (bigmem10)

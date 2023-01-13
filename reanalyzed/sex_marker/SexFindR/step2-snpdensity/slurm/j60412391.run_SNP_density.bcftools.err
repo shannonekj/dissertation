@@ -1,0 +1,1074 @@
++ set -e
++ hostname
+++ date +%s
++ start=1673480496
++ echo 'My SLURM_JOB_ID: 60412391'
++ stp_dir=/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity
++ vcf_dir=/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling
++ out_dir=/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density
++ vcf_file=RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf
++ echo ''
++ echo 'Sanity Checks --'
++ echo '    VCF directory : /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling'
++ echo '    VCF file : RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf'
++ echo '    output directory : /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density'
++ echo ''
++ '[' -d /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density ']'
++ cd /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density
++ '[' -f get_SNPdensity.slurm ']'
++ cat
++ chmod a+x get_SNPdensity.slurm
+++ echo -e 'femaleRef\nmaleRef'
++ for i in $(echo -e "femaleRef\nmaleRef")
++ cd /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Processing femaleRef'
++ '[' -d femaleRef ']'
++ cd femaleRef
++ '[' -f get_SNPdensity.slurm ']'
++ cp ../get_SNPdensity.slurm .
++ '[' -d slurm ']'
++ '[' -f femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz ']'
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Indexing femaleRef vcf file.'
++ '[' -f femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz.tbi ']'
++ '[' -f femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz.tbi ']'
++ '[' -f femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz.tbi ']'
++ echo '    done.'
++ mkdir -p individual_vcfs
+++ bcftools query -l femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz
+[W::bcf_hdr_check_sanity] GL should be declared as Number=G
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Making files of individuals for each sex'
+++ echo RX01_1_F_A07_CAGATCTG.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX01_1_F_A07_CAGATCTG.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX01_1_F_A07_CAGATCTG.sort-n.fixmate-m.sort.markdup-r RX01_1_F_A07_CAGATCTG.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Making files of individuals for each sex'
+++ echo RX02_1_F_B07_ACAGCAGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX02_1_F_B07_ACAGCAGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX02_1_F_B07_ACAGCAGA.sort-n.fixmate-m.sort.markdup-r RX02_1_F_B07_ACAGCAGA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Making files of individuals for each sex'
+++ echo RX03_1_F_C07_CAAGACTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX03_1_F_C07_CAAGACTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX03_1_F_C07_CAAGACTA.sort-n.fixmate-m.sort.markdup-r RX03_1_F_C07_CAAGACTA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Making files of individuals for each sex'
+++ echo RX04_1_F_D07_CTCAATGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX04_1_F_D07_CTCAATGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX04_1_F_D07_CTCAATGA.sort-n.fixmate-m.sort.markdup-r RX04_1_F_D07_CTCAATGA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Making files of individuals for each sex'
+++ echo RX05_1_F_E07_GGTGCGAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX05_1_F_E07_GGTGCGAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX05_1_F_E07_GGTGCGAA.sort-n.fixmate-m.sort.markdup-r RX05_1_F_E07_GGTGCGAA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Making files of individuals for each sex'
+++ echo RX06_2_M_A10_AGTACAAG.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX06_2_M_A10_AGTACAAG.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX06_2_M_A10_AGTACAAG.sort-n.fixmate-m.sort.markdup-r RX06_2_M_A10_AGTACAAG.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:36 'Making files of individuals for each sex'
+++ echo RX07_2_M_B10_ACGTATCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX07_2_M_B10_ACGTATCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX07_2_M_B10_ACGTATCA.sort-n.fixmate-m.sort.markdup-r RX07_2_M_B10_ACGTATCA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX08_2_M_C10_CAGCGTTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX08_2_M_C10_CAGCGTTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX08_2_M_C10_CAGCGTTA.sort-n.fixmate-m.sort.markdup-r RX08_2_M_C10_CAGCGTTA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX20_2_M_D10_GAATCTGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX20_2_M_D10_GAATCTGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX20_2_M_D10_GAATCTGA.sort-n.fixmate-m.sort.markdup-r RX20_2_M_D10_GAATCTGA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX22_1_F_F07_TGGTGGTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX22_1_F_F07_TGGTGGTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX22_1_F_F07_TGGTGGTA.sort-n.fixmate-m.sort.markdup-r RX22_1_F_F07_TGGTGGTA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX23_1_F_G07_AGGCTAAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX23_1_F_G07_AGGCTAAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX23_1_F_G07_AGGCTAAC.sort-n.fixmate-m.sort.markdup-r RX23_1_F_G07_AGGCTAAC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX25_1_F_H07_CTAAGGTC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX25_1_F_H07_CTAAGGTC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX25_1_F_H07_CTAAGGTC.sort-n.fixmate-m.sort.markdup-r RX25_1_F_H07_CTAAGGTC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX26_1_F_A08_ATGCCTAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX26_1_F_A08_ATGCCTAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX26_1_F_A08_ATGCCTAA.sort-n.fixmate-m.sort.markdup-r RX26_1_F_A08_ATGCCTAA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX27_1_F_B08_ACCTCCAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX27_1_F_B08_ACCTCCAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX27_1_F_B08_ACCTCCAA.sort-n.fixmate-m.sort.markdup-r RX27_1_F_B08_ACCTCCAA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX28_1_F_C08_CAATGGAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX28_1_F_C08_CAATGGAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX28_1_F_C08_CAATGGAA.sort-n.fixmate-m.sort.markdup-r RX28_1_F_C08_CAATGGAA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX29_1_F_D08_CTGAGCCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX29_1_F_D08_CTGAGCCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX29_1_F_D08_CTGAGCCA.sort-n.fixmate-m.sort.markdup-r RX29_1_F_D08_CTGAGCCA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX31_1_F_E08_GTACGCAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX31_1_F_E08_GTACGCAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX31_1_F_E08_GTACGCAA.sort-n.fixmate-m.sort.markdup-r RX31_1_F_E08_GTACGCAA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX32_2_M_E10_GTCTGTCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX32_2_M_E10_GTCTGTCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX32_2_M_E10_GTCTGTCA.sort-n.fixmate-m.sort.markdup-r RX32_2_M_E10_GTCTGTCA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX33_2_M_F10_AAGAGATC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX33_2_M_F10_AAGAGATC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX33_2_M_F10_AAGAGATC.sort-n.fixmate-m.sort.markdup-r RX33_2_M_F10_AAGAGATC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX34_2_M_G10_ATTGGCTC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX34_2_M_G10_ATTGGCTC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX34_2_M_G10_ATTGGCTC.sort-n.fixmate-m.sort.markdup-r RX34_2_M_G10_ATTGGCTC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX35_2_M_H10_GAGTTAGC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX35_2_M_H10_GAGTTAGC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX35_2_M_H10_GAGTTAGC.sort-n.fixmate-m.sort.markdup-r RX35_2_M_H10_GAGTTAGC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX36_2_M_A11_CATCAAGT.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX36_2_M_A11_CATCAAGT.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX36_2_M_A11_CATCAAGT.sort-n.fixmate-m.sort.markdup-r RX36_2_M_A11_CATCAAGT.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX37_2_M_B11_ACTATGCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX37_2_M_B11_ACTATGCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX37_2_M_B11_ACTATGCA.sort-n.fixmate-m.sort.markdup-r RX37_2_M_B11_ACTATGCA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX38_2_M_C11_CATACCAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX38_2_M_C11_CATACCAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX38_2_M_C11_CATACCAA.sort-n.fixmate-m.sort.markdup-r RX38_2_M_C11_CATACCAA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX39_2_M_D11_GACTAGTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX39_2_M_D11_GACTAGTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX39_2_M_D11_GACTAGTA.sort-n.fixmate-m.sort.markdup-r RX39_2_M_D11_GACTAGTA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX40_2_M_E11_GTGTTCTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX40_2_M_E11_GTGTTCTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX40_2_M_E11_GTGTTCTA.sort-n.fixmate-m.sort.markdup-r RX40_2_M_E11_GTGTTCTA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX41_2_M_F11_AAGGACAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX41_2_M_F11_AAGGACAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX41_2_M_F11_AAGGACAC.sort-n.fixmate-m.sort.markdup-r RX41_2_M_F11_AAGGACAC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX43_2_M_G11_CAAGGAGC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX43_2_M_G11_CAAGGAGC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX43_2_M_G11_CAAGGAGC.sort-n.fixmate-m.sort.markdup-r RX43_2_M_G11_CAAGGAGC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX46_1_F_F08_TTCACGCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX46_1_F_F08_TTCACGCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX46_1_F_F08_TTCACGCA.sort-n.fixmate-m.sort.markdup-r RX46_1_F_F08_TTCACGCA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX47_1_F_G08_ATAGCGAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX47_1_F_G08_ATAGCGAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX47_1_F_G08_ATAGCGAC.sort-n.fixmate-m.sort.markdup-r RX47_1_F_G08_ATAGCGAC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX48_1_F_H08_GAACAGGC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX48_1_F_H08_GAACAGGC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX48_1_F_H08_GAACAGGC.sort-n.fixmate-m.sort.markdup-r RX48_1_F_H08_GAACAGGC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX49_1_F_A09_AACGAACG.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX49_1_F_A09_AACGAACG.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX49_1_F_A09_AACGAACG.sort-n.fixmate-m.sort.markdup-r RX49_1_F_A09_AACGAACG.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX51_1_F_B09_ACGCTCGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX51_1_F_B09_ACGCTCGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX51_1_F_B09_ACGCTCGA.sort-n.fixmate-m.sort.markdup-r RX51_1_F_B09_ACGCTCGA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX52_1_F_C09_CACTTCGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX52_1_F_C09_CACTTCGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX52_1_F_C09_CACTTCGA.sort-n.fixmate-m.sort.markdup-r RX52_1_F_C09_CACTTCGA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:37 'Making files of individuals for each sex'
+++ echo RX54_1_F_D09_CTGGCATA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX54_1_F_D09_CTGGCATA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX54_1_F_D09_CTGGCATA.sort-n.fixmate-m.sort.markdup-r RX54_1_F_D09_CTGGCATA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX55_1_F_E09_GTCGTAGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX55_1_F_E09_GTCGTAGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX55_1_F_E09_GTCGTAGA.sort-n.fixmate-m.sort.markdup-r RX55_1_F_E09_GTCGTAGA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX56_1_F_F09_ACACGAGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX56_1_F_F09_ACACGAGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX56_1_F_F09_ACACGAGA.sort-n.fixmate-m.sort.markdup-r RX56_1_F_F09_ACACGAGA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r RX59_2_M_H11_GATGAATC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX61_2_M_A12_AGTGGTCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX61_2_M_A12_AGTGGTCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX61_2_M_A12_AGTGGTCA.sort-n.fixmate-m.sort.markdup-r RX61_2_M_A12_AGTGGTCA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX62_2_M_B12_AGAGTCAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX62_2_M_B12_AGAGTCAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX62_2_M_B12_AGAGTCAA.sort-n.fixmate-m.sort.markdup-r RX62_2_M_B12_AGAGTCAA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX64_2_M_C12_CCAGTTCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX64_2_M_C12_CCAGTTCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX64_2_M_C12_CCAGTTCA.sort-n.fixmate-m.sort.markdup-r RX64_2_M_C12_CCAGTTCA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX65_2_M_D12_GAGCTGAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX65_2_M_D12_GAGCTGAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX65_2_M_D12_GAGCTGAA.sort-n.fixmate-m.sort.markdup-r RX65_2_M_D12_GAGCTGAA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX66_2_M_E12_TAGGATGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX66_2_M_E12_TAGGATGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX66_2_M_E12_TAGGATGA.sort-n.fixmate-m.sort.markdup-r RX66_2_M_E12_TAGGATGA.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX67_2_M_F12_AATCCGTC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX67_2_M_F12_AATCCGTC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX67_2_M_F12_AATCCGTC.sort-n.fixmate-m.sort.markdup-r RX67_2_M_F12_AATCCGTC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r RX68_2_M_G12_CACCTTAC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX70_2_M_H12_GCCAAGAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX70_2_M_H12_GCCAAGAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX70_2_M_H12_GCCAAGAC.sort-n.fixmate-m.sort.markdup-r RX70_2_M_H12_GCCAAGAC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX71_1_F_G09_ACGACAAG.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX71_1_F_G09_ACGACAAG.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX71_1_F_G09_ACGACAAG.sort-n.fixmate-m.sort.markdup-r RX71_1_F_G09_ACGACAAG.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX73_1_F_H09_GACAGTGC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX73_1_F_H09_GACAGTGC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX73_1_F_H09_GACAGTGC.sort-n.fixmate-m.sort.markdup-r RX73_1_F_H09_GACAGTGC.vcf femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ cd /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling
++ for i in $(echo -e "femaleRef\nmaleRef")
++ cd /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Processing maleRef'
++ '[' -d maleRef ']'
++ cd maleRef
++ '[' -f get_SNPdensity.slurm ']'
++ cp ../get_SNPdensity.slurm .
++ '[' -d slurm ']'
++ '[' -f maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz ']'
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Indexing maleRef vcf file.'
++ '[' -f maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz.tbi ']'
++ '[' -f maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz.tbi ']'
++ '[' -f maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz.tbi ']'
++ echo '    done.'
++ mkdir -p individual_vcfs
+++ bcftools query -l maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz
+[W::bcf_hdr_check_sanity] GL should be declared as Number=G
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX01_1_F_A07_CAGATCTG.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX01_1_F_A07_CAGATCTG.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX01_1_F_A07_CAGATCTG.sort-n.fixmate-m.sort.markdup-r RX01_1_F_A07_CAGATCTG.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX02_1_F_B07_ACAGCAGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX02_1_F_B07_ACAGCAGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX02_1_F_B07_ACAGCAGA.sort-n.fixmate-m.sort.markdup-r RX02_1_F_B07_ACAGCAGA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX03_1_F_C07_CAAGACTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX03_1_F_C07_CAAGACTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX03_1_F_C07_CAAGACTA.sort-n.fixmate-m.sort.markdup-r RX03_1_F_C07_CAAGACTA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX04_1_F_D07_CTCAATGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX04_1_F_D07_CTCAATGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX04_1_F_D07_CTCAATGA.sort-n.fixmate-m.sort.markdup-r RX04_1_F_D07_CTCAATGA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX05_1_F_E07_GGTGCGAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX05_1_F_E07_GGTGCGAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX05_1_F_E07_GGTGCGAA.sort-n.fixmate-m.sort.markdup-r RX05_1_F_E07_GGTGCGAA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX06_2_M_A10_AGTACAAG.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX06_2_M_A10_AGTACAAG.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX06_2_M_A10_AGTACAAG.sort-n.fixmate-m.sort.markdup-r RX06_2_M_A10_AGTACAAG.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX07_2_M_B10_ACGTATCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX07_2_M_B10_ACGTATCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX07_2_M_B10_ACGTATCA.sort-n.fixmate-m.sort.markdup-r RX07_2_M_B10_ACGTATCA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX08_2_M_C10_CAGCGTTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX08_2_M_C10_CAGCGTTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX08_2_M_C10_CAGCGTTA.sort-n.fixmate-m.sort.markdup-r RX08_2_M_C10_CAGCGTTA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX20_2_M_D10_GAATCTGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX20_2_M_D10_GAATCTGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX20_2_M_D10_GAATCTGA.sort-n.fixmate-m.sort.markdup-r RX20_2_M_D10_GAATCTGA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX22_1_F_F07_TGGTGGTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX22_1_F_F07_TGGTGGTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX22_1_F_F07_TGGTGGTA.sort-n.fixmate-m.sort.markdup-r RX22_1_F_F07_TGGTGGTA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX23_1_F_G07_AGGCTAAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX23_1_F_G07_AGGCTAAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX23_1_F_G07_AGGCTAAC.sort-n.fixmate-m.sort.markdup-r RX23_1_F_G07_AGGCTAAC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX25_1_F_H07_CTAAGGTC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX25_1_F_H07_CTAAGGTC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX25_1_F_H07_CTAAGGTC.sort-n.fixmate-m.sort.markdup-r RX25_1_F_H07_CTAAGGTC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX26_1_F_A08_ATGCCTAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX26_1_F_A08_ATGCCTAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX26_1_F_A08_ATGCCTAA.sort-n.fixmate-m.sort.markdup-r RX26_1_F_A08_ATGCCTAA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX27_1_F_B08_ACCTCCAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX27_1_F_B08_ACCTCCAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX27_1_F_B08_ACCTCCAA.sort-n.fixmate-m.sort.markdup-r RX27_1_F_B08_ACCTCCAA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:38 'Making files of individuals for each sex'
+++ echo RX28_1_F_C08_CAATGGAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX28_1_F_C08_CAATGGAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX28_1_F_C08_CAATGGAA.sort-n.fixmate-m.sort.markdup-r RX28_1_F_C08_CAATGGAA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX29_1_F_D08_CTGAGCCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX29_1_F_D08_CTGAGCCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX29_1_F_D08_CTGAGCCA.sort-n.fixmate-m.sort.markdup-r RX29_1_F_D08_CTGAGCCA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX31_1_F_E08_GTACGCAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX31_1_F_E08_GTACGCAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX31_1_F_E08_GTACGCAA.sort-n.fixmate-m.sort.markdup-r RX31_1_F_E08_GTACGCAA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX32_2_M_E10_GTCTGTCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX32_2_M_E10_GTCTGTCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX32_2_M_E10_GTCTGTCA.sort-n.fixmate-m.sort.markdup-r RX32_2_M_E10_GTCTGTCA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX33_2_M_F10_AAGAGATC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX33_2_M_F10_AAGAGATC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX33_2_M_F10_AAGAGATC.sort-n.fixmate-m.sort.markdup-r RX33_2_M_F10_AAGAGATC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX34_2_M_G10_ATTGGCTC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX34_2_M_G10_ATTGGCTC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX34_2_M_G10_ATTGGCTC.sort-n.fixmate-m.sort.markdup-r RX34_2_M_G10_ATTGGCTC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX35_2_M_H10_GAGTTAGC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX35_2_M_H10_GAGTTAGC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX35_2_M_H10_GAGTTAGC.sort-n.fixmate-m.sort.markdup-r RX35_2_M_H10_GAGTTAGC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX36_2_M_A11_CATCAAGT.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX36_2_M_A11_CATCAAGT.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX36_2_M_A11_CATCAAGT.sort-n.fixmate-m.sort.markdup-r RX36_2_M_A11_CATCAAGT.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX37_2_M_B11_ACTATGCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX37_2_M_B11_ACTATGCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX37_2_M_B11_ACTATGCA.sort-n.fixmate-m.sort.markdup-r RX37_2_M_B11_ACTATGCA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX38_2_M_C11_CATACCAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX38_2_M_C11_CATACCAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX38_2_M_C11_CATACCAA.sort-n.fixmate-m.sort.markdup-r RX38_2_M_C11_CATACCAA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX39_2_M_D11_GACTAGTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX39_2_M_D11_GACTAGTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX39_2_M_D11_GACTAGTA.sort-n.fixmate-m.sort.markdup-r RX39_2_M_D11_GACTAGTA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX40_2_M_E11_GTGTTCTA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX40_2_M_E11_GTGTTCTA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX40_2_M_E11_GTGTTCTA.sort-n.fixmate-m.sort.markdup-r RX40_2_M_E11_GTGTTCTA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX41_2_M_F11_AAGGACAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX41_2_M_F11_AAGGACAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX41_2_M_F11_AAGGACAC.sort-n.fixmate-m.sort.markdup-r RX41_2_M_F11_AAGGACAC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX43_2_M_G11_CAAGGAGC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX43_2_M_G11_CAAGGAGC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX43_2_M_G11_CAAGGAGC.sort-n.fixmate-m.sort.markdup-r RX43_2_M_G11_CAAGGAGC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX46_1_F_F08_TTCACGCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX46_1_F_F08_TTCACGCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX46_1_F_F08_TTCACGCA.sort-n.fixmate-m.sort.markdup-r RX46_1_F_F08_TTCACGCA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX47_1_F_G08_ATAGCGAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX47_1_F_G08_ATAGCGAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX47_1_F_G08_ATAGCGAC.sort-n.fixmate-m.sort.markdup-r RX47_1_F_G08_ATAGCGAC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX48_1_F_H08_GAACAGGC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX48_1_F_H08_GAACAGGC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX48_1_F_H08_GAACAGGC.sort-n.fixmate-m.sort.markdup-r RX48_1_F_H08_GAACAGGC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX49_1_F_A09_AACGAACG.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX49_1_F_A09_AACGAACG.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX49_1_F_A09_AACGAACG.sort-n.fixmate-m.sort.markdup-r RX49_1_F_A09_AACGAACG.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX51_1_F_B09_ACGCTCGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX51_1_F_B09_ACGCTCGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX51_1_F_B09_ACGCTCGA.sort-n.fixmate-m.sort.markdup-r RX51_1_F_B09_ACGCTCGA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX52_1_F_C09_CACTTCGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX52_1_F_C09_CACTTCGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX52_1_F_C09_CACTTCGA.sort-n.fixmate-m.sort.markdup-r RX52_1_F_C09_CACTTCGA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX54_1_F_D09_CTGGCATA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX54_1_F_D09_CTGGCATA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX54_1_F_D09_CTGGCATA.sort-n.fixmate-m.sort.markdup-r RX54_1_F_D09_CTGGCATA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX55_1_F_E09_GTCGTAGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX55_1_F_E09_GTCGTAGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX55_1_F_E09_GTCGTAGA.sort-n.fixmate-m.sort.markdup-r RX55_1_F_E09_GTCGTAGA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX56_1_F_F09_ACACGAGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX56_1_F_F09_ACACGAGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX56_1_F_F09_ACACGAGA.sort-n.fixmate-m.sort.markdup-r RX56_1_F_F09_ACACGAGA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r RX59_2_M_H11_GATGAATC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX61_2_M_A12_AGTGGTCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX61_2_M_A12_AGTGGTCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX61_2_M_A12_AGTGGTCA.sort-n.fixmate-m.sort.markdup-r RX61_2_M_A12_AGTGGTCA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX62_2_M_B12_AGAGTCAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX62_2_M_B12_AGAGTCAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX62_2_M_B12_AGAGTCAA.sort-n.fixmate-m.sort.markdup-r RX62_2_M_B12_AGAGTCAA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX64_2_M_C12_CCAGTTCA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX64_2_M_C12_CCAGTTCA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX64_2_M_C12_CCAGTTCA.sort-n.fixmate-m.sort.markdup-r RX64_2_M_C12_CCAGTTCA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX65_2_M_D12_GAGCTGAA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX65_2_M_D12_GAGCTGAA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX65_2_M_D12_GAGCTGAA.sort-n.fixmate-m.sort.markdup-r RX65_2_M_D12_GAGCTGAA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX66_2_M_E12_TAGGATGA.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX66_2_M_E12_TAGGATGA.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX66_2_M_E12_TAGGATGA.sort-n.fixmate-m.sort.markdup-r RX66_2_M_E12_TAGGATGA.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:39 'Making files of individuals for each sex'
+++ echo RX67_2_M_F12_AATCCGTC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX67_2_M_F12_AATCCGTC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX67_2_M_F12_AATCCGTC.sort-n.fixmate-m.sort.markdup-r RX67_2_M_F12_AATCCGTC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:40 'Making files of individuals for each sex'
+++ echo RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r RX68_2_M_G12_CACCTTAC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:40 'Making files of individuals for each sex'
+++ echo RX70_2_M_H12_GCCAAGAC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=M
++ '[' M == F ']'
++ '[' M == M ']'
++ echo RX70_2_M_H12_GCCAAGAC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Male
++ sbatch get_SNPdensity.slurm RX70_2_M_H12_GCCAAGAC.sort-n.fixmate-m.sort.markdup-r RX70_2_M_H12_GCCAAGAC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Male
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:40 'Making files of individuals for each sex'
+++ echo RX71_1_F_G09_ACGACAAG.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX71_1_F_G09_ACGACAAG.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX71_1_F_G09_ACGACAAG.sort-n.fixmate-m.sort.markdup-r RX71_1_F_G09_ACGACAAG.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ for sample in `bcftools query -l ${i}_${vcf_file}.gz`
+++ date '+%D %T'
++ echo 01/11/23 15:41:40 'Making files of individuals for each sex'
+++ echo RX73_1_F_H09_GACAGTGC.sort-n.fixmate-m.sort.markdup-r
+++ cut -d_ -f3
++ sex=F
++ '[' F == F ']'
++ echo RX73_1_F_H09_GACAGTGC.sort-n.fixmate-m.sort.markdup-r
++ SEX=Female
++ sbatch get_SNPdensity.slurm RX73_1_F_H09_GACAGTGC.sort-n.fixmate-m.sort.markdup-r RX73_1_F_H09_GACAGTGC.vcf maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz Female
++ cd /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling
++ sstat --format JobID,MaxRSS,AveCPU -P 60412391.batch
+++ date +%s
++ end=1673480500
++ runtime=4
++ echo 'Runtime : 4'
