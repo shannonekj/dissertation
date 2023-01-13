@@ -40,3 +40,5 @@ reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/*maleRef/
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/*maleRef/*.vcf
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/*maleRef/*.vcf.gz
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/*maleRef/*.vcf.gz.tbi
+reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/*maleRef/slurm/*
+reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/maleRef/manual_analysis/*.txt
