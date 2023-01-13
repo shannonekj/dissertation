@@ -29,6 +29,7 @@ reanalyzed/sex_marker/SexFindR/step1-difcover/DifCover
 reanalyzed/sex_marker/SexFindR/step1-difcover/slurm
 reanalyzed/sex_marker/SexFindR/step1-difcover/*aleRef/RAD_analysis/a?/sample1_sample2.ratio_per_w_CC0_a10_A219_b10_B240_v1000_l500
 reanalyzed/sex_marker/SexFindR/step1-difcover/*aleRef/RAD_analysis/a?/sample[1:2].bedcov.Vk1s_sorted
+reanalyzed/sex_marker/SexFindR/step1-difcover/*aleRef/RAD_analysis/a?/sample1_sample2.unionbedcv
 reanalyzed/sex_marker/SexFindR/step1-difcover/*aleRef/RAD_analysis/a?/outputs/CHRR_integrated_?.fa
 reanalyzed/sex_marker/SexFindR/step0-mapping/maleRef_stats/maleRef_aligned_bam_file_sizes.list
 reanalyzed/sex_marker/SexFindR/step0-mapping/maleRef_stats/maleRef_aligned_bam_top2.AC
