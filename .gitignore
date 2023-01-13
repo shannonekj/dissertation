@@ -36,3 +36,4 @@ reanalyzed/sex_marker/SexFindR/step0-mapping/maleRef_stats/maleRef_aligned_bam_t
 reanalyzed/sex_marker/SexFindR/step0-variantcalling/*maleRef/*maleRef_RAD-Pst1_24F_24M*.vcf
 reanalyzed/sex_marker/SexFindR/step0-variantcalling/*maleRef/CHRR_integrated.fa
 reanalyzed/sex_marker/SexFindR/step0-variantcalling/*maleRef/*maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz
+reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/femaleRef/individual_vcfs/*
