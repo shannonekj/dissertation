@@ -20,5 +20,14 @@ reanalyzed/sex_marker/kmer_analysis/sex_abund.ratios
 reanalyzed/sex_marker/depth_analysis/*Ref.depth*
 reanalyzed/sex_marker/kmer_analysis/contigs.match=common5.fa
 reanalyzed/sex_marker/kmer_analysis/merged_bams_maleRef/*
-reanalyzed/sex_marker/SexFindR/step0-mapping/femaleRef_stats/*.stats
-reanalyzed/sex_marker/SexFindR/step0-mapping/maleRef_stats/*.stats
+reanalyzed/sex_marker/SexFindR/step0-mapping/slurm
+reanalyzed/sex_marker/SexFindR/step0-mapping/*alignments*
+reanalyzed/sex_marker/SexFindR/step0-variantcalling/slurm
+reanalyzed/sex_marker/SexFindR/step0-variantcalling/femaleRef/CHRR_integrated.fa
+reanalyzed/sex_marker/SexFindR/step0-variantcalling/maleRef/CHRR_integrated.fa
+reanalyzed/sex_marker/SexFindR/step1-difcover/DifCover
+reanalyzed/sex_marker/SexFindR/step1-difcover/slurm
+reanalyzed/sex_marker/SexFindR/step1-difcover/*aleRef/RAD_analysis/a?/sample1_sample2.ratio_per_w_CC0_a10_A219_b10_B240_v1000_l500
+reanalyzed/sex_marker/SexFindR/step1-difcover/*aleRef/RAD_analysis/a?/sample[1:2].bedcov.Vk1s_sorted
+reanalyzed/sex_marker/SexFindR/step1-difcover/*aleRef/RAD_analysis/a?/outputs/CHRR_integrated_?.fa
+
