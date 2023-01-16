@@ -48,3 +48,4 @@ reanalyzed/sex_marker/SexFindR/step2-kmersgwas/ABYSS_out
 reanalyzed/sex_marker/SexFindR/step2-kmersgwas/plink_out
 reanalyzed/sex_marker/SexFindR/step2-kmersgwas/slurm
 reanalyzed/sex_marker/SexFindR/step2-kmersgwas/blast_out/pval_1e-*/*maleRef/CHRR_integrated*
+reanalyzed/sex_marker/SexFindR/step2-gwas/slurm
