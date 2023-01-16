@@ -1,0 +1,27 @@
+##
+## GEMMA Version    = 0.98.3 (2020-11-28)
+## Build profile    = 
+## GCC version      = 7.5.0
+## GSL Version      = 1.16
+## OpenBlas         = OpenBLAS 0.3.12  - OpenBLAS 0.3.21 DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=128
+##   arch           = Haswell
+##   threads        = 4
+##   parallel type  = threaded
+##
+## Command Line Input = gemma -bfile maleRef_gwas_plink -lm 2 -o maleRef_gwas_gemma_out 
+##
+## Date = Mon Jan 16 14:45:52 2023
+##
+## Summary Statistics:
+## number of total individuals = 48
+## number of analyzed individuals = 48
+## number of covariates = 1
+## number of phenotypes = 1
+## number of total SNPs/var = 95716
+## number of analyzed SNPs/var = 46843
+##
+## Computation Time:
+## total computation time = 0.021404 min 
+## computation time break down: 
+##      time on optimization = 0.0038925 min 
+##
