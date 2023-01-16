@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH -J kmerGWAS
-#SBATCH -e slurm/j%j.find_regions.kmersGWAS.pval_1e-5.err
-#SBATCH -o slurm/j%j.find_regions.kmersGWAS.pval_1e-5.out
+#SBATCH -e slurm/j%j.find_regions.kmersGWAS.pval_1e-3.err
+#SBATCH -o slurm/j%j.find_regions.kmersGWAS.pval_1e-3.out
 #SBATCH -N 1
 #SBATCH -n 1
 #SBATCH -p bigmemm
@@ -31,8 +31,8 @@ echo "My SLURM_JOB_ID: $SLURM_JOB_ID"
 
 ### MAKE CHANGES ###
 # variables
-pval="1e-5"       # must be in #e-# format
-cutoff=25.0135    # 0.00001 p-val chi-squared cutoff (generated from here: http://courses.atlas.illinois.edu/spring2016/STAT/STAT200/pchisq.html)
+pval="1e-3"       # must be in #e-# format
+cutoff=14.8601    # 0.001 p-val chi-squared cutoff (generated from here: http://courses.atlas.illinois.edu/spring2016/STAT/STAT200/pchisq.html)
 prefix="sex_kmers_${pval}"
 # directories
 stp_dir="/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-kmersgwas"
