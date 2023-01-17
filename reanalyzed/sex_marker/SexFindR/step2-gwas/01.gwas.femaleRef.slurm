@@ -22,7 +22,7 @@
 
 # initialize conda
 . ~/miniconda3/etc/profile.d/conda.sh
-conda activate kmersgwas
+conda activate gwas
 
 # fail on weird errors
 set -o nounset
@@ -87,7 +87,7 @@ echo "    done."
 # filter VCF & convert to plink fmt
 echo $(date +%D' '%T) "Formatting VCF for plink & filtering to remove sites where missingData>50%, maf<5% or maf>95%"
 cd ${out_dir}
-vcftools --vcf ${vcf_dir}/${vcf_file} --plink --remove-indels --max-missing 0.5 --max-maf 0.95 --maf 0.05 --out ${SEX}Ref_gwas
+vcftools --gzvcf ${vcf_dir}/${vcf_file} --plink --remove-indels --max-missing 0.5 --max-maf 0.95 --maf 0.05 --out ${SEX}Ref_gwas
 echo "    done."
 echo ""
 
