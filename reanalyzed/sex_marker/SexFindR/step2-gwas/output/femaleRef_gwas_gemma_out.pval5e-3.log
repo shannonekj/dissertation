@@ -1,0 +1,30 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --bfile ../femaleRef_gwas_plink
+  --extract femaleRef_gwas_gemma_out.pval5e-3.loci
+  --out femaleRef_gwas_gemma_out.pval5e-3
+  --recode compound-genotypes
+
+Hostname: bigmem3
+Working directory: /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/output
+Start time: Tue Jan 17 14:35:18 2023
+
+Random number seed: 1673994918
+515968 MB RAM detected; reserving 257984 MB for main workspace.
+106488 variants loaded from .bim file.
+48 people (0 males, 0 females, 48 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to femaleRef_gwas_gemma_out.pval5e-3.nosex .
+48 phenotype values loaded from .fam.
+--extract: 278 variants remaining.
+Warning: Ignoring phenotypes of missing-sex samples.  If you don't want those
+phenotypes to be ignored, use the --allow-no-sex flag.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 48 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.986286.
+278 variants and 48 people pass filters and QC.
+Among remaining phenotypes, 24 are cases and 24 are controls.
+--recode ped to femaleRef_gwas_gemma_out.pval5e-3.ped +
+femaleRef_gwas_gemma_out.pval5e-3.map ... done.
+
+End time: Tue Jan 17 14:35:18 2023
