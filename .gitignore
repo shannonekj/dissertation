@@ -50,3 +50,4 @@ reanalyzed/sex_marker/SexFindR/step2-kmersgwas/slurm
 reanalyzed/sex_marker/SexFindR/step2-kmersgwas/blast_out/pval_?e-*/*maleRef/CHRR_integrated*
 reanalyzed/sex_marker/SexFindR/step2-gwas/slurm
 reanalyzed/sex_marker/SexFindR/step2-gwas/*maleRef_gwas*
+reanalyzed/sex_marker/SexFindR/step2-gwas/output/*maleRef_gwas*.assoc.txt
