@@ -1,0 +1,36 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --allow-extra-chr
+  --double-id
+  --extract femaleRef_pca.prune.in
+  --make-bed
+  --out femaleRef_pca
+  --pca
+  --set-missing-var-ids @:#
+  --vcf /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step0-variantcalling/femaleRef/femaleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz
+
+Hostname: bigmem10
+Working directory: /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/pca
+Start time: Thu Jan 19 11:52:38 2023
+
+Random number seed: 1674157958
+1031945 MB RAM detected; reserving 515972 MB for main workspace.
+--vcf: femaleRef_pca-temporary.bed + femaleRef_pca-temporary.bim +
+femaleRef_pca-temporary.fam written.
+516292 variants loaded from .bim file.
+516292 missing IDs set.
+48 people (0 males, 0 females, 48 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to femaleRef_pca.nosex .
+--extract: 86351 variants remaining.
+Using up to 95 threads (change this with --threads).
+Before main variant filters, 48 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.869598.
+86351 variants and 48 people pass filters and QC.
+Note: No phenotypes present.
+Relationship matrix calculation complete.
+--pca: Results saved to femaleRef_pca.eigenval and femaleRef_pca.eigenvec .
+--make-bed to femaleRef_pca.bed + femaleRef_pca.bim + femaleRef_pca.fam ...
+done.
+
+End time: Thu Jan 19 11:52:43 2023
