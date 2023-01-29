@@ -53,3 +53,6 @@ reanalyzed/sex_marker/SexFindR/step2-gwas/*maleRef_gwas*
 reanalyzed/sex_marker/SexFindR/step2-gwas/output/*maleRef_gwas*.assoc.txt
 reanalyzed/sex_marker/SexFindR/step2-gwas/pca/*.prune.*
 reanalyzed/sex_marker/SexFindR/step2-gwas/pca/*.bim
+/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers/*.vcf.gz
+/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers/*.ped
+/group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers/*.prune.out
