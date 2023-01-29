@@ -8,7 +8,8 @@
 #SBATCH --time=04:00:00
 #SBATCH --mem=16G
 
-#Script to run gwas using:
+
+# Script to run gwas using:
 # SOFTWARE:
 ##    -bcftools=1.9
 ##    -htslib=1.9
