@@ -1,0 +1,39 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --allow-extra-chr
+  --allow-no-sex
+  --extract femaleRef_no_outliers.prune.in
+  --file femaleRef_no_outliers_gemma_in
+  --make-bed
+  --out femaleRef_no_outliers_gemma_in
+  --pheno phenotypes.list
+  --remove-fam outliers.list
+
+Hostname: bigmem10
+Working directory: /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers
+Start time: Sat Jan 28 19:39:40 2023
+
+Random number seed: 1674963580
+1031945 MB RAM detected; reserving 515972 MB for main workspace.
+Scanning .ped file... done.
+Performing single-pass .bed write (15084 variants, 44 people).
+--file: femaleRef_no_outliers_gemma_in-temporary.bed +
+femaleRef_no_outliers_gemma_in-temporary.bim +
+femaleRef_no_outliers_gemma_in-temporary.fam written.
+15084 variants loaded from .bim file.
+44 people (0 males, 0 females, 44 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to femaleRef_no_outliers_gemma_in.nosex .
+44 phenotype values present after --pheno.
+--extract: 15084 variants remaining.
+--remove-fam: 44 people remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 44 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.923277.
+15084 variants and 44 people pass filters and QC.
+Among remaining phenotypes, 21 are cases and 23 are controls.
+--make-bed to femaleRef_no_outliers_gemma_in.bed +
+femaleRef_no_outliers_gemma_in.bim + femaleRef_no_outliers_gemma_in.fam ...
+done.
+
+End time: Sat Jan 28 19:39:40 2023

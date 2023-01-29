@@ -1,0 +1,32 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --allow-extra-chr
+  --bfile ../femaleRef_no_outliers_gemma_in
+  --extract femaleRef_no_outliers_gemma_out.pval5e-3.loci
+  --out femaleRef_no_outliers_gemma_out.genotypes.pval5e-3
+  --recode compound-genotypes
+
+Hostname: bigmem3
+Working directory: /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers/output
+Start time: Sat Jan 28 20:22:05 2023
+
+Random number seed: 1674966125
+515968 MB RAM detected; reserving 257984 MB for main workspace.
+15084 variants loaded from .bim file.
+44 people (0 males, 0 females, 44 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+femaleRef_no_outliers_gemma_out.genotypes.pval5e-3.nosex .
+44 phenotype values loaded from .fam.
+--extract: 66 variants remaining.
+Warning: Ignoring phenotypes of missing-sex samples.  If you don't want those
+phenotypes to be ignored, use the --allow-no-sex flag.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 44 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.988292.
+66 variants and 44 people pass filters and QC.
+Among remaining phenotypes, 21 are cases and 23 are controls.
+--recode ped to femaleRef_no_outliers_gemma_out.genotypes.pval5e-3.ped +
+femaleRef_no_outliers_gemma_out.genotypes.pval5e-3.map ... done.
+
+End time: Sat Jan 28 20:22:05 2023
