@@ -95,3 +95,6 @@ count_snp_p001_scaffolds <- perm_with_true_p001_snp %>% select(scaf) %>% count(s
 proportion_count_snp_p001_scaffolds <- left_join(count_snp_p001_scaffolds,genome_index) %>% mutate(proportion = (n*10000)/length)
 proportion_count_snp_p001_scaffolds %>% filter(length > 10000000) %>% ggplot(aes(x=scaf,y=proportion)) + geom_col() + theme(axis.text.x = element_text(angle = 90))
 ggsave("sex_scaf_proportion_p001.pdf")
+
+proportion_count_snp_p001_scaffolds %>% filter(length > 1000000) %>% ggplot(aes(x=scaf,y=proportion)) + geom_col() + theme(axis.text.x = element_text(angle = 90))
+ggsave("sex_scaf_proportion_p001_small_1000000.pdf")
