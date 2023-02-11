@@ -56,6 +56,6 @@ reanalyzed/sex_marker/SexFindR/step2-gwas/pca/*.bim
 reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers/*.vcf.gz
 reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers/*.ped
 reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers/*.prune.out
-reanalyzed/sex_marker/SexFindR/step2-snpdensity/pruned_dataset/*maleRef/SNPdensity_perm_with_true_p.*maleRef.sex.txt
-reanalyzed/sex_marker/SexFindR/step2-snpdensity/pruned_dataset/*maleRef/CHRR_integrated_*.fa
-reanalyzed/sex_marker/SexFindR/step2-snpdensity/pruned_dataset/*maleRef/snpden/*.snpden
+reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/SNPdensity_perm_with_true_p.*maleRef.sex.txt
+reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/CHRR_integrated_*.fa
+reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/snpden/*.snpden
