@@ -11,14 +11,11 @@ RX37_2_M_B11_ACTATGCA.sort-n.fixmate-m.sort.markdup-r
 RX38_2_M_C11_CATACCAA.sort-n.fixmate-m.sort.markdup-r
 RX39_2_M_D11_GACTAGTA.sort-n.fixmate-m.sort.markdup-r
 RX40_2_M_E11_GTGTTCTA.sort-n.fixmate-m.sort.markdup-r
-RX41_2_M_F11_AAGGACAC.sort-n.fixmate-m.sort.markdup-r
 RX43_2_M_G11_CAAGGAGC.sort-n.fixmate-m.sort.markdup-r
-RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r
 RX61_2_M_A12_AGTGGTCA.sort-n.fixmate-m.sort.markdup-r
 RX62_2_M_B12_AGAGTCAA.sort-n.fixmate-m.sort.markdup-r
 RX64_2_M_C12_CCAGTTCA.sort-n.fixmate-m.sort.markdup-r
 RX65_2_M_D12_GAGCTGAA.sort-n.fixmate-m.sort.markdup-r
 RX66_2_M_E12_TAGGATGA.sort-n.fixmate-m.sort.markdup-r
 RX67_2_M_F12_AATCCGTC.sort-n.fixmate-m.sort.markdup-r
-RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r
 RX70_2_M_H12_GCCAAGAC.sort-n.fixmate-m.sort.markdup-r
