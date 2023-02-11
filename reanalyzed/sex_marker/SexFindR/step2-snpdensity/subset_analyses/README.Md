@@ -4,12 +4,11 @@ This directory is an analysis of a subset of individuals from the original PstI 
 
 ## General Setup
 
-bash
-```
+```bash
 cd /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-snpdensity/
-mkdir -p pruned_dataset/femaleRef/snpden pruned_dataset/maleRef/snpden
-cp individual_SNP_density/femaleRef/manual_analysis/SNPdensity_femaleRef_sex.R pruned_dataset/femaleRef/.
-cp individual_SNP_density/maleRef/manual_analysis/SNPdensity_maleRef_sex.R pruned_dataset/maleRef/.
+mkdir -p subset_analyses/femaleRef/snpden subset_analyses/maleRef/snpden
+cp individual_SNP_density/femaleRef/manual_analysis/SNPdensity_femaleRef_sex.R subset_analyses/femaleRef/.
+cp individual_SNP_density/maleRef/manual_analysis/SNPdensity_maleRef_sex.R subset_analyses/maleRef/.
 ```
 
 
@@ -21,8 +20,7 @@ Excluded individuals:
 * RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r
 * RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r
 
-bash
-```
+```bash
 cd femaleRef
 ln -s /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/03-assemblies/sandbox_ipa_F/Hyp_tra_F_combined_chromonomer/output/CHRR_integrated.fa CHRR_integrated_F.fa
 cd snpden
@@ -48,8 +46,8 @@ Excluded individuals:
 * RX59_2_M_H11_GATGAATC.sort-n.fixmate-m.sort.markdup-r
 * RX68_2_M_G12_CACCTTAC.sort-n.fixmate-m.sort.markdup-r
 
-bash
-```
+
+```bash
 cd maleRef
 ln -s /group/millermrgrp2/shannon/projects/assembly_genome_Hypomesus-transpacificus/04-linkage_map/out_chromonomer/CHRR_integrated.fa CHRR_integrated_M.fa
 cd snpden
