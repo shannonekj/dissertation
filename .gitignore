@@ -59,3 +59,4 @@ reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers/*.prune.out
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/SNPdensity_perm_with_true_p.*maleRef.sex.txt
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/CHRR_integrated_*.fa
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/snpden/*.snpden
+reanalyzed/sex_marker/SexFindR/step2-fst/subset_analyses/*maleRef/*.vcf*
