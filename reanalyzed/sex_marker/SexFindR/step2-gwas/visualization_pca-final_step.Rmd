@@ -5,7 +5,7 @@ date: "2023-02-18"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, eval=TRUE, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(ggpubr)
@@ -14,11 +14,12 @@ setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFi
 wd <- getwd()
 ```
 
-## All Individuals
 
-### Female Reference Genome
+## Female Reference Genome
 
-```{r femaleRef_all, echo=TRUE}
+### All individuals
+
+```{r femaleRef_all, echo=FALSE}
 ### FEMALE REFERENCE ###
 # read in data
 pca_f <- read_table2("./pca/femaleRef_pca.eigenvec", col_names = FALSE)
@@ -35,15 +36,22 @@ sex_f[grep("_F_", pca_f$ind)] <- "F"
 sex_f[grep("_M_", pca_f$ind)] <- "M"
 # remake data.frame
 pca_f <- as.tibble(data.frame(pca_f, sex_f))
+```
+
+```{r femaleRef_all_pve, echo=FALSE}
 # first convert to percentage variance explained
 pve_f <- data.frame(PC = 1:20, pve_f = eigenval_f/sum(eigenval_f)*100)
 # make plot
-a <- ggplot(pve_f, aes(PC, pve_f)) +
+a_f <- ggplot(pve_f, aes(PC, pve_f)) +
   geom_bar(stat = "identity") +
   ylab("Percentage variance explained") +
   theme_light()
+a_f
 # calculate the cumulative sum of the percentage variance explained 
 cumsum(pve_f$pve_f)
+```
+
+```{r femaleRef_all_scatter, echo=FALSE}
 # plot pca
 b_f <- ggplot(pca_f, aes(PC1, PC2, col = sex_f)) +
   geom_point(size = 3) +
@@ -52,7 +60,9 @@ b_f <- ggplot(pca_f, aes(PC1, PC2, col = sex_f)) +
   xlab(paste0("PC1 (", signif(pve_f$pve_f[1], 3), "%)")) +
   ylab(paste0("PC2 (", signif(pve_f$pve_f[2], 3), "%)"))
 b_f
+```
 
+```{r femaleRef_all_scatter_zoom, echo=FALSE}
 # zoom plot
 pca_subset_f <- pca_f %>% filter(PC1 < 0.25, PC2 > -0.1, PC2 < 0.25)
 c_f <- ggplot(pca_subset_f, aes(PC1, PC2, col = sex_f)) +
@@ -62,11 +72,14 @@ c_f <- ggplot(pca_subset_f, aes(PC1, PC2, col = sex_f)) +
 c_f
 # combined plot
 b_f <- b_f + theme(legend.position = "none")
-grid.arrange(b_f, c_f, ncol=2, top=textGrob("Female Reference Assembly \n Principal Component Analysis of All Indivduals"))
+grid.arrange(b_f, c_f, ncol=2)
+#grid.arrange(b_f, c_f, ncol=2, top=textGrob("Female Reference Assembly \n Principal Component Analysis of All Indivduals"))
 # save plot
 b_f_big <- b_f + theme(text=element_text(size=24))
 c_f_big <- c_f + theme(text=element_text(size=24))
+```
 
+```{r femaleRef_all_save, echo=TRUE}
 png(filename="Figure-femaleRef-PCA_all_individuals.png", width=1020, height=570)
 grid.arrange(b_f_big, c_f_big, ncol=2)
 dev.off()
@@ -81,14 +94,96 @@ dev.off()
 #  theme(text=element_text(size=20), axis.text.x=element_text(angle=45, hjust=1)) +
 #  #geom_mark_rect(data=pca_zoom, expand = unit(1.5, "mm"), fill="lightgreen") +
 #  facet_zoom(xlim=c(-0.1,0.1), ylim=c(-0.1, 0.1))
+```
 
+```{r femaleRef_all_outlier_list, echo=TRUE}
 # grab outliers
-pca_outliers <- pca %>% filter(PC1 > 0.25 | PC2 < -0.1 | PC2 > 0.25)
-print(pca_outliers$ind)
+pca_outliers_f <- pca_f %>% filter(PC1 > 0.25 | PC2 < -0.1 | PC2 > 0.25)
+print(pca_outliers_f$ind)
+```
+
+### No Outliers
+
+```{r femaleRef_no_outliers, echo=FALSE}
+### FEMALE REFERENCE ###
+# read in data
+pca_f_no <- read_table2("./output_no_outliers/femaleRef_no_outliers.eigenvec", col_names = FALSE)
+eigenval_f_no <- scan("./output_no_outliers/femaleRef_no_outliers.eigenval")
+# sort out the pca data
+# remove nuisance column 
+pca_f_no <- pca_f_no[,-1]
+# set names
+names(pca_f_no)[1] <- "ind"
+names(pca_f_no)[2:ncol(pca_f_no)] <- paste0("PC", 1:(ncol(pca_f_no)-1))
+# sort sex
+sex_f_no <- rep(NA, length(pca_f_no$ind))
+sex_f_no[grep("_F_", pca_f_no$ind)] <- "F"
+sex_f_no[grep("_M_", pca_f_no$ind)] <- "M"
+# remake data.frame
+pca_f_no <- as.tibble(data.frame(pca_f_no, sex_f_no))
+
+```
+
+```{r femaleRef_no_outliers_pve, echo=FALSE}
+# first convert to percentage variance explained
+pve_f_no <- data.frame(PC=1:20, pve_f_no=eigenval_f_no/sum(eigenval_f_no)*100)
+# make plot
+a_f_no <- ggplot(pve_f_no, aes(PC, pve_f_no)) +
+  geom_bar(stat = "identity") +
+  ylab("Percentage variance explained") +
+  theme_light()
+# make plot
+a_f_no <- ggplot(pve_f_no, aes(PC, pve_f_no)) + geom_bar(stat = "identity")
+a_f_no + ylab("Percentage variance explained")
+# calculate the cumulative sum of the percentage variance explained
+cumsum(pve_f_no$pve_f_no)
+```
+
+```{r femaleRef_no_outliers_scatter, echo=FALSE}
+# plot pca with big axis
+b_f_no <- ggplot(pca_f_no, aes(PC1, PC2, col = sex_f_no)) +
+  geom_point(size = 3) +
+  scale_colour_manual(values = c("orangered", "steelblue3")) +
+  coord_equal() +
+  scale_y_continuous(limits=c(-0.5, 0.5)) +
+  scale_x_continuous(limits=c(-0.5, 0.5)) +
+  xlab(paste0("PC1 (", signif(pve_f_no$pve_f_no[1], 3), "%)")) +
+  ylab(paste0("PC2 (", signif(pve_f_no$pve_f_no[2], 3), "%)"))
+b_f_no
+```
+
+```{r femaleRef_no_outliers_scatter_zoom, echo=FALSE}
+# plot pca
+c_f_no <- ggplot(pca_f_no, aes(PC1, PC2, col = sex_f_no)) +
+  geom_point(size = 3) +
+  scale_y_continuous(limits=c(-0.5, 0.5)) +
+  scale_x_continuous(limits=c(-0.4, 0.2)) +
+  scale_colour_manual("sex", values = c("orangered", "steelblue3")) +
+  coord_equal()
+c_f_no
+```
+
+```{r femaleRef_no_outliers_facet_plots, echo=FALSE}
+# combined plot (all individuals vs no outliers)
+b_f_no <- b_f_no + theme(legend.position = "none")
+grid.arrange(b_f, c_f, b_f_no, c_f_no, ncol=2, nrow=2)
+#grid.arrange(b_f, c_f, b_f_no, c_f_no, ncol=2, nrow=2, top=textGrob("Female Reference Assembly \n Principal Component Analysis with Outliers"))
+# save plot
+b_f_no_big <- b_f_no + theme(text=element_text(size=24))
+c_f_no_big <- c_f_no + theme(text=element_text(size=24))
+```
+
+```{r femaleRef_no_outliers_save, echo=TRUE}
+png(filename="Figure-femaleRef-PCA_no_outliers.png", width=1220, height=570)
+grid.arrange(b_f_big, c_f_big, b_f_no_big, c_f_no_big, ncol=2, nrow=2)
+dev.off()
 ```
 
 
-### Male Reference Genome
+
+## Male Reference Genome
+
+### All Individuals
 
 ```{r maleRef_all, echo=FALSE}
 ### MALE REFERENCE ###
@@ -107,6 +202,9 @@ sex_m[grep("_F_", pca_m$ind)] <- "F"
 sex_m[grep("_M_", pca_m$ind)] <- "M"
 # remake data.frame
 pca_m <- as.tibble(data.frame(pca_m, sex_m))
+```
+
+```{r maleRef_all_pve, echo=FALSE}
 # first convert to percentage variance explained
 pve_m <- data.frame(PC = 1:20, pve = eigenval_m/sum(eigenval_m)*100)
 # make plot
@@ -114,6 +212,9 @@ a_m <- ggplot(pve_m, aes(PC, pve)) + geom_bar(stat = "identity")
 a_m + ylab("Percentage variance explained")
 # calculate the cumulative sum of the percentage variance explained
 cumsum(pve_m$pve)
+```
+
+```{r maleRef_all_scatter, echo=FALSE}
 # plot pca
 b_m <- ggplot(pca_m, aes(PC1, PC2, col = sex_m)) + geom_point(size = 3) +
   scale_colour_manual(values = c("darkred", "darkblue")) +
@@ -121,94 +222,43 @@ b_m <- ggplot(pca_m, aes(PC1, PC2, col = sex_m)) + geom_point(size = 3) +
   xlab(paste0("PC1 (", signif(pve_m$pve[1], 3), "%)")) + 
   ylab(paste0("PC2 (", signif(pve_m$pve[2], 3), "%)"))
 b_m
+```
+
+```{r maleRef_all_scatter_zoom, echo=FALSE}
 # zoom plot
 pca_subset_m <- pca_m %>% filter(PC1 > -0.25, PC2 > -0.25)
 c_m <- ggplot(pca_subset_m, aes(PC1, PC2, col = sex_m)) + geom_point(size = 3) + 
   scale_colour_manual(values = c("darkred", "darkblue")) + 
   coord_equal()
 c_m
+```
 
+```{r maleRef_all_facet_plot, echo=FALSE}
 # combined plot
 b_m <- b_m + theme(legend.position = "none")
-grid.arrange(b_m, c_m, ncol=2, top=textGrob("Male Reference Assembly \n Principal Component Analysis of All Indivduals"))
+grid.arrange(b_m, c_m, ncol=2)
+#grid.arrange(b_m, c_m, ncol=2, top=textGrob("Male Reference Assembly \n Principal Component Analysis of All Indivduals"))
 # save plot with bigger text and one legend
 b_m_big <- b_m + theme(text=element_text(size=24))
 c_m_big <- c_m + theme(text=element_text(size=24))
+```
 
+```{r maleRef_all_save, echo=FALSE}
 png(filename="Figure-maleRef-PCA_all_individuals.png", width=1020, height=570)
 grid.arrange(b_m_big, c_m_big, ncol=2)
 dev.off()
+```
 
-
+```{r maleRef_all_outlier_list, echo=TRUE}
 # grab outliers
 pca_outliers_m <- pca_m %>% filter(PC1 < -0.25 | PC2 < -0.25)
 head(pca_outliers_m$ind)
 ```
 
 
+### No Outliers
 
-```{r femaleRef_no_outliers, echo=TRUE}
-### FEMALE REFERENCE ###
-# read in data
-pca_f_no <- read_table2("./output_no_outliers/femaleRef_no_outliers.eigenvec", col_names = FALSE)
-eigenval_f_no <- scan("./output_no_outliers/femaleRef_no_outliers.eigenval")
-# sort out the pca data
-# remove nuisance column 
-pca_f_no <- pca_f_no[,-1]
-# set names
-names(pca_f_no)[1] <- "ind"
-names(pca_f_no)[2:ncol(pca_f_no)] <- paste0("PC", 1:(ncol(pca_f_no)-1))
-# sort sex
-sex_f_no <- rep(NA, length(pca_f_no$ind))
-sex_f_no[grep("_F_", pca_f_no$ind)] <- "F"
-sex_f_no[grep("_M_", pca_f_no$ind)] <- "M"
-# remake data.frame
-pca_f_no <- as.tibble(data.frame(pca_f_no, sex_f_no))
-# first convert to percentage variance explained
-pve_f_no <- data.frame(PC=1:20, pve_f_no=eigenval_f_no/sum(eigenval_f_no)*100)
-# make plot
-a_f_no <- ggplot(pve_f_no, aes(PC, pve_f_no)) +
-  geom_bar(stat = "identity") +
-  ylab("Percentage variance explained") +
-  theme_light()
-# make plot
-a_f_no <- ggplot(pve_f_no, aes(PC, pve_f_no)) + geom_bar(stat = "identity")
-a_f_no + ylab("Percentage variance explained")
-# calculate the cumulative sum of the percentage variance explained
-cumsum(pve_f_no$pve_f_no)
-# plot pca with big axis
-b_f_no <- ggplot(pca_f_no, aes(PC1, PC2, col = sex_f_no)) +
-  geom_point(size = 3) +
-  scale_colour_manual(values = c("orangered", "steelblue3")) +
-  coord_equal() +
-  scale_y_continuous(limits=c(-0.5, 0.5)) +
-  scale_x_continuous(limits=c(-0.5, 0.5)) +
-  xlab(paste0("PC1 (", signif(pve_f_no$pve_f_no[1], 3), "%)")) +
-  ylab(paste0("PC2 (", signif(pve_f_no$pve_f_no[2], 3), "%)"))
-b_f_no
-# plot pca
-c_f_no <- ggplot(pca_f_no, aes(PC1, PC2, col = sex_f_no)) +
-  geom_point(size = 3) +
-  scale_y_continuous(limits=c(-0.5, 0.5)) +
-  scale_x_continuous(limits=c(-0.4, 0.2)) +
-  scale_colour_manual("sex", values = c("orangered", "steelblue3")) +
-  coord_equal()
-c_f_no
-
-# combined plot (all individuals vs no outliers)
-b_f_no <- b_f_no + theme(legend.position = "none")
-grid.arrange(b, c, b_f_no, c_f_no, ncol=2, nrow=2, top=textGrob("Female Reference Assembly \n Principal Component Analysis with Outliers"))
-# save plot
-b_f_no_big <- b_f_no + theme(text=element_text(size=24))
-c_f_no_big <- c_f_no + theme(text=element_text(size=24))
-
-
-png(filename="Figure-femaleRef-PCA_no_outliers.png", width=1220, height=570)
-grid.arrange(b_big, c_big, b_f_no_big, c_f_no_big, ncol=2, nrow=2)
-dev.off()
-```
-
-```{r maleRef_no_outliers, echo=TRUE}
+```{r maleRef_no_outliers, echo=FALSE}
 ### MALE REFERENCE ###
 # read in data
 pca_m_no <- read_table2("./output_no_outliers/maleRef_no_outliers.eigenvec", col_names = FALSE)
@@ -225,6 +275,9 @@ sex_m_no[grep("_F_", pca_m_no$ind)] <- "F"
 sex_m_no[grep("_M_", pca_m_no$ind)] <- "M"
 # remake data.frame
 pca_m_no <- as.tibble(data.frame(pca_m_no, sex_m_no))
+```
+
+```{r maleRef_no_outliers_pve, echo=FALSE}
 # first convert to percentage variance explained
 pve_m_no <- data.frame(PC = 1:20, pve_m_no = eigenval_m_no/sum(eigenval_m_no)*100)
 # make plot
@@ -239,6 +292,9 @@ a_m_no + ylab("Percentage variance explained")
 cumsum(pve_m_no$pve_m_no)
 # calculate the cumulative sum of the percentage variance explained
 cumsum(pve_m_no$pve_m_no)
+```
+
+```{r maleRef_no_outliers_scatter, echo=FALSE}
 # plot pca with big axis
 b_m_no <- ggplot(pca_m_no, aes(PC1, PC2, col = sex_m_no)) +
   geom_point(size = 3) +
@@ -249,6 +305,9 @@ b_m_no <- ggplot(pca_m_no, aes(PC1, PC2, col = sex_m_no)) +
   xlab(paste0("PC1 (", signif(pve_m_no$pve[1], 3), "%)")) +
   ylab(paste0("PC2 (", signif(pve_m_no$pve[2], 3), "%)"))
 b_m_no
+```
+
+```{r maleRef_no_outliers_scatter_zoom, echo=FALSE}
 # plot pca
 c_m_no <- ggplot(pca_m_no, aes(PC1, PC2, col = sex_m_no)) +
   geom_point(size = 3) +
@@ -257,15 +316,19 @@ c_m_no <- ggplot(pca_m_no, aes(PC1, PC2, col = sex_m_no)) +
   scale_colour_manual("sex", values = c("orangered", "steelblue3")) +
   coord_equal()
 c_m_no
+```
 
+```{r maleRef_no_outliers_facet_plots, echo=FALSE}
 # combined plot (all individuals vs no outliers)
 b_m_no <- b_m_no + theme(legend.position = "none")
-grid.arrange(b_m, c_m, b_m_no, c_m_no, ncol=2, nrow=2, top=textGrob("Male Reference Assembly \n Principal Component Analysis with Outliers"))
+grid.arrange(b_m, c_m, b_m_no, c_m_no, ncol=2, nrow=2)
+#grid.arrange(b_m, c_m, b_m_no, c_m_no, ncol=2, nrow=2, top=textGrob("Male Reference Assembly \n Principal Component Analysis with Outliers"))
 # save plot
 b_m_no_big <- b_m_no + theme(text=element_text(size=24))
 c_m_no_big <- c_m_no + theme(text=element_text(size=24))
+```
 
-
+```{r maleRef_no_outliers_save, echo=TRUE}
 png(filename="Figure-maleRef-PCA_no_outliers.png", width=1220, height=570)
 grid.arrange(b_m_big, c_m_big, b_m_no_big, c_m_no_big, ncol=2, nrow=2)
 dev.off()
