@@ -14,15 +14,18 @@ setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFi
 wd <- getwd()
 ```
 
-## Step 2: GWAS
+## Step 1: difcover
 
-### PCA
+## Step 2: SNPdensity
+### Female Reference Genome
+### Male Reference Genome
 
-#### Female Reference Genome
-
+## Step 2: GWAS & Fst
+### Female Reference Genome
+#### PCA
 ##### All individuals
 
-```{r femaleRef_all, echo=FALSE}
+```{r pca_femaleRef_all, echo=FALSE}
 ### FEMALE REFERENCE ###
 # read in data
 pca_f <- read_table2("./step2-gwas/pca/femaleRef_pca.eigenvec", col_names = FALSE)
@@ -41,7 +44,7 @@ sex_f[grep("_M_", pca_f$ind)] <- "M"
 pca_f <- as.tibble(data.frame(pca_f, sex_f))
 ```
 
-```{r femaleRef_all_pve, echo=FALSE}
+```{r pca_femaleRef_all_pve, echo=FALSE}
 # first convert to percentage variance explained
 pve_f <- data.frame(PC = 1:20, pve_f = eigenval_f/sum(eigenval_f)*100)
 # make plot
@@ -54,7 +57,7 @@ a_f
 cumsum(pve_f$pve_f)
 ```
 
-```{r femaleRef_all_scatter, echo=FALSE}
+```{r pca_femaleRef_all_scatter, echo=FALSE}
 # plot pca
 b_f <- ggplot(pca_f, aes(PC1, PC2, col = sex_f)) +
   geom_point(size = 3) +
@@ -65,7 +68,7 @@ b_f <- ggplot(pca_f, aes(PC1, PC2, col = sex_f)) +
 b_f
 ```
 
-```{r femaleRef_all_scatter_zoom, echo=FALSE}
+```{r pca_femaleRef_all_scatter_zoom, echo=FALSE}
 # zoom plot
 pca_subset_f <- pca_f %>% filter(PC1 < 0.25, PC2 > -0.1, PC2 < 0.25)
 c_f <- ggplot(pca_subset_f, aes(PC1, PC2, col = sex_f)) +
@@ -82,7 +85,7 @@ b_f_big <- b_f + theme(text=element_text(size=24))
 c_f_big <- c_f + theme(text=element_text(size=24))
 ```
 
-```{r femaleRef_all_save, echo=TRUE}
+```{r pca_femaleRef_all_save, echo=TRUE}
 png(filename="visualizations/Figure_Step2-GWAS_femaleRef_PCA_all_individuals.png", width=1020, height=570)
 grid.arrange(b_f_big, c_f_big, ncol=2)
 dev.off()
@@ -99,7 +102,7 @@ dev.off()
 #  facet_zoom(xlim=c(-0.1,0.1), ylim=c(-0.1, 0.1))
 ```
 
-```{r femaleRef_all_outlier_list, echo=TRUE}
+```{r pca_femaleRef_all_outlier_list, echo=TRUE}
 # grab outliers
 pca_outliers_f <- pca_f %>% filter(PC1 > 0.25 | PC2 < -0.1 | PC2 > 0.25)
 print(pca_outliers_f$ind)
@@ -107,7 +110,7 @@ print(pca_outliers_f$ind)
 
 ##### No Outliers
 
-```{r femaleRef_no_outliers, echo=FALSE}
+```{r pca_femaleRef_no_outliers, echo=FALSE}
 ### FEMALE REFERENCE ###
 # read in data
 pca_f_no <- read_table2("./step2-gwas/output_no_outliers/femaleRef_no_outliers.eigenvec", col_names = FALSE)
@@ -124,10 +127,9 @@ sex_f_no[grep("_F_", pca_f_no$ind)] <- "F"
 sex_f_no[grep("_M_", pca_f_no$ind)] <- "M"
 # remake data.frame
 pca_f_no <- as.tibble(data.frame(pca_f_no, sex_f_no))
-
 ```
 
-```{r femaleRef_no_outliers_pve, echo=FALSE}
+```{r pca_femaleRef_no_outliers_pve, echo=FALSE}
 # first convert to percentage variance explained
 pve_f_no <- data.frame(PC=1:20, pve_f_no=eigenval_f_no/sum(eigenval_f_no)*100)
 # make plot
@@ -142,7 +144,7 @@ a_f_no + ylab("Percentage variance explained")
 cumsum(pve_f_no$pve_f_no)
 ```
 
-```{r femaleRef_no_outliers_scatter, echo=FALSE}
+```{r pca_femaleRef_no_outliers_scatter, echo=FALSE}
 # plot pca with big axis
 b_f_no <- ggplot(pca_f_no, aes(PC1, PC2, col = sex_f_no)) +
   geom_point(size = 3) +
@@ -155,7 +157,7 @@ b_f_no <- ggplot(pca_f_no, aes(PC1, PC2, col = sex_f_no)) +
 b_f_no
 ```
 
-```{r femaleRef_no_outliers_scatter_zoom, echo=FALSE}
+```{r pca_femaleRef_no_outliers_scatter_zoom, echo=FALSE}
 # plot pca
 c_f_no <- ggplot(pca_f_no, aes(PC1, PC2, col = sex_f_no)) +
   geom_point(size = 3) +
@@ -166,7 +168,7 @@ c_f_no <- ggplot(pca_f_no, aes(PC1, PC2, col = sex_f_no)) +
 c_f_no
 ```
 
-```{r femaleRef_no_outliers_facet_plots, echo=FALSE}
+```{r pca_femaleRef_no_outliers_facet_plots, echo=FALSE}
 # combined plot (all individuals vs no outliers)
 b_f_no <- b_f_no + theme(legend.position = "none")
 grid.arrange(b_f, c_f, b_f_no, c_f_no, ncol=2, nrow=2)
@@ -176,19 +178,108 @@ b_f_no_big <- b_f_no + theme(text=element_text(size=24))
 c_f_no_big <- c_f_no + theme(text=element_text(size=24))
 ```
 
-```{r femaleRef_no_outliers_save, echo=TRUE}
+```{r pca_femaleRef_no_outliers_save, echo=TRUE}
 png(filename="visualizations/Figure_Step2-GWAS_femaleRef_PCA_no_outliers.png", width=1220, height=570)
 grid.arrange(b_f_big, c_f_big, b_f_no_big, c_f_no_big, ncol=2, nrow=2)
 dev.off()
 ```
 
+#### GWAS
+##### All Individuals
+##### No Outliers
+
+#### Fst
+##### All Individuals
+```{r fst_femaleRef_all, echo=FALSE}
+Fst_F <- read_tsv("./step2-fst/biallelic_fst_femaleRef.weir.fst") %>% replace_na(list(WEIR_AND_COCKERHAM_FST=0)) %>% rename(scaf = CHROM, base=POS) %>% mutate(base=as.numeric(base)) %>% filter(WEIR_AND_COCKERHAM_FST >=0) %>% replace_na(list(WEIR_AND_COCKERHAM_FST=0))
+scaffold_lengths_F <- read_tsv("./step0-variantcalling/femaleRef/CHRR_integrated.fa.fai", col_names = c("scaf","length")) %>% filter(grepl("lg",scaf))
+cutoff1_F <- round(nrow(Fst_F)*0.05)
+Fst_F_sort_cut1 <- head(Fst_F %>% arrange(-WEIR_AND_COCKERHAM_FST), n=cutoff1_F)
+min(Fst_F_sort_cut1$`WEIR_AND_COCKERHAM_FST`) # lowest value there is 0.0737052 (5% cutoff)
+min_five_cutoff_F <- min(Fst_F_sort_cut1$`WEIR_AND_COCKERHAM_FST`)
+cutoff2_F <- round(nrow(Fst_F)*0.01)
+Fst_F_sort_cut2 <- head(Fst_F %>% arrange(-WEIR_AND_COCKERHAM_FST), n=cutoff2_F)
+min(Fst_F_sort_cut2$`WEIR_AND_COCKERHAM_FST`) # lowest value there is 0.243856 (1% cutoff)
+min_one_cutoff_F <- min(Fst_F_sort_cut2$`WEIR_AND_COCKERHAM_FST`)
+table(Fst_F_sort_cut2$scaf)
+quantile(Fst_F$`WEIR_AND_COCKERHAM_FST`, c(0.95, 0.99), na.rm = T)
+mean(Fst_F$WEIR_AND_COCKERHAM_FST)
+Fst_female <- left_join(scaffold_lengths_F,Fst_F) %>% filter(WEIR_AND_COCKERHAM_FST>=0)
+
+#for x axis, we want cumulative bases for each position in the genome for a continuous axis
+nCHR_F <- length(unique(Fst_female$scaf))
+Fst_female$BPcum <- 0
+sf <- 0
+nbp_F <- c()
+for (i in unique(Fst_female$scaf)){
+  nbp_F[i] <- max(Fst_female[Fst_female$scaf == i,]$base)
+  Fst_female[Fst_female$scaf == i,"BPcum"] <- Fst_female[Fst_female$scaf == i,"base"] + sf
+  sf <- sf + nbp_F[i]
+}
+axis.set_F <- Fst_female %>%
+  group_by(scaf) %>%
+  summarize(center = (max(BPcum) + min(BPcum)) / 2)
+Fst_female %>% ggplot(aes(x=BPcum, y=WEIR_AND_COCKERHAM_FST, color=as.factor(scaf))) +
+  geom_point(alpha = 0.75) +
+  scale_x_continuous(label = axis.set_F$scaf, breaks = axis.set_F$center) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(x="CHROMOSOME", color="") +
+  guides(color = guide_legend(ncol = 1, byrow = F)) +
+  geom_hline(yintercept = min_five_cutoff_F, linetype="dotted", color = "black", size=0.75) +
+  geom_hline(yintercept = min_one_cutoff_F, linetype="dotted", color = "black", size=1.5)  +
+  geom_vline(xintercept = as.integer(sf), linetype="dotted", color="red", size=1) +
+  labs(title="Fst for delta smelt (5% and 1% cutoff & FemaleSexSDR as dotted lines)")
+ggsave("visualizations/Figure_Step2-Fst_femaleRef_Fst_manhattan_with95_99_noMissing.pdf")
+```
+##### No Outliers
+```{r fst_femaleRef_no_outliers, echo=FALSE}
+Fst_F <- read_tsv("./step2-fst/subset_analyses/femaleRef/femaleRef_no_outliers_pruned_fst.weir.fst") %>% replace_na(list(WEIR_AND_COCKERHAM_FST=0)) %>% rename(scaf = CHROM, base=POS) %>% mutate(base=as.numeric(base)) %>% filter(WEIR_AND_COCKERHAM_FST >=0) %>% replace_na(list(WEIR_AND_COCKERHAM_FST=0))
+scaffold_lengths_F <- read_tsv("./step0-variantcalling/femaleRef/CHRR_integrated.fa.fai", col_names = c("scaf","length")) %>% filter(grepl("lg",scaf))
+cutoff1_F <- round(nrow(Fst_F)*0.05)
+Fst_F_sort_cut1 <- head(Fst_F %>% arrange(-WEIR_AND_COCKERHAM_FST), n=cutoff1_F)
+min(Fst_F_sort_cut1$`WEIR_AND_COCKERHAM_FST`) # lowest value there is 0.118254  (5% cutoff)
+min_five_cutoff_F <- min(Fst_F_sort_cut1$`WEIR_AND_COCKERHAM_FST`)
+cutoff2_F <- round(nrow(Fst_F)*0.01)
+Fst_F_sort_cut2 <- head(Fst_F %>% arrange(-WEIR_AND_COCKERHAM_FST), n=cutoff2_F)
+min(Fst_F_sort_cut2$`WEIR_AND_COCKERHAM_FST`) # lowest value there is 0.193863 (1% cutoff)
+min_one_cutoff_F <- min(Fst_F_sort_cut2$`WEIR_AND_COCKERHAM_FST`)
+table(Fst_F_sort_cut2$scaf)
+quantile(Fst_F$`WEIR_AND_COCKERHAM_FST`, c(0.95, 0.99), na.rm = T)
+mean(Fst_F$WEIR_AND_COCKERHAM_FST) # 0.03776015
+Fst_female <- left_join(scaffold_lengths_F,Fst_F) %>% filter(WEIR_AND_COCKERHAM_FST>=0)
+
+#for x axis, we want cumulative bases for each position in the genome for a continuous axis
+nCHR_F <- length(unique(Fst_female$scaf))
+Fst_female$BPcum <- 0
+sf <- 0
+nbp_F <- c()
+for (i in unique(Fst_female$scaf)){
+  nbp_F[i] <- max(Fst_female[Fst_female$scaf == i,]$base)
+  Fst_female[Fst_female$scaf == i,"BPcum"] <- Fst_female[Fst_female$scaf == i,"base"] + sf
+  sf <- sf + nbp_F[i]
+}
+axis.set_F <- Fst_female %>%
+  group_by(scaf) %>%
+  summarize(center = (max(BPcum) + min(BPcum)) / 2)
+Fst_female %>% ggplot(aes(x=BPcum, y=WEIR_AND_COCKERHAM_FST, color=as.factor(scaf))) +
+  geom_point(alpha = 0.75) +
+  scale_x_continuous(label = axis.set_F$scaf, breaks = axis.set_F$center) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(x="CHROMOSOME", color="") +
+  guides(color = guide_legend(ncol = 1, byrow = F)) +
+  geom_hline(yintercept = min_five_cutoff_F, linetype="dotted", color = "black", size=0.75) +
+  geom_hline(yintercept = min_one_cutoff_F, linetype="dotted", color = "black", size=1.5)  +
+  geom_vline(xintercept = as.integer(sf), linetype="dotted", color="red", size=1) +
+  labs(title="Fst for delta smelt (5% and 1% cutoff & FemaleSexSDR as dotted lines)")
+ggsave("visualizations/Figure_Step2-Fst_maleRef_manhattan_with95_99_noMissing_all.pdf")
+```
 
 
-## Male Reference Genome
+### Male Reference Genome
+#### PCA
+##### All Individuals
 
-### All Individuals
-
-```{r maleRef_all, echo=FALSE}
+```{r pca_maleRef_all, echo=FALSE}
 ### MALE REFERENCE ###
 # read in data
 pca_m <- read_table2("./step2-gwas/pca/maleRef_pca.eigenvec", col_names = FALSE)
@@ -207,7 +298,7 @@ sex_m[grep("_M_", pca_m$ind)] <- "M"
 pca_m <- as.tibble(data.frame(pca_m, sex_m))
 ```
 
-```{r maleRef_all_pve, echo=FALSE}
+```{r pca_maleRef_all_pve, echo=FALSE}
 # first convert to percentage variance explained
 pve_m <- data.frame(PC = 1:20, pve = eigenval_m/sum(eigenval_m)*100)
 # make plot
@@ -217,7 +308,7 @@ a_m + ylab("Percentage variance explained")
 cumsum(pve_m$pve)
 ```
 
-```{r maleRef_all_scatter, echo=FALSE}
+```{r pca_maleRef_all_scatter, echo=FALSE}
 # plot pca
 b_m <- ggplot(pca_m, aes(PC1, PC2, col = sex_m)) + geom_point(size = 3) +
   scale_colour_manual(values = c("darkred", "darkblue")) +
@@ -227,7 +318,7 @@ b_m <- ggplot(pca_m, aes(PC1, PC2, col = sex_m)) + geom_point(size = 3) +
 b_m
 ```
 
-```{r maleRef_all_scatter_zoom, echo=FALSE}
+```{r pca_maleRef_all_scatter_zoom, echo=FALSE}
 # zoom plot
 pca_subset_m <- pca_m %>% filter(PC1 > -0.25, PC2 > -0.25)
 c_m <- ggplot(pca_subset_m, aes(PC1, PC2, col = sex_m)) + geom_point(size = 3) + 
@@ -236,7 +327,7 @@ c_m <- ggplot(pca_subset_m, aes(PC1, PC2, col = sex_m)) + geom_point(size = 3) +
 c_m
 ```
 
-```{r maleRef_all_facet_plot, echo=FALSE}
+```{r pca_maleRef_all_facet_plot, echo=FALSE}
 # combined plot
 b_m <- b_m + theme(legend.position = "none")
 grid.arrange(b_m, c_m, ncol=2)
@@ -246,22 +337,22 @@ b_m_big <- b_m + theme(text=element_text(size=24))
 c_m_big <- c_m + theme(text=element_text(size=24))
 ```
 
-```{r maleRef_all_save, echo=FALSE}
+```{r pca_maleRef_all_save, echo=FALSE}
 png(filename="visualizations/Figure_Step2-GWAS_maleRef_PCA_all_individuals.png", width=1020, height=570)
 grid.arrange(b_m_big, c_m_big, ncol=2)
 dev.off()
 ```
 
-```{r maleRef_all_outlier_list, echo=TRUE}
+```{r pca_maleRef_all_outlier_list, echo=TRUE}
 # grab outliers
 pca_outliers_m <- pca_m %>% filter(PC1 < -0.25 | PC2 < -0.25)
 head(pca_outliers_m$ind)
 ```
 
 
-### No Outliers
+##### No Outliers
 
-```{r maleRef_no_outliers, echo=FALSE}
+```{r pca_maleRef_no_outliers, echo=FALSE}
 ### MALE REFERENCE ###
 # read in data
 pca_m_no <- read_table2("./step2-gwas/output_no_outliers/maleRef_no_outliers.eigenvec", col_names = FALSE)
@@ -280,7 +371,7 @@ sex_m_no[grep("_M_", pca_m_no$ind)] <- "M"
 pca_m_no <- as.tibble(data.frame(pca_m_no, sex_m_no))
 ```
 
-```{r maleRef_no_outliers_pve, echo=FALSE}
+```{r pca_maleRef_no_outliers_pve, echo=FALSE}
 # first convert to percentage variance explained
 pve_m_no <- data.frame(PC = 1:20, pve_m_no = eigenval_m_no/sum(eigenval_m_no)*100)
 # make plot
@@ -297,7 +388,7 @@ cumsum(pve_m_no$pve_m_no)
 cumsum(pve_m_no$pve_m_no)
 ```
 
-```{r maleRef_no_outliers_scatter, echo=FALSE}
+```{r pca_maleRef_no_outliers_scatter, echo=FALSE}
 # plot pca with big axis
 b_m_no <- ggplot(pca_m_no, aes(PC1, PC2, col = sex_m_no)) +
   geom_point(size = 3) +
@@ -310,7 +401,7 @@ b_m_no <- ggplot(pca_m_no, aes(PC1, PC2, col = sex_m_no)) +
 b_m_no
 ```
 
-```{r maleRef_no_outliers_scatter_zoom, echo=FALSE}
+```{r pca_maleRef_no_outliers_scatter_zoom, echo=FALSE}
 # plot pca
 c_m_no <- ggplot(pca_m_no, aes(PC1, PC2, col = sex_m_no)) +
   geom_point(size = 3) +
@@ -321,7 +412,7 @@ c_m_no <- ggplot(pca_m_no, aes(PC1, PC2, col = sex_m_no)) +
 c_m_no
 ```
 
-```{r maleRef_no_outliers_facet_plots, echo=FALSE}
+```{r pca_maleRef_no_outliers_facet_plots, echo=FALSE}
 # combined plot (all individuals vs no outliers)
 b_m_no <- b_m_no + theme(legend.position = "none")
 grid.arrange(b_m, c_m, b_m_no, c_m_no, ncol=2, nrow=2)
@@ -331,9 +422,104 @@ b_m_no_big <- b_m_no + theme(text=element_text(size=24))
 c_m_no_big <- c_m_no + theme(text=element_text(size=24))
 ```
 
-```{r maleRef_no_outliers_save, echo=TRUE}
+```{r pca_maleRef_no_outliers_save, echo=TRUE}
 png(filename="visualizations/Figure_Step2-GWAS_maleRef_PCA_no_outliers.png", width=1220, height=570)
 grid.arrange(b_m_big, c_m_big, b_m_no_big, c_m_no_big, ncol=2, nrow=2)
 dev.off()
 ```
 
+#### GWAS
+##### All Individuals
+##### No Outlier
+
+#### Fst
+##### All Individuals
+
+```{r fst_maleRef_all, echo=FALSE}
+Fst_M <- read_tsv("./step2-fst/biallelic_fst_maleRef.weir.fst") %>% replace_na(list(WEIR_AND_COCKERHAM_FST=0)) %>% rename(scaf = CHROM, base=POS) %>% mutate(base=as.numeric(base)) %>% filter(WEIR_AND_COCKERHAM_FST >=0) %>% replace_na(list(WEIR_AND_COCKERHAM_FST=0))
+scaffold_lengths_M <- read_tsv("./step0-variantcalling/maleRef/CHRR_integrated.fa.fai", col_names = c("scaf","length")) %>% filter(grepl("lg",scaf))
+cutoff1_M <- round(nrow(Fst_M)*0.05)
+Fst_M_sort_cut1 <- head(Fst_M %>% arrange(-WEIR_AND_COCKERHAM_FST), n=cutoff1_M)
+min(Fst_M_sort_cut1$`WEIR_AND_COCKERHAM_FST`) # lowest value there is 0.074878 (5% cutoff)
+min_five_cutoff_M <- min(Fst_M_sort_cut1$`WEIR_AND_COCKERHAM_FST`)
+cutoff2_M <- round(nrow(Fst_M)*0.01)
+Fst_M_sort_cut2 <- head(Fst_M %>% arrange(-WEIR_AND_COCKERHAM_FST), n=cutoff2_M)
+min(Fst_M_sort_cut2$`WEIR_AND_COCKERHAM_FST`) # lowest value there is 0.248619 (1% cutoff)
+min_one_cutoff_M <- min(Fst_M_sort_cut2$`WEIR_AND_COCKERHAM_FST`)
+table(Fst_M_sort_cut2$scaf)
+quantile(Fst_M$`WEIR_AND_COCKERHAM_FST`, c(0.95, 0.99), na.rm = T)
+mean(Fst_M$WEIR_AND_COCKERHAM_FST)
+Fst_male <- left_join(scaffold_lengths_M, Fst_M) %>% filter(WEIR_AND_COCKERHAM_FST>=0)
+
+#for x axis, we want cumulative bases for each position in the genome for a continuous axis
+nCHR_M <- length(unique(Fst_male$scaf))
+Fst_male$BPcum <- 0
+sm <- 0
+nbp_M <- c()
+for (i in unique(Fst_male$scaf)){
+  nbp_M[i] <- max(Fst_male[Fst_male$scaf == i,]$base)
+  Fst_male[Fst_male$scaf == i,"BPcum"] <- Fst_male[Fst_male$scaf == i,"base"] + sm
+  sm <- sm + nbp_M[i]
+}
+axis.set_M <- Fst_male %>%
+  group_by(scaf) %>%
+  summarize(center = (max(BPcum) + min(BPcum)) / 2)
+Fst_male %>% ggplot(aes(x=BPcum, y=WEIR_AND_COCKERHAM_FST, color=as.factor(scaf))) +
+  geom_point(alpha = 0.75) +
+  scale_x_continuous(label = axis.set_F$scaf, breaks = axis.set_F$center) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(x="CHROMOSOME", color="") +
+  guides(color = guide_legend(ncol = 1, byrow = F)) +
+  geom_hline(yintercept = min_five_cutoff_M, linetype="dotted", color = "black", size=0.75) +
+  geom_hline(yintercept = min_one_cutoff_M, linetype="dotted", color = "black", size=1.5)  +
+  geom_vline(xintercept = as.integer(sm), linetype="dotted", color="red",size=1) +
+  labs(title="Fst for delta smelt (5% and 1% cutoff & MaleSexSDR as dotted lines)")
+ggsave("visualizations/Figure_Step2-Fst_maleRef_manhattan_with95_99_noMissing_all.pdf")
+```
+
+##### No Outlier
+```{r fst_maleRef_no_outliers, echo=FALSE}
+Fst_M <- read_tsv("./step2-fst/subset_analyses/maleRef/maleRef_no_outliers_pruned.weir.fst") %>% replace_na(list(WEIR_AND_COCKERHAM_FST=0)) %>% rename(scaf = CHROM, base=POS) %>% mutate(base=as.numeric(base)) %>% filter(WEIR_AND_COCKERHAM_FST >=0) %>% replace_na(list(WEIR_AND_COCKERHAM_FST=0))
+scaffold_lengths_M <- read_tsv("./step0-variantcalling/maleRef/CHRR_integrated.fa.fai", col_names = c("scaf","length")) %>% filter(grepl("lg",scaf))
+cutoff1_M <- round(nrow(Fst_M)*0.05)
+Fst_M_sort_cut1 <- head(Fst_M %>% arrange(-WEIR_AND_COCKERHAM_FST), n=cutoff1_M)
+min(Fst_M_sort_cut1$`WEIR_AND_COCKERHAM_FST`) # lowest value there is 0.120286 (5% cutoff)
+min_five_cutoff_M <- min(Fst_M_sort_cut1$`WEIR_AND_COCKERHAM_FST`)
+cutoff2_M <- round(nrow(Fst_M)*0.01)
+Fst_M_sort_cut2 <- head(Fst_M %>% arrange(-WEIR_AND_COCKERHAM_FST), n=cutoff2_M)
+min(Fst_M_sort_cut2$`WEIR_AND_COCKERHAM_FST`) # lowest value there is 0.186137 (1% cutoff)
+min_one_cutoff_M <- min(Fst_M_sort_cut2$`WEIR_AND_COCKERHAM_FST`)
+table(Fst_M_sort_cut2$scaf)
+quantile(Fst_M$`WEIR_AND_COCKERHAM_FST`, c(0.95, 0.99), na.rm = T)
+mean(Fst_M$WEIR_AND_COCKERHAM_FST) # 0.03747152
+Fst_male <- left_join(scaffold_lengths_M, Fst_M) %>% filter(WEIR_AND_COCKERHAM_FST>=0)
+
+#for x axis, we want cumulative bases for each position in the genome for a continuous axis
+nCHR_M <- length(unique(Fst_male$scaf))
+Fst_male$BPcum <- 0
+sm <- 0
+nbp_M <- c()
+for (i in unique(Fst_male$scaf)){
+  nbp_M[i] <- max(Fst_male[Fst_male$scaf == i,]$base)
+  Fst_male[Fst_male$scaf == i,"BPcum"] <- Fst_male[Fst_male$scaf == i,"base"] + sm
+  sm <- sm + nbp_M[i]
+}
+axis.set_M <- Fst_male %>%
+  group_by(scaf) %>%
+  summarize(center = (max(BPcum) + min(BPcum)) / 2)
+Fst_male %>% ggplot(aes(x=BPcum, y=WEIR_AND_COCKERHAM_FST, color=as.factor(scaf))) +
+  geom_point(alpha = 0.75) +
+  scale_x_continuous(label = axis.set_M$scaf, breaks = axis.set_M$center) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  labs(x="CHROMOSOME", color="") +
+  guides(color = guide_legend(ncol = 1, byrow = F)) +
+  geom_hline(yintercept = min_five_cutoff_M, linetype="dotted", color = "black", size=0.75) +
+  geom_hline(yintercept = min_one_cutoff_M, linetype="dotted", color = "black", size=1.5)  +
+  geom_vline(xintercept = as.integer(sm), linetype="dotted", color="red",size=1) +
+  labs(title="Fst for delta smelt (5% and 1% cutoff & MaleSexSDR as dotted lines)")
+ggsave("visualizations/Figure_Step2-Fst_maleRef_manhattan_with95_99_noMissing_no_outliers.pdf")
+````
+
+## Step 2: kmersgwas
+### All Individuals
+### No Outliers
