@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+#knitr::opts_chunk$set(echo = TRUE)
 # packages needed tweenr, ggplot2, tidyverse, polyclip, ggforce, cowplot, ggpubr
 library('devtools')
 library('ggplot2')
@@ -182,7 +182,7 @@ male_hash_abund <- read_table(file="male_kmer_abunds_in_male_contigs.histo", col
 max_abd <- 150
 min_abd <- 0
 f_hsh_subset <- female_hash_abund %>% filter(f_hsh_abund>=min_abd & f_hsh_abund<=max_abd)
-m_hsh_subs
+m_hsh_subset <- male_hash_abund %>% filter(m_hsh_abund>=min_abd & m_hsh_abund<=max_abd)
 
 # stats
 mean(female_hash_abund$f_hsh_abund)
@@ -201,6 +201,7 @@ p2 <- ggplot() +
   theme(legend.position = c(0.01, 0.1), legend.background = element_rect(fill = "white")) +
   labs(x="k-mer Abundance") +
   theme(text=element_text(size=24))
+p2
 
 # save
 png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-distribution_male_vs_female_abundance_in_select_contigs.png", width=1020, height=830)
@@ -228,7 +229,7 @@ ggplot(contig_abunds, aes(m_ctg_abund, f_ctg_abund)) +
   geom_abline(aes(intercept=0, slope=1), color="mediumpurple4", linetype="dashed") +
   facet_zoom(xlim=c(0,200), ylim=c(0, 200))
 
-png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-male_vs_female_abundance_in_select_contigs.png", width=1020, height=630)
+#png(file="/Users/miocene/Desktop/git_repos/dissertation/fodder/made_for_dissertation/figures/Figure_TK-male_vs_female_abundance_in_select_contigs.png", width=1020, height=630)
 ggplot(contig_abunds, aes(m_ctg_abund, f_ctg_abund)) +
   geom_point(color="black", size=2) +
   labs(x="Male Abundance", y="Female Abundance") +
@@ -237,12 +238,13 @@ ggplot(contig_abunds, aes(m_ctg_abund, f_ctg_abund)) +
   geom_abline(aes(intercept=0, slope=1), color="mediumpurple4", linetype="dashed", size=1.5) +
   facet_zoom(xlim=c(0,200), ylim=c(0, 200)) +
   theme(text=element_text(size=24))
-dev.off()
+#dev.off()
 ```
 
 
 ## abundance histo for hashes in selected contigs
 Python:
+```{python, eval=FALSE, echo=TRUE}
 pylab.figure(num=None, figsize=(10, 8))
 
 abundance_range = (0, 150)
@@ -257,6 +259,7 @@ pylab.ylabel('density')
 pylab.axis(xmin=0)
 pylab.legend(loc='upper right')
 _ = pylab.savefig('/tmp/shannon-dist-selected-compare-abund.png')
+```
 
 ```{r abunds_histo_hashes_in_select_contigs, echo=FALSE}
 # read in data
