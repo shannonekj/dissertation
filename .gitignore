@@ -60,3 +60,4 @@ reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/SNPdens
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/CHRR_integrated_*.fa
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/snpden/*.snpden
 reanalyzed/sex_marker/SexFindR/step2-fst/subset_analyses/*maleRef/*.vcf*
+reanalyzed/sex_marker/SexFindR/step2-fst/subset_analyses/*maleRef/*gemma*
