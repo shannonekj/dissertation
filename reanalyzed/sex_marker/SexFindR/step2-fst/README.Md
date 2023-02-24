@@ -2,6 +2,11 @@
 
 A README for tracking manual analyses using non-outlying individuals determined from PCA. It contains information run on subset of individuals from the original PstI cut site dataset consisting for 24F and 24M wild delta smelt individuals.
 
+Filters:
+- rm outliers
+- rm pruned sites from GWAS
+- rm loci missing>50%, 5%<maf<95%, indels
+
 ## General Setup
 ```bash
 cd /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-fst
@@ -30,6 +35,30 @@ sed -i '/RX41/d' snpDen_males.subset.txt
 sed -i '/RX47/d' snpDen_females.subset.txt
 sed -i '/RX59/d' snpDen_males.subset.txt
 sed -i '/RX68/d' snpDen_males.subset.txt
+
+# make vcf file from GWAS plink files
+screen
+srun -t 72:00:00 --mem=4Gb -p high --pty /bin/bash
+source $HOME/.srun_profile
+conda activate gwas
+sex="female"
+plink_dir="../../../step2-gwas/output_no_outliers"
+plink_prefix="${sex}Ref_no_outliers_gemma_in"
+for i in $(echo fam bim bed)
+do
+    ln -s ${plink_dir}/${plink_prefix}.${i} ${plink_prefix}.${i}
+done
+plink --bfile ${plink_prefix} --allow-no-sex --allow-extra-chr --recode vcf --out ${sex}Ref_no_outliers_pruned
+
+# index vcf 
+bgzip -c ${sex}Ref_no_outliers_pruned.vcf > ${sex}Ref_no_outliers_pruned.vcf.gz
+tabix -p vcf ${sex}Ref_no_outliers_pruned.vcf.gz
+
+# run fst
+vcftools --gzvcf ${sex}Ref_no_outliers_pruned.vcf.gz --weir-fst-pop snpDen_males.subset.txt --weir-fst-pop snpDen_females.subset.txt --out ${sex}Ref_no_outliers_pruned
+
+######ENDING HERE
+
 
 # take indiviudals out of vcf file
 screen

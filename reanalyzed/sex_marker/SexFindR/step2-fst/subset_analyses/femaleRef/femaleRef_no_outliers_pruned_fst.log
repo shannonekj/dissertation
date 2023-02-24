@@ -1,0 +1,21 @@
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf femaleRef_no_outliers_pruned.vcf.gz
+	--weir-fst-pop snpDen_males.subset.txt
+	--weir-fst-pop snpDen_females.subset.txt
+	--keep snpDen_males.subset.txt
+	--keep snpDen_females.subset.txt
+	--out femaleRef_no_outliers_pruned_fst
+
+Using zlib version: 1.2.3
+Versions of zlib >= 1.2.4 will be *much* faster when reading zipped VCF files.
+Keeping individuals in 'keep' list
+After filtering, kept 44 out of 44 Individuals
+Outputting Weir and Cockerham Fst estimates.
+Weir and Cockerham mean Fst estimate: -0.00040341
+Weir and Cockerham weighted Fst estimate: 0.00051975
+After filtering, kept 15084 out of a possible 15084 Sites
+Run Time = 0.00 seconds

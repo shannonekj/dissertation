@@ -1,0 +1,28 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --allow-extra-chr
+  --allow-no-sex
+  --bfile femaleRef_no_outliers_gemma_in
+  --double-id
+  --out femaleRef_no_outliers_pruned
+  --recode vcf-iid
+
+Hostname: c8-87
+Working directory: /group/millermrgrp2/shannon/projects/dissertation/reanalyzed/sex_marker/SexFindR/step2-fst/subset_analyses/femaleRef
+Start time: Fri Feb 24 07:57:06 2023
+
+Random number seed: 1677254226
+64379 MB RAM detected; reserving 32189 MB for main workspace.
+15084 variants loaded from .bim file.
+44 people (0 males, 0 females, 44 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to femaleRef_no_outliers_pruned.nosex .
+44 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 44 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.923277.
+15084 variants and 44 people pass filters and QC.
+Among remaining phenotypes, 21 are cases and 23 are controls.
+--recode vcf-iid to femaleRef_no_outliers_pruned.vcf ... done.
+
+End time: Fri Feb 24 07:57:06 2023
