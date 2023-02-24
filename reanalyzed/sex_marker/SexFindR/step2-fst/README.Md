@@ -48,7 +48,7 @@ for i in $(echo fam bim bed)
 do
     ln -s ${plink_dir}/${plink_prefix}.${i} ${plink_prefix}.${i}
 done
-plink --bfile ${plink_prefix} --allow-no-sex --allow-extra-chr --recode vcf --out ${sex}Ref_no_outliers_pruned
+plink --bfile ${plink_prefix} --double-id --allow-no-sex --allow-extra-chr --recode vcf-iid --out ${sex}Ref_no_outliers_pruned
 
 # index vcf 
 bgzip -c ${sex}Ref_no_outliers_pruned.vcf > ${sex}Ref_no_outliers_pruned.vcf.gz
@@ -57,27 +57,15 @@ tabix -p vcf ${sex}Ref_no_outliers_pruned.vcf.gz
 # run fst
 vcftools --gzvcf ${sex}Ref_no_outliers_pruned.vcf.gz --weir-fst-pop snpDen_males.subset.txt --weir-fst-pop snpDen_females.subset.txt --out ${sex}Ref_no_outliers_pruned
 
-######ENDING HERE
 
+## now run maleRef analysis
 
-# take indiviudals out of vcf file
-screen
-srun -t 72:00:00 --mem=4Gb -p high --pty /bin/bash
-source $HOME/.srun_profile
-conda activate bcftools
-old_vcf="maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz"
-new_vcf="maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.subset.vcf.gz"
-ln -s ../../../step2-snpdensity/individual_SNP_density/maleRef/${old_vcf} ${old_vcf}
-ln -s ../../../step2-snpdensity/individual_SNP_density/maleRef/${old_vcf}.tbi ${old_vcf}.tbi
-cat snpDen*males.subset.txt >> maleRef_all_individuals.txt
-bcftools view --samples-file maleRef_all_individuals.txt ${old_vcf} > ${new_vcf}
-out_prefix=$(echo ${new_vcf} | cut -d. -f1-4)
-vcftools --gzvcf ${new_vcf} --weir-fst-pop snpDen_males.subset.txt --weir-fst-pop snpDen_females.subset.txt --out ${out_prefix}
-conda activate difcover # has R w packages loaded
-R 
+##OLD
+#conda activate difcover # has R w packages loaded
+#R 
 ```
 
-See `subset_analyses/maleRef/Fst_results_maleRef.R` for R work...
+#See `subset_analyses/femaleRef/Fst_results_femaleRef.R` for R work...
 
 
 
@@ -96,11 +84,28 @@ sed -i '/RX41/d' snpDen_males.subset.txt
 sed -i '/RX59/d' snpDen_males.subset.txt
 sed -i '/RX68/d' snpDen_males.subset.txt
 
-# take indiviudals out of vcf file
+sex="male"
+plink_dir="../../../step2-gwas/output_no_outliers"
+plink_prefix="${sex}Ref_no_outliers_gemma_in"
+for i in $(echo fam bim bed)
+do
+    ln -s ${plink_dir}/${plink_prefix}.${i} ${plink_prefix}.${i}
+done
+plink --bfile ${plink_prefix} --double-id --allow-no-sex --allow-extra-chr --recode vcf-iid --out ${sex}Ref_no_outliers_pruned
 
+# index vcf
+bgzip -c ${sex}Ref_no_outliers_pruned.vcf > ${sex}Ref_no_outliers_pruned.vcf.gz
+tabix -p vcf ${sex}Ref_no_outliers_pruned.vcf.gz
+
+# run fst
+vcftools --gzvcf ${sex}Ref_no_outliers_pruned.vcf.gz --weir-fst-pop snpDen_males.subset.txt --weir-fst-pop snpDen_females.subset.txt --out ${sex}Ref_no_outliers_pruned
+
+cd ../
+conda activate difcover
+R
 ```
 
-
+See `Fst_results.subset_analyses.R` for R work
 
 
 
