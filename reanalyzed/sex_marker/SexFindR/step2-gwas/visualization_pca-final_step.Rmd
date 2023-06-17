@@ -2,7 +2,10 @@
 title: "Visualization of PCAs"
 author: "Shannon EK Joslin"
 date: "2023-02-18"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_depth: 4
 ---
 
 ```{r setup, eval=TRUE, include=FALSE}
@@ -334,3 +337,4 @@ grid.arrange(b_m_big, c_m_big, b_m_no_big, c_m_no_big, ncol=2, nrow=2)
 dev.off()
 ```
 
+ 

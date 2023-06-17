@@ -1,7 +1,7 @@
 ---
 title: "Visualization of SexFindR Steps"
 author: "Shannon EK Joslin"
-date: "2023-02-24"
+date: "2023-03-24"
 output: 
   html_document:
     toc: true
@@ -17,21 +17,9 @@ setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFi
 wd <- getwd()
 ```
 
-## Step 1: difcover
+## _Step 1: difcover_
 
-Manual located [here](https://github.com/timnat/DifCover/tree/DifCover_v3/images)
-
-### RAD Data
-
-#### Female Reference Genome
-
-##### Stage 1: Get coverage of female bam (sample 1) and male bam (sample 2)
-
-details
-
-#### Stage 2: Get ratio per window
-
-ran `from_union_bed_to_ratio_per_window_CC0`
+### TKTKT WORKING IN `tmp4quickknit.Rmd`
 
 
 

@@ -163,6 +163,3 @@ kpPlotBAMCoverage(scf190_kp, data=scf190_female, col="#9666FF", border=NA, r0=0.
 kpAxis(scf190_kp, r0=0.5, r1=1, ymax=600)
 kpAddLabels(scf190_kp, "Female", r0=0.5, r1=1, label.margin = 0.05)
 
-
-
-

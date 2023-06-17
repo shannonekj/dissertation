@@ -5,7 +5,7 @@ library(tidyverse)
 library(ggpubr)
 setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/pca")
 
-### FEMALE ###
+### FEMALE REFERENCE ###
 # read in data
 pca <- read_table2("./femaleRef_pca.eigenvec", col_names = FALSE)
 eigenval <- scan("./femaleRef_pca.eigenval")
@@ -45,7 +45,7 @@ head(pca_outliers$ind)
 
 
 
-### MALE ###
+### MALE REFERENCE ###
 # read in data
 pca_m <- read_table2("./maleRef_pca.eigenvec", col_names = FALSE)
 eigenval_m <- scan("./maleRef_pca.eigenval")

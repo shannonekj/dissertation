@@ -1,9 +1,9 @@
-# Script: plot_PCA.R
+# Script: plot_PCA-no_outliers.R
 # Author: Shannon E.K. Joslin
 # Date: 19 January 2023
 library(tidyverse)
 library(ggpubr)
-setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/pca")
+setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFindR/step2-gwas/output_no_outliers")
 
 ### FEMALE ###
 # read in data
