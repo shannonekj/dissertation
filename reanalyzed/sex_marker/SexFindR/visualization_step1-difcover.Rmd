@@ -1,0 +1,82 @@
+---
+title: "tmp 4 quick knits"
+author: "Shannon EK Joslin"
+date: "2023-03-05"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 4
+---
+
+```{r setup, eval=TRUE, include=FALSE}
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, echo=FALSE)
+library(tidyverse)
+library(ggpubr)
+library(gridExtra)
+setwd("/Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFindR")
+wd <- getwd()
+```
+
+## _Step 1: difcover_
+
+Manual located [here](https://github.com/timnat/DifCover/tree/DifCover_v3/images)
+
+### RAD Data
+
+#### Female Reference Genome
+
+##### Stage 1: Get coverage of female bam (sample 1) and male bam (sample 2)
+
+1. Extract coverage distribution from `samtools stat <file> > <outfile>` output.
+2. Make `ALL_modal_depth.txt` file with list of all file coverage statistics.
+3. Pull top 2 individuals for each sex.
+  a. Grab file size for each bam file.
+  b. Grep for each sex and pull top 2 individuals based on file size
+  c. Get ratio male:female
+  d print AC file with the following format
+  [ratio] | [female file] | [male| file]
+4. Print AC file to `{sex}Ref_aligned_bam_top2.AC` 
+
+#### Stage 2: Get ratio per window
+
+Run DifCover on bam samples.
+
+ran `from_union_bed_to_ratio_per_window_CC0`
+
+Process:
+
+1. `[ -f from_unionbed_to_ratio_per_window_CC0 ] || make`
+2. Set Parameters
+    a. FOLDER_PATH=${scripts}
+    b. BAM1=\${bam_dir}/${fem_bam}
+    c. BAM2=\${bam_dir}/${mal_bam}
+    d. a=10        # minimum coverage for sample1
+    e. A=219       # maximum coverage for sample1
+    f. b=10        # minimum coverage for sample2
+    g. B=240       # maximum coverage for sample2
+    h. v=1000      # target number of valid bases in the window
+    i. l=500       # minimum size of window to output
+    j. AC=${ac}    # Adjustment Coefficient (set 1 if modal coverage is equal)
+    k. p=0.7369656     # enrichment scores threshold (when p=2 will report regions with coverage in sample1 being roughly 4 times larger than coverage in sample2)
+    l. bin=1       # for auxiliary stage (5), generates enrichment scores histogram with scores in bins with floating precision 1. For more detailed histogram use 10, 100
+3. Run DifCover
+  a. Stage 1: `$FOLDER_PATH/from_bams_to_unionbed.sh $BAM1 $BAM2`
+  b. Stage 2: `$FOLDER_PATH/from_unionbed_to_ratio_per_window_CC0 sample1_sample2.unionbedcv $a $A $b $B $v $l`
+  c. Stage 3: `$FOLDER_PATH/from_ratio_per_window__to__DNAcopy_output.sh "sample1_sample2.ratio_per_w_CC0_a"$a"_A"$A"_b"$b"_B"$B"_v"$v"_l"$l $AC`
+  d. Stage 4a: `$FOLDER_PATH/get_DNAcopyout_with_length_of_intervals.sh "sample1_sample2.ratio_per_w_CC0_a"$a"_A"$A"_b"$b"_B"$B"_v"$v"_l"$l".log2adj_"$AC".DNAcopyout" ref.length.Vk1s_sorted`
+  e. Stage 4b: `$FOLDER_PATH/generate_DNAcopyout_len_histogram.sh "sample1_sample2.ratio_per_w_CC0_a"$a"_A"$A"_b"$b"_B"$B"_v"$v"_l"$l".log2adj_"$AC".DNAcopyout.len" $bin`
+  f. Stage 5: `$FOLDER_PATH/from_DNAcopyout_to_p_fragments.sh "sample1_sample2.ratio_per_w_CC0_a"$a"_A"$A"_b"$b"_B"$B"_v"$v"_l"$l".log2adj_"$AC".DNAcopyout" $p`
+  
+Output Files:
+```{r, engine='bash'}
+cat /Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFindR/step1-difcover/femaleRef/RAD_analysis/a1/README
+```
+
+
+```{r, engine='bash'}
+head -n 10 /Users/miocene/Desktop/git_repos/dissertation/reanalyzed/sex_marker/SexFindR/step1-difcover/femaleRef/RAD_analysis/a1/sample1_sample2.ratio_per_w_CC0_a10_A219_b10_B240_v1000_l500.log2adj_.8348
+```
+
+
+
+
