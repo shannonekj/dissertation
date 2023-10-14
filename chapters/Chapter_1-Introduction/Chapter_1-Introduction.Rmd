@@ -1,0 +1,32 @@
+---
+title: "Chapter_1-Introduction"
+author: "Shannon EK Joslin"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggpubr)
+library(gridExtra)
+knitr::opts_knit$set(root.dir = '/Users/miocene/Desktop/git_repos/dissertation/chapters/Chapter_1-Introduction/metadata')
+wd <- getwd()
+```
+
+## Fall Midwater Trawl
+
+Years: 1967 to 2022
+
+```{r fmwt}
+dat <- data.frame(read.csv("FMWTindices.csv", header=TRUE))
+p <- ggplot(data=dat, aes(x=Year, y=Delta.Smelt)) +
+  geom_bar(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  scale_y_continuous(breaks=seq(min(0), max(1700), by=200), "Delta Smelt Count") +
+  scale_x_continuous(breaks = seq(min(dat$Year)+1, max(dat$Year), by=2), "Year") +
+  ggtitle("CA Department of Fish and Wildlife\nFall Midwater Trawl") +
+  theme(plot.title=element_text(hjust = 0.5, size=12), axis.text=element_text(size=10), axis.title=element_text(size=10))
+p
+ggsave("Figure_1-FMWT_DeltaSmeltCount_1967to2022.png", plot=p, path="/Users/miocene/Desktop/git_repos/dissertation/chapters/Chapter_1-Introduction/figures", width=6.5, height=4, dpi=300, units="in", device="png")
+```
+
