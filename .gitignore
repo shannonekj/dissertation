@@ -18,6 +18,7 @@ reanalyzed/sex_marker/kmer_analysis/sex_abund.ratios
 reanalyzed/sex_marker/depth_analysis/*Ref.depth*
 reanalyzed/sex_marker/kmer_analysis/contigs.match=common5.fa
 reanalyzed/sex_marker/kmer_analysis/merged_bams_maleRef/*
+reanalyzed/sex_marker/SexFindR/visualizations/*manhattan*.pdf
 reanalyzed/sex_marker/SexFindR/step0-mapping/slurm
 reanalyzed/sex_marker/SexFindR/step0-mapping/*alignments*
 reanalyzed/sex_marker/SexFindR/step0-variantcalling/slurm
@@ -34,6 +35,7 @@ reanalyzed/sex_marker/SexFindR/step0-mapping/maleRef_stats/maleRef_aligned_bam_t
 reanalyzed/sex_marker/SexFindR/step0-variantcalling/*maleRef/*maleRef_RAD-Pst1_24F_24M*.vcf
 reanalyzed/sex_marker/SexFindR/step0-variantcalling/*maleRef/CHRR_integrated.fa
 reanalyzed/sex_marker/SexFindR/step0-variantcalling/*maleRef/*maleRef_RAD-Pst1_24F_24M.filtered_PASS.biallelic.vcf.gz
+reanalyzed/sex_marker/SexFindR/step2-gwas/pca/.Rhistory
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/*maleRef/individual_vcfs/*
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/*maleRef/*.vcf
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/individual_SNP_density/*maleRef/*.vcf.gz
