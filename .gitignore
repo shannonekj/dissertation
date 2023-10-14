@@ -1,14 +1,10 @@
 .DS_Store
+chapters/~*.docx
+chapters/drafts_w_comments/~*.docx
 fodder/.DS_Store
 fodder/figures/.DS_Store
 fodder/made_for_dissertation/cumulative_read_lengths/.RData
 fodder/made_for_dissertation/cumulative_read_lengths/.Rhistory
-chapters/drafts_w_comments/~$slin_Dissertation_Chapters_1_2_AS_SEKJ.docx
-chapters/~*.docx
-chapters/drafts_w_comments/~*.docx
-chapters/~$apter_4-Sex_markers.docx
-chapters/~$fodder.docx
-tables_and_figures/~$Tables.xlsx
 reanalyzed/sex_marker/depth_analysis/*no0.sort
 reanalyzed/sex_marker/depth_analysis/*lzma
 reanalyzed/sex_marker/depth_analysis/*gz
@@ -63,3 +59,4 @@ reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/CHRR_in
 reanalyzed/sex_marker/SexFindR/step2-snpdensity/subset_analyses/*maleRef/snpden/*.snpden
 reanalyzed/sex_marker/SexFindR/step2-fst/subset_analyses/*maleRef/*.vcf*
 reanalyzed/sex_marker/SexFindR/step2-fst/subset_analyses/*maleRef/*gemma*
+tables_and_figures/~$Tables.xlsx
